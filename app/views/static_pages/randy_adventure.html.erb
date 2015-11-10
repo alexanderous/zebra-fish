@@ -1,0 +1,88 @@
+    <head>
+        <script>
+              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+              ga('create', '[redacted-g]', 'antho.co');
+              ga('send', 'pageview');
+
+              $(document).ready(function () {
+                $("#cyndivideoad02").fitVids();
+              });
+              $(document).ready(function () {
+                $("#nicolevideoadbelieving").fitVids();
+              });
+        </script>
+	<meta name="viewport" content="initial-scale = 1.0,maximum-scale = 2.0,user-scalable = 1.0">
+    </head>
+    <body>
+    <% provide(:title, 'Randy Bird: Adventure') %>
+        <%= image_tag("A D V E N T U R E.png", :id => "imagead", :class => "image") %>
+        <div id="boxad" class="clearfix">
+            <%= image_tag("treehunt.png", :id => "treehunt", :class => "image") %>
+            <div id="boxad1" class="clearfix">
+                <p id="Thrills_and_Shrills_Cyndi_Bird_wife">
+                <span id="textspanad">Thrills &amp; Shrills</span><span id="textspanad1"><br /></span><span id="textspanad2">Cyndi Bird, wife</span>
+                </p>
+                <div id="cyndivideoad02">
+                    <iframe width="1280" height="720" src="//www.youtube.com/embed/T8XzSOItKRE" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <div id="boxad2" class="clearfix">
+                <%= image_tag("snowmobilingwith.png", :id => "snowmobilingwith", :class => "image") %>
+        </div>
+        <%= image_tag("cliffjumper.png", :id => "cliffjumper", :class => "image") %>
+        <div id="boxad4" class="clearfix">
+            <div id="boxad5" class="clearfix">
+                <%= image_tag("tubing.png", :id => "tubing", :class => "image") %>
+                <%= image_tag("waterskiing.png", :id => "waterskiing", :class => "image") %>
+            </div>
+            <div id="boxad6" class="clearfix">
+                <%= image_tag("boating.png", :id => "boating", :class => "image") %>
+                <%= image_tag("jetskiing.png", :id => "jetskiing", :class => "image") %>
+            </div>
+        </div>
+        <%= image_tag("whitewaterrafting.png", :id => "whitewaterrafting", :class => "image") %>
+        <div id="boxad7" class="clearfix">
+            <div id="boxad8" class="clearfix">
+                <%= image_tag("snorkeling.png", :id => "snorkeling", :class => "image") %>
+                <%= image_tag("whipcream.png", :id => "whipcream", :class => "image") %>
+            </div>
+            <div id="boxad9" class="clearfix">
+                <%= image_tag("motorbiking.png", :id => "motorbiking", :class => "image") %>
+                <%= image_tag("greatwall.png", :id => "greatwall", :class => "image") %>
+            </div>
+        </div>
+        <div id="boxad10" class="clearfix">
+            <p id="A_Peak_Tradition_Nicole_Cheung_daughter">
+            <span id="textspanad6">A Peak Tradition</span><span id="textspanad7"><br /></span><span id="textspanad8">Nicole Cheung, daughter</span>
+            </p>
+            <div id="nicolevideoadbelieving">
+                <iframe width="1280" height="720" src="//www.youtube.com/embed/owMD_7y-iH4" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div id="boxad11" class="clearfix">
+            <%= image_tag("skiingup.png", :id => "skiingup", :class => "image") %>
+            <%= image_tag("ziplining.png", :id => "ziplining", :class => "image") %>
+            <%= image_tag("skiing.png", :id => "skiing", :class => "image") %>            
+            <%= image_tag("newpigeon.png", :id => "imagead1", :class => "image") %>
+        </div>
+
+        <div id="gueststories" class="clearfix">
+         
+            <% @anthology_items = Micropost.where(:topic => 'Adventure') %>
+            <% @identity = "9" %>
+            <% @subject_matter = 'Adventure' %>
+            <div id="x" >
+                <%= render 'shared/guest_stories' %>
+            </div>
+        </div>
+        <%= image_tag("sledding.png", :id => "sledding", :class => "image") %>
+            <div id="buttonbottom">
+        <%= link_to "Back to Life Story", randybird_path, class: "button2" %><br><br>
+        <%= link_to "Next Story", randybird_courtship_path, class: "button" %>
+    </div>
+    </body>

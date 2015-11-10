@@ -1,0 +1,15 @@
+development:
+  access_key_id: [redacted]
+  secret_access_key: [redacted]
+  bucket: [redacted]
+
+test:
+  access_key_id: [redacted]
+  secret_access_key: [redacted]
+  bucket: [redacted]
+
+production:
+  access_key_id: [redacted]
+  secret_access_key: [redacted]
+  bucket: [redacted]
+

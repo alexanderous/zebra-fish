@@ -1,0 +1,490 @@
+
+
+    <head>
+
+
+	<meta name="viewport" content="initial-scale = 1.0,maximum-scale = 3.0">
+
+    <script>
+            $(document).ready(function () {
+                $(".ChapterVideoMod").fitVids();
+            });
+
+    </script>
+
+    <script>
+        function showHide(shID) {
+          if (document.getElementById(shID)) {
+            if (document.getElementById(shID+'-show').style.display != 'none') {
+              document.getElementById(shID+'-show').style.display = 'none';
+              document.getElementById(shID).style.display = 'block';
+            }
+            else {
+              document.getElementById(shID+'-show').style.display = 'inline';
+              document.getElementById(shID).style.display = 'none';
+            }
+          }
+        }
+    </script>
+
+    <!-- fancybox begins -->
+
+        <!--script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script--> <!-- this causes fitvids NOT to work. BOO -->
+        <link rel="stylesheet" href="/fancybox/source/jquery.fancybox.css" type="text/css" media="screen">
+        <script type="text/javascript" src="/fancybox/source/jquery.fancybox.pack.js"></script>
+    <!-- fancybox end -->    
+    </head>
+
+<body>
+
+        <span id="In_Exhibit_Title_Mod">
+        CONVERSION
+        </span>
+        <div id="boxmodex_conversion" class="clearfix">
+            <%= image_tag("evelyn/menu/arrow motif left.png", :id => "exhibit_top_arrow_motif_left", :class => "image")  %>
+            <span id="In_Exhibit_Subtitle_Mod">
+            FINDING THE WAY BACK HOME
+            </span>
+            <%= image_tag("evelyn/menu/arrow motif right.png", :id => "exhibit_top_arrow_motif_right", :class => "image")  %>
+        </div>
+        <div id="boxmodex1" class="clearfix">
+            <span id="Previous_Exhibit_Link_Mod"><a href="<%= roos_devotion_path %>">
+            previous exhibit</a> 
+            </span>
+            <span id="Next_Exhibit_Link_Mod"><a href="<%= roos_resilience_path %>">
+            next exhibit</a>
+            </span>
+        </div>
+
+
+<!-- CHAPTER ONE -->
+
+
+        <div id="Gallery_Strip" class="clearfix">
+            <ol class="GalleryPicsMod">
+                <li><%= link_to image_tag("roos/conversion/small/CatholicUpbringing.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/conversion/large/CatholicUpbringing.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/conversion/small/CatholicUpbringing1.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/conversion/large/CatholicUpbringing1.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/conversion/small/CatholicUpbringing2.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/conversion/large/CatholicUpbringing2.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/conversion/small/CatholicUpbringing3.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/conversion/large/CatholicUpbringing3.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/conversion/small/CatholicUpbringing4.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/conversion/large/CatholicUpbringing4.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/conversion/small/CatholicUpbringing5.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/conversion/large/CatholicUpbringing5.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/conversion/small/CatholicUpbringing6a.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/conversion/large/CatholicUpbringing6a.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+            </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            My Catholic Upbringing
+            </span>
+            <span id="Contributor_Name_Mod">
+            teresa roos
+            </span>
+            <span id="First_Paragraph_Mod">
+            I was born into the Catholic Church. I was baptized October 23, 1936, when I was one day old in the St. Ignatius Catholic Church in Scranton, Logan, Arkansas, by Rev. Richard Eveld OSB. Sponsors were my grandparents John Layes, Sr. and Julia Henrica Nehus Beshoner. On that day my grandmother Julia Nehus Beshoner planted a red radiance rose bush in the flower bed in honor of my birth, and was there until the house burned down.  <br />
+            </span>
+            <div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/199139611%3Fsecret_token%3Ds-4kv5u&amp;color=d3d3d3&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “I would go to Mass by myself with the children.”
+                </span>
+            </div>
+            <span id="Second_Paragraph_Mod">
+                My life continued to revolve around the Catholic Church. On Sundays, we went to Mass in the morning, In the afternoon we went to benediction. When I was in elementary school, each Friday, we went to Mass, and we would receive Holy Communion, and before Holy Communion, we had to be fasting, so we brought our breakfast with us, and usually it would be a cold fried egg sandwich, and I’ve always loved fried egg sandwiches, because that was kind of a special treat. On holidays, at the church there was always a nativity scene, on the altar where the Virgin Mary was. <br /><br />
+
+                When I was married, I would go to Mass by myself with the children. And one special time, Cyndi decided that she was not happy being there, so she just started screaming. I tried to quiet her down, but she wouldn’t be quieted or consoled, so I would get up with all four girls and walk out, so after that I left them at home during Mass to be babysat, which was only about an hour or so, and they didn’t have to sit through the whole thing and be really quiet. 
+            </span>
+            
+            <!--span id="See_More_Mod"><a href="#" id="restofstory0-show"  onclick="showHide('restofstory0');return false;">SEE MORE</a>
+            </span>
+
+            <div id="restofstory0" class="more">
+
+                <span id="Second_Paragraph_Mod1" class="more">
+
+                I didn’t do a lot of temple recommend interviews, because usually those were done after the block on Sunday, and I was involved with the finance clerk doing the tithing, so the other counselor did most of those. But I think I did 90% of the youth interviews, because we did that on mutual night. I can remember going to girls’ camp and pulling the girls aside and interviewing them at girls’ camp for a temple recommend. I loved going to girls’ camp as a priesthood holder. <br /><br />
+
+                Those were things in my life that I found very meaningful and fulfilling.
+
+                </span>
+            </div-->
+        </div>
+
+
+<!-- CHAPTER TWO -->
+
+
+        <div id="Gallery_Strip1" class="clearfix">
+            <ol class="GalleryPicsMod">
+                    <li><%= link_to image_tag("roos/conversion/small/Ledback.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/conversion/large/Ledback.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/conversion/small/Ledback1.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/conversion/large/Ledback1.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/conversion/small/Ledback2.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/conversion/large/Ledback2.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears32.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears32.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears33.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears33.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears34.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears34.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears36.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears36.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears37.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears37.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+
+                </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            Led Back to the Church by Teresa      
+            </span>
+            <span id="Contributor_Name_Mod">
+            bill roos
+            </span>
+            <span id="First_Paragraph_Mod">There was a period in my life, basically when I went in the army, when I became fairly inactive in the Church. Not totally inactive, just semi-active. I was that way off and on until one day I came home from work and there were missionaries sitting in the living room. Teresa accepted the challenge of having them teach the discussions. My jaw hit the floor that she would be willing to that. “What?!” 
+            <br />
+            </span>
+            <div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <iframe src="https://player.vimeo.com/video/124071354" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “She said, ‘Yes,’ and my jaw really hit the floor.”
+                </span>
+            </div>
+
+            <span id="Second_Paragraph_Mod">
+                
+
+                After a couple of discussions, they announced that they were going to have a baptism. Was she ready for that? She said, “Yes,” and my jaw really hit the floor. From that point on it has been a case where we work together. She has kept me on the straight and narrow. She was baptized, we were living in Little Rock, and I ended up serving in the branch presidency there. Then, through various moves, I served in a lot of capacities in the Church. <br /><br />
+
+                It was a case where I was disconnected, not completely, but not doing everything I should be doing, and doing a lot of things I shouldn’t be doing. It helped to have my wife with me. 
+
+
+            </span>
+
+            <span id="See_More_Mod"><a href="#" id="restofstory-show"  onclick="showHide('restofstory');return false;">SEE MORE</a>
+            </span>
+
+            <div id="restofstory" class="more">
+
+                <span id="Second_Paragraph_Mod1" class="more">
+
+                I look at myself: I married a woman who was not a member of the Church. My cousin married a woman who was not a member of the Church. My wife is now a strong, dedicated, hard-working member of the Church, and my cousin’s wife is anti-Mormon and always has been. He’s been inactive since the time he was nineteen years old.  <br /><br />
+
+                I see the two different sides of the same equation. I was lucky. My wife became what I needed to have. Otherwise, who knows where I’d be today. So, if you’re going to get married, the secret is, pick the right woman! Or pick the right guy!
+                </span>
+            </div>
+
+        </div>
+            <!--span id="Exclusive_Quote_Mod">
+            “I want my children to have wisdom and intelligence, to be able to make the right choice to go back to heaven. Then we can all be happily living forever with each other in heaven.”
+            </span-->
+            
+
+
+<!-- CHAPTER THREE -->
+
+
+        <div id="Gallery_Strip1" class="clearfix">
+            <ol class="GalleryPicsMod">
+                    <li><%= link_to image_tag("roos/conversion/small/LearningMormonism.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/conversion/large/LearningMormonism.jpg", :class => "fancybox", :rel => "galleryx", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/conversion/small/LearningMormonism1.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/conversion/large/LearningMormonism1.jpg", :class => "fancybox", :rel => "galleryx", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/conversion/small/LearningMormonism2.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/conversion/large/LearningMormonism2.jpg", :class => "fancybox", :rel => "galleryx", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears26.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears26.jpg", :class => "fancybox", :rel => "galleryx", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears27.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears27.jpg", :class => "fancybox", :rel => "galleryx", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears28.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears28.jpg", :class => "fancybox", :rel => "galleryx", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears29.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears29.jpg", :class => "fancybox", :rel => "galleryx", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears30.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears30.jpg", :class => "fancybox", :rel => "galleryx", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears31.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears31.jpg", :class => "fancybox", :rel => "galleryx", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears48.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears48.jpg", :class => "fancybox", :rel => "galleryx", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears49.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears49.jpg", :class => "fancybox", :rel => "galleryx", :title => "" %>
+                    </li>
+            
+                </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            Learning About Mormonism
+            </span>
+            <span id="Contributor_Name_Mod">
+            teresa roos
+            </span>
+            <span id="First_Paragraph_Mod">
+               When we were first dating, we had a conversation about religion. He told me that he was Mormon. But I didn’t understand that word, “Mormon,” because I’d never really heard it that much, and I thought he said he was a “moron.” To me, I thought it was natural to laugh. “You say you’re a moron? Are you joking, or what?” But he didn’t take it that way. He thought I was being critical of the Church. I was not being critical of the Mormon Church. I was just laughing because I thought he was telling another joke, that he was a moron!
+            <br />
+            </span>
+            <div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <iframe src="https://player.vimeo.com/video/124071540" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “‘You say you’re a moron? Are you joking, or what?’”
+                </span>
+            </div>
+
+            <span id="Second_Paragraph_Mod">
+                
+
+                Time went on; we were married and had children, and we moved to Little Rock, Arkansas. We rented a house, and the landlord of that house didn’t really want to know anything about the Mormon Church, so when the missionaries stopped by his house—on our application we had written down that Bill was a Mormon—so he said, “I have just rented a house to someone who is a Mormon.”<br /><br />
+
+                The missionaries decided they would come over to our house and visit. They came over when Bill was at work, and I asked them to come in, ’cause we were brand new there, I didn’t know anybody, and I thought I would be polite and talk to them. Before that, when the missionaries came, I wasn’t too polite or talked to them because I didn’t want anything to do with the Mormon Church. 
+
+
+            </span>
+
+
+            <span id="See_More_Mod"><a href="#" id="restofstorya-show"  onclick="showHide('restofstorya');return false;">SEE MORE</a>
+            </span>
+
+            <div id="restofstorya" class="more">
+
+                <span id="Second_Paragraph_Mod1" class="more">
+                    They talked and they must have said just the right things, because it made me think about some of the things I had read in different books that were at our house, like <span class="italica">The Way to Perfection,</span> and a few other books. I had not read the Book of Mormon. I probably hadn’t read any of <span class="italica">The Book of Mormon,</span> but I read other information and other leaflets. <br /><br />
+
+                    We went to church that Sunday, and the investigator’s class was with Carroll Dortch. He was also a convert to the Church, and his wife was a convert. He was able to explain a lot of things to me that I didn’t understand. I guess I should say I had previously been to an investigators' class in Minneapolis, and the teacher there was on a lesson that was very controversial to me, and I didn’t accept anything that he taught. It was just too controversial for me. I didn’t believe anything he said.<br /><br />
+
+                    It was Carroll Dortch who was able to know and understand what I needed to know. It was probably things that maybe he needed to know before he was baptized. 
+                </span>
+            </div>
+        </div>
+            <!--span id="Exclusive_Quote_Mod">
+            “I want my children to have wisdom and intelligence, to be able to make the right choice to go back to heaven. Then we can all be happily living forever with each other in heaven.”
+            </span-->
+
+<!-- CHAPTER FOUR -->
+
+
+        <div id="Gallery_Strip1" class="clearfix">
+            <ol class="GalleryPicsMod">
+                    <li><%= link_to image_tag("roos/conversion/small/Baptism.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/conversion/large/Baptism.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/conversion/small/Baptism1.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/conversion/large/Baptism1.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            My Baptism
+            </span>
+            <span id="Contributor_Name_Mod">
+            teresa roos
+            </span>
+            <span id="First_Paragraph_Mod">
+            The missionaries made appointments to give discussions to me every day that next week. They came and on one of the days, they said, “By the way, Sister Roos, we have a baptism set up for the 17th of July. Would you like to be baptized on that day?”
+            <br />
+            </span>
+            <div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                       <iframe src="https://player.vimeo.com/video/124529444" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “They were very surprised! They didn’t think that I would say yes.”
+                </span>
+            </div>
+
+            <span id="Second_Paragraph_Mod">
+                
+
+                I said, “Yes, I would like to be baptized on that day.”<br /><br />
+
+                They were very surprised! They didn’t think that I would say yes, and they did not have a baptism set up. They were just wanting to feel me out so that they could figure out if I wanted to be baptized or not be baptized.
+
+
+            </span>
+
+            <span id="See_More_Mod"><a href="#" id="restofstoryb-show"  onclick="showHide('restofstoryb');return false;">SEE MORE</a>
+            </span>
+
+            <div id="restofstoryb" class="more">
+
+                <span id="Second_Paragraph_Mod1" class="more">
+                    They rushed out and arranged for a baptism on that day. The Relief Society President played the piano and another sister was the chorister. They called the Branch President and he was there, and another brother gave a talk. On that day I was baptized and I didn’t really know the difference that they really didn’t have that baptism set. <br /><br />
+
+                    One of the outstanding attractions to the Church was the temple and the sealing powers that take place in the temple. To me, the temple was the all-encompassing, important part and difference between the Mormon Church and the Catholic Church. If there wasn’t the temple, I didn’t see any reason to join the Mormon Church.
+                </span>
+            </div>
+           
+
+        </div>
+
+
+
+<!-- CHAPTER FIVE -->
+
+
+    <!--div id="Gallery_Strip1" class="clearfix">
+            <ol class="GalleryPicsMod">
+                    
+                </ol>   
+        </div-->
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod"><br /><br /><br />
+            The Happiest Moment of My Life
+            </span>
+            <span id="Contributor_Name_Mod">
+            bill roos
+            </span>
+            <span id="First_Paragraph_Mod">
+            I think the happiest would have been when Teresa decided to be baptized. We had just been transferred to Little Rock, Arkansas, and after the first day at work I came home and there was a little Nash Rambler parked in front of the house. I walked in and there were two missionaries sitting on the sofa. “Whoa! She let ‘em in?” 
+            <br />
+            </span>
+            <div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <iframe src="https://player.vimeo.com/video/124071417" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “She would sit with her arms folded with the attitude of, ‘Convince me.’”
+                </span>
+            </div>
+
+            <span id="Second_Paragraph_Mod">
+                
+                Previously to that she had gone to church with me a few times. In the investigators class, as they called it at the time, she would sit with her arms folded with the attitude of, “Convince me.” But when we got to Arkansas, we went to church the first Sunday and the guy there that taught that class was a good old, down-home Arkansas boy* with a good old Arkansas accent, and she just took to him big time. Later on his family and our family became close friends. He served as a branch president and I was one of his counselors. <br /><br />
+
+                The missionaries didn’t come once a week; they came the next day, and the next day, and the next day, teaching her. About the second or third time they were there, they said, “We have a baptism planned for tomorrow. Are you ready to be baptized?” 
+
+            </span>
+
+            <span id="See_More_Mod"><a href="#" id="restofstory2-show"  onclick="showHide('restofstory2');return false;">SEE MORE</a>
+            </span>
+
+            <div id="restofstory2" class="more">
+
+                <span id="Second_Paragraph_Mod1" class="more">
+                    She said “Yes,” and whoa! <br /><br />
+
+                    They hadn’t planned to have a baptism the next day, so they had to hustle and get one lined up. I was able to baptize her and confirm her, and then the next Sunday we had a Roos day at sacrament meeting. I gave each of my four girls a blessing. That was a happiest time, a great, wonderful time. <br /><br />
+
+                    <span class="italica">*As a result, over the years while we lived there, we became closest friends. They were either at our house with their family or we were at their house with our family. We did a lot of things together and remained close. Even after we moved away, we kept in touch with them. He eventually suffered a major heart attack and died, leaving a large family. <br /><br />
+
+                    At the time, he was closer to me than my own brother. I thought more of him than I did of my own brother. That’s probably the closest friend I’ve ever had in my whole life. I’m not one for having close friends. Acquaintances, a lot, but friends—I don’t know, I just don’t do that. But he was. I still think of him as a friend.</span> 
+                </span>
+            </div>
+        </div>
+
+<!-- CHAPTER SIX -->
+
+    <div id="Gallery_Strip1" class="clearfix">
+            <ol class="GalleryPicsMod">                    
+                    <li><%= link_to image_tag("roos/conversion/small/TempleSealinga.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/conversion/large/TempleSealinga.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                  <li><%= link_to image_tag("roos/conversion/small/TempleSealing5.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/conversion/large/TempleSealing5.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/conversion/small/TempleSealing1.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/conversion/large/TempleSealing1.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/conversion/small/TempleSealing2.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/conversion/large/TempleSealing2.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/conversion/small/TempleSealing3.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/conversion/large/TempleSealing3.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/conversion/small/TempleSealing4.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/conversion/large/TempleSealing4.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+
+                    <li><%= link_to image_tag("roos/conversion/small/TempleSealing6.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/conversion/large/TempleSealing6.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            Our Temple Sealing
+            </span>
+            <span id="Contributor_Name_Mod">
+            teresa roos
+            </span>
+            <span id="First_Paragraph_Mod">
+           In 1966 we made an appointment to go to the temple and be sealed together. The branch was very helpful for us. The branch president let us borrow his car, which had an air conditioner, because he didn’t want us to drive all the way out to Idaho (1777 miles) with no air conditioner, because it was really, really hot. 
+            <br />
+            </span>
+            <div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <iframe src="https://player.vimeo.com/video/124071542" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “Everybody cried.”
+                </span>
+            </div>
+
+            <span id="Second_Paragraph_Mod">
+        
+            We got in the car with our four girls and camped all the way out to Idaho. We met at my sister-in-law’s house in Meridian, Idaho, and we met my brother-in-law and his wife there and their two daughters. So we all gathered together at Meridian. The next morning we got up in the middle of the night and drove over to Idaho Falls, which was the closest temple to Meridian at that time. <br /><br />
+
+            My two nieces, who were already born in the covenant, needed a place to stay, so my sister-in-law Marilyn had a friend who lived in Idaho Falls. They were able to stay with friends while the rest of us went to the temple. 
+
+            
+            </span>
+
+            <span id="See_More_Mod"><a href="#" id="restofstoryq-show"  onclick="showHide('restofstoryq');return false;">SEE MORE</a>
+            </span>
+
+            <div id="restofstoryq" class="more">
+
+                <span id="Second_Paragraph_Mod1" class="more">
+                    Our four girls could go to the temple because they were being sealed. They went to the little nursery where they were dressed in white while we were going to receive our endowments, our initiatories and our endowment. Then we went to the sealing room. The helper in the nursery brought the four little girls in, and they were beautiful, and they were just smiling and happy. We all surrounded the altar as the officiator performed the sealing ordinance. Everybody cried. One of my brother-in-laws gave me a handkerchief, and it was soaking wet with tears.<br /><br />
+
+                    Being sealed in the temple was a very important day for us. We had waited for a long time to be sealed together and to have our children sealed to us. It was also important because we got together with family, with brothers and sisters and nephews and nieces. <br /><br />
+
+                    When we went back to Meridian after the sealing, Marilyn, my sister-in-law, and her husband packed up everything and moved down to Utah. We—Bill and I and our children, and Dan and Lois and their children—drove down to Afton, Wyoming to visit with the Taysom family, their grandfather and grandmother. We were able to visit with them and see their gardens.<br /><br />
+
+                    Then we went to a campground where we spent the night. As we were unpacking our things, along came Bill’s uncle, and he had a big catch of fish. He’d been out fishing that day and knew that we were there, so he brought us a bunch of fish. We had them for dinner. The next morning we had more fish for breakfast! We still had fish left over, so we gave them to another family who were camping in the same campground, and they were delighted to have some fresh fish.<br /><br />
+
+                    After that we drove down to Utah, where Marilyn and her family were, and helped them unload their truck into their new home and spent some time with them. <br /><br />
+
+                    We were able to go to the Salt Lake Temple and go through a session. That was probably the last time we were able to go to the temple for a long, long, long time, because we lived far from the temple. When we would go to visit family, there wasn’t time to go to the temple. We didn’t have babysitters if we did go, so we didn’t go to the temple again until we were in California. In Dublin, California we went to the Oakland Temple.<br /><br />
+
+                    The temple has always been really important to our family.
+                </span>
+            </div>
+        </div>
+
+
+
+<!-- BOTTOM OF PAGE -->
+
+        <div id="boxmodex1" class="clearfix">
+            <span id="Previous_Exhibit_Link_Mod"><a href="<%= roos_devotion_path %>">
+            previous exhibit</a> 
+            </span>
+            <span id="Next_Exhibit_Link_Mod"><a href="<%= roos_resilience_path %>">
+            next exhibit</a>
+            </span>
+        </div>
+
+        <div id="boxmodex4" class="clearfix">
+            <%= image_tag("evelyn/menu/arrow motif left.png", :id => "arrow_motif_left1", :class => "image")  %>
+            <span id="Home_Link_Mod"><a href="<%= roos_path %>">
+            HOME</a>
+            </span>
+             <%= image_tag("evelyn/menu/arrow motif right.png", :id => "arrow_motif_right1", :class => "image")  %>
+        </div>
+</body>

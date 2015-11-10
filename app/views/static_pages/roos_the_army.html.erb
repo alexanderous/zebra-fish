@@ -1,0 +1,430 @@
+
+
+    <head>
+
+
+	<meta name="viewport" content="initial-scale = 1.0,maximum-scale = 3.0">
+
+    <script>
+            $(document).ready(function () {
+                $(".ChapterVideoMod").fitVids();
+            });
+
+    </script>
+
+    <script>
+        function showHide(shID) {
+          if (document.getElementById(shID)) {
+            if (document.getElementById(shID+'-show').style.display != 'none') {
+              document.getElementById(shID+'-show').style.display = 'none';
+              document.getElementById(shID).style.display = 'block';
+            }
+            else {
+              document.getElementById(shID+'-show').style.display = 'inline';
+              document.getElementById(shID).style.display = 'none';
+            }
+          }
+        }
+    </script>
+
+    <!-- fancybox begins -->
+
+        <!--script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script--> <!-- this causes fitvids NOT to work. BOO -->
+        <link rel="stylesheet" href="/fancybox/source/jquery.fancybox.css" type="text/css" media="screen">
+        <script type="text/javascript" src="/fancybox/source/jquery.fancybox.pack.js"></script>
+    <!-- fancybox end -->
+    </head>
+
+<body>
+
+        <span id="In_Exhibit_Title_Mod">
+        THE ARMY
+        </span>
+        <div id="boxmodex_army" class="clearfix">
+            <%= image_tag("evelyn/menu/arrow motif left.png", :id => "exhibit_top_arrow_motif_left", :class => "image")  %>
+            <span id="In_Exhibit_Subtitle_Mod">
+            TRANSFORMATION IN THE MILITARY
+            </span>
+            <%= image_tag("evelyn/menu/arrow motif right.png", :id => "exhibit_top_arrow_motif_right", :class => "image")  %>
+        </div>
+        <div id="boxmodex1" class="clearfix">
+            <span id="Previous_Exhibit_Link_Mod"><a href="<%= roos_wisdom_path %>">
+            previous exhibit</a> 
+            </span>
+            <span id="Next_Exhibit_Link_Mod"><a href="<%= roos_teresas_childhood_path %>">
+            next exhibit</a>
+            </span>
+        </div>
+
+
+<!-- CHAPTER ONE -->
+
+
+        <div id="Gallery_Strip" class="clearfix">
+            <ol class="GalleryPicsMod">
+
+                <li><%= link_to image_tag("roos/bill/small/HS2.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/bill/large/HS2.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                </li>
+                <li><%= link_to image_tag("roos/bill/small/HS6.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/bill/large/HS6.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                </li>
+                <li><%= link_to image_tag("roos/army/small/Graduation.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/army/large/Graduation.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                </li>
+                <li><%= link_to image_tag("roos/bill/small/Teenager1.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/bill/large/Teenager1.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                </li>
+                <li><%= link_to image_tag("roos/bill/small/Downthebank2.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/bill/large/Downthebank2.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                </li>
+                <li><%= link_to image_tag("roos/army/small/Graduation1.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/army/large/Graduation1.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                </li>
+                <li><%= link_to image_tag("roos/army/small/Graduation2.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/army/large/Graduation2.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                </li>
+
+            </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            The Year Leading Up to Enlistment
+            </span>
+            <span id="Contributor_Name_Mod">
+            bill roos
+            </span>
+            <span id="First_Paragraph_Mod">
+            Because I had taken a heavy class schedule my junior year, I did not need a lot of credits to graduate, so my senior year was relatively light. I worked the first two periods, came to school for the 3rd period which was American History, then took lunch followed by choir at no credit (because I had band as well during the 6th period, and you could receive credit for only one music class). For 5th period I took Art. The only homework I had was for American History where we had to write a 5000 word theme on some part of American History for our final semester’s grade. I wrote my theme on Alaska, and got an A. A pretty easy final year. <br />
+            </span>
+            <!--div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <iframe src="https://player.vimeo.com/video/124071486" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “I would go to mass by myself with the children.”
+                </span>
+            </div-->
+            <span id="Second_Paragraph_Mod">
+                 
+                Also during my senior year I set a goal of having a date at least once a week and not dating any girl twice during the year. I almost achieved the goal. I did have at least one date a week but I did date one girl twice. I had asked her to a dance earlier in the year then in the spring, she asked me to take her to the Job’s Daughter’s Ball, a dance where the girls asked the boys for the date. Since she and I had been friends for quite awhile, I agreed. <br /><br />
+
+                The day after graduation from high school, I was off to a U.S. Forest Service camp in the woods on the northwest side of Priest Lake. It was a camp of college students and recent high school grads who were hired to engage in the control of the White Pine Blister Rust. The pay was $1.35 an hour and we paid about $2.00 a day for room and board. The “room” consisted of a four-man canvas wall tent with an army cot, a mattress, a sleeping bag and a sheet metal wood burning stove for heat if needed. “Board” was three meals a day. There was a huge breakfast, lunch was whatever you wanted to make and carry along with you. Dinner in the evening was so big it would make your eyes bug out. After dinner, desserts and snacks were available until lights out at 10:00pm. 
+ 
+            </span>
+            
+            <span id="See_More_Mod"><a href="#" id="restofstory0-show"  onclick="showHide('restofstory0');return false;">SEE MORE</a>
+            </span>
+
+            <div id="restofstory0" class="more">
+
+                <span id="Second_Paragraph_Mod1" class="more">
+
+                The work was not really hard or demanding, in fact it was quite boring. But it was the best paying job I had ever had up to that point. We were guaranteed 40 hours pay a week, and for all hours over 40 we were paid time and a half. So, if it rained one day we just sat around camp in the tents and didn’t get paid. Then we worked on Saturday for straight time. Thus, when it rained, we hoped and prayed for it to keep up for more than one day. That way we could sit around camp and get paid after the first rainy day. That never happened though. When it did rain it only did so one day out of a week. <br /><br />
+
+                One of the guys found a white-tailed deer fawn still with it’s spots that he thought had been abandoned. He stuffed it inside his shirt and brought it back to camp. That evening, a car load of guys got in a car and drove the 20 miles or so to the town of Priest River to a drug store where they bought a couple of baby bottles which we used to feed the fawn until it could graze. We named him, yes...Bambi. He had the run of the camp and loved being with all the guys there. Almost every night, after lights out, he would come into my tent and jump up on my cot, nestle around a bit and then settle down to sleep with me. <br /><br />
+
+                After a couple of months, we came back to camp one evening to learn that the camp boss, who didn’t approve of us having Bambi, had radioed to headquarters to have them send for a game warden to come get the deer. Bambi was gone. None of the guys were very happy about it, but the camp boss was the boss and his word was law. A couple of months later, after the season was over and I was attending the Bonner County fair, I went into the Idaho Fish and Wildlife exhibit and there, in a chain link stockade was a deer that I thought looked a lot like Bambi. I gave it the whistle we used for Bambi in the camp, and his ears flicked up and he looked around. I whistled again and he came right over to me. We both had a good time there I think. He nuzzled and licked me and I scratched and patted him through the chain link. It was kind of sad when I turned and walked away. <br /><br />
+
+                After working the summer in the Forest Service, I worked off and on with my brother-in-law Jack for a man who had an automobile body &amp; fender repair shop. My job was to mask off the chrome and glass of cars which were to be painted. Then after the painting was finished and dry, I removed the tape and paper. Really a “duh” type of job. <br /><br />
+
+                One day just before I went into the army, we had a cat that was sick and had diarrhea. We had taken it to a vet to no avail and the decision was to have it put down. I told Mother it was stupid to take it back to the vet and pay him more money to do it. I would just take the thing to the city dump and shoot it with my pistol. I put the cat in a cardboard box in the front seat of the car and started off. A block from home the cat started climbing out of the box and while trying to get it back in so it wouldn’t poop all over my car seat, I ran off the road and rammed into a large tree, totaling my car. The impact sent me flying into the steering wheel with my mouth bending it over and my head hit the windshield so hard it was knocked out onto the hood of the car. The bridge part of my glasses which goes over the nose had embedded itself under the skin on my nose. <br /><br />
+
+                So, I picked up the cat and walked back home bleeding from a cut at the hairline on my forehead, from the cut where the glasses had embedded themselves in my nose, bleeding from inside my nose and from my mouth. All were very superficial cuts, and by the time I walked the block back home, most had stopped bleeding but my face and shirtfront was pretty much covered with blood. As I walked in the back door into the kitchen, Mother, in an adjoining room asked why I was back already. I said I had had a wreck. She asked, “You what?” And stepped to the doorway to see me standing there in my bloody splendor. She let out a cry and started to crumple. I had to attend to her and assure her I was OK, and get her to sit down before I could go the bathroom, clean myself up and tend to the cuts. Poor mother. <br /><br />
+
+                I remember the day my mother went with me to the bus depot when I left for basic training in the army. I was excited, ready to start an adventure. She was losing a son. I can still remember the look of pain and the tears on her face as the bus pulled away from the curb. 
+
+                </span>
+            </div>
+        </div>
+
+
+<!-- CHAPTER TWO -->
+
+
+        <div id="Gallery_Strip1" class="clearfix">
+            <ol class="GalleryPicsMod">
+                    <li><%= link_to image_tag("roos/army/small/Armylife.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/army/large/Armylife.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/army/small/Armylife1.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/army/large/Armylife1.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/army/small/Armylife2.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/army/large/Armylife2.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/army/small/Armylife3.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/army/large/Armylife3.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/army/small/Armylife4.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/army/large/Armylife4.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/army/small/Armylife5.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/army/large/Armylife5.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/army/small/Armylife6.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/army/large/Armylife6.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/army/small/Armylife9.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/army/large/Armylife9.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/army/small/Armylife10.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/army/large/Armylife10.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/army/small/Armylife11.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/army/large/Armylife11.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/army/small/Armylife12.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/army/large/Armylife12.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/army/small/Armylife13.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/army/large/Armylife13.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/army/small/Armylife14.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/army/large/Armylife14.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/army/small/Armylife15.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/army/large/Armylife15.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/army/small/Armylife16.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/army/large/Armylife16.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+
+                </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            Army Life  
+            </span>
+            <span id="Contributor_Name_Mod">
+            bill roos
+            </span>
+            <span id="First_Paragraph_Mod">At that time, all men over the age of 18 had the obligation to serve in the military unless physical or mental condition warranted them for being exempt. So, I decided to enlist in the Army and get that part of my life over with. 
+
+            <br />
+            </span>
+            <!--div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <iframe src="https://player.vimeo.com/video/124071354" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “She said, ‘Yes,’ and my jaw really hit the floor.”
+                </span>
+            </div-->
+
+            <span id="Second_Paragraph_Mod">
+                Thus, on the 30th of November, 1954, I boarded the bus to Spokane, where I went to the military induction center and was sworn in as a member of the United States Army, along with about 20 other guys. We were then loaded onto a train and off we went to Fort Ord, California, arriving there about 6:00am the next day. At Fort Ord, I spent 8 weeks in basic training. It was supposed to be tough but for me it wasn’t. I was in the best physical shape I had ever been in from spending the summer in the Forest Service. My legs were very strong and the long marches we had in basic training that were hard on others, were easy for me. On one march of about 15 miles, we carried all of our gear, field packs, rifle, canteen, bayonet and steel helmet, only about 25 pounds total. That was light compared to the packs I had carried into the mountains camping, which weighed around 40 pounds or so. I was among the 30 or so who finished the march out of the company of 200. Most of us who finished had done so carrying not only all of our own gear but part of some other man’s as well, so they wouldn’t drop out of the march. When we got back, I learned that the man whose rifle I had carried for about the last 5 miles had dropped out anyway. So, I stuck his rifle into the ground barrel first and left it there for him to find. <br /><br /> 
+
+                One of the hardest days I had was the day we lined up in the mess hall and walked between two medics who each gave us a vaccination, a tetanus shot in the left arm and a typhoid shot in the right. Both of those shots carried a whallop! Immediately the arms began to hurt as though some big monster had slugged me in each arm. 
+
+            </span>
+
+            <span id="See_More_Mod"><a href="#" id="restofstory-show"  onclick="showHide('restofstory');return false;">SEE MORE</a>
+            </span>
+
+            <div id="restofstory" class="more">
+
+                <span id="Second_Paragraph_Mod1" class="more">
+                    After all had received their shots we were marched off to the physical training course where we did such torturous exercises as push-ups and standing with arms spread-eagle holding our 8 pound M-1 rifle by the barrel in our right hand. That is hard enough to do when your arm doesn’t hurt. By the end of the day a lot of the guys—close to a third of the company—were on sick call the next day. Some were out for two to three days. But, not me. I guess I was only meant to be miserable but not enough to be on sick call. <br /><br />
+
+                    I had a real great time on the machine gun range. I was assigned with three other guys to an worn out .30 caliber gun which was mounted on a low tripod. You fired it by laying on your belly. One man firing and a second making sure the ammunition was feeding into the gun properly. After firing 40 or so rounds we changed places so all four of us were able to fire the weapon and be the loader. The routine was, as you pulled the trigger, you were supposed to say to yourself, “Fire a burst of six” and release the trigger. Ostensibly the gun fires six bullets in that time. Also, supposedly, it was impossible to fire less than three or four rounds at a time with a .30 caliber machine gun. Our gun was so old and worn out we soon learned we could not only fire less than three rounds but could actually fire single shots! So there I was laying on by belly popping off one shot at a time when one of the range officers came down the firing line shouting, “Who’s firing single shots?” One of the guys in our group called out, “We are.” As the officer ran over to us I was still popping off single shots and we were all laughing about it. And he asked how we were able to shoot single rounds. We told him the gun’s mechanism was so worn out and slow it was just possible. He said. “Well, it’s not supposed to be possible, so stop doing it.” After he left, the guys who had not had their turn were still firing two or three single rounds among their “bursts of six” when their turn came. <br /><br />
+
+                    I was at Fort Ord over Christmas of 1954 and when we were issued three-day passes I took a bus to Napa, California where my mother’s brother Verl lived and spent Christmas with him, Aunt Ruth and my two cousins Don and Annette. <br /><br />
+
+                    As basic training was nearing completion, I decided to fly home on leave, but told my parents I was taking a bus that would take longer but would be cheaper. I flew from Salinas, California to Portland, Oregon then on to Spokane where I had to spend about five or six hours waiting in the bus depot for the bus to Sandpoint. When I arrived in Sandpoint it was on a bright, clean, crisp and sunny day the first part of February. I shouldered my duffle bag that held all my uniforms and personal gear and walked the 6 blocks home. I can still hear the soles of my combat boots making chirping sounds as I walked on the hard-packed, dry snow of the street. When I got to the house, I rang the doorbell and stood waiting. Mother opened the door, saw me threw her hands up and cried out “Oh My!” then “Ah-ha-ha-ha-ha!” It was quite a surprise. <br /><br />
+
+                    After two weeks at home, I boarded a train for Fort Benjamin Harrison, located just outside of Indianapolis, Indiana. The train took me to Chicago, where I changed trains to Indianapolis, but my luggage didn’t make the change. So, I arrived at Ft. Harrison with only the clothes on my back. It took three days before I was able to get my stuff. At Ft. Harrison I spent a little over a month in “casual status” awaiting the beginning of the next Finance Procedures class. Casual status meant we were laborers. One day half of us were on Kitchen Patrol (KP) from 5:00am till 6:00pm working in the mess hall, washing dishes, peeling potatoes, scrubbing pots and pans, sweeping and mopping floors, cleaning ovens, doing anything the cooks told us to do. The other half got to sleep in until 6:00 am and after breakfast we were assigned to work details starting at 8:00 am and working until 5:00 pm with an hour off for lunch. Thus, we had KP one day, work detail the next, then KP, then detail, day after day. The work details were a snap. But we all hated KP.<br /><br /> 
+
+                    The first detail I was assigned to was with another guy screwing handles on new chests of drawers for officer quarters. Not difficult or hard work but boring as all get out. Other work details were doing such things as sweeping, mopping, waxing and buffing floors. But, one day I was assigned to the office at the motor pool. This was a building with an officer we hardly ever saw, and when he was there, he was sequestered in his office. There was the First Sergeant, a Corporal and a Private First Class clerk. I was first assigned to sweep, mop, wax and buff the floors. Well that only took a couple of hours, so the sergeant assigned me to go with the two clerks to wash the staff car. Now the wash area was outdoors and this was the end of February and there was snow on the ground and it was cold. As soon as we sprayed water on the car, it froze into a sheet of ice. So, back to the office we went. Now there was nothing more for me to do the whole rest of the day, so I sat around talking with the two clerks in between their spurts of doing their jobs. Finally the sergeant took me into a back room, produced a circular rack holding about twelve .45 caliber automatic pistols. He showed me how to disassemble them for cleaning, then gave me cleaning supplies. I sat there the rest of the day cleaning those pistols. As I recall, I finished about two-thirds of them. The next day, I did my KP bit and the next day—surprise, I was assigned back to the motor pool office where I was warmly welcomed, and put to work sweeping and buffing the floor. Then back to the pistol rack to finish the job I had started two days before. When I finished, I went out and told the sergeant I was finished and asked what he had for me to do next. He looked me in the eye and said I was far too fast in getting my work done. I was to go back and clean all of the pistols again but to make the job last. I did so. The next day, off to KP. The next day, I was informed that the motor pool had requested I be assigned there every day so that was where I was to go. I was excused from KP. It was too good to be true, however, as after about a week of going to the motor pool and not having KP, someone higher up determined I was to take my turn doing KP. <br /><br />
+
+                    Finally classes started with 40 men. Thirteen weeks later, 39 graduated, one having failed about midway through the course and re-assigned to Fort Knox, Kentucky to become a crew member of a tank. The courses we took were military pay, commercial accounting, payment of commercial accounts and typing. For typing, we were all given a typing test and based on the results were divided into two classes, beginning and advanced. I scored 31 words per minute with one error with my hunt-and-peck method and was placed in the beginners class to be taught touch typing. The course was 50 hours long, about 5 hours a week. At the end, I was able to touch type 32 words a minute with two errors. Net improvement: zero. After my permanent assignment, I ended up handling the pay records of a battalion and straight typing was never a part of my job. What the job entailed was typing a 50% to 60% ratio of numbers mixed with letters. A chore which I found too cumbersome to do by touch typing, so I returned to hunt-and-peck and got along fine. <br /><br />
+
+                    I had applied to be assigned to fill one of the vacancies at Camp Chaffee, Arkansas after graduation. I wanted to spend some time stateside so I could go home on leave again before going overseas and I thought Arkansas would be an interesting place to be. As it turned out, I spent the remainder of my enlistment there. <br /><br />
+
+                    Four of us from our class arrived at Ft. Chaffee in June 1955 and it was HOT! We all thought we had been assigned to hell. The Finance Office where we worked had fans all over the place—no air conditioning. In fact, no building was air conditioned, not even the Division headquarters. The year after I arrived, they air-conditioned several buildings including the post library and enlisted men’s service club which were two blocks up the street from my barracks. Every evening after work, I would rush back to the barracks, change into civilian clothes, hit the mess hall for dinner then make a beeline for the library until it closed. Then I dashed across a parking lot to the service club where I would stay until they closed at 9:30 pm. Then, I had to go back to the oven of the barracks where we all would lay on our bunks not moving because to do so would cause us to sweat even more than we already were. <br /><br />
+
+                    Eventually, the night air cooled off somewhat and we could sleep. Before there were air-conditioned places to go, all we could do was suffer the heat and humidity of Arkansas in the summer. Winters though, were heaven to us northern boys. My first Christmas there, a buddy from Northern Minnesota and one from northern New York laid around sun bathing until Christmas dinner was served. Then after dinner, took off to try to find a lake where we could rent a boat and water skis.. We found places where they would rent a boat but no skis. They thought we were nuts to even think of water skiing in December. <br /><br />
+
+                    In November 1955, I went home on two weeks leave and while there I received the Melchezidek Priesthood and was ordained an Elder by my father on November 13th. On March 11, 1956, at the direction of the Central States Mission President, Alvin R. Dyer (who years later, served as a counselor in the First Presidency), I was set apart as a Military Group Leader for the Church of Jesus Christ of Latter-day Saints by Arthur R. Anderson, Branch President of the Fort Smith, Arkansas Branch of the Church. I was then responsible for conducting Sacrament Meetings each Sunday at one of the chapels at Fort Chaffee for those soldiers who were unable to go to town to attend church. <br /><br />
+
+                    As stated earlier, I was in charge of the pay records of a battalion and every month dealt with the company commanders and their executive officers who came to the office to pick up the payroll money for their men. After months of dealing with them, we all were on first-name (well, it was really a last-name basis as I was referred to as Roos and I called them by their last name) basis with each other and rank really didn’t enter into our dealings. Toward the end of my tour, when I would be out and about the post and saw one of the officers I knew, we would wave at each other rather than salute. Pretty lax military discipline. 
+                </span>
+            </div>
+
+        </div>
+            <!--span id="Exclusive_Quote_Mod">
+            “I want my children to have wisdom and intelligence, to be able to make the right choice to go back to heaven. Then we can all be happily living forever with each other in heaven.”
+            </span-->
+            
+
+
+<!-- CHAPTER THREE -->
+
+
+        <div id="Gallery_Strip1" class="clearfix">
+            <ol class="GalleryPicsMod">
+                    <li><%= link_to image_tag("roos/army/small/Inthearmynow.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/army/large/Inthearmynow.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/army/small/Inthearmynow1.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/army/large/Inthearmynow1.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/army/small/Inthearmynow2.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/army/large/Inthearmynow2.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/army/small/Inthearmynow3.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/army/large/Inthearmynow3.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/army/small/Inthearmynow4.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/army/large/Inthearmynow4.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/army/small/Inthearmynow5.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/army/large/Inthearmynow5.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            “You’re in the Army Now”
+            </span>
+            <span id="Contributor_Name_Mod">
+            bill roos
+            </span>
+            <span id="First_Paragraph_Mod">
+            On the 30th of November 1954 I was sworn in and began a three-year enlistment in the U.S. Army. There are a few interesting events I experienced during those three years.
+            <br />
+            </span>
+            <div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                       <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/199140260%3Fsecret_token%3Ds-J7vOr&amp;color=c8c8c8&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “I had command over close to a thousand captains, lieutenants, sergeants, and trainees.”
+                </span>
+            </div>
+
+            <span id="Second_Paragraph_Mod">
+                
+                The first happened while I was in basic training at Fort Ord, California. It was on a balmy January day that our training battalion and one other went to the rifle range to fire the M1 rifle for qualification. <br /><br />
+
+                The army had four levels of qualification based on the score a soldier achieved firing from four different body positions. The first was the prone position at 500 yards from the target, sitting at 300 yards, kneeling at 200 yards and standing at 100 yards. The highest award was Expert Rifleman, then came the award of Marksman followed by Sharpshooter and those who failed to qualify for any of those three awards, were referred to bolos indicating that all they were good for was carrying a bolo knife which was a type of a machete. 
+
+                
+            </span>
+
+            <span id="See_More_Mod"><a href="#" id="restofstoryb-show"  onclick="showHide('restofstoryb');return false;">SEE MORE</a>
+            </span>
+
+            <div id="restofstoryb" class="more">
+
+                <span id="Second_Paragraph_Mod1" class="more">
+                    The firing range was stretched out in a long line with about 100 firing positions. There was a 30-foot tall control tower located mid-way along the line where the range officer sat and controlled all that went on along the line. He was in complete charge and his orders were to be obeyed without fail, even by other officers on the ground along the line.<br /><br />
+
+                    Everyone was at the last line, which was 100 yards from the targets, firing from the standing position. I enjoyed firing weapons. I earned the highest rating possible, the Expert Rifleman badge with the M-1 rifle, a feat I attribute to all the shooting I had done growing up. I was among the first group to finish firing one day, and was standing around watching others shoot. It had been a long, long day, we had eaten lunch, the sun was warm and I had finished qualifying and was looking in vain for somewhere I could sit and take a nap. I was walking below the control tower when the range officer called to me. He asked if I had finished firing and when I answered yes, he told me to climb up the ladder and come into the tower.<br /><br />
+
+                    The inside of the tower wasn’t very large, maybe six feet square. The bottom 30 inches was enclosed all around, but above that level, it was open on all four sides with a good view of the firing line and out to the targets. There was a microphone resting on a shelf fastened to the wall below the opening facing the target area and two folding chairs.<br /><br />
+
+                    A young First Lieutenant occupied one chair and after we returned salutes, he ordered me to sit in the other chair. He explained it had been a long day, he had been out late the night before and he wanted to catch a short nap. In short, I was to be the acting range officer. He explained how the microphone switch worked, told me that since I had been on the range all day, I should know how the program went, told me to wake him up when the firing was completed, tilted his chair back, slid his Blue painted officer’s helmet over his eyes and left me to run his business. <br /><br />
+
+                    It was a great experience, especially after a few minutes of giving orders, when I realized that I had command over close to a thousand captains, lieutenants, sergeants, and trainees. I spent a busy hour or so keeping everything running smoothly and safely along the line and enjoyed myself immensely. But still, I envied that officer having his nap, although how he could sleep with all the noise of 100 rifles being fired and my loudspeaker orders of “cease fire” and “commence firing” being given, I do not know. He must have had a very hard night the night before.<br /><br />
+
+                    When all the firing had finished, I awoke the lieutenant, was excused, exchanged salutes, thanked him and climbed down to the ground, where I ran across a couple of buddies from my platoon who asked where I had been, as they had been sent to find me. When I told them, they wouldn’t believe me. Even the platoon sergeant didn’t believe me. Eventually though, the range officer happened to walk past our platoon as we were forming up to leave the range and as he passed, told me thanks for helping him. That put a stop to the doubting Thomases that wouldn’t believe me. Then they all wanted to know how I had been so lucky to be selected. <br /><br />
+
+                    I told them that luck had no part in my selection. It was just obvious the lieutenant recognized a good soldier when he saw one. 
+                </span>
+            </div>
+           
+
+        </div>
+
+
+
+<!-- CHAPTER FOUR -->
+
+
+    <div id="Gallery_Strip1" class="clearfix">
+            <ol class="GalleryPicsMod">
+                    <li><%= link_to image_tag("roos/extra/small/extra5.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/extra/large/extra5.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/extra/small/extra6.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/extra/large/extra6.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/extra/small/extra7.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/extra/large/extra7.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/extra/small/extra8.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/extra/large/extra8.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/extra/small/extra9.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/extra/large/extra9.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/army/small/Whowantstoknow.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/army/large/Whowantstoknow.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/army/small/Whowantstoknow1.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/army/large/Whowantstoknow1.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/army/small/Whowantstoknow2.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/army/large/Whowantstoknow2.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/army/small/Armylife7.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/army/large/Armylife7.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/army/small/Armylife8.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/army/large/Armylife8.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            “Who Wants To Know?”
+            </span>
+            <span id="Contributor_Name_Mod">
+            bill roos
+            </span>
+            <span id="First_Paragraph_Mod">
+            Three months before my enlistment in the army was up, there transpired a famous event in U.S. History. The U.S. Supreme Court had ruled racial segregation in schools was illegal. In 1957, there was going to be a test case in Arkansas. Little Rock Central High School was going to be integrated with nine black students.
+            <br />
+            </span>
+            <div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/199140092%3Fsecret_token%3Ds-QDgfR&amp;color=cccccc&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “I...found myself looking at a Two-Star General standing some six feet from me.”
+                </span>
+            </div>
+
+            <span id="Second_Paragraph_Mod">    
+
+                The Governor Orville Faubus used the Arkansas National Guard to block entrance by the black students under guise that the guard was there to keep the peace.<br /><br />
+                     
+                The black students did not attend the first day of school. On the second day, they did enter but they were met with such harsh treatment and near riot, classes were cancelled. The President of the U.S., Dwight D. Eisenhower, then sent the 101st airborne division to Little Rock to restore order. To remove the National Guard from control of the governor, he “nationalized” them. That is, they were called into the regular army under the control of the President. 
+ 
+            </span>
+
+            <span id="See_More_Mod"><a href="#" id="restofstory2-show"  onclick="showHide('restofstory2');return false;">SEE MORE</a>
+            </span>
+
+            <div id="restofstory2" class="more">
+
+                <span id="Second_Paragraph_Mod1" class="more">
+                    
+                     
+                    That is how I became involved.<br /><br />
+                     
+                    I was a Specialist 3rd class (Spec 3) assistant section chief in the divisional finance office. I was picked, along with a Sergeant First Class (SFC), to prepare a building to house a special finance office to handle the payroll of the Arkansas National Guard. We set about the task and were joined a couple of days later by a First Lieutenant, and 40 privates who were on a 120-day reserve training program from Fort Hood Texas. The Lieutenant became the commanding officer, the Sergeant became the First Sergeant and second in command. I was third in line and to begin with, was responsible for getting all the pay records printed up.<br /><br />
+                     
+                    The Lieutenant and the 40 privates all had quarters close by, but the Sergeant and I were both married and lived in town, about a 30-minute drive away.<br /><br />
+                     
+                    We worked long, long hours those first few weeks. Often, we worked until we became groggy, then would just lie down on a table and sleep for a couple of hours. I went two or three days at a time without going home, without clean clothes. One guy had an electric razor and several of us used it to shave each day. The first week, we had sandwiches, milk and coffee delivered to us so we could keep working while we ate.<br /><br />
+
+                    About the fourth or fifth night, I and a couple of men assigned to me, were working in a room just inside the entrance to the building. It was about 9:00 pm or so and I had a radio blaring good old music of the 50’s and was singing along over the clatter of the equipment used to make the printing plates used to print the pay records and the machine that printed those records.<br /><br />
+                     
+                    I heard someone standing in the doorway behind me ask, “What is going on in this room?” <br /><br />
+
+                    Without stopping work or looking around to see who was asking, I rudely responded, “Who wants to know?”<br /><br />
+                     
+                    Then before any answer came, I looked around and found myself looking at a Two-Star General standing some six feet from me. I leapt to my foot, called “Ten hut!” to the men in the room and blurted out, “I’m sorry sir, I didn't know it was—” <br /><br />
+
+                    He cut me off and told my helpers to go on back to their work. He apologized for interrupting us and asked where he could find the officer in charge. I offered to escort him but he just asked to be given directions; he didn’t want to stop me in my work. I told him where to find the Lieutenant and he left. About half an hour later, he stopped by the room on his way out of the building and thanked us warmly for the long hours we were putting in to get the job accomplished.<br /><br />
+                     
+                    I rushed upstairs to where the Lieutenant and Sergeant were and found out he was the Commanding General of the Arkansas National Guard. He had learned we were working around the clock setting things up to get his men paid and decided to pay us a visit.<br /><br />
+                     
+                    After that, when someone behind me asked a question I always looked to see who it was before I answered.
+                </span>
+            </div>
+        </div>
+
+
+
+<!-- BOTTOM OF PAGE -->
+
+        <div id="boxmodex1" class="clearfix">
+            <span id="Previous_Exhibit_Link_Mod"><a href="<%= roos_wisdom_path %>">
+            previous exhibit</a> 
+            </span>
+            <span id="Next_Exhibit_Link_Mod"><a href="<%= roos_teresas_childhood_path %>">
+            next exhibit</a>
+            </span>
+        </div>
+
+        <div id="boxmodex4" class="clearfix">
+            <%= image_tag("evelyn/menu/arrow motif left.png", :id => "arrow_motif_left1", :class => "image")  %>
+            <span id="Home_Link_Mod"><a href="<%= roos_path %>">
+            HOME</a>
+            </span>
+             <%= image_tag("evelyn/menu/arrow motif right.png", :id => "arrow_motif_right1", :class => "image")  %>
+        </div>
+</body>

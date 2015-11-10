@@ -1,0 +1,448 @@
+<head>
+	<meta name="viewport" content="initial-scale = 1.0,maximum-scale = 3.0">
+
+    <script>
+            $(document).ready(function () {
+                $(".ChapterVideoMod").fitVids();
+            });
+
+    </script>
+
+    <script>
+        function showHide(shID) {
+          if (document.getElementById(shID)) {
+            if (document.getElementById(shID+'-show').style.display != 'none') {
+              document.getElementById(shID+'-show').style.display = 'none';
+              document.getElementById(shID).style.display = 'block';
+            }
+            else {
+              document.getElementById(shID+'-show').style.display = 'inline';
+              document.getElementById(shID).style.display = 'none';
+            }
+          }
+        }
+    </script>
+
+    <!-- fancybox begins -->
+
+        <!--script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script--> <!-- this causes fitvids NOT to work. BOO -->
+        <link rel="stylesheet" href="/fancybox/source/jquery.fancybox.css" type="text/css" media="screen">
+        <script type="text/javascript" src="/fancybox/source/jquery.fancybox.pack.js"></script>
+    <!-- fancybox end -->
+</head>
+
+<body>
+
+        <span id="In_Exhibit_Title_Mod">
+        HARDSHIP
+        </span>
+        <div id="boxmodex" class="clearfix">
+            <%= image_tag("evelyn/menu/arrow motif left.png", :id => "exhibit_top_arrow_motif_left", :class => "image")  %>
+            <span id="In_Exhibit_Subtitle_Mod">
+            THE CLIMB OUT OF POVERTY
+            </span>
+            <%= image_tag("evelyn/menu/arrow motif right.png", :id => "exhibit_top_arrow_motif_right", :class => "image")  %>
+        </div>
+        <div id="boxmodex1" class="clearfix">
+            <span id="Previous_Exhibit_Link_Mod"><a href="<%= evelyn_guestbook_path %>">
+            previous exhibit</a> 
+            </span>
+            <span id="Next_Exhibit_Link_Mod"><a href="<%= evelyn_faith_path %>">
+            next exhibit</a>
+            </span>
+        </div>
+
+
+<!-- CHAPTER ONE -->
+
+
+        <div id="Gallery_Strip" class="clearfix">
+            <ol class="GalleryPicsMod">
+                    <li><%= link_to image_tag("evelyn/Hardship/Smaller/1ExperiencesinPoverty1.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Hardship/Large/1ExperiencesinPoverty1.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Hardship/Smaller/1ExperiencesinPoverty2.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Hardship/Large/1ExperiencesinPoverty2.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Hardship/Smaller/1ExperiencesinPoverty3.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Hardship/Large/1ExperiencesinPoverty3.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Hardship/Smaller/1ExperiencesinPoverty4.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Hardship/Large/1ExperiencesinPoverty4.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Hardship/Smaller/1ExperiencesinPoverty5.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Hardship/Large/1ExperiencesinPoverty5.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Hardship/Smaller/1ExperiencesinPoverty.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Hardship/Large/1ExperiencesinPoverty.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Hardship/Smaller/1ExperiencesinPoverty6.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Hardship/Large/1ExperiencesinPoverty6.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Hardship/Smaller/1ExperiencesinPoverty7.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Hardship/Large/1ExperiencesinPoverty7.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Hardship/Smaller/1ExperiencesinPoverty8.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Hardship/Large/1ExperiencesinPoverty8.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Hardship/Smaller/1ExperiencesinPoverty9.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Hardship/Large/1ExperiencesinPoverty9.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+
+                </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            Experiences in Poverty
+            </span>
+            <span id="Contributor_Name_Mod">
+            evelyn li
+            </span>
+            <span id="First_Paragraph_Mod">
+            In my childhood we couldn’t afford eggs, so when we got two eggs, it was like a celebration for the season. We had to mix the eggs with twice as much water and put sugar in it so that the eggs were enough to share among all of us kids. Many nights we went to sleep hungry. <br />
+            </span>
+            <div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <!--iframe src="//player.vimeo.com/video/113120001" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe-->
+                        <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/189859559&amp;color=c8c8c8&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “Every night there were fleas coming out of the wood and biting us.”
+                </span>
+            </div>
+            <span id="Second_Paragraph_Mod">
+            Another part of my childhood that I remember is all six of us at one time living in a 100 square foot room. My dad was very technically savvy. He built a bunk bed within this 100 square foot room. My sister and I and my two brothers slept on the top bunk bed and my parents slept on the bottom.  <br />
+
+            <br />We had no money to buy a mattress. We slept on the wood—bare wood. Every night there were fleas coming out of the wood and biting us. When we caught them we squeezed them and the blood would come out, because they sucked the blood out of our bodies. Those are called wood fleas. There were a lot of them. We were lucky any night we weren’t bitten by those wood fleas.<br />
+            </span>
+            <!--span id="Exclusive_Quote_Mod">
+            “I want my children to have wisdom and intelligence, to be able to make the right choice to go back to heaven. Then we can all be happily living forever with each other in heaven.”
+            </span-->
+            <!--span id="Second_Paragraph_Mod1"-->
+            
+            <!--span id="See_More_Mod"><a href="#" id="restofstory-show"  onclick="showHide('restofstory');return false;">SEE MORE</a>
+            </span>
+
+            <div id="restofstory" class="more">
+
+                <span id="Second_Paragraph_Mod1" class="more">
+
+                Why did we immigrate to the United States? It was because my dad had no job. We moved from apartment to apartment because we got kicked out. My dad would borrow some money and pay the downpayment for the deposit to rent an apartment. One of them was three hundred square feet, the other was two hundred square feet, for six of us. After one or two months he wouldn’t pay rent, so we got kicked out after one year. My dad was kind of smart; he was able to know the law enough for us to have free rent. But it was a horrible time, because we lived in Hong Kong at the worst time of all time. <br />
+
+                </span>
+            </div-->
+        </div>
+
+
+<!-- CHAPTER TWO -->
+
+
+        <div id="Gallery_Strip1" class="clearfix">
+            <ol class="GalleryPicsMod">
+                    <li><%= link_to image_tag("evelyn/Hardship/Smaller/2LifeInHKImmigration.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Hardship/Large/2LifeInHKImmigration.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Hardship/Smaller/2LifeInHKImmigration1.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Hardship/Large/2LifeInHKImmigration1.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Hardship/Smaller/2LifeInHKImmigration2.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Hardship/Large/2LifeInHKImmigration2.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Hardship/Smaller/2LifeInHKImmigration3.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Hardship/Large/2LifeInHKImmigration3.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Hardship/Smaller/2LifeInHKImmigration4.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Hardship/Large/2LifeInHKImmigration4.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Hardship/Smaller/2LifeInHKImmigration5.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Hardship/Large/2LifeInHKImmigration5.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Hardship/Smaller/2LifeInHKImmigration6.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Hardship/Large/2LifeInHKImmigration6.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Hardship/Smaller/2LifeInHKImmigration7.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Hardship/Large/2LifeInHKImmigration7.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Hardship/Smaller/2LifeInHKImmigration8.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Hardship/Large/2LifeInHKImmigration8.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Hardship/Smaller/2LifeInHKImmigration9.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Hardship/Large/2LifeInHKImmigration9.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Hardship/Smaller/2LifeInHKImmigration10.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Hardship/Large/2LifeInHKImmigration10.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Hardship/Smaller/2LifeInHKImmigration11.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Hardship/Large/2LifeInHKImmigration11.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Hardship/Smaller/2LifeInHKImmigration12.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Hardship/Large/2LifeInHKImmigration12.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Hardship/Smaller/2LifeInHKImmigration13.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Hardship/Large/2LifeInHKImmigration13.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Hardship/Smaller/2LifeInHKImmigration14.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Hardship/Large/2LifeInHKImmigration14.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+
+                </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            Life in Hong Kong and Our Immigration to Hawaii
+            </span>
+            <span id="Contributor_Name_Mod">
+            evelyn li
+            </span>
+            <span id="First_Paragraph_Mod">
+            When I was growing up in Hong Kong, the thing I remember most was that we lived in the garage. There were a lot of things that happened in the garage. At that time we were very poor. We had no house to live in, but we lived in a city, and a city has buildings and garages. So we lived in a two-car garage. Those people were very nice to allow us to live in their garage. There were about eight of us: my grandparents, my parents, four of us kids, and sometimes my auntie and uncle dropped by to live there. My grandpa was an opium addict. He was about sixty years old. I still remember how he looked: he sat on a chair and he was so skinny. He had asthma because he had been smoking opium so much, and we had no opium for him to smoke because we were so poor. He subsequently died. 
+            <br />
+            </span>
+            <div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <!--iframe src="//player.vimeo.com/video/113120001" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe-->
+                        <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/189859745&amp;color=b6b6b6&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “Living in the garage, we had no bathroom, so we had to walk one or two blocks to go to some other association’s place. We snuck in to use their bathroom and snuck out.”
+                </span>
+            </div>
+
+            <span id="Second_Paragraph_Mod">
+            Living in the garage, we had no bathroom, so we had to walk one or two blocks to go to some other association’s place. We snuck in to use their bathroom and snuck out. Every time we did that, the kids always made fun of us. We also had no water. We had to walk about two blocks, up where there was a little hill. A bunch of us kids would run over there and get the hill water, which was pretty clean. There was a well there, too, so we got some water from there and took it to our house. <br />
+
+            <br />The most pleasant time I have in my memory of Hong Kong was, believe it or not, during the typhoon season. My parents always went out to work and there was nobody home, and so the only time they were home was during the typhoon season. During that time we closed all the doors, all the kids were home, and the parents were home. That was the only time I felt comforted and happy. That would only last for two or three days, because the season would end and we would go out and see all of the trees on the ground. We were running around because that was the only time you smelled fresh air.  <br />
+            </span>
+
+            <span id="See_More_Mod"><a href="#" id="restofstory-show"  onclick="showHide('restofstory');return false;">SEE MORE</a>
+            </span>
+
+            <div id="restofstory" class="more">
+
+                <span id="Second_Paragraph_Mod1" class="more">
+
+                Why did we immigrate to the United States? It was because my dad had no job. We moved from apartment to apartment because we got kicked out. My dad would borrow some money and pay the downpayment for the deposit to rent an apartment. One of them was three hundred square feet, the other was two hundred square feet, for six of us. After one or two months he wouldn’t pay rent, so we got kicked out after one year. My dad was kind of smart; he was able to know the law enough for us to have free rent. But it was a horrible time, because we lived in Hong Kong at the worst time of all time. <br />
+
+                <br />It was the lowest pit of capitalism. We had a lot of foreign invaders. We didn’t have enough to eat. I still remember going to bed hungry. My parents, needless to say, had no jobs. My mom would be somebody’s personal secretary, helping people doing scut work here and there, and my dad would be a hustler, going around learning how to gamble and stuff like that to make a few dollars to raise us. Before that he was an artist. He drew beautiful pictures and portraits on theaters. He was amazingly talented. My dad had two months of art class and was able to draw portraits vividly. It looked like the person was alive, and that was why so many theaters wanted him. But that was only for a short time, and then when bad times came, nobody watched movies anymore and we were back to this state of economic depression. <br />
+
+                <br />In 1967 and shortly after, Hong Kong was so bad, the mafia basically ran the country. It was called a triad. They ran the country, and when the kids graduated from elementary school they either became prostitutes or went to work in the factories. In 1969 there was the really bad street revolt. Riots were in the street and people threw bombs in the street. We left Hong Kong two years before that, in 1967. <br />
+
+                <br />Needless to say, we needed to look for a place to have prosperity. My parents were told that America had jobs. My Auntie Violet was so nice and kind. She got married to someone in America and sponsored us to move to America. After we came to America, we were very fortunate and my parents launched into jobs and my dad worked as an assistant cook in a Chinese restaurant. This was a skill he had to learn. He had to learn everything because he didn’t speak English. He made about $400 a month, and that wasn’t enough to feed the family, so my mom had to work in the pineapple cannery twelve hours a day, six days a week. <br />
+
+                <br />We were a bunch of latchkey kids. I was eleven years old, my sister was thirteen, and my two younger brothers were nine and four years old at that time. At the age of eleven, I was the person responsible to cook for the whole house, because nobody had time to cook. When my mom came back home she was super tired, so I cooked for six people in my family, plus my grandma, which makes seven people. Lunch, dinner, and breakfast. My sister was the custodian of the family. She would wash dishes and clean the house.<br />
+                </span>
+            </div>
+
+        </div>
+            <!--span id="Exclusive_Quote_Mod">
+            “I want my children to have wisdom and intelligence, to be able to make the right choice to go back to heaven. Then we can all be happily living forever with each other in heaven.”
+            </span-->
+            
+
+
+<!-- CHAPTER THREE -->
+
+
+        <div id="Gallery_Strip1" class="clearfix">
+            <ol class="GalleryPicsMod">
+                    <li><%= link_to image_tag("evelyn/Hardship/Smaller/3OurGhetto.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Hardship/Large/3OurGhetto.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Hardship/Smaller/3OurGhetto1.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Hardship/Large/3OurGhetto1.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Hardship/Smaller/3OurGhetto2.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Hardship/Large/3OurGhetto2.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Hardship/Smaller/3OurGhetto3.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Hardship/Large/3OurGhetto3.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Hardship/Smaller/3OurGhetto4.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Hardship/Large/3OurGhetto4.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Hardship/Smaller/3OurGhetto5.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Hardship/Large/3OurGhetto5.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Hardship/Smaller/3OurGhetto6.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Hardship/Large/3OurGhetto6.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Hardship/Smaller/3OurGhetto7.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Hardship/Large/3OurGhetto7.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+            
+                </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            Our Ghetto in Honolulu
+            </span>
+            <span id="Contributor_Name_Mod">
+            evelyn li
+            </span>
+            <span id="First_Paragraph_Mod">
+            In Hawaii we were living in a house, which was better than what we had in Hong Kong. It was a wooden house, and guess what? The house had a lot of holes in it. When we took a shower, we had so many holes in the shower room, we had to turn off the light. You know why? A lot of teenage guys around that area would creep underneath our house and peek at us when we were taking a shower. We were so scared that we had to turn off the light so that nobody could see us, and we had to take showers in the dark. The whole house was basically saturated with termites. Every night when we went to sleep, the termite powder dropped onto our faces and sometimes into our mouths. You could not walk without making noises in that house.
+            <br />
+            </span>
+            <div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <!--iframe src="//player.vimeo.com/video/113120001" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe-->
+                        <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/189859643&amp;color=ccc9c8&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “For us to step outside the bus and go to our house, which was twenty steps, was the scariest part of our day.”
+                </span>
+            </div>
+
+            <span id="Second_Paragraph_Mod">
+            I think the most horrific situation that I faced was that there were always a bunch of teenage boys sitting outside our house, smoking marijuana and dope. They were swearing and using all kinds of words. They would sit right outside our house, so for us to step outside the bus and go to our house, which was twenty steps, was the scariest part of our day. We had to shoot into the door and shoot inside the house. I still remember those teenage boys would steal our underwear from our yard, and then they would trample them underneath the soil underneath the house and smoke marijuana with it. We were horrified by losing our clothes. We didn’t know where our clothing went sometimes.<br />
+
+            <br />Going to school we only had 25 cents for lunch, but even with only 25 cents we were at a very high risk of being bullied and they would take away our 25 cents. Usually, instead of taking a bus to school, I would walk to school so I could save my 25 cents for lunch.<br />
+            </span>
+
+        </div>
+            <!--span id="Exclusive_Quote_Mod">
+            “I want my children to have wisdom and intelligence, to be able to make the right choice to go back to heaven. Then we can all be happily living forever with each other in heaven.”
+            </span-->
+
+<!-- CHAPTER FOUR -->
+
+
+        <div id="Gallery_Strip1" class="clearfix">
+            <ol class="GalleryPicsMod">
+                    <li><%= link_to image_tag("evelyn/Hardship/Smaller/4WorkingMyWay.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Hardship/Large/4WorkingMyWay.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Hardship/Smaller/4WorkingMyWay1.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Hardship/Large/4WorkingMyWay1.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Hardship/Smaller/4WorkingMyWay2.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Hardship/Large/4WorkingMyWay2.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Hardship/Smaller/4WorkingMyWay3.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Hardship/Large/4WorkingMyWay3.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Hardship/Smaller/4WorkingMyWay4.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Hardship/Large/4WorkingMyWay4.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Hardship/Smaller/4WorkingMyWay5.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Hardship/Large/4WorkingMyWay5.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Hardship/Smaller/4WorkingMyWay6.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Hardship/Large/4WorkingMyWay6.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Hardship/Smaller/4WorkingMyWay7.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Hardship/Large/4WorkingMyWay7.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Hardship/Smaller/4WorkingMyWay8.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Hardship/Large/4WorkingMyWay8.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Hardship/Smaller/4WorkingMyWay9.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Hardship/Large/4WorkingMyWay9.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Hardship/Smaller/4WorkingMyWay10.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Hardship/Large/4WorkingMyWay10.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Hardship/Smaller/4WorkingMyWay11.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Hardship/Large/4WorkingMyWay11.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Hardship/Smaller/4WorkingMyWay12.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Hardship/Large/4WorkingMyWay12.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Hardship/Smaller/4WorkingMyWay13.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Hardship/Large/4WorkingMyWay13.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            Working My Way Out
+            </span>
+            <span id="Contributor_Name_Mod">
+            evelyn li
+            </span>
+            <span id="First_Paragraph_Mod">
+            What prompted me to be a cardiologist? I think it was the act of God. When I was kid, I was more interested in being an actress, because I saw them have fame and have control. But as I grew older, God’s hand had a lot to do with it. He made that happen. I don’t see how I could have made it happen. When I was a kid, healthcare was a big issue in our family. My parents were always reminding us that if it weren’t because of our going to the hospital, they would be millionaires. I don’t know how they could say that, but it definitely was very costly. 
+            <br />
+            </span>
+            <div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <!--iframe src="//player.vimeo.com/video/113120001" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe-->
+                        <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/189859557&amp;color=d3d2d2&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “I said a prayer for two hours in bed when I was twelve years old. I was crying for two hours, and then I felt an angel talking to me.”
+                </span>
+            </div>
+
+            <span id="Second_Paragraph_Mod">
+            My mom said my brother and I took turns having seizures in our house. I was maybe six or seven years old, and he was five or six years old. My mom had no car to go to the hospital so she would beg her neighbors to take us, and sometimes she would have to pay a taxi to take us to the hospital. That really drained our money when we were already in poverty. There were times when we were not that sick, and we would stand in long, long lines to go to the hospital and we would have to pay money. I stood in line for two hours to be seen for a common cold. <br />
+
+            <br />If people are sick, they shouldn’t be tortured in such a fashion. That prompted me to have interest in healthcare. But for me, being in such an impoverished state, having nothing in Hong Kong, becoming a doctor was undreamed of. It’s like thinking about something that is impossible. I think it was totally an act of God. <br />
+            </span>
+
+            <span id="See_More_Mod"><a href="#" id="restofstory2-show"  onclick="showHide('restofstory2');return false;">SEE MORE</a>
+            </span>
+
+            <div id="restofstory2" class="more">
+
+                <span id="Second_Paragraph_Mod1" class="more">
+
+                When I came to America I was eleven years old, but I didn’t know how to speak English. Going to school was a horrific experience. We lived in the ghetto in Hawaii, and every day we were facing bullying, fights, and quarreling among the students. My friends got chased out of the room with a broom. One of the classmates would pick up a broom and chase her out. <br />
+
+                <br />It had a lot to do with the language barrier, acceptance, or maybe racism - multiple reasons. We lived under that kind of strain, and for me, not able to express myself, it was a difficult time. Out of loneliness I decided to study. I also distinctly remember that I said a prayer for two hours in bed when I was twelve years old. I was crying for two hours, and then I felt an angel talking to me at that time. He said, “If you want to get out of the ghetto, I need you to study. Study hard.” It mobilized me. It motivated me to study harder. As I grew older, ages fourteen and fifteen, I was able to get some A’s because people from Hong Kong are good in math, and we automatically got 100 percent. <br />
+
+                <br />I was studying the dictionary with my friend, because nobody taught us English other than the teacher, and the teacher was very busy taking care of all these violent kids. So we were studying the dictionary, practically word by word, and that’s how we studied for the SAT. Gradually we were promoted to a better section in our class and got some A’s, so in high school when I graduated, I was awarded a trophy for outstanding achievement in science. That was amazing. Unfortunately my mom had to work twelve hours a day, so she couldn’t even come to my graduation. I graduated with honors in high school and with my first trophy, and my mom couldn’t come. It was sad. But I was fortunate and got into UC Berkeley. <br />
+
+                <br />I still remember when I first flew to Berkeley, I had maybe $50 in my pocket. I didn’t have a scholarship at the time, so my friend lent me $1,000 and my mom gave me a blanket. That was all I got to carry me to UC Berkeley. The first day, the first thing I did was go to the financial aid office. I said to them, “Here I am. I have no money.” They looked at my report card and saw that I had all A’s, and then they extended me the Regents’ Scholarship so I was able to finish my Berkeley education. Then I went to UC Davis for medical school. <br />
+
+                <br />But it’s all the act of God. I felt like God’s hand was really working on me. When I was a kid, I was really lazy and didn’t want to do anything, but God had a way to make me become what I am today. If I hadn’t gone through the immigration, if I hadn’t suffered through the discrimination when I was a teenager, I probably wouldn’t have treasured the ethics, wouldn’t have treasured education, wouldn’t have treasured the values of a community. <br />
+
+                <br />To make a long story short, it was good for me to go through all of that trial, learning to face adversity and going through all this alone. I was brought closer to God. Multiple times I would pray to him and it was he who watched me all the time. Because of that, when I was seventeen, I was brought to the church and baptized in the Mormon Church. <br />
+                </span>
+            </div>
+
+        </div>
+            <!--span id="Exclusive_Quote_Mod">
+            “I want my children to have wisdom and intelligence, to be able to make the right choice to go back to heaven. Then we can all be happily living forever with each other in heaven.”
+            </span-->
+
+
+<!-- CHAPTER FIVE -->
+
+
+    <div id="Gallery_Strip1" class="clearfix">
+            <ol class="GalleryPicsMod">
+                    <li><%= link_to image_tag("evelyn/Hardship/Smaller/5OriginsofMedicine.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Hardship/Large/5OriginsofMedicine.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Hardship/Smaller/5OriginsofMedicine1.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Hardship/Large/5OriginsofMedicine1.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Hardship/Smaller/5OriginsofMedicine2.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Hardship/Large/5OriginsofMedicine2.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Hardship/Smaller/5OriginsofMedicine3.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Hardship/Large/5OriginsofMedicine3.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Hardship/Smaller/5OriginsofMedicine4.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Hardship/Large/5OriginsofMedicine4.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Hardship/Smaller/5OriginsofMedicine5.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Hardship/Large/5OriginsofMedicine5.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Hardship/Smaller/5OriginsofMedicine6.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Hardship/Large/5OriginsofMedicine6.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Hardship/Smaller/5OriginsofMedicine7.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Hardship/Large/5OriginsofMedicine7.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Hardship/Smaller/5OriginsofMedicine8.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Hardship/Large/5OriginsofMedicine8.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            My Ambition for Medicine
+            </span>
+            <span id="Contributor_Name_Mod">
+            evelyn li
+            </span>
+            <span id="First_Paragraph_Mod">
+            I didn’t decide to be a doctor. God did. I have to admit that during the years that we were growing up, healthcare issues were a primary setback in our continual poverty. My brother and I were always alternating having seizures when we were in Hong Kong. My mom, having no car to take us to the hospital, had to beg the neighbor to take us, and many times our neighbor would say no. That really scared her. I remember getting sewing needles poked through my finger, and my dad had no money to take me to the hospital. He would pull out the needle and put all kinds of powders on it, and miraculously it healed. 
+            <br />
+            </span>
+            <div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <!--iframe src="//player.vimeo.com/video/113120001" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe-->
+                        <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/189861624&amp;color=cccccc&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “If he hadn’t put me in an environment where I was so deprived of friendship when I first came to Hawaii, I probably wouldn’t have wanted to study.”
+                </span>
+            </div>
+
+            <span id="Second_Paragraph_Mod">
+            Once a big pot of hot water poured over my whole belly when I was eight years old, and bubbles came out of my skin. My dad had no money to take me to the doctor. He said he read in the newspaper somewhere that all you had to do was put honey on top. So he did. He put honey on top of my belly for one week and it healed miraculously. It healed! There were a lot of maggots that swarmed around my belly for several days because of the honey, but now it is healed and has no scars, so you have to give credit to my dad. Even though we were poor and had no doctors, he was able to help us survive all those stormy years.  <br />
+
+            <br />The draining of finances due to poverty and healthcare issues, together with living in the ghetto in Hawaii, prompted me to study hard. By studying hard, getting A’s in school, and getting trophies when I graduated from high school with honors, I was able to go to UC Berkeley with a full Regents’ Scholarship, and I was able to go to UC Davis Medical School with a full scholarship. I would say they were all acts of God. <br />
+
+            <br /> If he hadn’t put me in an environment where I was so deprived of friendship when I first came to Hawaii, I probably wouldn’t have wanted to study. If I had had tons of friends in Hong Kong, I wouldn’t have wanted to study. If he hadn’t made my life such an impoverished situation, I probably would have had no need to study. God has made me a better person, to have more ambition, to be motivated, to excel in the world, and to learn to care for other people who have less than I do. That was my motivation to be a doctor.<br />
+            </span>
+        </div>
+
+<!-- CHAPTER SIX -->
+<!-- CHAPTER SEVEN -->
+<!-- CHAPTER EIGHT -->
+
+        <div id="boxmodex1" class="clearfix">
+            <span id="Previous_Exhibit_Link_Mod"><a href="<%= evelyn_guestbook_path %>">
+            previous exhibit</a> 
+            </span>
+            <span id="Next_Exhibit_Link_Mod"><a href="<%= evelyn_faith_path %>">
+            next exhibit</a>
+            </span>
+        </div>
+
+        <div id="boxmodex4" class="clearfix">
+            <%= image_tag("evelyn/menu/arrow motif left.png", :id => "arrow_motif_left1", :class => "image")  %>
+            <span id="Home_Link_Mod"><a href="<%= evelyn_path %>">
+            HOME</a>
+            </span>
+             <%= image_tag("evelyn/menu/arrow motif right.png", :id => "arrow_motif_right1", :class => "image")  %>
+        </div>
+</body>

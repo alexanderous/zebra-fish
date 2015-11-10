@@ -1,0 +1,56 @@
+<head> 
+  <script language="javascript" type="text/javascript">
+      $(function(){
+      $("#page-wrap").wrapInner("<table cellspacing='30'><tr>");
+      $(".post").wrap("<td>");
+    });
+       $(document).ready(function () {
+       if ($("[rel=tooltip]").length) {
+       $("[rel=tooltip]").tooltip();
+       }
+     });
+  </script>
+  <% @fans = draft.lovers %>
+</head>
+
+<%#this is for the show_posts page %>
+
+<%# if !draft.hide or current_user == draft.subject or current_user == draft.user %>
+  <article class="postdraft"> 
+        <li>
+            <%# if !draft.title.blank? %>
+              <!--h3><%#= link_to draft.title, micropost_path(draft) %></h3><br>
+            <%# else %>
+              <h3><%#= link_to "Untitled", micropost_path(draft) %></h3><br-->   
+            <%# end %>
+
+
+            <% if !draft.subject.nil? %>
+                <%= link_to "Written for", micropost_path(draft) %> <%= link_to draft.subject.name, micropost_path(draft) %><br><%#= link_to draft.subject.name, draft.subject %>
+            <%# else %>
+               <!-- Written for Someone Awesome -->
+            <% end %>
+            <%# if !draft.title.nil? %>
+                <%#= link_to draft.title, micropost_path(draft) %>
+
+            <%# end %>
+            <% if !draft.content.nil? %>
+              <span id="draft-content-italicize"><%= link_to draft.content.truncate(150), micropost_path(draft) %></span>
+            <% end %>
+            <%# if !draft.topic.nil? %>
+                <!--div id="drafttopic"><%#= link_to "Topic:", micropost_path(draft) %> <%= link_to draft.topic, micropost_path(draft) %></div-->
+            <%# end %>
+            <br>
+            <span class="bottomstampdraft">
+                <%= link_to "Edit", edit_micropost_path(draft) %>
+                <%# if draft.draft? %>
+                  <%= link_to "Preview", micropost_path(draft) %>
+                <%# else %>
+                  <%#= link_to "View", micropost_path(draft) %>
+                <%# end %>
+              </span>
+        </li>      
+  </article> 
+<%# end %>
+
+

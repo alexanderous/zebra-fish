@@ -1,0 +1,1287 @@
+#roos_summary_box {
+    width: 100%;
+    float: left;  
+    margin-top: 2em;
+}
+
+#roos_summary_title {
+    
+    /* float: left; */
+    font-size: 2.25em;
+    width: 14.6em;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1em;
+    color: rgb(36, 35, 35);
+    font-style: normal;
+    letter-spacing: 0.063em;
+    text-decoration: none;
+    font-family: 'Garamond Premier Pro';
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 20;
+    margin-top: 0px;
+    margin-left: auto;
+    clear: none;
+    margin-right: auto;
+    min-width: 0px;
+
+}
+
+#roos_summary {
+    /* float: left; */
+    font-size: 1.1em;
+    width: 580px;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1.6em;
+    color: rgb(5, 5, 5);
+    font-style: normal;
+    letter-spacing: 0.045em;
+    text-decoration: none;
+    font-family: 'Garamond Premier Pro';
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 15;
+    margin-top: 1.5em;
+    /* margin-left: 9.29%; */
+    margin-left: auto;
+    clear: both;
+    margin-right: auto;   
+}
+
+
+
+
+.primaryContainer {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100%;
+    width: 100%;
+}
+
+#Home_Link_Mod {
+    float: left;
+    font-size: 0.75em;
+    width: auto;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1em;
+    color: rgb(110, 110, 110);
+    font-style: normal;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    font-family: 'Domus Titling';
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+    margin-top: 0px;
+    margin-left: 10px;
+    clear: none;
+    margin-right: 0%;
+}
+
+ol.GalleryPicsMod {
+    /* display: -webkit-box; */
+    display: inline-flex;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    padding-top: 0px;
+    list-style: none;
+    float: left;
+
+    li {
+        padding-right: 5px;
+    }
+}
+
+ol.GalleryPicsMod li:hover {
+    opacity: 0.9;
+    
+}
+
+#See_More_Mod {
+    float: left;
+    font-size: 0.875em;
+    width: auto;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1em;
+    color: rgb(23, 23, 23);
+    font-style: normal;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    font-family: 'Domus Titling';
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 13;
+    margin-top: 1.14em;
+    margin-left: 0%;
+    clear: both;
+    margin-right: 0%;
+}
+
+#Exclusive_Quote_Mod {
+    float: left;
+    font-size: 1.5em;
+    width: 34.7%;
+    height: auto;
+    text-align: center;
+    font-weight: normal;
+    line-height: 36px;
+    color: rgb(5, 5, 5);
+    font-style: normal;
+    letter-spacing: 0.012em;
+    text-decoration: none;
+    font-family: 'Adobe Garamond Pro';
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 14;
+    margin-top: 0em;
+    margin-left: 0%;
+    clear: both;
+    margin-right: 0%;
+}
+
+#Exclusive_Quote_Mod_in_SM {
+    float: left;
+    font-size: 1.5em;
+    width: 34.7%;
+    height: auto;
+    text-align: center;
+    font-weight: normal;
+    line-height: 30px;
+    color: rgb(5, 5, 5);
+    font-style: normal;
+    letter-spacing: 0.012em;
+    text-decoration: none;
+    font-family: 'Adobe Garamond Pro';
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 14;
+    margin-top: 0em;
+    margin-left: 0%;
+    clear: both;
+    margin-right: 0%;
+    margin-bottom: 0.5em;
+}
+
+#Second_Paragraph_Mod {
+    float: left;
+    font-size: 1em;
+    width: 34.7%;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1.7em;
+    color: rgb(5, 5, 5);
+    font-style: normal;
+    letter-spacing: 0.045em;
+    text-decoration: none;
+    font-family: 'Garamond Premier Pro';
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 15;
+    margin-top: 1.5em;
+    margin-left: 0%;
+    clear: both;
+    margin-right: 0%;
+}
+
+#Pic_3_Gallery_Mod {
+    float: left;
+    width: auto;
+    max-width: 100%;
+    height: 100%;
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 25;
+    margin-top: 0px;
+    margin-left: 1.25%;
+    clear: none;
+    min-height: 0px;
+}
+
+#Next_Exhibit_Link_Mod {
+    float: right;
+    font-size: 0.75em;
+    width: auto;
+    height: auto;
+    text-align: right;
+    font-weight: 100;
+    line-height: 1em;
+    color: rgb(110, 110, 110);
+    font-style: normal;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    font-family: 'Domus Titling';
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 31;
+    margin-top: 0px;
+    margin-left: 0px;
+    clear: none;
+    margin-right: 0%;
+}
+
+#Chapter_Quote_Mod {
+    float: right;
+    font-size: 1.5em;
+    width: 34.8%;
+    height: auto;
+    text-align: right;
+    font-weight: normal;
+    line-height: 34px;
+    color: rgb(5, 5, 5);
+    font-style: normal;
+    letter-spacing: 0.012em;
+    text-decoration: none;
+    font-family: 'Adobe Garamond Pro';
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 18;
+    margin-top: 0px;
+    margin-left: 0px;
+    clear: none;
+    margin-right: 0%;
+}
+
+#Pic_1_Gallery_Mod {
+    float: left;
+    width: auto;
+    max-width: none;
+    height: 330px;
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 27;
+    margin-top: 0px;
+    margin-left: -40px;
+    clear: none;
+    min-height: 0px;
+}
+
+#Previous_Exhibit_Link_Mod {
+    float: left;
+    font-size: 0.75em;
+    width: auto;
+    height: auto;
+    text-align: left;
+    font-weight: 100;
+    line-height: 1em;
+    color: rgb(110, 110, 110);
+    font-style: normal;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    font-family: 'Domus Titling';
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 30;
+    margin: 0px 0px 0px 0%;
+    clear: none;
+}
+
+#Video_Mod {
+    float: left;
+    width: 53.44%;
+    max-width: 100%;
+    height: auto;
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 16;
+    margin-top: 0px;
+    margin-left: 0%;
+    clear: none;
+    margin-right: 0%;
+}
+
+#Pic_2_Gallery_Mod {
+    float: left;
+    width: auto;
+    max-width: none;
+    height: 330px;
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 26;
+    margin-top: 0px;
+    margin-left: 5px;
+    clear: none;
+    min-height: 0px;
+}
+
+#exhibit_top_arrow_motif_left {
+    float: left;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 34;
+    margin-top: 6px;
+    margin-left: 0%;
+    clear: none;
+    margin-right: 0%;
+}
+
+#First_Paragraph_Mod {
+    float: left;
+    font-size: 1em;
+    width: 34.7%;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1.7em;
+    color: rgb(5, 5, 5);
+    font-style: normal;
+    letter-spacing: 0.045em;
+    text-decoration: none;
+    font-family: 'Garamond Premier Pro';
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 17;
+    margin-top: 2em;
+    margin-left: 0%;
+    clear: both;
+    margin-right: 0%;
+    text-indent: 0px;
+}
+
+#Gallery_Strip {
+    float: left;
+    height: 330px;
+    width: 97.5%;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 23;
+    margin-top: 1em;
+    margin-left: 1.245753%;
+    clear: both;
+    overflow-x: scroll;
+}
+
+#exhibit_top_arrow_motif_right {
+    float: left;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 32;
+    margin-top: 5px;
+    margin-left: 11px;
+    clear: none;
+    margin-right: 0%;
+}
+
+#Contributor_Name_Mod {
+    float: left;
+    font-size: 0.875em;
+    width: auto;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1em;
+    color: rgb(23, 23, 23);
+    font-style: normal;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    font-family: 'Domus Titling';
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 19;
+    margin-top: 2px;
+    margin-left: 0%;
+    clear: both;
+    margin-right: 0%;
+}
+
+#In_Exhibit_Subtitle_Mod {
+    float: left;
+    font-size: 1em;
+    width: auto;
+    height: auto;
+    text-align: left;
+    font-weight: 100;
+    line-height: 1em;
+    color: rgb(23, 23, 23);
+    font-style: normal;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    font-family: 'Domus Titling';
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 33;
+    margin-top: 0px;
+    margin-left: 9px;
+    clear: none;
+    margin-right: 0%;
+}
+
+#Chapter_Title_Mod {
+    float: left;
+    font-size: 2.25em;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1em;
+    color: rgb(36, 35, 35);
+    font-style: normal;
+    letter-spacing: 0.063em;
+    text-decoration: none;
+    font-family: 'Garamond Premier Pro';
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 20;
+    margin-top: 0px;
+    margin-left: 0%;
+    clear: none;
+    margin-right: 0%;
+    min-width: 0px;
+}
+
+#In_Exhibit_Title_Mod {
+    float: left;
+    font-size: 4.5em;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-weight: normal;
+    line-height: 0.8em;
+    color: rgb(34, 34, 34);
+    font-style: normal;
+    letter-spacing: 0.075em;
+    text-decoration: none;
+    font-family: 'Garamond Premier Pro';
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 35;
+    margin-top: 1.33em;
+    margin-left: 0%;
+    clear: none;
+    margin-right: auto;
+    min-width: 0px;
+}
+
+#boxmodex {
+    float: none;
+    height: auto;
+    margin: 0px auto;
+    clear: both;
+    width: 373.0000043900001px;
+}
+
+#boxmodex_descendants {
+    float: none;
+    height: auto;
+    margin: 0px auto;
+    clear: both;
+    width: 301px;
+}
+
+#boxmodex_guestbook {
+    float: none;
+    height: auto;
+    margin: 0px auto;
+    clear: both;
+    width: 289px;
+}
+
+#boxmodex_timeline {
+    float: none;
+    height: auto;
+    margin: 0px auto;
+    clear: both;
+    width: 358px;
+}
+
+#boxmodex_familytree {
+    float: none;
+    height: auto;
+    margin: 0px auto;
+    clear: both;
+    width: 312px;
+}
+
+#boxmodex_purpose {
+    float: none;
+    height: auto;
+    margin: 0px auto;
+    clear: both;
+    width: 330px;
+}
+
+#boxmodex_faith {
+    float: none;
+    height: auto;
+    margin: 0px auto;
+    clear: both;
+    width: 430px;
+}
+
+#boxmodex_teresas_childhood {
+    float: none;
+    height: auto;
+    margin: 0px auto;
+    clear: both;
+    width: 436px;
+}
+
+#boxmodex_bills_childhood {
+    float: none;
+    height: auto;
+    margin: 0px auto;
+    clear: both;
+    width: 459px;
+}
+
+#boxmodex_devotion {
+    float: none;
+    height: auto;
+    margin: 0px auto;
+    clear: both;
+    width: 395px;
+}
+
+#boxmodex_conversion {
+    float: none;
+    height: auto;
+    margin: 0px auto;
+    clear: both;
+    width: 390px;
+}
+
+#boxmodex_resilience {
+    float: none;
+    height: auto;
+    margin: 0px auto;
+    clear: both;
+    width: 490px;
+}
+
+#boxmodex_service {
+    float: none;
+    height: auto;
+    margin: 0px auto;
+    clear: both;
+    width: 408px;
+}
+
+#boxmodex_wisdom {
+    float: none;
+    height: auto;
+    margin: 0px auto;
+    clear: both;
+    width: 325px;
+}
+
+#boxmodex_army {
+    float: none;
+    height: auto;
+    margin: 0px auto;
+    clear: both;
+    width: 435px;
+}
+
+#boxmodex_motherhood2 {
+    float: none;
+    height: auto;
+    margin: 0px auto;
+    clear: both;
+    width: 389px;
+}
+
+#boxmodex_motherhood1 {
+    float: none;
+    height: auto;
+    margin: 0px auto;
+    clear: both;
+    width: 425px;
+}
+
+
+#arrow_motif_left1 {
+    float: left;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 34;
+    margin-top: 4px;
+    margin-left: 0%;
+    clear: none;
+    margin-right: 0%;
+    display: block;
+}
+
+#arrow_motif_right1 {
+    float: left;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 32;
+    margin-top: 3px;
+    margin-left: 10px;
+    clear: none;
+    margin-right: 0px;
+    display: block;
+}
+
+#boxmodex1 {
+    float: left;
+    height: auto;
+    margin-left: 1.247523%;
+    margin-top: 5em;
+    clear: none;
+    width: 97.5%;
+}
+
+
+#boxmodex3 {
+    float: left;
+    height: auto;
+    margin-left: 0%;
+    margin-top: 1.5em;
+    clear: both;
+    width: 100.000%;
+    margin-right: 0%;
+}
+
+.ChapterVideoDivMod {
+    float: left;
+    height: auto;
+    margin-left: 0%;
+    margin-top: 0%;
+    clear: both;
+    width: 34.7%;
+}
+
+.ChapterVideoMod {
+    float: left;
+    width: 100%;
+    max-width: none;
+    height: auto;
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 45;
+    margin-top: 0px;
+    margin-left: 0%;
+    clear: none;
+    margin-right: 0%;
+}
+
+#boxmodex4 {
+    float: none;
+    height: auto;
+    margin: 0px auto;
+    clear: left;
+    width: 153.203125px;
+    padding: 150px 0px 0px;
+}
+
+#Gallery_Strip1 {
+    float: left;
+    height: 330px;
+    width: 97.5%;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 23;
+    margin-top: 3em;
+    margin-left: 1.25%;
+    clear: both;
+    display: block;
+    margin-right: 0%;
+    overflow-x: scroll;
+}
+
+#Pic_1_Gallery_Mod1 {
+    float: left;
+    width: auto;
+    max-width: 100%;
+    height: 100%;
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 27;
+    margin-top: 0px;
+    margin-left: -40px;
+    clear: none;
+    min-height: 0px;
+}
+
+#Pic_2_Gallery_Mod1 {
+    float: left;
+    width: auto;
+    max-width: 100%;
+    height: 100%;
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 26;
+    margin-top: 0px;
+    margin-left: 5px;
+    clear: none;
+    min-height: 0px;
+}
+
+#Pic_3_Gallery_Mod1 {
+    float: left;
+    width: auto;
+    max-width: 100%;
+    height: 100%;
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 25;
+    margin-top: 0px;
+    margin-left: 1.25%;
+    clear: none;
+    min-height: 0px;
+}
+
+#boxmodex2 {
+    float: left;
+    height: auto;
+    margin-left: 1.245753%;
+    margin-top: 1.5em;
+    clear: both;
+    width: 97.499646%;
+}
+
+#Second_Paragraph_Mod1 {
+    float: left;
+    font-size: 1em;
+    width: 34.7%;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1.7em;
+    color: rgb(5, 5, 5);
+    font-style: normal;
+    letter-spacing: 0.045em;
+    text-decoration: none;
+    font-family: 'Garamond Premier Pro';
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 15;
+    margin-top: 0.5em;
+    margin-left: 0%;
+    clear: both;
+    margin-right: 0%;
+    display: block;
+    min-height: 0px;
+}
+
+.italica {
+    font-style: italic;
+}
+
+@media only screen and (max-width: 1374px) {
+    #First_Paragraph_Mod {
+        width: 44.1%;
+    }
+
+    .ChapterVideoDivMod {
+        width: 44.1%;
+    }
+
+    #Second_Paragraph_Mod {
+        width: 44.1%;
+    }
+
+    #Second_Paragraph_Mod1 {
+        width: 44.1%;
+    }
+
+    #Gallery_Strip1 {
+        height: 280px;
+    }
+
+    #Pic_1_Gallery_Mod1 {
+        height: 100%;
+    }
+
+    #Pic_2_Gallery_Mod1 {
+        height: 100%;
+    }
+
+    #Pic_3_Gallery_Mod1 {
+        height: 100%;
+    }
+
+    #Gallery_Strip {
+        height: 280px;
+    }
+
+    #Pic_1_Gallery_Mod {
+        height: 280px;
+    }
+
+    #Pic_2_Gallery_Mod {
+        height: 280px;
+    }
+
+    #Exclusive_Quote_Mod {
+        width: 44.1%;
+    }
+
+    #Exclusive_Quote_Mod_in_SM {
+        width: 44.1%;
+    }
+
+    #Video_Mod {
+        width: 44.1%;
+    }
+
+    #boxmodex2 {
+        margin-left: 1.25%;
+    }
+
+    #boxmodex4 {
+        margin: 0px auto;
+    }
+}
+
+@media only screen and (max-width: 1134px) {
+    #Video_Mod {
+        width: 53.44%;
+    }
+
+    #boxmodex2 {
+        margin-left: 1.25%;
+    }
+
+}
+
+@media only screen and (max-width: 920px) {
+    #First_Paragraph_Mod {
+        width: 53.4%;
+    }
+    
+    .ChapterVideoDivMod {
+        width: 53.4%;
+    }
+
+    #Second_Paragraph_Mod {
+        width: 53.4%;
+    }
+
+    #Exclusive_Quote_Mod {
+        width: 53.4%;
+    }
+
+    #Exclusive_Quote_Mod_in_SM {
+        width: 53.4%;
+    }
+
+    #Second_Paragraph_Mod1 {
+        width: 53.4%;
+    }
+
+    #Gallery_Strip {
+        height: 230px;
+    }
+
+    #Pic_1_Gallery_Mod {
+        height: 230px;
+    }
+
+    #Pic_2_Gallery_Mod {
+        height: 230px;
+    }
+
+    #Gallery_Strip1 {
+        height: 230px;
+    }
+}
+
+@media only screen and (max-width: 730px) {
+
+    #roos_summary {
+        width: 81.36%;
+        margin-left: 9.29%;
+    }
+
+    #roos_summary_title {
+        margin-left: 9.29%;
+        width: 81.36%;
+    }
+
+
+    #Gallery_Strip {
+        height: 200px;
+    }
+
+    #Pic_1_Gallery_Mod {
+        height: 200px;
+    }
+
+    #Pic_2_Gallery_Mod {
+        height: 200px;
+        margin-left: 4px;
+    }
+
+    #Gallery_Strip1 {
+        height: 200px;
+    }
+
+    #First_Paragraph_Mod {
+        width: 62.8%;
+    }
+
+    .ChapterVideoDivMod {
+        width: 62.8%;
+    }
+
+    #Second_Paragraph_Mod {
+        width: 62.8%;
+    }
+
+    #Exclusive_Quote_Mod {
+        width: 62.8%;
+    }
+
+    #Exclusive_Quote_Mod_in_SM {
+        width: 62.8%;
+    }
+
+    #Second_Paragraph_Mod1 {
+        width: 62.8%;
+    }
+
+    #Video_Mod {
+        width: 62.8%;
+    }
+
+    #boxmodex1 {
+        margin: 4em 0px 0px 1.25%;
+    }
+}
+
+@media only screen and (max-width: 601px) {
+    #Gallery_Strip {
+        height: 140px;
+        margin-top: 0.5em;
+    }
+
+    #Pic_1_Gallery_Mod {
+        height: 140px;
+    }
+
+    #Pic_2_Gallery_Mod {
+        height: 140px;
+    }
+
+    #Gallery_Strip1 {
+        height: 140px;
+    }
+
+    #In_Exhibit_Title_Mod {
+        margin-top: 1.33em;
+        font-size: 3.5em;
+    }
+
+    #Chapter_Title_Mod {
+        font-size: 1.88em;
+    }
+
+    #Chapter_Quote_Mod {
+        font-size: 1.25em;
+        line-height: 1.28em;
+        clear: both;
+        width: 81.4%;
+        margin-left: 0%;
+        margin-right: 0px;
+        float: left;
+        margin-top: 1em;
+        text-align: center;
+        color: rgb(141, 141, 141);
+    }
+
+    #Exclusive_Quote_Mod {
+        line-height: 1.28em;
+        font-size: 1.25em;
+        width: 81.4%;
+    }
+
+    #Exclusive_Quote_Mod_in_SM {
+        line-height: 1.28em;
+        font-size: 1.25em;
+        width: 81.4%;
+    }
+
+    #First_Paragraph_Mod {
+        width: 81.4%;
+    }
+
+    .ChapterVideoDivMod {
+        width: 81.4%;
+    }
+
+    #Video_Mod {
+        width: 81.4%;
+    }
+
+    #Second_Paragraph_Mod {
+        width: 81.4%;
+    }
+
+    #Second_Paragraph_Mod1 {
+        width: 81.4%;
+    }
+}
+
+@media only screen and (max-width: 509px) {
+    #boxmodex2 {
+        width: 97.5%;
+    }
+
+    #First_Paragraph_Mod {
+        width: 100%;
+    }
+
+    .ChapterVideoDivMod {
+        width: 100%;
+    }
+
+    #Video_Mod {
+        width: 100%;
+        max-width: none;
+    }
+
+    #Chapter_Quote_Mod {
+        width: 100%;
+    }
+
+    #Second_Paragraph_Mod {
+        width: 100%;
+    }
+
+    #Exclusive_Quote_Mod {
+        width: 100%;
+    }
+
+    #Exclusive_Quote_Mod_in_SM {
+        width: 100%;
+    }
+
+    #Second_Paragraph_Mod1 {
+        width: 100%;
+    }
+
+    #In_Exhibit_Title_Mod {
+        font-size: 3em;
+    }
+
+    #boxmodex1 {
+        margin-top: 3em;
+    }
+}
+
+@media only screen and (max-width: 426px) {
+    #In_Exhibit_Title_Mod {
+        font-size: 2.5em;
+    }
+
+    #In_Exhibit_Subtitle_Mod {
+        font-size: 0.75em;
+        margin-left: 6px;
+    }
+
+    #exhibit_top_arrow_motif_left {
+        width: 35px;
+    }
+
+    #exhibit_top_arrow_motif_right {
+        width: 35px;
+        margin-left: 6px;
+    }
+
+    #boxmodex {
+        width: 283px;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        margin-top: 0px;
+        clear: both;
+    }
+
+    #Gallery_Strip {
+        margin-top: 0.5em;
+        margin-left: 1.24354%;
+        clear: both;
+        height: 110px;
+    }
+
+    #Pic_1_Gallery_Mod {
+        height: 110px;
+    }
+
+    #Pic_2_Gallery_Mod {
+        height: 110px;
+        margin-left: 2px;
+    }
+
+    #boxmodex2 {
+        margin-top: 1.5em;
+        margin-left: 1.247578%;
+        clear: both;
+    }
+
+    #Gallery_Strip1 {
+        margin-top: 3em;
+        margin-left: 1.247578%;
+        clear: both;
+        height: 110px;
+    }
+
+    #boxmodex4 {
+        margin-top: 1966px;
+        clear: none;
+    }
+
+    #Previous_Exhibit_Link_Mod {
+        font-size: 0.66em;
+    }
+
+    #Next_Exhibit_Link_Mod {
+        font-size: 0.66em;
+    }
+
+    #boxmodex_descendants {
+        width: 224px;
+    }
+
+    #boxmodex_guestbook {
+        width: 214px;
+    }
+
+    #boxmodex_purpose {
+        width: 245px;
+    }
+
+    #boxmodex_faith {
+        width: 320px;
+    }   
+
+    #boxmodex_bills_childhood {
+        width: 343px;
+    }
+
+    #boxmodex_service {
+        width: 305px;
+    }
+
+    #boxmodex_devotion {
+        width: 295px;
+    }
+
+    #boxmodex_conversion {
+        width: 290px;
+    }
+
+    #boxmodex_resilience {
+        width: 367px;
+    }
+
+    #boxmodex_wisdom {
+        width: 243px;
+    }
+
+    #boxmodex_army {
+        width: 325px;
+    }
+
+    #boxmodex_teresas_childhood {
+        width: 326px;
+    }
+
+    #boxmodex_motherhood2 {
+        width: 289px;
+    }
+
+    #boxmodex_motherhood1 {
+        width: 316px;
+    }
+
+    #boxmodex_familytree {
+        width: 231px;
+    }
+
+    #boxmodex_timeline {
+        width: 266px;
+    }
+
+}
+
+@media only screen and (max-width: 352px) {
+    #In_Exhibit_Title_Mod {
+        margin: 1.33em auto 0px 0%;
+        font-size: 2.25em;
+    }
+
+    #Gallery_Strip {
+        height: 100px;
+    }
+
+    #Pic_1_Gallery_Mod {
+        height: 100px;
+    }
+
+    #Pic_2_Gallery_Mod {
+        height: 100px;
+        margin-left: 0px;
+    }
+
+
+    #Gallery_Strip1 {
+        height: 100px;
+    }
+}
+

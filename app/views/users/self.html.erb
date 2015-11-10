@@ -1,0 +1,96 @@
+<!-- when is this used???? do I need to update this?!?!? I have not yet updated modality functionality since we upgraded Bootstrap... -->
+<head>
+  <script language="javascript" type="text/javascript">
+       $(document).ready(function () {
+       if ($("[rel=tooltip]").length) {
+       $("[rel=tooltip]").tooltip();
+       }
+     });
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', '[redacted-g]']);
+    _gaq.push(['_setDomainName', 'antho.co']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+</head>
+
+<div class="wrap">
+  <div class="top">
+      <h1><%= @user.name %></h1>
+      <p>
+        <% if @user.image.blank? %>
+          <%= link_to image_tag("hitchcock.png", :size => "120x120"), edit_user_path(current_user) %>
+        <% else %>
+          <%= link_to image_tag(@user.image_url(:none), :class => "anthopic"), @user %>
+        <% end %>
+        <br>
+        <!--a href="<%#= kinships_user_path(@user) %>"> Your Kin 
+          <%# if @user.pending_invited_by.count > 0 %> 
+            <%#= pluralize(@user.pending_invited_by.count, "Request") %> 
+          <%# end %>
+        </a-->
+        
+       <% if !@legacy_anthologies.blank? %>
+          <br><a href="<%= anthologies_managed_user_path(@user) %>"> Managing <%= pluralize(@legacy_anthologies.count, "Anthology") %></a>
+       <% end %>
+        <br>
+        <br>
+          <a href="<%= show_posts_user_path(@user) %>">
+              <strong id="microposts" class="stat">
+              Contributed <%= pluralize(@publishedcontributions.count, "Story") %>
+              </strong>
+          </a>
+      </p>
+      <br>
+    <div class="startbutton2">  
+      <a data-target="#myModal" role="button" class="button2a" data-toggle="modal">Tips on Getting Started</a>
+      <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h3 id="myModalLabel">A Few Pointers to Get Started</h3>
+        </div>
+        <div class="modal-body">
+          <div class="modalize">
+            <br>          
+            <p>1.  Check out other stories by clicking "Home" on the footer.</p> <br>
+            <p>2.  Seach for people you know, and contribute a memory to their anthologies.</p> <br>
+            <p>3.  Start anthologies for other people in your life. </p> <br>
+          </div>
+        </div>
+        <div class="modal-footer">
+            <button class="button" data-dismiss="modal" aria-hidden="true">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="main">
+    <div class="home"> 
+      <div class=horizontal> 
+        <div class="posts">
+          <div class="storynumber">
+            <% @subjectnumber = Micropost.where(:subject_id => @user.id).count %>
+            <% @authornumber = Micropost.where(:user_id => @user.id).count %>
+            <% @number = @subjectnumber + @authornumber %>
+                <a href="#" rel="tooltip" title="This is the running tally of stories on this anthology." data-placement="right" ><strong><%= pluralize(@number, "Story") %></strong></a><br>
+          </div>
+        </div>
+        <ol class="microposts">
+          <%= render 'shared/anthology' %>
+        </ol> 
+      </div>
+    </div>
+  </div>
+  <br><br><br><br><br>
+  <div class="startbutton3">
+        <%= link_to 'Start an Anthology', start_path, class: "button" %> &nbsp; &nbsp; &nbsp;
+        <%= link_to 'Contribute a Story', contribute_path, class: "button3" %>
+  </div>
+  <br><br>
+</div>
+

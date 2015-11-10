@@ -1,0 +1,213 @@
+// Place all the styles related to the Articles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.blog-directory {
+	margin-left: 25%;
+	width: 50%;
+	margin-right: 25%;
+	margin-top: 50px;
+	float: left;
+	clear: both;
+}
+
+#Thomas_Campbell {
+    font-size: 0.875em;
+    text-align: center;
+    color: rgb(53, 53, 53);
+    font-style: italic;
+    letter-spacing: 0.1em;
+    font-family: georgia;
+    margin-top: 23px;
+    clear: both;
+}
+
+
+#wheat {
+	width: 80%;
+	margin-top: 20px;
+	margin-left: 10%;
+}
+
+#blog-heading {
+	margin-bottom: 10px;
+	font-family: trajan-pro-3;
+	text-align: left;
+	font-size: 3em;	
+	margin-top: 75px;
+	margin-left: 9%;
+	float: left;
+	clear: both;
+}
+
+#blog-subtitle {
+	margin-top: 12px;
+	clear: both;
+	float: left;
+	font-family: jaf-domus-titling-web;
+	font-size: 0.875em;
+	line-height: 1.5em;
+	letter-spacing: 0.1em;
+	margin-left: 10%;
+	margin-right: 10%;
+
+}
+
+
+.article-title p {
+	text-align: left;
+	font-family: trajan-pro-3;
+	font-size: 2.0em;	
+	line-height: 3.0em;
+	margin-bottom: -15px;
+	margin-top: -25px;
+}
+
+.article-byline {
+	font-family: jaf-domus-titling-web;
+	font-size: 0.875em;
+	line-height: 1.5em;
+	letter-spacing: 0.1em;
+}
+
+.article-edit {
+	font-family: jaf-domus-titling-web;
+	font-size: 0.875em;
+	line-height: 1.5em;
+	letter-spacing: 0.1em;
+	float: right;
+}
+
+.article-content {
+	p {
+		font-size: 0.875em;
+		line-height: 1.72em;
+		font-family: georgia;
+		margin-top: 40px;
+		letter-spacing: 0.01em;
+	}
+	margin-bottom: 40px;
+	input[type="image"] {
+		width: 100%;
+		/* width: 200%; margin-left: -50%; */
+	}
+	max-width: 630px;
+
+}
+
+#show-article {
+	margin-left: 20%;
+	width: 60%;
+	margin-right: 20%;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+
+div.hr {
+background: #fff  no-repeat scroll center;
+margin-left: 15em;
+margin-right: 15em;
+width: 100%;
+height: 2px;
+}
+
+div.hr hr {
+display: none;
+}
+
+
+@media only screen and (max-width: 1200px) {
+	.blog-directory {
+		margin-left: 20%;
+		width: 60%;
+		margin-right: 20%;
+	}	
+}
+
+@media only screen and (max-width: 900px) {
+	.blog-directory {
+		margin-left: 15%;
+		width: 70%;
+		margin-right: 15%;
+		margin-top: 40px;
+	}	
+}
+
+
+@media only screen and (max-width: 600px) {
+
+	.blog-directory {
+		margin-left: 10%;
+		width: 80%;
+		margin-right: 10%;
+		margin-top: 30px;
+	}	
+
+	.article-content {
+		p {
+			font-size: 0.875em;
+			line-height: 1.72em;
+			margin-top: 30px;
+		}
+	margin-bottom: 30px;
+
+	}
+
+	.article-title p {
+		font-size: 1.7em;	
+		line-height: 1.5em;
+		margin-bottom: 0px;
+	}
+
+	#show-article {
+		margin-left: 10%;
+		width: 80%;
+		margin-right: 10%;
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	#blog-heading h1 {
+		margin-top: 50px;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+
+	.blog-directory {
+		margin-left: 7.5%;
+		width: 85%;
+		margin-right: 7.5%;
+		margin-top: 20px;
+	}	
+
+	.article-content {
+		p {
+			font-size: 0.875em;
+			line-height: 1.72em;
+			font-family: georgia;
+			margin-top: 20px;
+		}
+		input[type="image"] {
+			width: 100%;
+		}
+		margin-bottom: 20px;
+	}
+
+	.article-title p {
+		font-size: 1.5em;	
+		line-height: 1.5em;
+		margin-bottom: 0px;
+	}
+
+	#show-article {
+		margin-left: 7.5%;
+		width: 85%;
+		margin-right: 7.5%;
+		margin-top: 20px;
+		margin-bottom: 30px;
+	}
+}

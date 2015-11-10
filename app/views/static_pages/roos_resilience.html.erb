@@ -1,0 +1,633 @@
+
+
+    <head>
+
+
+	<meta name="viewport" content="initial-scale = 1.0,maximum-scale = 3.0">
+
+    <script>
+            $(document).ready(function () {
+                $(".ChapterVideoMod").fitVids();
+            });
+
+    </script>
+
+    <script>
+        function showHide(shID) {
+          if (document.getElementById(shID)) {
+            if (document.getElementById(shID+'-show').style.display != 'none') {
+              document.getElementById(shID+'-show').style.display = 'none';
+              document.getElementById(shID).style.display = 'block';
+            }
+            else {
+              document.getElementById(shID+'-show').style.display = 'inline';
+              document.getElementById(shID).style.display = 'none';
+            }
+          }
+        }
+    </script>
+
+    <!-- fancybox begins -->
+
+        <!--script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script--> <!-- this causes fitvids NOT to work. BOO -->
+        <link rel="stylesheet" href="/fancybox/source/jquery.fancybox.css" type="text/css" media="screen">
+        <script type="text/javascript" src="/fancybox/source/jquery.fancybox.pack.js"></script>
+    <!-- fancybox end -->
+    </head>
+
+<body>
+
+        <span id="In_Exhibit_Title_Mod">
+        RESILIENCE
+        </span>
+        <div id="boxmodex_resilience" class="clearfix">
+            <%= image_tag("evelyn/menu/arrow motif left.png", :id => "exhibit_top_arrow_motif_left", :class => "image")  %>
+            <span id="In_Exhibit_Subtitle_Mod">
+            FAITH THROUGH CONTINUAL TRANSITION
+            </span>
+            <%= image_tag("evelyn/menu/arrow motif right.png", :id => "exhibit_top_arrow_motif_right", :class => "image")  %>
+        </div>
+        <div id="boxmodex1" class="clearfix">
+            <span id="Previous_Exhibit_Link_Mod"><a href="<%= roos_conversion_path %>">
+            previous exhibit</a> 
+            </span>
+            <span id="Next_Exhibit_Link_Mod"><a href="<%= roos_service_path %>">
+            next exhibit</a>
+            </span>
+        </div>
+
+
+<!-- CHAPTER ONE -->
+
+
+        <div id="Gallery_Strip" class="clearfix">
+            <ol class="GalleryPicsMod">
+                    <li><%= link_to image_tag("roos/resilience/small/MyTask.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/MyTask.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %> 
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/MyTask1.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/MyTask1.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/MyTask2.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/MyTask2.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears1.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears1.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears13.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears13.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears35.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears35.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears44.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears44.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears53.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears53.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears77.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears77.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears88.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears88.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears90.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears90.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+            </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            “My Task”
+            </span>
+            <span id="Contributor_Name_Mod">
+            teresa roos
+            </span>
+            <span id="First_Paragraph_Mod">
+            My Task<br /><br />
+            To love someone more dearly every day,<br />
+            To help a wand’ring child to find his way,<br />
+            To ponder o’er a noble thought, and pray<br />
+            And smile when evening falls,<br />
+            And smile when evening falls,<br />
+            This is my task.<br />
+            </span>
+            <div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/199139607%3Fsecret_token%3Ds-iJ0bm&amp;color=d7d7d7&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “To follow truth as blind men long for light.”
+                </span>
+            </div>
+            <span id="Second_Paragraph_Mod">
+                To follow truth as blind men long for light,<br />
+                To do my best from dawn of day till night,<br />
+                To keep my heart fit for His holy sight,<br />
+                And answer when He calls,<br />
+                And answer when He calls,<br />
+                This is my task.<br /><br />
+
+                And then my Savior by and by to meet,<br />
+                When faith hath made her task on earth complete,<br />
+                And lay my trophies at the Master’s feet,<br />
+                Within the jasper walls,<br />
+                Within the jasper walls,<br />
+                This crowns my task.<br />
+            </span>
+            
+            <span id="See_More_Mod"><a href="#" id="restofstory0-show"  onclick="showHide('restofstory0');return false;">SEE MORE</a>
+            </span>
+
+            <div id="restofstory0" class="more">
+
+                <span id="Second_Paragraph_Mod1" class="more">
+
+               This was the song sang by my senior class at our graduation ceremonies. Saint Scholastica Academy was a girls’ boarding and day school. I was a boarder there for two years, then for two years I was a nanny in a private home. I did babysitting and light housekeeping in those homes. <br /><br />
+
+                My mother had also attended Saint Scholastica Academy when she was in high school, and she had some of the same teachers that I had. Some of the teachers also went to elementary school with my mother or my father.
+
+                </span>
+            </div>
+        </div>
+
+
+<!-- CHAPTER TWO -->
+
+
+        <div id="Gallery_Strip1" class="clearfix">
+            <ol class="GalleryPicsMod">
+                    <li><%= link_to image_tag("roos/resilience/small/History7.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/History7.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/History8.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/History8.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/History9.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/History9.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/History10.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/History10.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/History11.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/History11.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/History12.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/History12.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/TurningPoints10.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/TurningPoints10.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/TurningPoints11.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/TurningPoints11.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/extra/small/extra1.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/extra/large/extra1.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/TurningPoints.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/TurningPoints.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %> 
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/TurningPoints1.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/TurningPoints1.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/TurningPoints2.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/TurningPoints2.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/TurningPoints3.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/TurningPoints3.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/TurningPoints4.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/TurningPoints4.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/TurningPoints5.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/TurningPoints5.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/TurningPoints6.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/TurningPoints6.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/TurningPoints7.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/TurningPoints7.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/TurningPoints8.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/TurningPoints8.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/TurningPoints9.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/TurningPoints9.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    
+
+                </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            Professional Turning Points          
+            </span>
+            <span id="Contributor_Name_Mod">
+            bill roos
+            </span>
+            <span id="First_Paragraph_Mod">What caused my professional turning points? Basically, necessity. I came out of the service, had a job at JCPenney, and I lost that job. I got a job with the VA (Veterans Affairs), which meant we had to move from Sandpoint to Minneapolis. 
+            <br />
+            </span>
+            <div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <iframe src="https://player.vimeo.com/video/124529529" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “That company was in bad shape and they were closing stores.”
+                </span>
+            </div>
+
+            <span id="Second_Paragraph_Mod">
+                Then I got transferred to Little Rock. Nothing was happening there, so I left them and went back to work for private enterprise with a company back in Idaho. That company was in bad shape and they were closing stores. They closed our store and moved me to Lawrence, Kansas. Then they were going to close that store, so I lost that job and I went back with the VA. <br /><br />
+
+                It was just the necessity of I had a family, and you gotta provide for the family. That’s what influenced my career. It was no pre-advanced planning or anything. Something happens; you react. That’s what I did. I reacted! <br /><br />
+
+                I gotta say I very much enjoyed my career with the VA. Toward the end I didn’t; that’s why I retired when I did. So that’s the way it was.
+            </span>
+
+            <!--span id="See_More_Mod"><a href="#" id="restofstory-show"  onclick="showHide('restofstory');return false;">SEE MORE</a>
+            </span>
+
+            <div id="restofstory" class="more">
+
+                <span id="Second_Paragraph_Mod1" class="more">
+
+                I got in contact with him through a lady in New Orleans. She was the one who got in contact with Johann Cobus in Germany, and she called me one day and she pronounced the Nehus name “Newhouse”,” and I wasn’t positively sure it was part of my family—I’d never heard it pronounced “Newhouse”—so I finally figured out from the first names that it was part of my family. She gave me the e-mail for Johann, we e-mailed back and forth, and he sent me his whole family line. I was able to add those names to my program and submit those names for temple work. <br /><br />
+
+                Johann is still Catholic and his family is still Catholic, but he was an English teacher in Germany. He understood English and German, so he taught me a few tricks about reading the German records. I was able to read some of the German records and gain the information that he had there.
+                </span>
+            </div-->
+
+        </div>
+            <!--span id="Exclusive_Quote_Mod">
+            “I want my children to have wisdom and intelligence, to be able to make the right choice to go back to heaven. Then we can all be happily living forever with each other in heaven.”
+            </span-->
+            
+
+
+<!-- CHAPTER THREE -->
+
+
+        <div id="Gallery_Strip1" class="clearfix">
+            <ol class="GalleryPicsMod">
+                    <li><%= link_to image_tag("roos/resilience/small/History.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/History.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %> 
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/History1.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/History1.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/History2.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/History2.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/History3.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/History3.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/History4.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/History4.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/History5.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/History5.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/History6.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/History6.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    
+                    <li><%= link_to image_tag("roos/resilience/small/History13.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/History13.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/History14.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/History14.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/History15.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/History15.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/History16.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/History16.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/History17.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/History17.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/History18.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/History18.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/History19.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/History19.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/History20.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/History20.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/History21.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/History21.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/History22.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/History22.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/History23.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/History23.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/History24.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/History24.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/History25.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/History25.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/History26.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/History26.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/History27.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/History27.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/History28.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/History28.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/History29.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/History29.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/History30.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/History30.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/History31.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/History31.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            Full Professional History
+            </span>
+            <span id="Contributor_Name_Mod">
+            bill roos
+            </span>
+            <span id="First_Paragraph_Mod">
+              Our daughter Laura Jane was born in Fort Smith, Arkansas five months before my enlistment was completed. After I was discharged from the army on November 30, 1957, Teresa, Laura and I drove to Sandpoint where I had a job waiting for me at the JCPenney store. While there, we had 3 more daughters, Pamela Ann, Cynthia Kay and Janet Lee. 
+            <br />
+            </span>
+            <!--div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <iframe src="https://player.vimeo.com/video/124071543" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “Promotions were few, and happened only when someone died.”
+                </span>
+            </div-->
+
+            <span id="Second_Paragraph_Mod">
+                Meanwhile, I was set apart on March 30, 1958 and served for a short time as a Stake Missionary in the Spokane Washington Stake. I also served as a counselor in the Sunday School and as secretary in the Elder’s quorum in the Sandpoint Ward. <br /><br />
+            </span>
+
+            <span id="Exclusive_Quote_Mod">
+                “Promotions were few, and happened only when someone died.”
+            </span>
+
+            <span id="Second_Paragraph_Mod">
+                I was getting nowhere with Penney’s and decided to make a change. A friend managed the Sandpoint branch of the Idaho Department of Employment and I went to him to see what he could find for me in the mid-west closer to Teresa‘s family. He sent my resume to several Midwest states and one of the responses we got back was with the Veterans Administration’s Veterans Canteen Service Field Office in St. Louis, Missouri. They offered a job as a management trainee in the V. A. Hospital in Minneapolis, Minnesota. I accepted and we loaded all our belongings into a U-Haul trailer, which was bigger than the little Rambler American car we had, and off we went to Minneapolis. I spent one year there as a trainee, then became the Assistant Canteen Officer where I served for another year. Then I was offered a transfer as an assistant in the hospital in Little Rock, Arkansas. I jumped at the offer and off we went to Little Rock, just a couple of hours away from Teresa’s family.
+            </span>
+
+
+            <span id="See_More_Mod"><a href="#" id="restofstorya-show"  onclick="showHide('restofstorya');return false;">SEE MORE</a>
+            </span>
+
+            <div id="restofstorya" class="more">
+
+                <span id="Second_Paragraph_Mod1" class="more">
+                While there I had a variety of church callings and spent the two years as a counselor in the Little Rock 2nd Branch Presidency and the last 6 months on the District High Council of the Arkansas District. On August 23, 1966, Teresa and I were sealed as husband and wife for eternity in the Idaho Falls Temple of the church and Laura Jane, Pamela Ann, Cynthia Kay and Janet Lee were sealed to us for eternity. <br /><br />
+
+                After four years, the future was bleak with the Canteen Service. Promotions were few, and happened only when someone died. Our first son, Kenneth William was born and Teresa was pregnant with our 6th child and I needed a job that paid more. <br /><br />
+
+                Dad wrote and told me he had run into the guy in the state employment office that I had worked with to get the job with the VA and he had told Dad of a job opening with the Tempo chain store in Nampa, Idaho. The company’s home office was in Minneapolis, so we took our vacation and drove, camping along the way, from Little Rock to Kansas City then over to the Great Mississippi River Road on up to Minneapolis where I interviewed and was hired for the Nampa job. <br /><br />
+
+                Back in Little Rock, I resigned from my VA job, we loaded up a U-Haul truck which was driven back to Idaho by two LDS missionaries who had finished their mission and were going home. We loaded the kids in the car and off we went to Idaho to work for the Tempo Discount store in Nampa. <br /><br />
+
+                We bought a home in Caldwell, six miles from the store and 2 months after arriving, our second son Robert Daniel was born. While there I served as a counselor in the Caldwell ward elder’s quorum. <br /><br />
+
+                A year later, the Tempo company was in financial trouble and began closing stores, including the one in Nampa. I was transferred to the store in Lawrence, Kansas. After a year there, they closed that store and I was without a job. I contacted the Canteen service and was 
+                hired back May 5, 1970 at the hospital in Leavenworth, Kansas for refresher training then on June 28, 1970 was promoted and transferred to Muskogee, Oklahoma as the Canteen Officer. While there I served as the CTR primary teacher and the Young Men’s President at the same time in the very small ward there. <br /><br />
+
+                On April 4, 1971 I was again promoted and transferred to Madison, Wisconsin as Canteen Officer. I served a short while as advisor to the Teacher’s Quorum in the Madison Ward and later as a counselor in the Elder’s Quorum. We spent a year there living in an old house on a farm West of Madison surrounded by corn fields, and with a pig barn out behind the house. When the wind blew from the wrong direction, it was a bit smelly! But Billy &amp; Bobby loved it there. <br /><br />
+
+                On June 25, 1972, I was again promoted and transferred to Kansas City. We lived in the town of Lee’s Summit, southeast of Kansas City. I served as an assistant ward executive secretary for a while, then I was ordained a Seventy in the Independence, Missouri Stake Seventies Quorum on March 25, 1973 by Elder Paul H. Dunn of the First Quorum of the Seventy. After two years, I was again promoted and transferred, this time back to Leavenworth, Kansas as the Canteen Officer on March 3, 1974. While there I served as the Ward Mission Leader and as a member of the Liberty Missouri Stake Seventies Presidency and Stake Mission Presidency at the same time.<br /><br />
+                 
+                After four years, on February 13, 1977, I was once more on the move. This time as a Field Supervisor, first supervising 8 and eventually 14 canteens out of the San Francisco, California Field Office. My job was one where I traveled, visiting my canteen operations, usually for 2 weeks at a time, then back home for a week or two then back out for two weeks and occasionally 3 weeks. We lived in the East Bay area in the city of Dublin, where I taught the Gospel essentials class in the Dublin Ward. <br /><br />
+
+                After four years there, I was selected to go to the Central Office in Washington, DC where I became the Chief of Design and Layout for the Canteen Service on August 24, 1981. My job was designing new and remodeled canteens throughout the entire system and monitoring those projects through to completion. In the 10 years in that job, I designed about 23 complete canteens and some 30 partial renovations. We lived in three different homes in Fairfax, Virginia. <br /><br />
+
+                While living in Fairfax, Virginia, I was ordained a High Priest on November 11, 1984 by Charles E. Pixton, the First Counselor in the Fairfax Virginia Stake of the Church. I served about 4 years as a counselor to two Bishops the Wakefield Ward, there in Virginia. The first Bishop died of a heart attack. <br /><br /> 
+
+                Also while living in Virginia, I served as an ordinance worker in the Washington DC Temple of the church from September 11, 1990 to July 5, 1991 when I was released because my job had been transferred to California. <br /><br />
+
+                On June 16, 1991 I became the first Regional Director of the Canteen Service’s Western Region, responsible for all canteen operations in the 13 Western states. My office was located on the grounds of the Sepulveda, California Medical Center. We lived in a house out in the high desert at Palmdale where the space shuttles and the stealth bombers were built and tested. I served as the ward music director and choir director there. We were only about an hour or so drive away from our daughter Janet and were able to visit her quite often, either with us going to her home or she to ours. <br /><br />
+
+                On July 2, 1993, I retired with 33 years, 11 months and 4 days of total federal service. 
+                During my years with the VA, I was assigned at 7 different Medical centers, one (Leavenworth) twice. In addition, I visited in an official capacity an additional 97 VA facilities. 
+                </span>
+            </div>
+        </div>
+            <!--span id="Exclusive_Quote_Mod">
+            “I want my children to have wisdom and intelligence, to be able to make the right choice to go back to heaven. Then we can all be happily living forever with each other in heaven.”
+            </span-->
+
+<!-- CHAPTER FOUR -->
+
+
+        <div id="Gallery_Strip1" class="clearfix">
+            <ol class="GalleryPicsMod">
+                    
+                    
+                    <li><%= link_to image_tag("roos/resilience/small/Placetoplace2a.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/Placetoplace2a.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/Placetoplace3.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/Placetoplace3.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/Placetoplace4.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/Placetoplace4.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/Placetoplace5.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/Placetoplace5.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/Placetoplace6.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/Placetoplace6.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/Placetoplace7.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/Placetoplace7.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/Placetoplace8.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/Placetoplace8.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/Placetoplace9.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/Placetoplace9.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/Placetoplace10.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/Placetoplace10.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/Placetoplace11.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/Placetoplace11.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/Placetoplace12.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/Placetoplace12.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/Placetoplace13.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/Placetoplace13.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/Placetoplace14.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/Placetoplace14.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/Placetoplace.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/Placetoplace.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %> 
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/Placetoplace15.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/Placetoplace15.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/Placetoplace16.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/Placetoplace16.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/Placetoplace17.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/Placetoplace17.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/Placetoplace18.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/Placetoplace18.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/Placetoplace19.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/Placetoplace19.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/Placetoplace20.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/Placetoplace20.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            From Place to Place
+            </span>
+            <span id="Contributor_Name_Mod">
+            teresa roos
+            </span>
+            <span id="First_Paragraph_Mod">
+            We moved a lot. It was hard in a way, because we had to pack up everything. We did have movers to help us with that, so that was really good, but we always had to leave behind friends and family. That was kind of hard. 
+            <br />
+            </span>
+            <div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        
+                        <iframe src="https://player.vimeo.com/video/124529440" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “We always had to leave behind friends and family.”
+                </span>
+            </div>
+
+            <span id="Second_Paragraph_Mod">
+                Adjusting to a new house and getting everything in order in a new house was a huge job. Having the children adjust to new friends and new schools and new neighborhoods—it was a little difficult, but we were able to meet a lot of people that we would not have otherwise met, very good friends of ours that we have had through the years, we would probably not ever have met or know anything about. <br /><br />
+
+                Having the Church was a really good thing, too, because there was always people there who became our friends almost instantly, besides just our neighbors next door. The girls were able to make friends at church and at school, so they always had a lot of friends. They missed their old friends, but they were happy to find new friends in a new location. They were happy to be able to see the different sites and locations, the different scenery in all the new places we lived in. They were able to go to a lot of historical places that they would not have been able to see otherwise. 
+            </span>
+
+           
+
+        </div>
+
+
+
+<!-- CHAPTER FIVE -->
+
+
+    <div id="Gallery_Strip1" class="clearfix">
+            <ol class="GalleryPicsMod">
+                    <li><%= link_to image_tag("roos/resilience/small/Selfreliance.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/Selfreliance.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %> 
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/Selfreliance1.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/Selfreliance1.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/Selfreliance15.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/Selfreliance15.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/Selfreliance2.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/Selfreliance2.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/Selfreliance3.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/Selfreliance3.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/Selfreliance4.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/Selfreliance4.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/Selfreliance5.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/Selfreliance5.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/Selfreliance6.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/Selfreliance6.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/Selfreliance7.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/Selfreliance7.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/Selfreliance8.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/Selfreliance8.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/Selfreliance9.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/Selfreliance9.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/Selfreliance10.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/Selfreliance10.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/Selfreliance11.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/Selfreliance11.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/Selfreliance12.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/Selfreliance12.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/Selfreliance13.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/Selfreliance13.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/Selfreliance14.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/selfreliance14.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    
+                </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            Continuous Self-Reliance
+            </span>
+            <span id="Contributor_Name_Mod">
+            bill roos
+            </span>
+            <span id="First_Paragraph_Mod">
+            I’m a great believer in being self-reliant. Don’t rely on other people to take care of you. I was married, had four children, and lost my job. I didn’t go on welfare; I didn’t sit around and moan. The day I lost my job, I went to the state employment office and talked to the guy there who I knew. I said, “Find me a job.”   
+            <br />
+            </span>
+            <div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <iframe src="https://player.vimeo.com/video/124529524" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “The day I lost my job, I went to the state employment office.”
+                </span>
+            </div>
+
+            <span id="Second_Paragraph_Mod">
+                He said, “Where do you want one? Here?” <br /><br />
+
+                I said, “No, let’s get one closer to my wife’s family in Arkansas.”<br /><br />
+
+                So he helped me put out a little resume and sent applications around, and that’s when I started my job with the VA. I had to travel from Sandpoint, Idaho, to Minneapolis, Minnesota. I loaded up everything we had in a little UHaul trailer, towed it behind a little rambler automobile all the way across to Minneapolis. I worked for the VA for about five years, I guess. Nothing was happening. We had another child, Billy, and Teresa was expecting Bobby, and I was not making enough money. There were no promotions because the only way promotions were coming was if people were dying, and they weren’t dying fast enough. So I quit and took a job. 
+            </span>
+
+            <span id="See_More_Mod"><a href="#" id="restofstory2-show"  onclick="showHide('restofstory2');return false;">SEE MORE</a>
+            </span>
+
+            <div id="restofstory2" class="more">
+
+                <span id="Second_Paragraph_Mod1" class="more">
+                I heard about a job here in Caldwell, Idaho. I loaded up the family and traveled to Caldwell, Idaho, and took that job. After a little over a year, the company was going bankrupt and started closing stores. They closed this one in Caldwell and moved me to Lawrence, Kansas. So we go to Lawrence, Kansas. We got there, they decided to close that store, and I was out of a job. <br /><br />
+
+                I went back with the VA and moved from there to Muskogee, Oklahoma. From Muskogee they transferred me to Madison, Wisconsin. From Madison, Wisconsin, to Kansas City, and Kansas City to Leavenworth, and Leavenworth to San Francisco, California, and San Francisco, California, to Washington, D.C., and Washington, D.C., to Sepulveda, California, where I retired. But it was always a case of that was what I had to do to provide a living. <br />
+                </span>
+            </div>
+        </div>
+
+<!-- CHAPTER SIX -->
+
+    <div id="Gallery_Strip1" class="clearfix">
+            <ol class="GalleryPicsMod">                    
+                    <li><%= link_to image_tag("roos/resilience/small/Togetherstill.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/Togetherstill.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %> 
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/Togetherstill1.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/Togetherstill1.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/Togetherstill2.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/Togetherstill2.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/Togetherstill3.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/Togetherstill3.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/Togetherstill4.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/Togetherstill4.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    
+                </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            “Together Still”
+            </span>
+            <span id="Contributor_Name_Mod">
+            teresa roos
+            </span>
+            <span id="First_Paragraph_Mod">
+           This poem reminds me of me and Grandpa. I’m not sure where I got this, but I really like it. 
+            <br />
+            </span>
+            <div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/199139637%3Fsecret_token%3Ds-8R45x&amp;color=d7d7d7&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “It hasn't been easy to make the climb, / But the way was eased by your hand in mine.”
+                </span>
+            </div>
+
+            <span id="Second_Paragraph_Mod">
+            Together Still<br />
+            by Peggy Cameron King<br /><br /> 
+                
+                Let me hold your hand, as we go downhill,<br />
+                We've shared our strength, and we share it still,<br />
+                It hasn't been easy to make the climb,<br />
+                But the way was eased by your hand in mine.<br /><br />
+
+                Like the lake, our life, has had ripples too,<br />
+                Ill health and worries, and payments due,<br />
+                With happy pauses along the way,<br />
+                A graduation, a raise in pay.<br /><br />
+
+                At the foot of the slope, we will stop and rest,<br />
+                Look back if you wish, we've been truly blessed,<br />
+                We've been spared the grief of being torn apart,<br />
+                By death or divorce, or a broken heart.<br /><br />
+
+                The view ahead, is one of the best,<br />
+                Just a little further, and then we can rest,<br />
+                We move more slowly, but together still,<br />
+                Let me hold your hand, as we go downhill.<br />
+            </span>
+
+        </div>
+
+
+
+<!-- BOTTOM OF PAGE -->
+
+        <div id="boxmodex1" class="clearfix">
+            <span id="Previous_Exhibit_Link_Mod"><a href="<%= roos_conversion_path %>">
+            previous exhibit</a> 
+            </span>
+            <span id="Next_Exhibit_Link_Mod"><a href="<%= roos_service_path %>">
+            next exhibit</a>
+            </span>
+        </div>
+
+        <div id="boxmodex4" class="clearfix">
+            <%= image_tag("evelyn/menu/arrow motif left.png", :id => "arrow_motif_left1", :class => "image")  %>
+            <span id="Home_Link_Mod"><a href="<%= roos_path %>">
+            HOME</a>
+            </span>
+             <%= image_tag("evelyn/menu/arrow motif right.png", :id => "arrow_motif_right1", :class => "image")  %>
+        </div>
+</body>

@@ -1,0 +1,670 @@
+<head>
+    <!-- show and hide begins -->
+    <script>
+        function showHide(shID) {
+          if (document.getElementById(shID)) {
+            if (document.getElementById(shID+'-show').style.display != 'none') {
+              document.getElementById(shID+'-show').style.display = 'none';
+              document.getElementById(shID).style.display = 'block';
+            }
+            else {
+              document.getElementById(shID+'-show').style.display = 'inline';
+              document.getElementById(shID).style.display = 'none';
+            }
+          }
+        }
+    </script>
+    <!-- show and hide end -->
+    <!-- responsive video begins -->
+    <script>
+            $(document).ready(function () {
+                $(".ChapterVideoDiv").fitVids();
+            });
+    </script>
+    <!-- responsive video end -->
+    <!-- fancybox begins -->
+
+        <!--script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script--> <!-- this causes fitvids NOT to work. BOO -->
+        <link rel="stylesheet" href="/fancybox/source/jquery.fancybox.css" type="text/css" media="screen">
+        <script type="text/javascript" src="/fancybox/source/jquery.fancybox.pack.js"></script>
+    <!-- fancybox end -->
+
+<meta name="viewport" content="width=device-width; initial-scale=1.0,maximum-scale = 3.0">
+
+    <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', '[redacted-g]', 'antho.co');
+          ga('send', 'pageview');
+    </script>
+
+</head>
+
+<!-- Story Heading Begins -->
+        <div id="ThemeCoverPhotoChildhood1" class="clearfix">
+            <span id="ThemeTitle">
+                <span id="textspanlichapter">CHILDHOOD I</span><span id="textspanlichapter1"><br /></span><span id="textspanlichapter2">YOUNGEST OF ELEVEN</span><br />
+            </span>
+            
+            <span id="ChapterSectionIndex"><br/><br/><br/>
+                <a href="#ch1">1 </a>&#x2f;<a href="#ch2"> 2 </a>&#x2f;<a href="#ch3"> 3 </a>&#x2f;<a href="#ch4"> 4 </a>&#x2f;<a href="#ch5"> 5 </a>&#x2f;<a href="#ch6"> 6 </a><!--&#x2f;<a href="#ch7"> 7 </a--><!--&#x2f;<a href="#ch8"> 8 </a> Evelyn needs to finish remarriage temple sealing part -->
+            </span>
+
+        </div>
+
+<!-- Story Heading Ends -->
+
+<div id="Gallery_Strip" class="clearfix">
+            <ol class="GalleryPicsMod">
+
+                    
+                    <li><%= link_to image_tag("carma/childhood1/small/childhoodI17.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/carma/childhood1/large/childhoodI17.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("carma/childhood1/small/childhoodI15.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/carma/childhood1/large/childhoodI15.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("carma/childhood1/small/childhoodI18.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/carma/childhood1/large/childhoodI18.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("carma/childhood1/small/childhoodI19.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/carma/childhood1/large/childhoodI19.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("carma/childhood1/small/childhoodI5.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/carma/childhood1/large/childhoodI5.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("carma/childhood1/small/childhoodI20.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/carma/childhood1/large/childhoodI20.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("carma/childhood1/small/childhoodI21.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/carma/childhood1/large/childhoodI21.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("carma/childhood1/small/childhoodI22.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/carma/childhood1/large/childhoodI22.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("carma/childhood1/small/childhoodI23.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/carma/childhood1/large/childhoodI23.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("carma/childhood1/small/childhoodI24.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/carma/childhood1/large/childhoodI24.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("carma/childhood1/small/childhoodI4.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/carma/childhood1/large/childhoodI4.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    
+                    <li><%= link_to image_tag("carma/childhood1/small/childhoodI6.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/carma/childhood1/large/childhoodI6.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("carma/childhood1/small/childhoodI7.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/carma/childhood1/large/childhoodI7.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("carma/childhood1/small/childhoodI8.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/carma/childhood1/large/childhoodI8.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("carma/childhood1/small/childhoodI9.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/carma/childhood1/large/childhoodI9.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("carma/childhood1/small/childhoodI10.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/carma/childhood1/large/childhoodI10.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("carma/childhood1/small/childhoodI16.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/carma/childhood1/large/childhoodI16.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("carma/childhood1/small/childhoodI.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/carma/childhood1/large/childhoodI.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("carma/childhood1/small/childhoodI1.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/carma/childhood1/large/childhoodI1.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("carma/childhood1/small/childhoodI2.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/carma/childhood1/large/childhoodI2.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("carma/childhood1/small/childhoodI3.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/carma/childhood1/large/childhoodI3.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("carma/childhood1/small/childhoodI11.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/carma/childhood1/large/childhoodI11.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("carma/childhood1/small/childhoodI12.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/carma/childhood1/large/childhoodI12.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("carma/childhood1/small/childhoodI13.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/carma/childhood1/large/childhoodI13.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("carma/childhood1/small/childhoodI14.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/carma/childhood1/large/childhoodI14.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+
+                </ol>   
+        </div>
+
+<!-- Chapter 1 Begins -->
+        <span class="anchorup"><a name="ch1"> </a><div class="invisichar"> a</div>
+<br /><br /><br /><div> </div></span>
+        <span id="ChapterHeading">
+            <span id="textspanlichapter9">N</span><span id="textspanlichapter10">o</span><span id="textspanlichapter11"> 1 &nbsp;</span>
+            <span id="textspanlichapter13">MY FIRST FEW YEARS </span><!--span id="textspanlichapter15">for </span><span id="textspanlichapter16">CHOCOLATE</span-->
+        </span>
+        <div id="HorizontalDivider" class="clearfix">
+        </div>
+        <div class="ChapterVideoDiv">
+            <div class="ChapterVideo">
+                <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/196382644%3Fsecret_token%3Ds-aGCi8&amp;color=cccccc&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+            </div>
+        </div>
+
+
+        <span id="ChapterQuoteAudio">
+        “We truly as a family have loved missionary service.” 
+        </span>
+        <div id="ChapterText" class="clearfix">
+            <!--span id="ChapterByline">
+            <span id="textspanlichapter22">ELLIS LI</span><br /><span id="textspanlichapter24">DAUGHTER</span>
+            </span-->
+
+            <span id="ChapterParagraphOne">
+            <span id="BigFirstLetterText"></span>I was born on the 18th day of December in the year 1926, the eleventh child, sixth daughter of Joseph Albert Ingram and Mary Roselpha Johnson. The day was Saturday and my mother remembers that it was late in the afternoon. I was a surprise Christmas gift for the family that year as none of my siblings knew I was coming! Because of the circumstances of the family that year I was the only Christmas gift save a drum for my brother, Bart, just six years old that year. The house where I was born was located at 162 Whittier Street in Idaho Falls, Idaho, in the 4th Ward of the Idaho Falls Stake. I was given the name Carma Joyce Ingram in a blessing at the priesthood hands of H. Ray Hatch on May 1, 1927.<br /><br />
+
+            I have little memory of anything that took place in my life during the years that my family lived on Whittier Street. I imagine that because of my placement in the order of the family, being the youngest of ten living siblings and being a new baby arriving, that I was the recipient of lots of attention. Of course there are the suggestions that I was certainly spoiled and pampered because of this. I do know that I had loving parents and brothers and sisters who cared for my every need and that my years as a small child were filled with loving attention and freedom to play without fear. We lived in that location for approximately four years after I arrived.<br /><br />
+
+            I have memory of one incident that was quite traumatic to myself and a young friend, Doris Standen, when we interfered with a beehive located somewhere in the area and were both stung by the angry occupants to the extent that Doris was quite ill for a time. I fared much better than she as my injuries from the bees were minor. I also have a memory, however slight, of a big swing in the neighborhood, maybe in the Standen yard or even my yard, that we both enjoyed as kids and friends. <br /><br />
+
+            The house on Whittier was about a block west of the railroad tracks that run through Idaho Falls. That area was quite sparsely populated in 1926 and there were few houses on the block where we lived. Doris lived just a house or two to the east of us so we were pretty constant play friends. I guess she could be known as the very first friend that I had as a child. When I was about 5 years old my family moved to F street, directly across Memorial Drive from the LDS Hospital. We lived there for about two or three years. <br /><br />
+
+            The hospital was considered to be quite tall for buildings at that time. It was an impressive building. From the street there was a long walkway up to the front door of the hospital. There could usually be seen at most any time a doctor or a nurse in ter white uniform and cap hurrying up to the door to enter and report for duty. As long as I can remember I have always wanted to be a nurse. I do believe that it was because of the excitement of living near that beautiful hospital.<br /><br />
+                    
+                    I don’t remember much about the house I believe it was a two story and I’m sure if there was a basement. I remember a garden in the back of tiie house and a barn or shed of some sort. There were a lot of people to live in that house. However, according to my brother, Frant, the older brothers, who would be well into their teens when we moved into that house were off finding work so they could help take care of the large family of brothers and sisters. <br /><br />
+
+                    Rhoe, my oldest brother worked for the Coy Coal company, driving a delivery truck for them. The twin sisters, Melba and Nelda found work at Samsel’s which was a “five and dime” store on A street in Idaho Falls. Frant had left the area and was working in California. Duard (“Dude”) had also left to find work. These were the depression years and it was necessary for those old enough to take work to help the family. They would take on this responsibility either by being out on their own, or else if they lived at home they would help to supplement the income that Dad brought home. <br /><br />
+
+                    My dad worked as a sheep herder, cattle herder or ranch hand and was not home much of the time. I remember when he would come home that I could not remember him, because he would often be away for weeks at a time. None of the older brothers and sisters, excepting Ethel and Bart, and then I, attended high school. <br /><br />
+
+                    I remember one experience at the F street house. My dad was always a very soft hearted person when it came time to punish a child who had misbehaved. That responsibility fell to my mother who usually paddled us when needed. At one time I remember being across her knee being on the receiving end of a spanking and my dad was waiting outside the back door. I could see him there, so that he could comfort me when the ordeal was over. My dad said that those times were about as difficult for him as it was for one being punished. I never remember having him raise a hand to me in any way at anytime. And I remember very few times that my mother punished us that way either. 
+            </span>
+
+            <!--div id="ChapterPictureGallery" class="clearfix">
+                <ol class="GalleryPics">
+                    
+                    
+                </ol>    
+            </div-->
+
+
+            <!--span id="ChapterParagraphTwo">
+                    I have little memory of anything that took place in my life during the years that my family lived on Whittier Street. I imagine that because of my placement in the order of the family, being the youngest of ten living siblings and being a new baby arriving, that I was the recipient of lots of attention. Of course there are the suggestions that I was certainly spoiled and pampered because of this. I do know that I had loving parents and brothers and sisters who cared for my every need and that my years as a small child were filled with loving attention and freedom to play without fear. We lived in that location for approximately four years after I arrived.
+            </span>
+            
+            <span id="SEE_MORE"><a href="#" id="restofstory1-show"  onclick="showHide('restofstory1');return false;">SEE MORE</a>
+            </span>
+
+            <div id="restofstory1" class="more">
+                <span id="ChapterParagraphTwo">
+                    I have memory of one incident that was quite traumatic to myself and a young friend, Doris Standen, when we interfered with a beehive located somewhere in the area and were both stung by the angry occupants to the extent that Doris was quite ill for a time. I fared much better than she as my injuries from the bees were minor. I also have a memory, however slight, of a big swing in the neighborhood, maybe in the Standen yard or even my yard, that we both enjoyed as kids and friends. <br /><br />
+
+                    The house on Whittier was about a block west of the railroad tracks that run through Idaho Falls. That area was quite sparsely populated in 1926 and there were few houses on the block where we lived. Doris lived just a house or two to the east of us so we were pretty constant play friends. I guess she could be known as the very first friend that I had as a child. When I was about 5 years old my family moved to F street, directly across Memorial Drive from the LDS Hospital. We lived there for about two or three years. <br /><br />
+
+                    The hospital was considered to be quite tall for buildings at that time. It was an impressive building. From the street there was a long walkway up to the front door of the hospital. There could usually be seen at most any time a doctor or a nurse in ter white uniform and cap hurrying up to the door to enter and report for duty. As long as I can remember I have always wanted to be a nurse. I do believe that it was because of the excitement of living near that beautiful hospital.<br /><br />
+                    
+                    I don’t remember much about the house I believe it was a two story and I’m sure if there was a basement. I remember a garden in the back of tiie house and a barn or shed of some sort. There were a lot of people to live in that house. However, according to my brother, Frant, the older brothers, who would be well into their teens when we moved into that house were off finding work so they could help take care of the large family of brothers and sisters. <br /><br />
+
+                    Rhoe, my oldest brother worked for the Coy Coal company, driving a delivery truck for them. The twin sisters, Melba and Nelda found work at Samsel’s which was a “five and dime” store on A street in Idaho Falls. Frant had left the area and was working in California. Duard (“Dude”) had also left to find work. These were the depression years and it was necessary for those old enough to take work to help the family. They would take on this responsibility either by being out on their own, or else if they lived at home they would help to supplement the income that Dad brought home. <br /><br />
+
+                    My dad worked as a sheep herder, cattle herder or ranch hand and was not home much of the time. I remember when he would come home that I could not remember him, because he would often be away for weeks at a time. None of the older brothers and sisters, excepting Ethel and Bart, and then I, attended high school. <br /><br />
+
+                    I remember one experience at the F street house. My dad was always a very soft hearted person when it came time to punish a child who had misbehaved. That responsibility fell to my mother who usually paddled us when needed. At one time I remember being across her knee being on the receiving end of a spanking and my dad was waiting outside the back door. I could see him there, so that he could comfort me when the ordeal was over. My dad said that those times were about as difficult for him as it was for one being punished. I never remember having him raise a hand to me in any way at anytime. And I remember very few times that my mother punished us that way either. 
+
+                </span-->
+
+                <!--span id="SEE_MORE">
+                    <a href="#" id="restofstory2-hide" onclick="showHide('restofstory2');return false;">SEE LESS</a>
+                </span-->
+            <!--/div-->
+
+
+                    
+
+           
+        </div>
+        <%#= image_tag("li/grace/movinggambling COVER.jpg", :id => "ChapterHeadingCoverPhoto", :class => "image") %>
+
+
+<!-- Chapter 2 Begins -->
+        <span class="anchorup"><a name="ch2"> </a><div class="invisichar"> a</div>
+<br /><br /><br /><div> </div></span>
+        <span id="ChapterHeading">
+            <span id="textspanlichapter9">N</span><span id="textspanlichapter10">o</span><span id="textspanlichapter11"> 2 &nbsp;</span>
+            <span id="textspanlichapter13">MY PARENTS </span><!--span id="textspanlichapter15">at the </span><span id="textspanlichapter16">FARM</span--><!--span id="textspanlichapter15">to </span><span id="textspanlichapter16">GUATEMALA</span-->
+        </span>
+        <div id="HorizontalDivider" class="clearfix">
+        </div>
+        <div class="ChapterVideoDiv">
+            <div class="ChapterVideo">
+                <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/198514049%3Fsecret_token%3Ds-REzAx&amp;color=c5c5c5&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+            </div>
+        </div>
+
+
+        <span id="ChapterQuoteAudio">
+        “My mom was a ‘Four Star Mother’ during the Second World War.” 
+        </span>
+        <div id="ChapterText" class="clearfix">
+            <!--span id="ChapterByline">
+            <span id="textspanlichapter22">ELLIS LI</span><br /><span id="textspanlichapter24">DAUGHTER</span>
+            </span-->
+
+            <span id="ChapterParagraphOne">
+            <span id="BigFirstLetterText"></span>
+                My mom and dad were born and grew up in small towns in southern Utah, my dad in Henrieville and mom in Cannonville. My mom was a school teacher and my dad worked on ranches when they met and eventually married in a civil ceremony and they were sealed in the St. George temple in 1908 and my oldest brother Rhoe was sealed to them at that time. A second child Maude lived only a few months. <br /><br />
+
+                My parents then moved to Idaho where they hoped to find better employment and lived in southeastern Idaho for the remainder of their lives. Twin girls, Melba and Nelda, along with Frant, Duard, Ruby, Dean, Ethel, Bart, and Carma were added to the family and raised to adults. <br /><br />
+
+                    My dad was a man who was honest, a hard worker to provide for his large family. He mostly worked as a cattle herder for ranchers and was always held in esteem by his employers as a good and hard worker. He later was employed by Bonneville County as the foreman on the county road and bridge crew and has been instrumental in the building of many of the bridges in Bonneville County. His example of “an honest day's work” has carried on to his family, each of whom he taught the importance of hard work and fulfilling responsibilities given. <br /><br />
+
+                    The large family was raised during the depression years and necessitated the need for the adult children to find work to help support the family. I have often heard from my older siblings that the family was a very happy family with much love and respect for each other. There was not jealousy or competition among them and if any one of them happened to receive or attain a gift or reward or special attention in one way or another there was never any jealousy or bad feelings among the others. I have often heard my brothers and sisters say, “We had so little that when any one of us was on the receiving end of something special we were all happy for that sibling.” <br /><br />
+
+                    My mother was a stay-at-home mom and always had the welcome mat ready and welcome for anyone who needed help or attention. She was an excellent cook and very talented in “making do” with what she had. She was especially known for her delicious bread rolls which she always had ready for anyone. Mom was a quilt maker and once told me she had probably made 50 or 60, all hand-quilted. Her home was always warm and comfortable even though she raised her children in times of distress because of the depression years. <br /><br />
+
+                    She and my dad lived in Sugar City for a number of years and then moved to Idaho Falls, on Whittier Street where I was born. We then lived on F Street for several years across the street, Memorial Drive, from the LDS hospital. We then moved south to 16th Street. I lived there with my parents through the 2nd grade to high school graduation. My mom was a “Four Star Mother” during the Second World War, as she had four sons who served in the military and a plaque from the government was proudly displayed in the front window of our home indicating such.
+            </span>
+
+            <!--div id="ChapterPictureGallery" class="clearfix">
+                <ol class="GalleryPics">
+                    
+                    
+                </ol>    
+            </div-->
+
+            <!--span id="ChapterParagraphTwo">
+                As we approached the turn that would take us down another ranger coming along in a jeep, he asked us where we were going in our big outfit. He then warned us that the trail was hairpin sharp, and that there was no turning back once we started—but we had already started down, so we couldn’t turn back! After a bit of consulting with Ethel, we decided to go for it and continue on. The ranger shook his head and said, “Good luck.” 
+            </span>
+            <span id="SEE_MORE"><a href="#" id="restofstory2-show"  onclick="showHide('restofstory2');return false;">SEE MORE</a>
+            </span-->
+
+            <!--div id="restofstory2" class="more">
+                <span id="ChapterParagraphTwo">
+                    
+ 
+                </span>
+
+                <span id="SEE_MORE">
+                    <a href="#" id="restofstory2-hide" onclick="showHide('restofstory2');return false;">SEE LESS</a>
+                </span>
+            </div-->
+
+        </div>
+        <%#= image_tag("li/grace/endearment COVER.jpg", :id => "ChapterHeadingCoverPhoto", :class => "image") %>
+
+
+<!-- Chapter 3 Begins -->
+
+             <span class="anchorup"><a name="ch3"> </a><div class="invisichar"> a</div>
+<br /><br /><br /><div> </div></span>
+
+       <span id="ChapterHeading">
+
+            <span id="textspanlichapter9">N</span><span id="textspanlichapter10">o</span><span id="textspanlichapter11"> 3 &nbsp;</span>
+            <span id="textspanlichapter13">STITCHES </span><span id="textspanlichapter15">and &nbsp;</span><span id="textspanlichapter16">TRIPS </span><span id="textspanlichapter15">as a </span><span id="textspanlichapter13">CHILD</span>
+        </span>
+        <div id="HorizontalDivider" class="clearfix">
+        </div>
+        <!--div class="ChapterVideoDiv">
+            <div class="ChapterVideo">
+                <iframe src="//player.vimeo.com/video/113120053" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+        </div-->
+
+
+        <!--span id="ChapterQuoteAudio">
+        “These are all favorites!”
+        </span-->
+        <div id="ChapterText" class="clearfix">
+            <!--span id="ChapterByline">
+            <span id="textspanlichapter22">ALICE CHAU</span><br /><span id="textspanlichapter24">SISTER</span>
+            </span-->
+
+            <span id="ChapterParagraphOne">
+            <span id="BigFirstLetterText"></span>
+            At one time when I was very small, perhaps five or six years old, I fell and cut my nose and had to go to the hospital or the doctor’s office and have five stitches taken. I can vaguely remember being on the table mid having the doctor leaning over. The smell of the ether also lingers in memory and I have often thought that perhaps that is another experience in memory that helped led to the decision to become a nurse…along with living across the street from the LDS hospital for several years while I was very young and impressionable. <br /><br />
+
+            Some of the funnest trips that I can remember as a child were when we visited in Provo, Utah, to the home of the Arnold cousins…my dad’s sisters family and then when they also came to Idaho to visit us. My aunt’s name was ”Aunt Matt”…her real name being Amanda and one day I found out what her true name was and began teasing her and dancing around the house and then kept calling her “Aunt Amanda.” For some reason, she didn’t like to be called by that name and scolded me. I have never forgotten that incident. It’s quite amusing, and it would be fascinating to be able to look inside our minds and discover why we remember certain things and forget others. Aunt Matt was a favorite and I guess I didn’t want to displease her so her anger at me was impressed indelibly on my mind and has continued to stay in my memory all these years. <br /><br />
+
+            Also, there were trips to the annual Joel H. Johnson reunion that I got to attend for several years. These were very well attended because the Johnson clan is a huge posterity of Joel Hills…he having had five wives and his son and my grandfather Seth, having two wives. All in all my grandpa had 25 children by his two wives and so the reunions were well attended and I remember them as lots of fun. Now all of those sons and daughters are gone—my mother lived to be 95 and was the next to last one to die. Uncle Parley was 95 when he died. 
+
+
+            </span>
+
+            <!--div id="ChapterPictureGallery" class="clearfix">
+                <ol class="GalleryPics">
+
+                </ol>    
+            </div-->
+
+            <!--span id="ChapterParagraphTwo">
+                One of them is, “There’s a better way than the way of the world.” That’s a statement by Gordon B. Hinckley. <br /><br />
+
+                Another is, “He who knows others is learned. He who knows himself is wise.” <br /><br />
+
+                Oh, this is another one of my favorites. “God gave us memory that we might have roses in December.” <br /><br />
+
+                I should sort these out first.
+
+            <span id="SEE_MORE"><a href="#" id="restofstory3-show"  onclick="showHide('restofstory3');return false;">SEE MORE</a>
+            </span>
+
+            <div id="restofstory3" class="more">
+                <span id="ChapterParagraphTwo">
+                    Oh, and this is another one of my favorites. “I’m stressed. I don’t know if I found a rope or lost my horse.”<br /><br />
+
+                    “Judge not an eternal soul by the appearance of an earthly body.”<br /><br />
+
+                    “The future is not something we enter. The future is something we create.”<br /><br />
+
+                    “Sometimes we must be hurt in order to grow. Sometimes we must fail in order to know. Sometimes we must lose in order to gain, because some lessons in life are best learned through pain.”<br /><br />
+
+                    “Life is what we make it. Always has been, always will.”<br /><br />
+
+                    This is another favorite: “As long as you keep waking up in the morning is evidence that HE is not through with you.”<br /><br />
+
+                    “Don’t compromise yourself. You’re all you’ve got.”<br /><br />
+
+                    I need one that’s special. I need to find it.<br /><br />
+
+                    “The main thing is to have the main thing be the main thing.”<br /><br />
+
+                    “When life gives you lemons, throw ‘em back and demand chocolate.”<br /><br />
+
+                    “We can’t all be heroes because someone has to sit on the curb and clap as they go by.”<br /><br />
+
+                    “You were given this life because you’re strong enough to live it.”<br /><br />
+
+                    These are all favorites!<br /><br />
+
+                    “Good morning. Let the stress begin.”<br /><br />
+
+                    “Be yourself. Just be yourself, because everyone else is taken.”<br /><br />
+
+                    “While there are some things wrong in the world today, there are many things right, such as teachers who teach, ministers who minister, marriages that make it, parents who sacrifice, and friends who help.”<br /><br />
+
+                    There are so many of these.<br /><br />
+
+                    “If you see the light at the end of the tunnel, it’s the light of the oncoming train.”<br /><br />
+
+                    “I believe everything happens for a reason. Usually the reason is somebody screwed up.”<br /><br />
+
+                    There’s one I need to find here.<br /><br />
+
+                    “A vacation is what you take when you can no longer take what you were taking.”<br /><br />
+
+                    One favorite, I don’t think it’s written down here, but it says…I’ll have to find it.<br /><br />
+
+                    “Be the kind of woman that when your feet touch the floor in the morning, the devil says, “Oh darn. She’s up!”<br /><br />
+
+                    “I’m too blessed to be stressed.”<br /><br />
+
+                    “When life does get tough and the crisis is undeniably at hand, we must in an instant look inward for strength of character to see us through. We will find nothing inside ourselves that we have not already put there.” That’s a good one.<br /><br />
+
+                    “Practical guide for successful living: put your head under the pillow and scream.”<br /><br />
+
+                    Oh, I’m taking too much time. <br /><br />
+
+                    “Whether you think you can or think you can’t, you’re right.”<br /><br />
+
+                    I like this one, too: “How beautiful it is to do nothing and then rest afterwards.”<br /><br />
+
+                    “The power of the Book of Mormon is the application of the doctrine therein.”<br /><br />
+
+                    This is a statement by President Harold B. Lee: “I bear you my witness that the Savior is closer to us than you have any idea. He will be closer to you and powers divine will be at your side when you have nowhere else to turn.”<br /><br />
+
+                    I should have sorted these out ahead of time.<br /><br />
+
+                    “Do not spoil what you have by desiring what you have not, but remember that what you have now was among the things you hoped for.”<br /><br />
+
+                    Oh, this one is a special favorite by President Gordon B. Hinckley: “Anyone who imagines that bliss is normal is going to waste a lot of time running around shouting that he’s been robbed. The fact is that most putts don’t drop. Most beef is tough. Most children grow up to be just people. Most successful marriages require a high degree of mutual toleration. Most jobs are more often dull than otherwise. The trick is to thank the Lord for letting you have the ride.”<br /><br />
+                </span>
+
+                <span id="SEE_MORE">
+                    <a href="#" id="restofstory2-hide" onclick="showHide('restofstory2');return false;">SEE LESS</a>
+                </span>
+            </div-->
+            
+        </div>
+    <%#= image_tag("li/menu/GraceMenuSmall.jpg", :id => "ChapterHeadingCoverPhoto", :class => "image") %>
+
+
+<!-- Chapter Four Begins -->
+
+
+<span class="anchorup"><a name="ch4"> </a><div class="invisichar"> a</div>
+<br /><br /><br /><div> </div></span>
+
+       <span id="ChapterHeading">
+
+            <span id="textspanlichapter9">N</span><span id="textspanlichapter10">o</span><span id="textspanlichapter11"> 4 &nbsp;</span>
+            <span id="textspanlichapter13">SCHOOL, MUTTON </span><span id="textspanlichapter15">and &nbsp;</span><span id="textspanlichapter16">BAPTISM</span><!--span id="textspanlichapter15">and </span><span id="textspanlichapter13">HOW THEY MET</span-->
+        </span>
+        <div id="HorizontalDivider" class="clearfix">
+        </div>
+        <div class="ChapterVideoDiv">
+            <div class="ChapterVideo">
+                <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/196379760&amp;color=cccccc&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+            </div>
+        </div>
+
+
+        <span id="ChapterQuoteAudio">
+        “I clearly remember being confirmed a member of the church while I was still wet.”
+        </span>
+        <div id="ChapterText" class="clearfix">
+            <!--span id="ChapterByline">
+            <span id="textspanlichapter22">ALICE CHAU</span><br /><span id="textspanlichapter24">SISTER</span>
+            </span-->
+
+            <span id="ChapterParagraphOne">
+            <span id="BigFirstLetterText"></span>           
+
+                    One very vivid occurrence at the hospital will always be etched into my memory. When my sister, Melba’s little girl Sharlene was eight or ten months old she got pneumonia and was in the hospital for several days. On one of those days I rode my bicycle up to the hospital and looked up to the floor and the window of the room where Sharlene’s bed was and could see my mother and my sister standing at the window crying and I knew then that my little niece had died. She was a beautiful little girl with lots and lots of black hair and big black eyes. My dad used to call her “my little papoose.” <br /><br />
+
+                    In 1931, I began school at the Riverside Elementary School at the age of five. Memories are few from the first grade but I do remember having a traumatic experience there. Our teacher had given us instructions that anyone who whispered on that particular day would have their mouth taped. I was “tricked” into turning around in my seat when Polly Fitch (I even remember her name) poked me and whispered something and I did tum around but didn't utter a word. But I was accused and convicted on the spot by the teacher and my mouth was taped! Very embarrassing to me. <br /><br />
+
+                    I attended school there for the first grade and then my parents moved to 187 E. 16th Street in Idaho Falls where I attended school at the East Side Elementary School building. There are a few memories of the East Side building. I believe it was three stories high and had dark wood floors and a wide stairway leading to the upper floors. There were big round drinking fountains in the center of the foyer of each floor. There was a big grassy area field outdoors where we played soccer during recess. I also remember the restrooms at that school because that is where I would roll my long stockings down to my ankles and tuck a hated “garter belt” which was used to hold up the stockings. I hated the heavy long stockings which Mom put on me to wear during the cold winter months. <br /><br />
+
+                    Every so often when I am near to a school classroom, there are special memories that come floating back of those early grade school rooms with the smell of the blackboard, the erasers and the smell of the dark hardwood floors that were treated with a waxy substance with a very strong odor—not necessarily unpleasant but very strong and memorable. The house on 16th Street was an unusual building. At one time it had been lived in while still just a basement. Later when we moved into it, it consisted of the down stairs which was a kitchen and a dining sort of room, a bathroom and a coal room. Up a narrow and dark flight of stairs was a living room where the front door to the house was at street level and also two bedrooms. <br /><br />
+
+                    My memories of that house at that time consist of a pot-bellied stove in one comer and windows on the north, east and south of the room. The bedrooms were off a foyer sort of area. I remember small closets in that house. I remember my dad drying his long underwear in the winter time which were hung on that pot-bellied stove! I also have memories of when we would listen to drama on the radio, The Lone Ranger, The Shadow, and of course, The Hit Parade, which was the list of the 10 most popular tunes at that time. There were lots of big trees around the place. The backyard was a little lower than the front and so sloped off to the north. <br /><br />
+
+                    My parents always had a garden. There was an alley that ran through most blocks at that time where garbage cans were kept to be picked up later by a truck. I also remember a big tree in the back and a run-down building in the back of the lot where a car was kept. Also there was, for the first years we lived there, a sort of corral. I can’t remember what animals were kept there but I do remember the old bam of sort; it was small. There was also a water hydrant near the northwest of the house where the hoses were attached for the outside watering. <br /><br />
+
+                    I also remember my dad hanging a mutton from the big tree in the back and it was taken down and the meat cut off as needed. I don’t know what might have kept it from spoiling but I remember my dad always had a mutton somewhere for us to eat. (I grew up hating mutton!) The coal room which was opposite the bathroom in the back hallway was a dark and scary place. Before we got a furnace, which was many years after we moved there, the coal would be ordered and dumped through the upper window of the room where it could be put into buckets and carried to the cook stove in the kitchen or up the stairs to the stove in the living room. <br /><br />
+
+                    We had a round oak table which was used for serving meals, and the kitchen stove was a huge black thing, which had to be fed coal or wood for cooking and heating water. I remember my mom heating water in a big copper oblong kettle on the stove for laundry and other errands. The sink was in the comer of the kitchen, the windows were high and we could only see the sky from them. <br /><br />
+
+                    In the summer time the old coal bin was cleaned out and miraculously became my play room. Not very much light in there but nevertheless it was mine for a few short months! In the fall when the leaves from those big tree were feeling we would gather them up in huge piles and then dive into them with much joy. We also made houses of them by raking them into rooms and with much pretending could often become a castle! In the area of Idaho Falls during those early growing up years on 16th Street, we were surrounded on many sides by vacant lots; there were few houses then. The neighborhood kids and I had lots of fun playing in those vacant lots and later when some of had bicycles we would ride over the fields and through the dirt roads with great glee. We would also use our sleds in the winter (there used to be lots more snow then than we have now) and ride down the hills in the area. <br /><br />
+
+                    A branch of the Idaho Canal ran just a half block south of our house and we often swam in it during the summer…it seemed so much larger than it actually is now as we drive by on 17th St, We would swim down that stream toward Reno Park as it was called then (Tautphaus now) and get out at the potato chip factory and get some sacks of their broken chips which we were given free and then walk through the Rose Hill Cemetery (we weren’t allowed to swim through the cemetery) and then float again on down to Reno Lake. A great deal of Tautphaus Park today used to be Reno Lake.<br /><br />
+
+                    I was baptized at eight years on the 20th of January, 1935 by Glen I. Wilkinson in the fount at the First Ward chapel, it being the stake building at that time. I clearly remember coming up out of the water and being confirmed a member of the church while I was still wet. I was confirmed by John Homer. I have a very special memory of the day President Heber J. Grant visited the Third Ward. I remember looking up into his face as I shook his hand and what a thrill it was. I also remember that when he walked into the chapel everyone stood up as we still do today when a prophet enters the room. Also, all the ladies were asked to remove their hats!
+            </span>
+
+            <!--div id="ChapterPictureGallery" class="clearfix">
+                <ol class="GalleryPics">
+ 
+                </ol>    
+            </div-->
+
+            <!--span id="ChapterParagraphTwo">
+                Then when Marlon came home from his mission, I believe we picked him up in Salt Lake. When Robert finished his mission in Australia, we planned to make a major trip down to pick him up. Kenneth and I, and Marlon and Debra left to go down to Australia to pick up Robert. We had a trip that lasted six weeks, and we visited many, many countries in the South Pacific. We visited Mike’s mission and met some of the people that he had worked with in New Zealand. We met many of Robert’s friends and had a very special time there with him. Robert served as an assistant to the president, so he had many things that he could show us in Australia. We thoroughly enjoyed that and met his mission president. 
+            </span>
+            <span id="SEE_MORE"><a href="#" id="restofstory4-show"  onclick="showHide('restofstory4');return false;">SEE MORE</a>
+            </span>
+
+            <div id="restofstory4" class="more">
+                <span id="ChapterParagraphTwo">
+                    From there we went to Indonesia and met many of Marlon’s mission friends as well. They called him “Yellow Bird” down there. We were kind of tickled with that nickname they gave him because of his blond hair. Being there was especially a fun time because we had a very tall Robert, a very rotund Kenneth–he had a little weight on him–and Debra with her long blond hair. That type of person in Indonesia was very, very rare. We attracted a crowd wherever we went. We had people following us and looking at us and wanting to stop and visit. We had a wonderful time. <br /><br />
+
+                    We also went to Taiwan. We went to Thailand. We were in Singapore. We spent time in Japan. We were in Tokyo for three or four days. Then we flew back to Hawaii where Mike and Randy and Janet met us and we spent another week in Hawaii. That was a very special trip and it really gave us the desire to travel as much as we possibly could throughout the following years.  <br /><br />
+
+                    Another special trip we had in our family was when we were going to celebrate our 50th wedding anniversary. Kenneth was just beginning to get into the throes of Alzheimer’s, so we knew that if we wanted to take a family trip together, we must do it at that time. We planned a trip to go to the Mediterranean.  <br /><br />
+
+                    It was kind of interesting how that trip came together, because some of our children just didn’t have the finances to do that trip. They were concerned about it. We wanted to do a family trip for a 50th wedding anniversary, but we didn’t know where we wanted to go or what to do or how long to stay. Finally, Dani called and she said, “Bob is going to put a trip together for us. Let’s go to the Mediterranean. Let’s go take a trip to the Greek Islands.” Oh, my goodness, I thought that would be wonderful. Debra thought it would be wonderful. Bob thought this was wonderful. We began to plan the trip, and pretty soon those who thought they would not go came together, and as a family, all six of our children and their spouses and Ken and I, we made the trip to the Mediterranean.  <br /><br />
+
+                    We went to Rome. We were in Italy for a week or so. We went to the Greek Islands and absolutely fell in love with them. I’ve always wanted to go back to Sorrento in Italy. That was a very special place for me. That was a marvelous trip. The time we spent together as family—we were unbelievably close, helping each other and enjoying the time that we had there. We had some really fun experiences that I would be happy to share with anyone. Anytime they want to listen to me, I’ll tell them of our experiences on that trip.  <br /><br />
+
+                    I’ve been privileged to make several trips to England and travel on the continent with Bob and Janet. They lived there for ten years while Bob was transferred there for his employment. I was privileged to go to England four different times, and it’s become my most favorite place in the world. I love England and I’ll always have special memories. I’m very much connected to England. My ancestors came from there as well, so I guess there’s a spiritual tie there that keeps me in love with England.  <br /><br />
+
+                    It’s interesting, because when Bob and Janet said they’d been transferred to England, I said, “England! Who on earth wants to go and live in England? Are you sure you’re going to do this?” But it just took one trip over there. I went over when Bradley was born. Janet was having some difficulties with that birth, and I went over to help her and just totally fell in love with England.  <br /><br />
+
+                    I’ve been blessed to travel through Europe: Germany, Switzerland, Holland, Italy. I’ve been blessed to travel. I have been blessed to travel! The Lord has been good to me in that respect.  <br /><br />
+
+                    Haven’t been to Alaska. Everyone’s been to Alaska but me.  <br /><br />
+
+                    Oh my goodness, I’ve been to South America. I’ve been to Guatemala. Janet served her mission in Peru and we went down to pick her up and brought her home with us, because we finished our mission in Guatemala as Janet finished hers. We were able to have some of the family go with us, and we went down and picked up Janet and she drove home with us.  <br /><br />
+
+                    Also, when we finished our mission in Guatemala, we brought back with us a fifteen-year-old Guatemalan girl named Norah Alvarado. Her parents were pleased to let her come home with us, and she was able to go to school in Rigby. A couple of years later she came back and attended Ricks College.  <br /><br />
+
+                    I’ve had some beautiful experiences traveling. I’ve had wonderful times and seen a lot of this wonderful world we live in.
+                </span>
+
+                <span id="SEE_MORE">
+                    <a href="#" id="restofstory2-hide" onclick="showHide('restofstory2');return false;">SEE LESS</a>
+                </span>
+            </div-->
+            
+        </div>
+    <%#= image_tag("li/menu/GraceMenuSmall.jpg", :id => "ChapterHeadingCoverPhoto", :class => "image") %>
+        
+
+
+
+
+
+<!-- Chapter Five Begins -->
+
+        
+       <span class="anchorup"><a name="ch5"> </a><div class="invisichar"> a</div>
+<br /><br /><br /><div> </div></span>
+
+       <span id="ChapterHeading">
+
+            <span id="textspanlichapter9">N</span><span id="textspanlichapter10">o</span><span id="textspanlichapter11"> 5 &nbsp;</span>
+            <span id="textspanlichapter13">FAVORITE FOODS </span><span id="textspanlichapter15">as a </span><span id="textspanlichapter16">CHILD </span>
+        </span>
+        <div id="HorizontalDivider" class="clearfix">
+        </div>
+        <!--div class="ChapterVideoDiv">
+            <div class="ChapterVideo">
+                <iframe src="//player.vimeo.com/video/113120053" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+        </div-->
+
+
+        <!--span id="ChapterQuoteAudio">
+        “To be together, to show the love we feel for each other, and to see the cooperation—it was just full of love!”
+        </span-->
+        <div id="ChapterText" class="clearfix">
+            <!--span id="ChapterByline">
+            <span id="textspanlichapter22">ALICE CHAU</span><br /><span id="textspanlichapter24">SISTER</span>
+            </span-->
+
+            <span id="ChapterParagraphOne">
+            <span id="BigFirstLetterText"></span>
+                    As long as I can remember, I have loved beans! All kinds of beans! And I hated cottage cheese when I was a kid. One memory I have is of a meal with all the family around and someone helped me take up my plate with food and of all things most terrible they put some beans on my plate and then plopped cottage cheese right on top of the beans. It was terrible and I went crying away from the table because of the tragedy and it just made me sick! Later on I grew to love cottage cheese—interesting what we remember! <br /><br />
+
+                    My mother always made biscuits out of some of her bread dough when she made a big batch of bread and they weren’t small rolls; they were huge and they raised up to be beautiful big rolls and she continued to make them until just a few months before she died at 95. <br /><br />
+
+                    Another incident that I have always remembered about myself and my mother was when one time she was stirring a batch of fudge to thicken it up, and I kept standing beside her and dipping my finger into the pan to taste it and—fudge being a favorite of mine—I just kept at it until she pushed my whole hand down into the pan! It was a little warm still so I yelped and immediately began to wash it off. She was quite disturbed at me and said, “Why are you washing it all down the sink when you wanted it so bad!” The old-time fudge recipes had to be cooked to a certain point and then beat until thick…not like the newfangled recipes that almost immediately become fudge—but it is really good as well, attesting to Kristen Mary and all the fudge she has made for me over the years—thank you, Kristen Mary! 
+            </span>
+
+            <!--div id="ChapterPictureGallery" class="clearfix">
+                <ol class="GalleryPics">
+                        
+                </ol>    
+            </div-->
+
+            <!--span id="ChapterParagraphTwo">
+                The home was on seven acres. There are two acres of woods, two acres of pastures, and then an acre and a half for the home. I’m not sure just what the numbers are.<br /><br />
+
+                After we had lived here for a number of years, we found that the family loved to come here. They often planned their summer vacations to come, and eventually we had family reunions. I'm not sure just which year we started; I think it was about 1989. The family loved to come especially for reunions. We managed to put everyone up, and they loved to be together. They looked forward to coming and we looked forward so much to having them come. To be together, to show the love we feel for each other, and to see the cooperation—it was just full of love! The reunions have been wonderful. 
+            </span>
+            <span id="SEE_MORE"><a href="#" id="restofstory5-show"  onclick="showHide('restofstory5');return false;">SEE MORE</a>
+            </span>
+
+            <div id="restofstory5" class="more">
+                <span id="ChapterParagraphTwo">
+                    We always had a theme for our reunions, and everyone in the family participated. We had committees. Everyone was part of a committee, preparing meals and preparing games to play. The food was a big deal. We always tried to have special food that everyone would enjoy. We often had the food catered, but mostly family wanted to work together, to be together, and to have fun together. Our family has always had those blessings of enjoying being together and looking forward to reunion time. We had about half a dozen reunions here in this home. <br /><br />
+
+                    I think reunions are a very special part of family relationships. They bring families together; for those who’ve lived far away and been separated for a number of years, when they come to a reunion—I don't know how to describe it. It's such a warm, special time to be together with those that you love and be part of a very special family. We have always enjoyed having the reunions.<br /><br />
+
+                    The last one we had here had about eighty-five people. It was a riot! A riot. Everyone loved it. We had barrels of fun. We were together for about four days total. Some even wanted to stay longer. Family from Mesa traveled so far and they wanted to come and stay longer, so of course we welcomed that. It's a special feeling to know that your family wants to come back home and to be with you—very special.<br /><br />
+
+                    Cyndi gave me a kitchen towel, and the last reunion she hung it on my oven door and I didn't know who left it there. But the towel explains a family. I believe the towel says, “Home is where Mom is.” That's kind of what family is. We don't have a dad right now, but home is where Mom and Dad are, wherever they live. That's where home is. <br /><br />
+
+                    We've always been a close family. We've always enjoyed being close together. We've had many, many blessings in our family because of our love of the gospel, our desire to be together, and the love we feel for one another.
+                </span>
+
+                <span id="SEE_MORE">
+                    <a href="#" id="restofstory2-hide" onclick="showHide('restofstory2');return false;">SEE LESS</a>
+                </span>
+            </div-->
+            
+        </div>
+
+        <%#= image_tag("li/grace/personalities COVER.jpg", :id => "ChapterHeadingCoverPhoto", :class => "image") %>
+
+<!-- CHAPTER SIX BEGINS -->
+
+   <span class="anchorup"><a name="ch6"> </a><div class="invisichar"> a</div>
+<br /><br /><br /><div> </div></span>
+      <span id="ChapterHeading">
+            <span id="textspanlichapter9">N</span><span id="textspanlichapter10">o</span><span id="textspanlichapter11"> 6 &nbsp;</span>
+            <span id="textspanlichapter13">MY PASTIME </span><span id="textspanlichapter15">of &nbsp;</span><span id="textspanlichapter16">READING</span><!--span id="textspanlichapter15">in </span><span id="textspanlichapter16">BRIDLINGTON </span-->
+        </span>
+        <div id="HorizontalDivider" class="clearfix">
+        </div>
+        <!--div class="ChapterVideoDiv">
+            <div class="ChapterVideo">
+                <iframe src="//player.vimeo.com/video/114207389" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+        </div-->
+
+
+        <!--span id="ChapterQuoteAudio">
+        “I would wish for them to have the kind of family that I have had.” 
+        </span-->
+        <div id="ChapterText" class="clearfix">
+            <!--span id="ChapterByline">
+            <span id="textspanlichapter22">GREGG LI</span><br /><span id="textspanlichapter24">SON</span>
+            </span-->
+
+            <span id="ChapterParagraphOne">
+            <span id="BigFirstLetterText"></span>             
+
+            Many enjoyable hours during my childhood (mid-young teen years) were spent in my room reading. I loved to read and can remember at times my mother would have to come to my room and take my book so I would come to the table to eat! Most of my books were from the Idaho Falls Public Library and my memory holds many feelings of enjoyable hours reading books. <br /><br />
+
+            I didn’t own many books of my own but had good friends willing to share. I was especially fond of the “Nancy Drew” mystery series and longed to have the new one when it came out and then the next one and the next. I was always trying to find someone who had the book so I could persuade them to lend it to me. I remember one day gaining enough courage to ask a friend of mine for several of them as she was from a “rich” family and dream of all dreams she had the whole series on her bookshelves. Her house was a very big house or so it seemed to me then, and I went bravely over. She was sick in bed; her mother led me up the stairs and there the “princess” lay in her bed sick. I stumbled over the words, “Can I borrow some of your Nancy Drew books…?” And she lent them to me. (I have driven by that house since becoming an adult and that house isn’t so big after all!)
+
+            </span>
+
+            <!--div id="ChapterPictureGallery" class="clearfix">
+                <ol class="GalleryPics">
+                                      
+                </ol>    
+            </div-->
+
+            <!--span id="ChapterParagraphTwo">
+
+                    I would wish for them to have the kind of family that I have had. I would like to see them have families where their children grow up in the gospel and have strong, viable testimonies of the gospel as my children have had and as my husband and I have had. I would wish for them a tremendous posterity, as I have had. Heavenly Father has blessed me tremendously with my family. I couldn’t have asked to have a better family than I’ve had. My posterity, as well, is just…I can’t describe how pleased and happy and blessed I feel to have my family. 
+ 
+            </span-->
+            
+            <!--span id="SEE_MORE"><a href="#" id="restofstory6-show"  onclick="showHide('restofstory6');return false;">SEE MORE</a>
+            </span>
+
+            <div id="restofstory6" class="more">
+                <span id="ChapterParagraphTwo">
+                    As it turned out, Ricks College and the homes up there became a haven for many hundreds of those whose homes were destroyed. My big concern was for the Public Health Office, a newly-built health department building that we had only been using for a few months. I had someone notify the sheriff the next day that I needed to get to my office to remove vaccine materials and other chemicals and any other record materials that could be salvaged. <br /><br />
+
+                    The sheriff came to the bottom of the hill by Smith Park and took me in a row boat to the office and we were able to take out from there all that needed to be kept safe. The health department was soon established in the rock house next to the drive, which was high enough that only the basement apartment had water in it. <br /><br />
+
+                    The apartment in the basement where Robert and Laurie lived was filled with flood water and all of their possessions were soaked and ruined. Marlon's apartment was also totally flooded and they lived in our camper parked in our backyard for awhile. The drive-in and the bottom apartments of the Norsemen were filled as well and so the work to get it cleaned up began. <br /><br />
+
+                    The water in Rexburg eventually ran off and on down the valley. The 8th Ward chapel of which we were members only had a few inches of water and only had minor damage. A miracle there. Volunteers came from everywhere to help in the clean up of flooded Rexburg. Many faith-promoting incidents occurred during the next weeks and months following the tragedy of the Teton Dam breaking. Testimonies were strengthened and faith enlarged by those who were residents of Rexburg as well as those who came to help. <br /><br />
+
+                    Many of us learned that through adversity comes stronger faith and through service comes great blessings. We also earned that no matter what the Lord is always near to us and the blessings always come.
+                </span>
+
+                <span id="SEE_MORE">
+                    <a href="#" id="restofstory5-hide" onclick="showHide('restofstory5');return false;">SEE LESS</a>
+                </span>
+            </div-->
+        </div>
+            
+
+        <%#= image_tag("li/progress_two/working3x COVER.jpg", :id => "ChapterHeadingCoverPhoto", :class => "image") %>
+
+
+    <div class="bottom-menu">
+        <p id="bottommenuli">
+        <%= link_to 'HOME', carma_path %> &nbsp; <span id="textspanlichapter15">/</span> &nbsp; <%= link_to 'NEXT EXHIBIT', carma_childhood_2_path %> &nbsp;<span id="textspanlichapter15">/</span> &nbsp; <%= link_to 'GUESTBOOK', carma_guestbook_path %><br />
+        </p>
+    </div>
+
+
+<!-- Chapter Eight Begins --><!-- Evelyn needs to write this up!!! -->

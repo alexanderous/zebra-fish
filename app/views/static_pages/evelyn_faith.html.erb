@@ -1,0 +1,672 @@
+
+
+    <head>
+
+
+	<meta name="viewport" content="initial-scale = 1.0,maximum-scale = 3.0">
+
+    <script>
+            $(document).ready(function () {
+                $(".ChapterVideoMod").fitVids();
+            });
+
+    </script>
+
+    <script>
+        function showHide(shID) {
+          if (document.getElementById(shID)) {
+            if (document.getElementById(shID+'-show').style.display != 'none') {
+              document.getElementById(shID+'-show').style.display = 'none';
+              document.getElementById(shID).style.display = 'block';
+            }
+            else {
+              document.getElementById(shID+'-show').style.display = 'inline';
+              document.getElementById(shID).style.display = 'none';
+            }
+          }
+        }
+    </script>
+
+    <!-- fancybox begins -->
+
+        <!--script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script--> <!-- this causes fitvids NOT to work. BOO -->
+        <link rel="stylesheet" href="/fancybox/source/jquery.fancybox.css" type="text/css" media="screen">
+        <script type="text/javascript" src="/fancybox/source/jquery.fancybox.pack.js"></script>
+    <!-- fancybox end -->
+    </head>
+
+<body>
+
+        <span id="In_Exhibit_Title_Mod">
+        FAITH
+        </span>
+        <div id="boxmodex_faith" class="clearfix">
+            <%= image_tag("evelyn/menu/arrow motif left.png", :id => "exhibit_top_arrow_motif_left", :class => "image")  %>
+            <span id="In_Exhibit_Subtitle_Mod">
+            CHANGING THROUGH CONVERSION
+            </span>
+            <%= image_tag("evelyn/menu/arrow motif right.png", :id => "exhibit_top_arrow_motif_right", :class => "image")  %>
+        </div>
+        <div id="boxmodex1" class="clearfix">
+            <span id="Previous_Exhibit_Link_Mod"><a href="<%= evelyn_hardship_path %>">
+            previous exhibit</a> 
+            </span>
+            <span id="Next_Exhibit_Link_Mod"><a href="<%= evelyn_motherhood_1_path %>">
+            next exhibit</a>
+            </span>
+        </div>
+
+
+<!-- CHAPTER ONE -->
+
+
+        <div id="Gallery_Strip" class="clearfix">
+            <ol class="GalleryPicsMod">
+                    <li><%= link_to image_tag("evelyn/Faith/Smaller/1PathtoFaith.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Faith/Large/1PathtoFaith.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Faith/Smaller/1PathtoFaith1.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Faith/Large/1PathtoFaith1.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Faith/Smaller/1PathtoFaith2.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Faith/Large/1PathtoFaith2.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Faith/Smaller/1PathtoFaith3.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Faith/Large/1PathtoFaith3.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Faith/Smaller/1PathtoFaith4.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Faith/Large/1PathtoFaith4.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Faith/Smaller/1PathtoFaith5.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Faith/Large/1PathtoFaith5.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Faith/Smaller/1PathtoFaith6.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Faith/Large/1PathtoFaith6.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Faith/Smaller/1PathtoFaith7.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Faith/Large/1PathtoFaith7.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Faith/Smaller/1PathtoFaith8.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Faith/Large/1PathtoFaith8.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Faith/Smaller/1PathtoFaith9.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Faith/Large/1PathtoFaith9.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Faith/Smaller/1PathtoFaith10.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Faith/Large/1PathtoFaith10.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Faith/Smaller/1PathtoFaith11.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Faith/Large/1PathtoFaith11.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+
+                </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            My Path to Faith
+            </span>
+            <span id="Contributor_Name_Mod">
+            evelyn li
+            </span>
+            <span id="First_Paragraph_Mod">
+            I guess I am more of a thinker and deliberator than a feeler. When I was first introduced to Christianity I was five years old, and my grandmother was a Christian, a Protestant. She took me to her church. I didn’t like the people there, but I remember every time Christmas came I would get beautiful presents from them. As a child in Hong Kong, that was very, very extraordinary. It was such a special occasion for us because no one gave us candies at all. Christmas was really a candy day. The first time we ate candies was once a year at Christmastime when we would go to church. So who doesn’t like Christmas and who doesn’t like the Church? That was the first time I was introduced to Christianity.<br />
+            </span>
+            <div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <iframe src="//player.vimeo.com/video/120529306" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “I woke up and said, ‘God has been nice to me all this time, and I have not been nice to him. What happened to me?’”
+                </span>
+            </div>
+            <span id="Second_Paragraph_Mod">
+            Then I was put into a Catholic elementary school. I read about Jesus in our textbook. It talked about Jesus feeding 2,000 people and making someone dead come alive. I said, "How could anybody not believe in him?" Even the story of Jesus walking on water, how could anybody not believe in this person? I had never heard of anybody who could walk on water. That’s Jesus. I kept looking at the book and I kept looking at the people. I said, "Why don’t you guys believe? They’re teaching us that Jesus walked on water. Why are you not making a big deal out of it?" As a concrete thinker, I could not understand for a moment why anybody would not believe in Jesus. <br /><br />
+            </span>
+            <span id="Exclusive_Quote_Mod">
+            “My grandmother was a devoted Christian, but she never preached about it. She never talked to us about it.”
+            </span>
+            <span id="Second_Paragraph_Mod">So I believed in Jesus, but I did not like my elementary school. I did not like the Catholic Church at the time. I was not baptized in the Catholic Church, but I was a student there. The reason I didn’t like it was that they would put us under the hot sun for hours to say prayers to Saint Mary. One or two times I actually fainted, and a lot of my classmates also fainted in the hot Hong Kong summertime sun. I said, “If there’s a nice God in this church, why would they want us to suffer like that as a little child?” I didn’t believe in any doctrines from then on. There were some doctrines in the Catholic Church I wasn’t very fond of. One of them was that we are always a sinner. As a child it was hard for me to understand why all of a sudden we had sinned so much. What did we do? That was not explained well to us.<br />
+
+            <br />When I moved to Hawaii I still didn’t believe, because my dad was an atheist, my mom was an atheist, and though my grandmother was a Christian, but she rarely went to church. When we came to Hawaii, things were rough. We didn’t have any friends and the people that we knew were Chinese gangsters. They smoked and did all kinds of things like take drugs. There was not much Christianity in our circle of friends.<br />
+            </span>
+            
+            <span id="See_More_Mod"><a href="#" id="restofstory0-show"  onclick="showHide('restofstory0');return false;">SEE MORE</a>
+            </span>
+
+            <div id="restofstory0" class="more">
+
+                <span id="Second_Paragraph_Mod1" class="more">
+
+                When I was fourteen years old, because of the adverse situation in our family, we were latchkey kids: inside the house and our parents not around. We lived in the ghetto. The teenage boys out there frightened us, and my parents were always working. We were totally petrified in that kind of environment. I sat down and prayed to God for two hours, and I cried for two hours. I remember hearing a voice from an angel, and he told me, "You have to work hard." I felt like that was my holy spirit, because ever since that time he was always with me. I felt like every time I got A’s, it was because of him. Being as poor as we were, we couldn’t afford a tutor, but I could comprehend things so fast. He basically taught me how to get A’s in school and he taught me how to study. It was amazing. I suddenly felt like I had more intelligence than I ever had before. I felt like this same spirit coached me to study and taught me how to understand what I was learning. Ever since that time, I could excel in everything I tried. That was my touch with the spirit world. <br />
+
+                <br />Then, when I was seventeen, my sister converted to Mormonism and was baptized. When I turned seventeen I had nothing to do, so I remember going with her to the church. The missionary talked to me and asked, "Do you want to go back to heaven? That’s where you came from." I said, "Oh, totally! It sounds so right and so true, why not? If that’s the only thing it takes to go back to heaven, then I'll do it. I'll get baptized." So I was baptized when I was seventeen. <br />
+
+                <br />Needless to say, I wasn’t a pious or devoted person. My sister was very devoted and she went and served a mission, which I wish I had done. But you know, you always make mistakes in life. I didn’t serve a mission. But I was very pampered by God. He knew that I was rebellious. He managed to straighten me out, but he pampered me at the time. He let me go to college and medical school and get free rides. He also gave me the best man in the world, and we got married and had three great children. They were just wonderful kids. I was so pampered by God that I felt like I just didn’t deserve it. <br />
+
+                <br />One day, when God took my husband away from me, it was the collapse of my world. I woke up and said, "God has been nice to me all this time, and I have not been nice to him. What happened to me?” I realized that when the Holy Spirit was slowly running away from me, I felt different. I wasn’t as intelligent as before; I wasn’t as powerful as before; I was beginning to be weak and scared; it was not me anymore. I began to search again, to search for the purpose of living. Especially because my husband, 33 years old, just out of medical school, and only a doctor for two years, and God took away his life. At that moment I said, "What is the purpose of life? Why was he only here for a few years and then died? Why is this happening?" I was searching for the meaning of life. <br />
+
+                <br />Don’t forget that at that time I had been inactive in the church for ten years. My sister was very nice. She has always been the angel of my life. She told the missionaries to come and visit me again. As rebellious as I was, I didn’t want to be forced or pushed into any religion. They were very nice. They left me The Book of Mormon, Gospel Principles, and The Doctrine and Covenants in my mailbox because I hung up on them so many times that they knew I didn’t want to talk to them. <br />
+
+                <br />During the time right before my husband died, I had nothing to do except sit next to him, because he was on chemotherapy. When I was sitting next to him I had nothing to read, so I picked up that book and I read the whole book: The Book of Mormon, The Doctrine and Covenants, and all the other books I could get my hands on to understand the purpose of life. In The Doctrine and Covenants, I came across the concept of the three degrees of glory. That all made sense to me. God also said, “You live with a purpose, you’re born with a purpose, and you die with a purpose.” All of these things made so much sense to me. I said, "O, my God! My eyes have been opened! There’s a reason to be born, and there’s a reason to live." After I read that book, I totally converted. I said, “There is no other church other than this church. This has to be the true church because that is wisdom. That is intelligence. That is what life is all about. We have an eternity. We have a future. This life is only temporary.” <br />
+
+                <br />When I saw the truth in it, nobody could take that away from me because it was true. My husband also was baptized, and then he died. I became active again in the church, and I have been very faithful ever since. I subsequently became the Relief Society president in Oakland. I was very proud of myself. I was progressing in a better direction.
+
+                </span>
+            </div>
+        </div>
+
+
+<!-- CHAPTER TWO -->
+
+
+        <div id="Gallery_Strip1" class="clearfix">
+            <ol class="GalleryPicsMod">
+                    <li><%= link_to image_tag("evelyn/Faith/Smaller/2DreamAboutDad.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Faith/Large/2DreamAboutDad.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Faith/Smaller/2DreamAboutDad1.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Faith/Large/2DreamAboutDad1.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Faith/Smaller/2DreamAboutDad2.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Faith/Large/2DreamAboutDad2.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Faith/Smaller/2DreamAboutDad3.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Faith/Large/2DreamAboutDad3.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Faith/Smaller/2DreamAboutDad4.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Faith/Large/2DreamAboutDad4.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Faith/Smaller/2DreamAboutDad5.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Faith/Large/2DreamAboutDad5.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Faith/Smaller/2DreamAboutDad6.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Faith/Large/2DreamAboutDad6.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Faith/Smaller/2DreamAboutDad7.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Faith/Large/2DreamAboutDad7.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Faith/Smaller/2DreamAboutDad8.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Faith/Large/2DreamAboutDad8.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Faith/Smaller/2DreamAboutDad9.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Faith/Large/2DreamAboutDad9.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Faith/Smaller/2DreamAboutDad10.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Faith/Large/2DreamAboutDad10.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+
+                </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            Dreams of My Biological Father
+            </span>
+            <span id="Contributor_Name_Mod">
+            kimberli cheung
+            </span>
+            <span id="First_Paragraph_Mod">After my dad passed away, when I had barely turned six, we moved from Sacramento to Concord. I remember the first while it was really lonely. All of sudden I didn’t have attention from both parents. All of a sudden we didn’t have any attention from either parent because Dad had passed away and Mom was busy working all the time. 
+            <br />
+            </span>
+            <div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <iframe src="https://player.vimeo.com/video/121174102" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “I opened the door, it was the middle of the night, and my biological father was floating there in front of me, maybe about a foot above the ground.”
+                </span>
+            </div>
+
+            <span id="Second_Paragraph_Mod">
+            One night I had a dream. It was knocking of some sort, or a doorbell ringing at the door. I really thought it was real in my dream. I went to the front door and opened the door. I know it sounds crazy because I was only six, but I opened the door, it was the middle of the night, and my biological father was floating there in front of me, maybe about a foot above the ground. I don’t know why. <br />
+
+            <br />I was so excited and happy to see him. I didn’t have any fearful feelings or thoughts at all. They were very elated, happy feelings. He talked to me and asked me how I was doing. He asked me how first grade was going and I was so excited to tell him all about my life, all that was happening, and that I missed him so much. I remember that I woke up and it wasn’t real. <br />
+            </span>
+
+            <span id="See_More_Mod"><a href="#" id="restofstory-show"  onclick="showHide('restofstory');return false;">SEE MORE</a>
+            </span>
+
+            <div id="restofstory" class="more">
+
+                <span id="Second_Paragraph_Mod1" class="more">
+
+                Years later my mom told this story that she was in the same house, the one in Concord, and that she had a dream shortly after my dad’s death. It was probably around the same time period that I was having my dream. She said that she heard a knocking or doorbell ring at the door, and she went to the door, answered it, and it was my dad. She was so excited to see him. He was floating above the ground and he talked to her about how wonderful heaven was and the spirit world. She invited him into the house and he said he could not. She doesn’t know why, but he explained that he wasn’t allowed to. <br /><br />
+
+                He invited her to come out of the house, so she walked out of the house and they floated to the top of a fence somewhere and stood on the top of the fence and held hands and talked about all of the wonderful things in the spirit world: the amazing mysteries and abilities that you can all of a sudden do and have when you’re up there, and the beautiful scenery and colors. He shared all of this with her. <br /><br />
+
+                I can’t remember exactly all of the details, but I remember my biological father pretty well in my own way, and he was always uplifting. He was always encouraging. I knew that from personal experience. He was this all-around really positive person. He instilled strength in people. He taught me how to ride my first bike. I can only imagine that he, in that moment, strengthened my mom and told her, “You can do this,” and made her feel confident in herself that she was not alone, that he was there and that God was watching over us.<br />
+                </span>
+            </div>
+
+        </div>
+            <!--span id="Exclusive_Quote_Mod">
+            “I want my children to have wisdom and intelligence, to be able to make the right choice to go back to heaven. Then we can all be happily living forever with each other in heaven.”
+            </span-->
+            
+
+
+<!-- CHAPTER THREE -->
+
+
+        <div id="Gallery_Strip1" class="clearfix">
+            <ol class="GalleryPicsMod">
+                    <li><%= link_to image_tag("evelyn/Faith/Smaller/3BaptismInactivity.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Faith/Large/3BaptismInactivity.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Faith/Smaller/3BaptismInactivity1.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Faith/Large/3BaptismInactivity1.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Faith/Smaller/3BaptismInactivity2.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Faith/Large/3BaptismInactivity2.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Faith/Smaller/3BaptismInactivity3.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Faith/Large/3BaptismInactivity3.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Faith/Smaller/3BaptismInactivity4.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Faith/Large/3BaptismInactivity4.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Faith/Smaller/3BaptismInactivity5.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Faith/Large/3BaptismInactivity5.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Faith/Smaller/3BaptismInactivity6.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Faith/Large/3BaptismInactivity6.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+            
+                </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            Baptism and Inactivity
+            </span>
+            <span id="Contributor_Name_Mod">
+            evelyn li
+            </span>
+            <span id="First_Paragraph_Mod">
+            In Hawaii we were living in a house, which was better than what we had in Hong Kong. It was a wooden house, and guess what? The house had a lot of holes in it. When we took a shower, we had so many holes in the shower room, we had to turn off the light. You know why? A lot of teenage guys around that area would creep underneath our house and peek at us when we were taking a shower. We were so scared that we had to turn off the light so that nobody could see us, and we had to take showers in the dark. The whole house was basically saturated with termites. Every night when we went to sleep, the termite powder dropped onto our faces and sometimes into our mouths. You could not walk without making noises in that house.
+            <br />
+            </span>
+            <div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <iframe src="//player.vimeo.com/video/119499852" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “When I went into the water, I felt light. I thought I saw a light. I felt like I was in heaven.”
+                </span>
+            </div>
+
+            <span id="Second_Paragraph_Mod">
+                I got baptized. The baptism was amazing. I did not know how to swim and was afraid of water, and I didn’t think I could survive this baptism ceremony. But when I went under the water, I actually had more oxygen than before I went under. It was a very miraculous experience. Not only that, but when I went into the water, I felt light. I thought I saw a light. I felt like I was in heaven. All of this reconfirmed the idea that I was going in the right direction. <br /><br />
+
+                Shortly after, my friend took me to watch some horrible movie. I guess before that time I was not coached not to watch certain movies. I was a beginner believer without knowing much doctrine of the church. One of the movies I went to watch was The Exorcist, and after that I was so scared. That was one of the roadblocks for me, compounded with my strenuous work at school making it difficult for me to go to church on Sunday. <br />
+            </span>
+
+
+            <span id="See_More_Mod"><a href="#" id="restofstorya-show"  onclick="showHide('restofstorya');return false;">SEE MORE</a>
+            </span>
+
+            <div id="restofstorya" class="more">
+
+                <span id="Second_Paragraph_Mod1" class="more">
+                I became inactive. I still appreciated God. I still appreciated the Spirit. I still appreciated Jesus, and I appreciated all the fortunate opportunities that I had going to UC Berkeley for undergrad and subsequently to UC Davis Medical School. To me it was a continuously present from God.<br /><br />
+
+                Then I met my first husband, Allan Nunn. He wasn’t a believer, so we were married in a regular Protestant church. You don’t have to be a Christian to get married in their church. We were married and then I had my three children. 
+                </span>
+            </div>
+        </div>
+            <!--span id="Exclusive_Quote_Mod">
+            “I want my children to have wisdom and intelligence, to be able to make the right choice to go back to heaven. Then we can all be happily living forever with each other in heaven.”
+            </span-->
+
+<!-- CHAPTER FOUR -->
+
+
+        <div id="Gallery_Strip1" class="clearfix">
+            <ol class="GalleryPicsMod">
+                    <li><%= link_to image_tag("evelyn/Faith/Smaller/4SaddestMoments.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Faith/Large/4SaddestMoments.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Faith/Smaller/4SaddestMoments1.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Faith/Large/4SaddestMoments1.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Faith/Smaller/4SaddestMoments2.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Faith/Large/4SaddestMoments2.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Faith/Smaller/4SaddestMoments3.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Faith/Large/4SaddestMoments3.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Faith/Smaller/4SaddestMoments4.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Faith/Large/4SaddestMoments4.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Faith/Smaller/4SaddestMoments5.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Faith/Large/4SaddestMoments5.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Faith/Smaller/4SaddestMoments6.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Faith/Large/4SaddestMoments6.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Faith/Smaller/4SaddestMoments7.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Faith/Large/4SaddestMoments7.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            The Saddest Moments of My Life
+            </span>
+            <span id="Contributor_Name_Mod">
+            evelyn li
+            </span>
+            <span id="First_Paragraph_Mod">
+            The saddest moments that I have had in life were when I lost my first husband and when I lost my second husband. When a person grows into adulthood, they feel that they have power; they feel that they are have power to run the world, to give to the world, to manipulate the world, or to have a future. It’s kind of like building a home and building a bubble. When I saw the bubble burst, I saw that my children had no father and my youngest one was only six months old. 
+            <br />
+            </span>
+            <div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <!--iframe src="//player.vimeo.com/video/113120001" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe-->
+                        <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/189861626&amp;color=d3d3d3&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “His death was very traumatic for me. After he died, I felt like I had no friends in this world. I felt so alone.”
+                </span>
+            </div>
+
+            <span id="Second_Paragraph_Mod">
+            Not creating a home for my children was very difficult for me. Not only that, but my husband was a very loving husband. He was understanding, supportive of any trial I went through. He believed in me. All my life I never had anyone believe in me, except my teachers and my dad. But my husband, especially every time I did something wrong, would say, "No, it’s not your fault." <br /><br />
+
+            It was a little exaggerated, but it was so nice to have someone believe in me. He totally believed in my kindness, my goodness, and my potential. Because of him I want to be a better person. He showed me how to love, and all of sudden he was gone. He was my best friend, and all of a sudden he was gone. I couldn’t even bargain with God. I remember I tried to tell God, "Why don’t you give me another ten more years of him. I will give you all of my gratitude." But it guess it was non-negotiable. <br />
+            </span>
+
+            <span id="See_More_Mod"><a href="#" id="restofstory2-show"  onclick="showHide('restofstory2');return false;">SEE MORE</a>
+            </span>
+
+            <div id="restofstory2" class="more">
+
+                <span id="Second_Paragraph_Mod1" class="more">
+
+                His death was very traumatic for me. After he died, I felt like I had no friends in this world. I felt so alone. Not to mention facing financial problems, and the work was tremendous, taking care of three kids with two babies in diapers. Time-wise, I couldn’t face it. Plus, at that time I was still in training as a doctor. All of that created extraordinary hardship for me. It was a difficult time. <br /><br />
+                </span>
+
+                <span id="Exclusive_Quote_Mod_in_SM">
+                “I was six years old when my dad passed away and I've seen my mom grow from being more of a submissive wife, when I did have my biological father around, to becoming more of an independent woman who started to have opinions and started to look for values, a reason, and a purpose to live.” - Kimberli Cheung, daughter
+                </span>
+
+                <span id="Second_Paragraph_Mod1" class="more">
+                The second time, when my second husband left me, it was devastating because I would never have thought he would leave me because we were married in the temple, we were both Mormons, and it wasn’t part of the equation that you get married just to go through a divorce. It was never in the equation that he would leave. We thought we could always work things out. <br /><br />
+
+                When he left me for another woman, it was devastating for me. I didn’t understand why. I didn’t understand why he did what he did. I thought I was a good wife. I thought I provided everything. I cleaned the house, I took care of his business, I took care of the swimming pool, I took care of the back yard, I took care of the three kids. He didn’t have to do practically anything. I took care of all the finances. I was also a full-time doctor, a cardiologist. I thought he would appreciate that. Yet he still left me. It was a lesson to learn. <br /><br />
+
+                I thought, “Where is God? Why is he not with me? What is going on here?” I think part of growing up is asking, “What it going on?” Someone pulls the carpet out from underneath your feet. All of a sudden your best friend is no longer your best friend. All of a sudden I saw myself with lawyers in between us. We became enemies. Not until a year later did I succumb myself to God. I humbled myself and said, “Well, it could be me that is creating this estrangement. It could be me.” Then I began to have peace. <br /><br />
+
+                Looking back at it right now, I wouldn’t say it’s fully his fault that he left. I would say it’s partly my fault that we didn’t communicate at that time. I was overworked. I was too tired to talk to him and we no longer communicated, so he was looking for another woman to communicate with him. That may be part of the issue. I wasn’t a lovey-dovey type of person. I’m not a very sentimental person, so people may feel coldness in me. Compassion was never nurtured in me. So this helped me understand how other people can be different from me. They might need more physical touch or love that I’m not giving. They have different thinking than you do, other needs than you do. It made me become a better doctor. I became a better listener. <br /><br />
+
+                Also, I realized that when you take care of everything around a person, that may not be what they want. What they want may not be what you think is what they want and most need. His leaving helped me understand people more because I worked harder to understand why people are doing certain things. His leaving also helped me be closer to God. With him leaving, I wanted to be closer to God and ask Him, “Why is this happening to me?” By getting closer to God, I began to understand him more. <br />
+                </span>
+            </div>
+
+        </div>
+
+
+
+<!-- CHAPTER FIVE -->
+
+
+    <div id="Gallery_Strip1" class="clearfix">
+            <ol class="GalleryPicsMod">
+                    <li><%= link_to image_tag("evelyn/Faith/Smaller/5OngoingConversion.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Faith/Large/5OngoingConversion.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Faith/Smaller/5OngoingConversion1.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Faith/Large/5OngoingConversion1.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Faith/Smaller/5OngoingConversion2.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Faith/Large/5OngoingConversion2.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Faith/Smaller/5OngoingConversion3.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Faith/Large/5OngoingConversion3.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Faith/Smaller/5OngoingConversion4.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Faith/Large/5OngoingConversion4.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            Ongoing Conversion
+            </span>
+            <span id="Contributor_Name_Mod">
+            evelyn li
+            </span>
+            <span id="First_Paragraph_Mod">
+            After my second husband left me, I began to wonder, “What is the purpose of all of this? Why are we going through life like a ship in a storm?” I took classes in Hebrew and Greek to learn more about the scriptures. That’s when I learned the history of the Church, and that reconfirmed and solidified my understanding of the Mormon Church. It really gave a much better foundation for my faith. I said, “Okay. There is no question that this is the true church.” 
+            <br />
+            </span>
+            <div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <iframe src="//player.vimeo.com/video/119502220" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “It has changed my life. It has changed my family’s life. I have received so many blessings that are out of the ordinary.”
+                </span>
+            </div>
+
+            <span id="Second_Paragraph_Mod">
+            The history of the Church compounded with its spiritual truth and principles, and with my spiritual development, all added together to elevate my conversion. I attended the temple, and if anyone has been to the temple, she realizes that there is no way she can deny there is a God, because I feel like I have seen God in the temple. It has changed my life. It has changed my family’s life. I have received so many blessings that are out of the ordinary. <br /><br />
+
+            How can anybody deny there is a God? How can anybody deny that the Mormon Church is the true church? There’s no way. You can look at The Book of Mormon, you can look at the history of the Church and deny it, but once you go to the temple, the spiritual evidence and the testimony of Jesus in there is amazing and there is no way. It’s like being testified to by the Holy Ghost. There’s no one that can ever deny that. It’s like when Joseph Smith said that he couldn’t deny that he saw God. Even though I didn’t see Him physically, I have felt his presence. I have felt his influence on me. It’s so amazing. How could I deny that our church is the true church? <br /><br />
+            </span>
+
+            <span id="Exclusive_Quote_Mod">“My conversion did not stop. There are still moments in time that I have doubt. I say, ‘This church is so strict. It’s like you can’t even breathe. There’s no air to breathe.’ There are times when I fall behind, and there are times when I catch up again. I must say it is a difficult process, just like it is for everybody else.’” </span>
+
+            <span id="Second_Paragraph_Mod">
+            Conversion is a gradual process, and day by day as I live the gospel and follow the principles, as I preach the Gospel, and as I help people come to God and attend the temple, I am closer to God and more in reality with God. Right now I’m serving as an ordinance worker there, and I’m so proud of it. I can’t stop talking about it. I even preach to my patients. My patients don’t like it, but hey, that’s the truth. I gotta tell you. This is the best gift ever!<br />
+            </span>
+        </div>
+
+<!-- CHAPTER SIX -->
+
+    <div id="Gallery_Strip1" class="clearfix">
+            <ol class="GalleryPicsMod">                    
+                    <li><%= link_to image_tag("evelyn/Faith/Smaller/6PurposeinTragedy.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Faith/Large/6PurposeinTragedy.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Faith/Smaller/6PurposeinTragedy1.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Faith/Large/6PurposeinTragedy1.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Faith/Smaller/6PurposeinTragedy2.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Faith/Large/6PurposeinTragedy2.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Faith/Smaller/6PurposeinTragedy3.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Faith/Large/6PurposeinTragedy3.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Faith/Smaller/6PurposeinTragedy4.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Faith/Large/6PurposeinTragedy4.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Faith/Smaller/6PurposeinTragedy5.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Faith/Large/6PurposeinTragedy5.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Faith/Smaller/6PurposeinTragedy6.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Faith/Large/6PurposeinTragedy6.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Faith/Smaller/6PurposeinTragedy7.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Faith/Large/6PurposeinTragedy7.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Faith/Smaller/6PurposeinTragedy8.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Faith/Large/6PurposeinTragedy8.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Faith/Smaller/6PurposeinTragedy9.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Faith/Large/6PurposeinTragedy9.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Faith/Smaller/6PurposeinTragedy10.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Faith/Large/6PurposeinTragedy10.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Faith/Smaller/6PurposeinTragedy11.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Faith/Large/6PurposeinTragedy11.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Faith/Smaller/6PurposeinTragedy12.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Faith/Large/6PurposeinTragedy12.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Faith/Smaller/6PurposeinTragedy13.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Faith/Large/6PurposeinTragedy13.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            Finding Purpose in Tragedy
+            </span>
+            <span id="Contributor_Name_Mod">
+            evelyn li
+            </span>
+            <span id="First_Paragraph_Mod">
+            Seven years after my marriage, it abruptly ended when my husband developed cancer of the pancreas. When he was sick, lying in bed, I had time to read more about the purpose of life. Why would God let someone like him live and then take him away while he still has three little children? The Doctrine and Covenants, Gospel Principles, and The Book of Mormon helped me answer this question. It was the first time that I felt lucky to have the Gospel, that I was so lucky to understand the purpose of life. 
+            <br />
+            </span>
+            <div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <iframe src="//player.vimeo.com/video/119499860" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “It was the first time that I felt lucky to have the Gospel, that I was so lucky to understand the purpose of life.”
+                </span>
+            </div>
+
+            <span id="Second_Paragraph_Mod">
+            It was difficult for me after he died. I had to go back to training. I lost about 30 pounds. I had pain, so much pain that it took me five years to forget. During this time I began to understand and realize that the Mormon Church is the only true church, because after reading all the scriptures, I understood how everything could be true and how the doctrine of the Mormon Church is so close to the New Testament and the Old Testament. There’s no other church that I know of that even resembles or gets anywhere close to what the New Testament is talking about, what Jesus was talking about. Only the Mormon Church is very close in the doctrines. The combination of all that strengthened my faith in the Church. <br /><br />
+
+            I went back to the Church. Right before my husband died, he also learned about the gospel and was baptized. He couldn’t get endowed because he was too sick to go to the temple. Five years after he died I met my second husband, and I told him, “Right now I have devoted my life to God. I will be a missionary, and if you don’t plan to be a missionary with me, I don’t want to marry you.” He said, “Yes. I will be a missionary with you.” Without knowing whether he was for real or not, I wrote down on a big, big piece of paper and made him sign it. And he signed that paper. So we got married, and he got baptized. At that point I was very happy. I was the Relief Society President in the Oakland Ward. Things were going well. I was attending the temple regularly. <br />
+            </span>
+            <span id="See_More_Mod"><a href="#" id="restofstory3-show"  onclick="showHide('restofstory3');return false;">SEE MORE</a>
+            </span>
+            <div id="restofstory3" class="more">
+
+                <span id="Second_Paragraph_Mod1" class="more">
+
+                After my marriage, it was just like all marriages; it has its ups and downs and challenges. One of my challenges was that what I wanted was frequently not what my husband wanted. For example, he didn’t want a maid in the house. For me, facing three children, it was difficult. But he did allow my parents to live with us, and so my parents helped us out. But my parents were getting older and older, it was becoming more and more difficult. It got to the point where my parents were constantly yelling at each other and yelling at me, disrupting a lot of the peace in our home. On top of my challenges at work, I had to tell my parents, “You have to move out, because we cannot constantly be having fights at home.”<br /><br /> 
+
+                After my parents moved out, I was again facing a difficult situation. I had a lot of work to do, a lot of housework to do, and my husband also had a lot of work to do in his office, so he was tired when he came home and couldn’t help me. Out of strenuous activity and working, I had three miscarriages. I was taking care of the children myself, doing my church calling, plus my office work; it put a lot of strain on our marriage. My husband decided, “This marriage is not right for me.” He left. He left our family. He left with my secretary that I hired for him. At that point in time I was devastated and sad. A year later he decided to come back. <br /><br /> 
+
+                During that whole year, a lot of things came into my thoughts: “What did I do wrong? What could I have been better?” I scrutinized my thoughts and this whole event actually made me closer to God. I wanted to know what was happening and why this was happening to me. What was God thinking? For me, understanding Him was vital at that time. I went to Institute and learned about the history of the Church, the history of all churches. I went to the Catholic seminary to learn about the Catholic Church. I went to learn about everything that I could put my hands on. That brought me closer to God. I learned Hebrew and Greek. I learned the New Testament’s actual language and learned the Torah in its native language. All this has helped me understand God more. <br /><br /> 
+                </span>
+
+                <span id="Exclusive_Quote_Mod_in_SM">
+                “She is probably one of the most ardent people I know, always wanting to believe and wanting to understand what the Church and the gospel are. She would read through all the scriptures. She would try to find Institute course work to go through. She even tried to learn Hebrew so she could better understand what the original Biblical text included and meant. She is very passionate about the study of religion.” - Jonathan Cheung, son
+                </span>
+
+                <span id="Second_Paragraph_Mod1" class="more">
+                This whole event may seem like it’s a disaster to a lot of humans, but to me, it was a growing experience. It helped me learn, number one, about the communication problem between me and my husband, and that human communication is not just verbal, but that body language, the atmosphere, everything is also part of communication. That helped me understand humans more. I realized that I’m such a scientist; I’m not that human myself. It made me understand who I am and made me understand the other side of the world. <br /><br /> 
+
+                There are feelings in this world, there are people that value a lot of things more than I do. I read a lot of books during that time. I must have read 100 books. It was a lot of books! I still remember one book, written by a businessman. It said that a person is a bag of emotions. They are not a bag of logic that you put together, that you can delineate. They are not robots; they are bags of emotions, and you’re dealing with a bunch of emotions around you. It was an eye-opener for me. <br /><br /> 
+
+                This ordeal also helped me learn about God, learn about Jesus, learn about why things happen, learn about how people feel, how people get hurt, how I have hurt other people all my life, how it feels to hurt someone, and how it feels to be hurt. To me, it was a very valuable experience, even though it is such a horrible thing to have happen to you. My changing and understanding my own fault and deficiencies made me more able to forgive, and Norman also somehow turned around. <br /><br /> 
+
+                He returned to his senses and decided to come back home and come back to the family. My children love him and wanted to accept him. He’s back in the family and my commitment to God is a lot stronger. Now I realize God has given us unconditional love and is waiting for me to understand who I am and how I can improve myself. He has spent so much time and energy and created all of these things around me so I can grow and learn more. <br /><br /> 
+
+                Each day I learn more it is because God is so forgiving. He creates opportunity for me to learn. If he stood in front of me and said, “Listen, Evelyn, you have to learn about God. You have to learn about Jesus. You have to believe in me,” no. I wouldn’t have listened! People could have come to me and said, “Be good,” and I wouldn’t have listened. But when I was not good, he gave me opportunities to learn and change and come to the realization that the more evil I am, I begin to meet more evil people, and the more angelic I am, I begin to meet more angelic people. <br /><br /> 
+
+                Then I realized how what goes around comes back to hurt you and haunt you. I must have been a very prideful person; I must be very proud of myself, of my own achievement. I’m pretty arrogant and not really caring for people around me. Maybe people hated me, maybe they were hostile toward me; I don’t know. But I definitely became a lot more sympathetic, a lot more loving and kind, and I changed myself to understand what God means when he says to be compassionate, loving, and kind. <br /><br /> 
+
+                I began to understand people. I understand why they are hurt, why they are sad. It was an invaluable experience and lesson for me. That adverse event brought me closer to God, made me understand his pain when he was in Gethsemane, and made me understand how to be a better disciple. <br /><br /> 
+
+                At this moment in time, Norman is still not very active in the church, but he’s trying his best to come back. He has his own journey, which I don’t know, but I can say that I was very fortunate. After he came back to the family, we had other hurdles that we had to cross.
+                </span>
+            </div>
+        </div>
+
+
+
+<!-- CHAPTER SEVEN -->
+
+   <div id="Gallery_Strip1" class="clearfix">
+            <ol class="GalleryPicsMod">                    
+                    <li><%= link_to image_tag("evelyn/Faith/Smaller/7HowGodShapesMe.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Faith/Large/7HowGodShapesMe.jpg", :class => "fancybox", :rel => "gallery7", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Faith/Smaller/7HowGodShapesMe1.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Faith/Large/7HowGodShapesMe1.jpg", :class => "fancybox", :rel => "gallery7", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Faith/Smaller/7HowGodShapesMe2.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Faith/Large/7HowGodShapesMe2.jpg", :class => "fancybox", :rel => "gallery7", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Faith/Smaller/7HowGodShapesMe3.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Faith/Large/7HowGodShapesMe3.jpg", :class => "fancybox", :rel => "gallery7", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Faith/Smaller/7HowGodShapesMe4.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Faith/Large/7HowGodShapesMe4.jpg", :class => "fancybox", :rel => "gallery7", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Faith/Smaller/7HowGodShapesMe5.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Faith/Large/7HowGodShapesMe5.jpg", :class => "fancybox", :rel => "gallery7", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Faith/Smaller/7HowGodShapesMe6.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Faith/Large/7HowGodShapesMe6.jpg", :class => "fancybox", :rel => "gallery7", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Faith/Smaller/7HowGodShapesMe7.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Faith/Large/7HowGodShapesMe7.jpg", :class => "fancybox", :rel => "gallery7", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Faith/Smaller/7HowGodShapesMe8.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Faith/Large/7HowGodShapesMe8.jpg", :class => "fancybox", :rel => "gallery7", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Faith/Smaller/7HowGodShapesMe9.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Faith/Large/7HowGodShapesMe9.jpg", :class => "fancybox", :rel => "gallery7", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Faith/Smaller/7HowGodShapesMe10.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Faith/Large/7HowGodShapesMe10.jpg", :class => "fancybox", :rel => "gallery7", :title => "" %>
+                    </li>
+                </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            How God Has Shaped Me
+            </span>
+            <span id="Contributor_Name_Mod">
+            evelyn li
+            </span>
+            <span id="First_Paragraph_Mod">
+            My spiritual journey moved me to help out at the temple. I was working as an ordinance worker. That helped me understand God’s purpose more. Little by little, it has been a slow journey. Conversion is continuous, and I began to understand God’s hand in my life. 
+            <br />
+            </span>
+            <div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <iframe src="//player.vimeo.com/video/119499861" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “My life is a miracle, and God has shaped my life and changed me.”
+                </span>
+            </div>
+
+            <span id="Second_Paragraph_Mod">
+                How I became what I am right now is a total miracle to me. I was a rebellious girl. I would not listen to anybody. I was recalcitrant and decided I just wanted to be a movie star. But with God’s hand I have changed and converted myself to be more understanding and more compassionate, to the degree that I decided to run for Congress, because I want to help all these other people that don’t know about God. They don’t know there is so much that God can give us. All we have to do is listen to him and he will lead our way. <br /><br />
+
+                He will give us whatever we want. I see that happen in my life, and I know it will happen to everybody’s life because I know God loves each one of us. I like to share that with all people, even to the degree that I want to go out and tell them. How can I tell them? The most effective way is to run for politics so I can have more people interview me and I can tell them about God. Unfortunately I lost. I wrote a book that talked about God. It talked about how much we have to put God back into our country, the United States, so that we can feel the love of God and enjoy the blessings of God.  <br />
+            </span>
+            <span id="See_More_Mod"><a href="#" id="restofstory4-show"  onclick="showHide('restofstory4');return false;">SEE MORE</a>
+            </span>
+            <div id="restofstory4" class="more">
+
+                <span id="Second_Paragraph_Mod1" class="more">
+
+                My life is a miracle, and God has shaped my life and changed me. The <a href="https://www.youtube.com/watch?v=aJxrX42WcjQ">song </a>that I still remember is, “You raise me up, so I can stand on mountains; / You raise me up to walk on stormy seas; / I am strong when I am on your shoulders; / You raise me up to more than I can be,” to become what I am right now, and what I can be in the future. That song touches me. 
+
+                I know God has done so much to me, and I know God would do a lot to you and to all the people in this world, as long as there is a magic key to it. The key is that you get baptized, believe in him, and communicate with him, and you will get whatever you want to get. I truly believe in that. I say this in the name of Jesus Christ, Amen.
+                </span>
+            </div>
+        </div>
+<!-- CHAPTER EIGHT -->
+
+   <div id="Gallery_Strip1" class="clearfix">
+            <ol class="GalleryPicsMod">                    
+                    <li><%= link_to image_tag("evelyn/Faith/Smaller/8GrowthinGod.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Faith/Large/8GrowthinGod.jpg", :class => "fancybox", :rel => "gallery8", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Faith/Smaller/8GrowthinGod1.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Faith/Large/8GrowthinGod1.jpg", :class => "fancybox", :rel => "gallery8", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Faith/Smaller/8GrowthinGod2.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Faith/Large/8GrowthinGod2.jpg", :class => "fancybox", :rel => "gallery8", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Faith/Smaller/8GrowthinGod3.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Faith/Large/8GrowthinGod3.jpg", :class => "fancybox", :rel => "gallery8", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Faith/Smaller/8GrowthinGod4.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Faith/Large/8GrowthinGod4.jpg", :class => "fancybox", :rel => "gallery8", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Faith/Smaller/8GrowthinGod5.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Faith/Large/8GrowthinGod5.jpg", :class => "fancybox", :rel => "gallery8", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Faith/Smaller/8GrowthinGod6.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Faith/Large/8GrowthinGod6.jpg", :class => "fancybox", :rel => "gallery8", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Faith/Smaller/8GrowthinGod7.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Faith/Large/8GrowthinGod7.jpg", :class => "fancybox", :rel => "gallery8", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Faith/Smaller/8GrowthinGod8.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Faith/Large/8GrowthinGod8.jpg", :class => "fancybox", :rel => "gallery8", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Faith/Smaller/8GrowthinGod9.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Faith/Large/8GrowthinGod9.jpg", :class => "fancybox", :rel => "gallery8", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Faith/Smaller/8GrowthinGod10.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Faith/Large/8GrowthinGod10.jpg", :class => "fancybox", :rel => "gallery8", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Faith/Smaller/8GrowthinGod11.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Faith/Large/8GrowthinGod11.jpg", :class => "fancybox", :rel => "gallery8", :title => "" %>
+                    </li>
+                </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            Growth in God’s Ways
+            </span>
+            <span id="Contributor_Name_Mod">
+            kimberli cheung
+            </span>
+            <span id="First_Paragraph_Mod">
+            I feel I can witness and testify that through the years of observing my mom and her spiritual growth, it has definitely and dramatically impacted both her personal life and the way that she interacts with others, especially in terms of her marriage and relationships. 
+            <br />
+            </span>
+            <div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <iframe src="https://player.vimeo.com/video/121174375" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “Her growth spiritually has allowed her to succumb more of herself to the Lord and have faith and have patience.”
+                </span>
+            </div>
+
+            <span id="Second_Paragraph_Mod">
+                Her growth spiritually has allowed her to succumb more of herself to the Lord and have faith and have patience. Those are two big things, as well as trust, in developing her relationships now. I can definitely see that being a huge impact on her current marriage today.
+            </span>
+        </div>
+
+<!-- BOTTOM OF PAGE -->
+
+        <div id="boxmodex1" class="clearfix">
+            <span id="Previous_Exhibit_Link_Mod"><a href="<%= evelyn_hardship_path %>">
+            previous exhibit</a> 
+            </span>
+            <span id="Next_Exhibit_Link_Mod"><a href="<%= evelyn_motherhood_1_path %>">
+            next exhibit</a>
+            </span>
+        </div>
+
+        <div id="boxmodex4" class="clearfix">
+            <%= image_tag("evelyn/menu/arrow motif left.png", :id => "arrow_motif_left1", :class => "image")  %>
+            <span id="Home_Link_Mod"><a href="<%= evelyn_path %>">
+            HOME</a>
+            </span>
+             <%= image_tag("evelyn/menu/arrow motif right.png", :id => "arrow_motif_right1", :class => "image")  %>
+        </div>
+</body>

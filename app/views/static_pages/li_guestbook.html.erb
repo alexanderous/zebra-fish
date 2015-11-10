@@ -1,0 +1,70 @@
+<script>
+            $(document).ready(function () {
+                $(".ChapterVideoDiv").fitVids();
+            });
+
+
+</script>
+
+    <meta name="viewport" content="width=device-width; initial-scale=1.0,maximum-scale = 3.0">
+
+        <div id="ThemeCoverPhotoGuestbook" class="clearfix">
+            <span id="ThemeTitle">
+                <span id="textspanlichapter">GUESTBOOK</span><span id="textspanlichapter1"><br /></span><span id="textspanlichapter2">A GROWING TRIBUTE</span><br />
+            </span>
+            <span id="ChapterSectionIndex"><br/><br/><br/><div class="invisichar">
+                </div>
+            </span>
+        </div>
+
+
+        <!--div id="storyboard"-->        
+	        <a name="x"></a>
+	        <div id="gueststories" class="clearfix">
+	         
+	            <% @anthology_items = Micropost.where(:subject_id => "151") %>
+	            <% @identity = "151" %>
+	            <% @subject_matter = 'none' %>
+	            
+                <% if @anthology_items.count > 0 %>
+                      <!--div class="wrap"-->
+                        <div id="show">
+                          <div class="main">                  
+                            <div class="horizontal">               
+                                  <ol class="microposts">
+                                    <%#= @feed_items = micropost %>
+                                    
+                                    <%= render "shared/anthology" %>
+                                    
+                                  </ol>   
+                            </div> 
+                          </div>
+                        </div> 
+                        <br>
+                <% end %>
+	        </div>
+	    <!--/div-->
+
+
+
+        <div id="liguestbookcover2" class="clearfix">
+                <%= render 'shared/guest_stories_li' %>
+                <!--div id="outerboxbutton_li">
+                    <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/186093346%3Fsecret_token%3Ds-QMY5S&amp;color=c5c5c5&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+
+                    <span class="StoryQuote">
+                    
+                    "Popo and Gong Gong lived together with us in Washington, D.C. during 1984-85. One thing that Gong Gong loved to do, and we all found very funny, was to rub his shoes on the floor and create static. He would then touch metal and shock himself and other people. He loved to do that all the time, and in D.C. in the winter months it's very dry, so he created so much static on himself."<br /> <span class="StoryQuoteByline">- KAREN LI, DAUGHTER-IN-LAW</span>
+         
+                    </span>
+                </div-->
+        </div>
+
+
+
+
+        <div class="bottom-menu">
+        <p id="bottommenuli">
+        <%= link_to 'HOME', li_path %> &nbsp; <span id="textspanlichapter15">/</span> &nbsp; <%= link_to 'NEXT EXHIBIT', li_timeline_path %> &nbsp; <span id="textspanlichapter15">/</span> &nbsp; <%= link_to 'GUESTBOOK', li_guestbook_path %><br />
+        </p>
+        </div>

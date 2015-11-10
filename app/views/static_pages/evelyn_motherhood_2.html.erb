@@ -1,0 +1,607 @@
+
+
+    <head>
+
+
+    <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 3.0">
+
+    <script>
+            $(document).ready(function () {
+                $(".ChapterVideoMod").fitVids();
+            });
+
+    </script>
+
+    <script>
+        function showHide(shID) {
+          if (document.getElementById(shID)) {
+            if (document.getElementById(shID+'-show').style.display != 'none') {
+              document.getElementById(shID+'-show').style.display = 'none';
+              document.getElementById(shID).style.display = 'block';
+            }
+            else {
+              document.getElementById(shID+'-show').style.display = 'inline';
+              document.getElementById(shID).style.display = 'none';
+            }
+          }
+        }
+    </script>
+
+    <!-- fancybox begins -->
+
+        <!--script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script--> <!-- this causes fitvids NOT to work. BOO -->
+        <link rel="stylesheet" href="/fancybox/source/jquery.fancybox.css" type="text/css" media="screen">
+        <script type="text/javascript" src="/fancybox/source/jquery.fancybox.pack.js"></script>
+    <!-- fancybox end -->
+    </head>
+
+<body>
+
+        <span id="In_Exhibit_Title_Mod">
+        MOTHERHOOD II
+        </span>
+        <div id="boxmodex_motherhood2" class="clearfix">
+            <%= image_tag("evelyn/menu/arrow motif left.png", :id => "exhibit_top_arrow_motif_left", :class => "image")  %>
+            <span id="In_Exhibit_Subtitle_Mod">
+            RAISING RIGHTEOUS CHILDREN
+            </span>
+            <%= image_tag("evelyn/menu/arrow motif right.png", :id => "exhibit_top_arrow_motif_right", :class => "image")  %>
+        </div>
+        <div id="boxmodex1" class="clearfix">
+            <span id="Previous_Exhibit_Link_Mod"><a href="<%= evelyn_purpose_path %>">
+            previous exhibit</a> 
+            </span>
+            <span id="Next_Exhibit_Link_Mod"><a href="<%= evelyn_descendants_path %>">
+            next exhibit</a>
+            </span>
+        </div>
+
+
+<!-- CHAPTER ONE -->
+
+        
+        <div id="Gallery_Strip" class="clearfix">
+            <ol class="GalleryPicsMod">
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/1ParentingbyExample.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/1ParentingbyExample.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/1ParentingbyExample1.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/1ParentingbyExample1.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/1ParentingbyExample2.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/1ParentingbyExample2.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/1ParentingbyExample3.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/1ParentingbyExample3.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/1ParentingbyExample4.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/1ParentingbyExample4.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/1ParentingbyExample5.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/1ParentingbyExample5.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/1ParentingbyExample6.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/1ParentingbyExample6.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/1ParentingbyExample7.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/1ParentingbyExample7.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/1ParentingbyExample8.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/1ParentingbyExample8.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/1ParentingbyExample9.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/1ParentingbyExample9.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/1ParentingbyExample10.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/1ParentingbyExample10.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/1ParentingbyExample11.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/1ParentingbyExample11.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/1ParentingbyExample12.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/1ParentingbyExample12.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/1ParentingbyExample13.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/1ParentingbyExample13.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/1ParentingbyExample14.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/1ParentingbyExample14.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/1ParentingbyExample15.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/1ParentingbyExample15.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/1ParentingbyExample16.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/1ParentingbyExample16.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/1ParentingbyExample17.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/1ParentingbyExample17.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/1ParentingbyExample18.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/1ParentingbyExample18.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/1ParentingbyExample19.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/1ParentingbyExample19.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/1ParentingbyExample20.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/1ParentingbyExample20.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/1ParentingbyExample21.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/1ParentingbyExample21.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/1ParentingbyExample22.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/1ParentingbyExample22.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/1ParentingbyExample23.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/1ParentingbyExample23.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/1ParentingbyExample24.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/1ParentingbyExample24.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/1ParentingbyExample25.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/1ParentingbyExample25.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/1ParentingbyExample26.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/1ParentingbyExample26.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/1ParentingbyExample27.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/1ParentingbyExample27.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            Parenting by Example and Authenticity
+            </span>
+            <span id="Contributor_Name_Mod">
+            Evelyn Li
+            </span>
+            <span id="First_Paragraph_Mod">
+            Regarding parenthood, there are a few things I’d like to share that I learned throughout the years. Everybody comes to me and says, “You’ve got three kids that are so great. They are wonderful kids!” Then they ask me, “What are your secrets?” I think they are naturally great, so that’s one secret.  <br />
+            </span>
+            <div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <iframe src="//player.vimeo.com/video/120529309" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “Children don’t learn from what you tell them; they learn from you setting a good example.”
+                </span>
+            </div>
+            <span id="Second_Paragraph_Mod">Number two is that I feel that my devotion to God has a lot to do with it. When I am nicer to God, somehow God helps me solve other problems. The third secret is that a lot of times I realize children don’t learn from what you tell them; they learn from you setting a good example.<br /><br /> 
+            
+            If we cannot be a good example, sometimes we have to be honest with our children and say, “If I were perfect, I would have done this. But since I’m not, I couldn’t do it.” Just apologize and be honest about it, instead of hiding our weaknesses and saying, “I am perfect. I am the best.” I don’t believe the Church would want us to expose all of our weaknesses to our children, but if we accidentally did expose it, I think it is better to treat it in an honest way and say, “I made a mistake.” <br /><br />
+
+            I love children. I’m not good at them. Right now I have a calling to be a primary teacher, and I pray a lot about it because it is a challenge for me. My forte is taking care of old people, but as you can see, this is my grandson, and he is so cute. I love being with him. Just being with him makes me happy, and I preach that to all my friends, the ones that ask, “Why should I have to get married?” I say, “When you have your grandchildren, that’s where the joy is. That’s where our blessing is.” That’s what it says in the temple. You have the greatest joy when you have grandchildren.
+            </span>
+
+        </div>
+
+
+<!-- CHAPTER TWO -->
+
+
+        <div id="Gallery_Strip1" class="clearfix">
+            <ol class="GalleryPicsMod">
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/2PivotalInfluence.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/2PivotalInfluence.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/2PivotalInfluence1.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/2PivotalInfluence1.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/2PivotalInfluence2.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/2PivotalInfluence2.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/2PivotalInfluence3.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/2PivotalInfluence3.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/2PivotalInfluence4.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/2PivotalInfluence4.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/2PivotalInfluence5.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/2PivotalInfluence5.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/2PivotalInfluence6.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/2PivotalInfluence6.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/2PivotalInfluence7.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/2PivotalInfluence7.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/2PivotalInfluence8.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/2PivotalInfluence8.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            A Pivotal Influence in My Life
+            </span>
+            <span id="Contributor_Name_Mod">
+            jonathan cheung
+            </span>
+            <span id="First_Paragraph_Mod">It’s actually funny, because Mom sometimes seems overly passionate about some of her religious beliefs, and some people find it a put-off. Her example of being willing to sacrifice and willing to give back to the Church and to God really was a pivotal influence in my life. 
+            <br />
+            </span>
+            <div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <iframe src="//player.vimeo.com/video/118836105" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “Her example of being willing to sacrifice and give back to the Church and to God was a pivotal influence in my life.”
+                </span>
+            </div>
+
+            <span id="Second_Paragraph_Mod">
+            Because of her example and some other examples in my life, I was able to develop the desire to return to activity in the church and better understand my role in this world and in the church.<br /><br />
+            </span>
+
+        </div>
+            
+
+
+<!-- CHAPTER THREE -->
+
+
+        <div id="Gallery_Strip1" class="clearfix">
+            <ol class="GalleryPicsMod">
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/3UnityAmidDiversity.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/3UnityAmidDiversity.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/3UnityAmidDiversity1.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/3UnityAmidDiversity1.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/3UnityAmidDiversity2.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/3UnityAmidDiversity2.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/3UnityAmidDiversity3.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/3UnityAmidDiversity3.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/3UnityAmidDiversity4.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/3UnityAmidDiversity4.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/3UnityAmidDiversity5.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/3UnityAmidDiversity5.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/3UnityAmidDiversity6.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/3UnityAmidDiversity6.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/3UnityAmidDiversity7.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/3UnityAmidDiversity7.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/3UnityAmidDiversity8.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/3UnityAmidDiversity8.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/3UnityAmidDiversity9.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/3UnityAmidDiversity9.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/3UnityAmidDiversity10.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/3UnityAmidDiversity10.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/3UnityAmidDiversity11.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/3UnityAmidDiversity11.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/3UnityAmidDiversity12.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/3UnityAmidDiversity12.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/3UnityAmidDiversity13.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/3UnityAmidDiversity13.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/3UnityAmidDiversity14.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/3UnityAmidDiversity14.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/3UnityAmidDiversity15.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/3UnityAmidDiversity15.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/3UnityAmidDiversity16.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/3UnityAmidDiversity16.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/3UnityAmidDiversity17.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/3UnityAmidDiversity17.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/3UnityAmidDiversity18.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/3UnityAmidDiversity18.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/3UnityAmidDiversity19.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/3UnityAmidDiversity19.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            Unity Amid Diversity
+            </span>
+            <span id="Contributor_Name_Mod">
+            norman cheung
+            </span>
+            <span id="First_Paragraph_Mod">
+            When I met Mom, the first thing I felt was that she was a very capable person. She was able to run a busy practice going to the hospital and taking care of patients, and able to take care of the family, as well. But in the beginning she was very headstrong, very opinionated, and would not back down on anything. Especially if she believed in something, you could not change her mind. 
+            <br />
+            </span>
+            <div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <iframe src="//player.vimeo.com/video/118842251" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “We learned along the way that we have to give and take here and there. I think giving and taking throughout the years is what keeps us together, especially with the rest of the family.”
+                </span>
+            </div>
+
+            <span id="Second_Paragraph_Mod">
+                We learned along the way that we have to give and take here and there, and over the years I sense that she is allowing people to influence her a little bit more and able to listen a little bit more. Whether she takes their advice or not, that’s another story, but at least she’s more tolerant of other people’s ideas and open to people’s advice. She still has her beliefs, which I think is good, because we all should have our own principles, but at least she is now allowing other people to have theirs, as well. She’s less hot-tempered than she was before, so we don’t argue as much. <br /><br />
+
+                She is letting things go a little bit more than she used to, which makes life a lot easier for both of us, because I’m probably just as opinionated as she is! I think giving and taking throughout the years is what keeps us together, especially with the rest of the family: Kimberli, Jonathan, Alex, and now with Nicole, Beth, Jeremiah, and Ethan. The unit is stronger and stronger every day.<br /><br />
+
+            </span>
+            
+        </div>
+
+
+<!-- CHAPTER FOUR -->
+
+
+        <div id="Gallery_Strip1" class="clearfix">
+            <ol class="GalleryPicsMod">
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/4ConsecratingOurWork.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/4ConsecratingOurWork.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/4ConsecratingOurWork1.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/4ConsecratingOurWork1.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/4ConsecratingOurWork2.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/4ConsecratingOurWork2.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/4ConsecratingOurWork3.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/4ConsecratingOurWork3.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/4ConsecratingOurWork4.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/4ConsecratingOurWork4.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/4ConsecratingOurWork5.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/4ConsecratingOurWork5.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/4ConsecratingOurWork6.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/4ConsecratingOurWork6.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/4ConsecratingOurWork7.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/4ConsecratingOurWork7.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    </li>
+                </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            Consecrating Our Work
+            </span>
+            <span id="Contributor_Name_Mod">
+            kimberli cheung
+            </span>
+            <span id="First_Paragraph_Mod">
+            One of the values that I’ve taken away from my mom is her diligence, hard work ethic, and the desire to make an impact on society. I’ve definitely taken that with me. I think different people in my family have also picked that up for themselves, as well—a greater desire to consecrate our talents and work to the Lord and do more good in the community, do more good with our talents. 
+            <br />
+            </span>
+            <div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <iframe src="https://player.vimeo.com/video/121174379" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “Through that documentary we were able to get the attention of the Senate, and were able to make better changes for patient care in hospital systems.”
+                </span>
+            </div>
+
+            <span id="Second_Paragraph_Mod">
+            Hence, we made the film Life for Sale, which is a documentary about health care. Through that documentary we were able to get the attention of the Senate and the government and they were able to make better changes for patient care in hospital systems in California. I think that it’s always been instilled in us to work hard, to work hard for a good purpose, and to have that desire to make a positive difference in the world.
+            </span>
+        </div>
+
+
+
+<!-- CHAPTER FIVE -->
+
+<div id="Gallery_Strip1" class="clearfix">
+            <ol class="GalleryPicsMod">                    
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/5FewLifeLessons.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/5FewLifeLessons.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/5FewLifeLessons1.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/5FewLifeLessons1.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/5FewLifeLessons2.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/5FewLifeLessons2.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/5FewLifeLessons3.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/5FewLifeLessons3.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/5FewLifeLessons4.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/5FewLifeLessons4.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/5FewLifeLessons5.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/5FewLifeLessons5.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/5FewLifeLessons6.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/5FewLifeLessons6.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/5FewLifeLessons7.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/5FewLifeLessons7.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/5FewLifeLessons8.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/5FewLifeLessons8.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/5FewLifeLessons9.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/5FewLifeLessons9.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/5FewLifeLessons10.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/5FewLifeLessons10.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/5FewLifeLessons11.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/5FewLifeLessons11.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/5FewLifeLessons12.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/5FewLifeLessons12.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/5FewLifeLessons13.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/5FewLifeLessons13.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            A Few Life Lessons
+            </span>
+            <span id="Contributor_Name_Mod">
+            jonathan cheung
+            </span>
+            <span id="First_Paragraph_Mod">
+            There were a couple of life lessons that Mom seemed adamant about ingraining into our minds as kids. One was that there was never a free lunch in this world. The other was to try to be your own boss. 
+            <br />
+            </span>
+            <div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <iframe src="//player.vimeo.com/video/118842248" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “She wanted us to be independent, to be strong-willed, and to try to stick out on our own.”
+                </span>
+            </div>
+
+            <span id="Second_Paragraph_Mod">
+            The reason why she wanted us to learn those lessons was that she had to go through a lot of angst, turmoil, and effort to get to where she is today, and she found that she couldn’t depend on other people. She needed to get things done herself. When she was a doctor early on, she didn’t like that she had to do what other people said. She didn’t like the lack of latitude that her managers or her superior doctors gave her. <br /><br />
+
+            She also wanted to make sure we didn’t trust in a power source that wasn’t trustworthy. She wanted us to be independent, to be strong-willed, and to try to stick out on our own. That’s why she wanted us to learn those lessons.
+            </span>
+
+        </div>
+
+<!-- CHAPTER SIX -->
+
+    <div id="Gallery_Strip1" class="clearfix">
+            <ol class="GalleryPicsMod">
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/6GrandmotherRescue.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/6GrandmotherRescue.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/6GrandmotherRescue1.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/6GrandmotherRescue1.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/6GrandmotherRescue2.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/6GrandmotherRescue2.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/6GrandmotherRescue3.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/6GrandmotherRescue3.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/6GrandmotherRescue4.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/6GrandmotherRescue4.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/6GrandmotherRescue5.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/6GrandmotherRescue5.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/6GrandmotherRescue6.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/6GrandmotherRescue6.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/6GrandmotherRescue7.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/6GrandmotherRescue7.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/6GrandmotherRescue8.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/6GrandmotherRescue8.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/6GrandmotherRescue9.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/6GrandmotherRescue9.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/6GrandmotherRescue10.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/6GrandmotherRescue10.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/6GrandmotherRescue11.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/6GrandmotherRescue11.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/6GrandmotherRescue12.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/6GrandmotherRescue12.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/6GrandmotherRescue13.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/6GrandmotherRescue13.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/6GrandmotherRescue14.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/6GrandmotherRescue14.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/6GrandmotherRescue15.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/6GrandmotherRescue15.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/6GrandmotherRescue16.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/6GrandmotherRescue16.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/6GrandmotherRescue17.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/6GrandmotherRescue17.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/6GrandmotherRescue18.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/6GrandmotherRescue18.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/6GrandmotherRescue19.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/6GrandmotherRescue19.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/6GrandmotherRescue20.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/6GrandmotherRescue20.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/6GrandmotherRescue21.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/6GrandmotherRescue21.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/6GrandmotherRescue22.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/6GrandmotherRescue22.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            Grandmother to the Rescue
+            </span>
+            <span id="Contributor_Name_Mod">
+            norman cheung
+            </span>
+            <span id="First_Paragraph_Mod">
+            I would like to mention some of the things that I see in Mom in the situation concerning Kimberli and Jeremiah. After the divorce, Kimberli and Jeremiah moved in with us when Jeremiah was about two years old. There would be nights when Mom stayed up making sure Jeremiah was taken care of and comfortable when he cried at night. Mom probably spends a lot more time with Jeremiah than I do. For example, she spends time taking him to school and making sure he can go to the science museum, enjoy learning, and be involved in physical sports, like swimming. Jeremiah is a good swimmer now. 
+            <br />
+            </span>
+            <div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <iframe src="//player.vimeo.com/video/118842254" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “She teaches him the Gospel, its principles, and how to say prayer. She makes sure he is doing it the right way, which I think is extremely important.”
+                </span>
+            </div>
+
+            <span id="Second_Paragraph_Mod">
+            She makes sure that he is learning things that are beneficial for him. We try getting him to Chinese school, and he’s taking piano and violin lessons. Those are things that take a lot of time on Mom’s part. When Kimberli is not available, then Mom picks up the slack. That’s very difficult, especially after you work a full day. You still have to sacrifice the time to take Jeremiah around and entertain him, making sure he grows up to be a responsible person. <br /><br />
+
+            She always makes sure that Jeremiah goes to church and is involved in church. She teaches him the Gospel, its principles, and how to say prayer. She makes sure he is doing that and doing it the right way, which I think is extremely important. I really want to see Jeremiah go in the direction he’s currently going: learning to be a good person, to be educated, to be physically fit, and to have his descendants in church when he grows up. That’s what I want to see for him, and I’m sure that’s what Mom wants to see for him as he grows up.<br />
+        </div>
+
+
+<!-- CHAPTER SEVEN -->
+
+
+   <div id="Gallery_Strip1" class="clearfix">
+            <ol class="GalleryPicsMod">                    
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/7PopoandMe.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/7PopoandMe.jpg", :class => "fancybox", :rel => "gallery7", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/7PopoandMe1.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/7PopoandMe1.jpg", :class => "fancybox", :rel => "gallery7", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/7PopoandMe2.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/7PopoandMe2.jpg", :class => "fancybox", :rel => "gallery7", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/7PopoandMe3.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/7PopoandMe3.jpg", :class => "fancybox", :rel => "gallery7", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/7PopoandMe4.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/7PopoandMe4.jpg", :class => "fancybox", :rel => "gallery7", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/7PopoandMe5.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/7PopoandMe5.jpg", :class => "fancybox", :rel => "gallery7", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/7PopoandMe6.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/7PopoandMe6.jpg", :class => "fancybox", :rel => "gallery7", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/7PopoandMe7.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/7PopoandMe7.jpg", :class => "fancybox", :rel => "gallery7", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/7PopoandMe8.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/7PopoandMe8.jpg", :class => "fancybox", :rel => "gallery7", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/7PopoandMe9.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/7PopoandMe9.jpg", :class => "fancybox", :rel => "gallery7", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/7PopoandMe10.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/7PopoandMe10.jpg", :class => "fancybox", :rel => "gallery7", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/7PopoandMe11.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/7PopoandMe11.jpg", :class => "fancybox", :rel => "gallery7", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/7PopoandMe12.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/7PopoandMe12.jpg", :class => "fancybox", :rel => "gallery7", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/7PopoandMe13.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/7PopoandMe13.jpg", :class => "fancybox", :rel => "gallery7", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/7PopoandMe14.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/7PopoandMe14.jpg", :class => "fancybox", :rel => "gallery7", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/7PopoandMe15.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/7PopoandMe15.jpg", :class => "fancybox", :rel => "gallery7", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/7PopoandMe16.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/7PopoandMe16.jpg", :class => "fancybox", :rel => "gallery7", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/7PopoandMe17.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/7PopoandMe17.jpg", :class => "fancybox", :rel => "gallery7", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood2/Smaller/7PopoandMe18.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood2/Large/7PopoandMe18.jpg", :class => "fancybox", :rel => "gallery7", :title => "" %>
+                    </li>
+                </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            Popo and Me
+            </span>
+            <span id="Contributor_Name_Mod">
+            Jeremiah Zou
+            </span>
+            <span id="First_Paragraph_Mod">
+            Alex: Tell me about Popo. <br /><br />
+
+            Jeremiah: She is a doctor. 
+            <br />
+            </span>
+            <div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <iframe src="https://player.vimeo.com/video/121174377" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “She takes me wherever I want to go.”
+                </span>
+            </div>
+
+            <span id="Second_Paragraph_Mod">
+                A: What do you like about Popo? <br /><br />
+
+                J: She takes me wherever I want to go.  <br /><br />
+
+                A: What else? <br /><br />
+
+                J: She buys me my favorite food. <br /><br />
+
+                A: What’s your favorite food that she buys you? <br /><br />
+
+                J: Fried rice. <br /><br />
+
+                A: Tell me a story about Popo. <br /><br />
+
+                J: She helps people’s hearts pump again... She tells funny jokes with her hands. I can’t remember exactly but she uses her thumb and she says the thumb is “chong chong,” a bug.  <br /><br />
+
+                A: What about Popo makes you smile? <br /><br />
+
+                J: When she’s nice to me.  <br /><br />
+
+                A: How is she nice to you? <br /><br />
+
+                J: [Sigh] Giving me my favorite food, I told you. <br /><br />
+
+                A: What is something Popo has taught you? <br /><br />
+
+                J: Always listen to the teacher at school. <br /><br />
+
+                A: What does Popo do for fun? <br /><br />
+
+                J: She runs. She chases me in the park. <br /><br />
+            </span>
+        </div>
+
+
+<!-- BOTTOM OF PAGE -->
+
+        <div id="boxmodex1" class="clearfix">
+            <span id="Previous_Exhibit_Link_Mod"><a href="<%= evelyn_purpose_path %>">
+            previous exhibit</a> 
+            </span>
+            <span id="Next_Exhibit_Link_Mod"><a href="<%= evelyn_descendants_path %>">
+            next exhibit</a>
+            </span>
+        </div>
+
+        <div id="boxmodex4" class="clearfix">
+            <%= image_tag("evelyn/menu/arrow motif left.png", :id => "arrow_motif_left1", :class => "image")  %>
+            <span id="Home_Link_Mod"><a href="<%= evelyn_path %>">
+            HOME</a>
+            </span>
+             <%= image_tag("evelyn/menu/arrow motif right.png", :id => "arrow_motif_right1", :class => "image")  %>
+        </div>
+</body>

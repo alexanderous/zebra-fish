@@ -1,0 +1,596 @@
+
+
+    <head>
+
+
+	<meta name="viewport" content="initial-scale = 1.0,maximum-scale = 3.0">
+
+    <script>
+            $(document).ready(function () {
+                $(".ChapterVideoMod").fitVids();
+            });
+
+    </script>
+
+    <script>
+        function showHide(shID) {
+          if (document.getElementById(shID)) {
+            if (document.getElementById(shID+'-show').style.display != 'none') {
+              document.getElementById(shID+'-show').style.display = 'none';
+              document.getElementById(shID).style.display = 'block';
+            }
+            else {
+              document.getElementById(shID+'-show').style.display = 'inline';
+              document.getElementById(shID).style.display = 'none';
+            }
+          }
+        }
+    </script>
+
+    <!-- fancybox begins -->
+
+        <!--script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script--> <!-- this causes fitvids NOT to work. BOO -->
+        <link rel="stylesheet" href="/fancybox/source/jquery.fancybox.css" type="text/css" media="screen">
+        <script type="text/javascript" src="/fancybox/source/jquery.fancybox.pack.js"></script>
+    <!-- fancybox end -->
+    </head>
+
+<body>
+
+        <span id="In_Exhibit_Title_Mod">
+        WISDOM
+        </span>
+        <div id="boxmodex_wisdom" class="clearfix">
+            <%= image_tag("evelyn/menu/arrow motif left.png", :id => "exhibit_top_arrow_motif_left", :class => "image")  %>
+            <span id="In_Exhibit_Subtitle_Mod">
+            LESSONS PASSED DOWN
+            </span>
+            <%= image_tag("evelyn/menu/arrow motif right.png", :id => "exhibit_top_arrow_motif_right", :class => "image")  %>
+        </div>
+        <div id="boxmodex1" class="clearfix">
+            <span id="Previous_Exhibit_Link_Mod"><a href="<%= roos_service_path %>">
+            previous exhibit</a> 
+            </span>
+            <span id="Next_Exhibit_Link_Mod"><a href="<%= roos_the_army_path %>">
+            next exhibit</a>
+            </span>
+        </div>
+
+
+<!-- CHAPTER ONE -->
+
+
+<div id="Gallery_Strip" class="clearfix">
+            <ol class="GalleryPicsMod">
+                    <li><%= link_to image_tag("roos/wisdom/small/Lifelessons1.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/wisdom/large/Lifelessons1.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/wisdom/small/Lifelessons.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/wisdom/large/Lifelessons.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %> 
+                    </li>
+                    <li><%= link_to image_tag("roos/wisdom/small/Lifelessons2.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/wisdom/large/Lifelessons2.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/wisdom/small/Lifelessons3.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/wisdom/large/Lifelessons3.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/wisdom/small/Lifelessons4.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/wisdom/large/Lifelessons4.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/wisdom/small/Lifelessons5.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/wisdom/large/Lifelessons5.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/wisdom/small/Lifelessons6.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/wisdom/large/Lifelessons6.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/wisdom/small/Lifelessons7.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/wisdom/large/Lifelessons7.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/wisdom/small/Lifelessons8.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/wisdom/large/Lifelessons8.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/wisdom/small/Lifelessons9.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/wisdom/large/Lifelessons9.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/wisdom/small/Lifelessons10.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/wisdom/large/Lifelessons10.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/wisdom/small/Lifelessons11.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/wisdom/large/Lifelessons11.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/wisdom/small/Lifelessons12.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/wisdom/large/Lifelessons12.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+
+                </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            Life Lessons from Dad       
+            </span>
+            <span id="Contributor_Name_Mod">
+            bill roos
+            </span>
+            <span id="First_Paragraph_Mod">My dad was a carpenter. He was not just a nail-pounder; he was a good finish carpenter. He made cabinets and he could build a house from scratch to finish. For the summer between eighth grade and my freshman year, he made me go to work with him. He was doing a remodeling of the postmaster’s house. He would tear into some of the old part of the building and would just cuss about “What kind of stupid farmer built this place?” He always impressed on me, if you do something, do it right. Don’t do anything halfway. Do it right. That pretty well stuck with me my whole life, no matter what I was involved in, probably except school. I didn’t put my effort into school...or into band practice. A lot of things I just didn’t care about. 
+            <br />
+            </span>
+            <div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <iframe src="https://player.vimeo.com/video/124529447" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “If you do something, do it right. Don’t do anything halfway.”
+                </span>
+            </div>
+
+            <span id="Second_Paragraph_Mod">
+                But in my working career, I was very positive and trying to do things right. That was pretty much what they taught. <br /><br />
+
+                They came up through the Depression where they didn’t have much. Dad had to work hard for a living and make his own way. That’s basically the foundation that was given to me.
+            </span>
+
+            <!--span id="See_More_Mod"><a href="#" id="restofstory-show"  onclick="showHide('restofstory');return false;">SEE MORE</a>
+            </span>
+
+            <div id="restofstory" class="more">
+
+                <span id="Second_Paragraph_Mod1" class="more">
+
+                I got in contact with him through a lady in New Orleans. She was the one who got in contact with Johann Cobus in Germany, and she called me one day and she pronounced the Nehus name “Newhouse”,” and I wasn’t positively sure it was part of my family—I’d never heard it pronounced “Newhouse”—so I finally figured out from the first names that it was part of my family. She gave me the e-mail for Johann, we e-mailed back and forth, and he sent me his whole family line. I was able to add those names to my program and submit those names for temple work. <br /><br />
+
+                Johann is still Catholic and his family is still Catholic, but he was an English teacher in Germany. He understood English and German, so he taught me a few tricks about reading the German records. I was able to read some of the German records and gain the information that he had there.
+                </span>
+            </div-->
+
+        </div>
+            <!--span id="Exclusive_Quote_Mod">
+            “I want my children to have wisdom and intelligence, to be able to make the right choice to go back to heaven. Then we can all be happily living forever with each other in heaven.”
+            </span-->
+
+<!-- CHAPTER TWO -->
+
+        <!--div id="Gallery_Strip" class="clearfix">
+            <ol class="GalleryPicsMod">
+            
+            </ol>   
+        </div-->
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod"><br /><br /><br />
+            A Pillar of the Community
+            </span>
+            <span id="Contributor_Name_Mod">
+            bill roos
+            </span>
+            <span id="First_Paragraph_Mod">
+            This might be a long segment. It’s about somebody who had a really profound influence on my life. 
+            </span>
+            <div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <iframe src="https://player.vimeo.com/video/124071348" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “We actually saw people being shot and killed.”
+                </span>
+            </div>
+            <span id="Second_Paragraph_Mod">
+                When we moved from Seattle to Sandpoint, I started elementary school there, and there was an acting principal at the time, because the principal had been drafted and was in Europe in the army. In fact, if any of my descendents ever hear anything about World War II, there was a battle there called the Battle of the Bulge, where a large contingent of the army was surrounded completely by the Germans. He was in that bulge. He was there. <br /><br />
+
+                After the war was over and he came back, he had a deal where he would take seventh grade kids on a Saturday over to the school and teach us how to operate a 16 millimeter movie projector. We would load the reels of film, thread it through the projector, run the films, and rewind the films onto the spools. If the film would break, we learned how to splice them together. Seventh grade was the learning process. 
+
+            </span>
+                
+            <span id="See_More_Mod"><a href="#" id="restofstory0-show"  onclick="showHide('restofstory0');return false;">SEE MORE</a>
+            </span>
+
+            <div id="restofstory0" class="more">
+
+                <span id="Second_Paragraph_Mod1" class="more">
+
+               In the wintertime when the weather was really bad and the kids couldn’t go outside much during the lunch period, they could come into this one classroom that was across the hall from the lunchroom. That was where we had the movie projectors set up, and we’d show cartoons. That was the eighth graders’ job—to show these cartoons.<br /><br />
+
+                Also when we were in the eighth grade, he would have us come over on Saturdays and he would show us movies that were taken by combat photographers during the war. We actually saw people being shot and killed. We saw dead people lying beside the road. During the later part of the war, the German army lacked gasoline to operate motor vehicles, and so a lot of their equipment was towed by horses, and there would be dead horses lying there beside the road all bloated. He showed us those to let us know that war was a nasty, dirty, terrible thing, and not like you saw in the movies.<br /><br />
+
+                He was a great scouter, involved with boy scouts. The local scouting area named a scout camp after him. His name was Charlie Stidwell. Charlie lived up the street from me about a block and half. He never married. He lived with his mother. <br /><br />
+
+                When I was in school, there were always poor kids. You could tell the poor kids ‘cause they didn’t have much in the way of clothing. Their clothes were ragged, and when wintertime came, they wouldn’t have a decent coat or overshoes or anything. All of a sudden, they’d show up with nice new clothes and everything all outfitted. We thought, “Oh well. Okay.” We didn’t think much of that. <br /><br />
+
+                Years later when I was working at the local JCPenney store, in came Charlie one day with this raggedy-looking kid in tow. He walked up to me and gave me an outline: how many pairs of socks, how many shorts, how many t-shirts, how many shirts, how many pairs of trousers, a pair of overshoes, a nice warm coat, gloves, and a cap. Then he told the kid, “Now, you put on a complete set of clothes and get your fanny back to school immediately.” He told me, “Take the old stuff this kid had on, throw it away, and package up the rest of it. Bring it over to me after you get off work and I’ll pay you then.” <br /><br />
+
+                That’s when I realized what happened with these kids when I was in school myself in fifth, sixth, seventh, and eighth grade. These kids would always show up warmly dressed. Charlie was paying for that stuff out of his own pocket, and he did it with more than one kid. <br /><br />
+
+                </span>
+
+                <span id="Exclusive_Quote_Mod">
+                “He called these kids ‘My kids.’”<br /><br />
+                </span>
+
+                <span id="Second_Paragraph_Mod1" class="more">
+                Traveling on a job years later, I stopped in Spokane and rented a car and drove over to visit my folks. When I was visiting my folks, I thought, “I’ll just go up and see if Charlie is home.” I did. He had retired and was home. He sat there telling me about his kids and said, “I’ve got kids that are in their fifties, sixties. They’re in trouble. I’ll get a call at two o’clock in the morning and these guys are weeping and crying: ‘Charlie, what will I do?’ Always wanting my advice. You know, that means a lot to me, to have these kids still call me when they’re old, wanting my advice.”<br /><br />
+
+                He was asking about my family, and I told him, “My son Bill just got his Eagle.”<br /><br />
+
+                “He did?! Oh, just a minute!” He jumped up and ran back into another room, and when he came back, he said, “When my mother turned ninety, I gave her ninety silver dollars with as many as close as possible to the year of her birth. This was one of those silver dollars. It wasn’t the year of her birth, but it’s the last one I have. You give that to your son.” <br /><br />
+
+                I thought, “Whoa!”<br /><br />
+
+                Then he told me, “One day they knocked on the door. I opened up the door and here stands these two young men. I made the mistake of inviting them in, and they started teaching me about your church. On one of the visits, they saw I had an ashtray there, and they said, “You have any cigarettes?” <br /><br />
+
+                I said, “Yeah.”<br /><br />
+
+                They said, “Let me see them.” I gave them this pack of cigarettes. “Are these the only ones you got?”<br /><br />
+
+                “Yes.”<br /><br />
+
+                The missionary just sat there and crushed them in his hand and said, “You don’t need these anymore.”<br /><br />
+
+                Charlie probably smoked one or two cigarettes a day. He was not really addicted, so I don’t think it was all that difficult to give them up.<br /><br />
+
+                They said, “Do you have any alcohol in the house?” <br /><br />
+
+
+                “I’ve got some wine in the kitchen.”<br /><br />
+
+                “Well, can we see it?”<br /><br />
+
+                I took them back in the kitchen and got out this bottle of wine. It had some out of it, but it wasn’t really full. He took it and poured it down the sink and said, “You don’t need that anymore. Now, when are you going to be baptized?”<br /><br />
+
+                He said, “I’m still thinking about it.”<br /><br />
+
+                So I just said, “Wow, that’s really neat, Charlie.”<br /><br />
+
+                I’d gotten back home, and at some later point I was either talking to my folks on the phone or got a letter from my mother, telling me that Charlie had been baptized. When he decided to be baptized, he called up my dad and asked my dad to baptize and confirm him. Later on he said, “I don’t know why I didn’t do this years ago.” He apparently had always been impressed by the LDS kids in his school, compared to other kids. <br /><br />
+
+                Charlie was a pillar of the community. He was highly respected, and when he died, the town of Sandpoint lost a giant. That’s about all I can say. He was a big impact in my life.
+                </span>
+            </div>
+        </div>
+
+
+<!-- CHAPTER THREE -->
+
+
+        <div id="Gallery_Strip1" class="clearfix">
+            <ol class="GalleryPicsMod">
+                    <li><%= link_to image_tag("roos/wisdom/small/Brothersdeath.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/wisdom/large/Brothersdeath.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %> 
+                    </li>
+                    <li><%= link_to image_tag("roos/wisdom/small/Brothersdeath1.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/wisdom/large/Brothersdeath1.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/wisdom/small/Brothersdeath2.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/wisdom/large/Brothersdeath2.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/wisdom/small/Brothersdeath3.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/wisdom/large/Brothersdeath3.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/wisdom/small/Brothersdeath4.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/wisdom/large/Brothersdeath4.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+            
+                </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            My Brother's Death
+            </span>
+            <span id="Contributor_Name_Mod">
+            bill roos
+            </span>
+            <span id="First_Paragraph_Mod">
+              
+            I don’t remember that much. I was only two years old. It really never affected my life that much. It had a pretty profound effect on my sister, and especially my mother. Mother had a little wooden box, a little trunk, and she had all of the possessions that Sonny had when he died in that box. I can remember times when she’d be in her bedroom sitting beside the box with her head in her arms, crying.
+            <br />
+            </span>
+            <div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <iframe src="https://player.vimeo.com/video/124529528" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “He saw this little kid with a red wagon full of flowers.”
+                </span>
+            </div>
+
+            <span id="Second_Paragraph_Mod">
+                
+
+                Years later, I got a letter from Mother telling me she and Dad had decided they were going to bury the trunk with Sonny’s stuff in it. I assumed that was what happened. But when Dad had his accident and got out of the nursing home, I had him home and was taking care of him. I started digging around through stuff in the basement and I found this box. I opened it up and that was all of Sonny’s stuff. They had not buried it after all. When Dad had died, we took all of the stuff out of the little box and put it in the casket with Dad. Dad took all of Sonny’s stuff with him to the grave. <br /><br />
+
+                When Dad had his accident, he had an out-of-body experience where he thought he was in a place where there was this big field with a lot of kids playing and flowers and green grass. He saw this little kid with a red wagon full of flowers. He wanted to join him, and they wouldn’t let him. “No, you can’t come yet.” Then he woke up. So my brother, sister, and I went and found and bought him a little red wagon, just a little tiny one, and gave it to him. He had that for the next couple years until he died. We buried the red wagon with him. So he’s got the red wagon and Sonny’s stuff with him in his casket.  <br /><br />
+
+                That’s basically the only thing I really have memories of about my brother’s death. It didn’t affect me that much. Maybe I’m callous.
+            </span>
+
+
+            
+        </div>
+            
+
+<!-- CHAPTER FOUR -->
+
+
+        <div id="Gallery_Strip1" class="clearfix">
+            <ol class="GalleryPicsMod">
+                    <li><%= link_to image_tag("roos/wisdom/small/Saddestmoment.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/wisdom/large/Saddestmoment.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %> 
+                    </li>
+                    <li><%= link_to image_tag("roos/wisdom/small/Saddestmoment1.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/wisdom/large/Saddestmoment1.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/wisdom/small/Saddestmoment2.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/wisdom/large/Saddestmoment2.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/wisdom/small/Saddestmoment3.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/wisdom/large/Saddestmoment3.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/wisdom/small/Saddestmoment4.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/wisdom/large/Saddestmoment4.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/wisdom/small/Saddestmoment5.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/wisdom/large/Saddestmoment5.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/wisdom/small/Saddestmoment6.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/wisdom/large/Saddestmoment6.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            The Saddest Moment of My Life
+            </span>
+            <span id="Contributor_Name_Mod">
+            bill roos
+            </span>
+            <span id="First_Paragraph_Mod">
+            The saddest time of my life was when my mother passed away. Mother was going to have her second heart surgery. I was in Washington, D.C., and the surgery was planned for one day and I got a flight where I could arrive the day before. 
+            <br />
+            </span>
+            <div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <!--iframe src="//player.vimeo.com/video/113120001" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe-->
+                        <iframe src="https://player.vimeo.com/video/124071421" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “They closed the lid on the casket, and that’s when I lost it.”
+                </span>
+            </div>
+
+            <span id="Second_Paragraph_Mod">
+                
+
+                When I arrived, my brother picked me up at the airport and said that they’d operated on mom that day. We went up to the hospital and there she was in intensive care, tubes all over in her, totally unconscious, and they had had complications. They had replaced a valve in her heart, and replacing that valve made the blood pressure so much stronger that her aorta ruptured. They had to go back in and repair the aorta. I got there that day, was there the next day, and the next day she appeared to be doing better. I flew back home, and when I got home I found out that the aorta had ruptured again, and Dad said, “Enough is enough.” She passed away. <br /><br />
+
+                I never got to tell my mother goodbye. That was hard. 
+
+
+            </span>
+            <span id="See_More_Mod"><a href="#" id="restofstoryx-show"  onclick="showHide('restofstoryx');return false;">SEE MORE</a>
+            </span>
+
+            <div id="restofstoryx" class="more">
+
+                <span id="Second_Paragraph_Mod1" class="more">
+                    So then I had to fly back out to her funeral. At the funeral I was cool, everything was fine, it was a great funeral. It’s not something that’s ordinarily done, open casket, but at the end of the funeral they came and took the flowers around and they closed the lid on the casket, and that’s when I lost it. When I could no longer see my mother’s face, that’s when I broke down and wept. <br /><br />
+
+                    I missed my mother. I always have ever since. <br /><br />
+
+                    When Dad died, it was not a big thing. I was close to Dad, I spent a lot of time with Dad. I spent over a month taking care of him after he’d had an accident. We got a lot of his life history recorded. When he passed away, my brother and I went to the funeral home and dressed him. My brother had a terrible time with that. After we finally got Dad dressed, we were starting to leave and my brother went into the restroom and didn’t come out, didn’t come out, and didn’t come out. He was in there weeping. For some reason, losing my Dad was not the trauma to me of losing my mother. I still miss Mom. It’s been about thirty years since Mom was gone. I’m looking forward to seeing her again.
+                
+                </span>
+            </div>
+           
+
+        </div>
+
+
+
+<!-- CHAPTER FIVE -->
+
+
+    <div id="Gallery_Strip1" class="clearfix">
+            <ol class="GalleryPicsMod">
+                    <li><%= link_to image_tag("roos/wisdom/small/Hopeforchildren.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/wisdom/large/Hopeforchildren.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %> 
+                    </li>
+                    <li><%= link_to image_tag("roos/wisdom/small/Hopeforchildren1.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/wisdom/large/Hopeforchildren1.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/wisdom/small/Hopeforchildren2.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/wisdom/large/Hopeforchildren2.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/wisdom/small/Hopeforchildren3.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/wisdom/large/Hopeforchildren3.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/wisdom/small/Hopeforchildren4.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/wisdom/large/Hopeforchildren4.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/wisdom/small/Hopeforchildren5.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/wisdom/large/Hopeforchildren5.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/wisdom/small/Hopeforchildren6.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/wisdom/large/Hopeforchildren6.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/wisdom/small/Hopeforchildren7.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/wisdom/large/Hopeforchildren7.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/wisdom/small/Hopeforchildren8.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/wisdom/large/Hopeforchildren8.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/wisdom/small/Hopeforchildren9.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/wisdom/large/Hopeforchildren9.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/wisdom/small/Hopeforchildren10.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/wisdom/large/Hopeforchildren10.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/wisdom/small/Hopeforchildren11.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/wisdom/large/Hopeforchildren11.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/wisdom/small/Hopeforchildren12.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/wisdom/large/Hopeforchildren12.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/wisdom/small/Hopeforchildren13.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/wisdom/large/Hopeforchildren13.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/wisdom/small/Hopeforchildren14.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/wisdom/large/Hopeforchildren14.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/wisdom/small/Hopeforchildren15.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/wisdom/large/Hopeforchildren15.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            Hopes for My Children
+            </span>
+            <span id="Contributor_Name_Mod">
+            teresa roos
+            </span>
+            <span id="First_Paragraph_Mod">
+            I would hope for my children that they would all have strong testimonies of Jesus Christ and his gospel; that they will remain true and faithful unto him; that they will obey his commandments; that they will enjoy the blessings of the gospel; that they will enjoy the blessings of the temple.
+            <br />
+            </span>
+            <div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <iframe src="https://player.vimeo.com/video/124071418" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “I hope that they will have the inspiration they need.”
+                </span>
+            </div>
+
+            <span id="Second_Paragraph_Mod">
+                I hope that they will have the inspiration they need to guide and lead their children in the paths of the gospel. I hope they understand that each child is different. Each child may respond differently to different teachings, and things that one child will understand, another child will not, so they will have to have that constant inspiration to be able to guide each one of their children back home to their Heavenly Father.
+            </span>
+
+            <!--span id="See_More_Mod"><a href="#" id="restofstory2-show"  onclick="showHide('restofstory2');return false;">SEE MORE</a>
+            </span>
+
+            <div id="restofstory2" class="more">
+
+                <span id="Second_Paragraph_Mod1" class="more">
+                I heard about a job here in Caldwell, Idaho. I loaded up the family and traveled to Caldwell, Idaho, and took that job. After a little over a year, the company was going bankrupt and started closing stores. They closed this one in Caldwell and moved me to Lawrence, Kansas. So we go to Lawrence, Kansas. We got there, they decided to close that store, and I was out of a job. <br /><br />
+
+                I went back with the VA and moved from there to Muskogee, Oklahoma. From Muskogee they transferred me to Madison, Wisconsin. From Madison, Wisconsin, to Kansas City, and Kansas City to Leavenworth, and Leavenworth to San Francisco, California, and San Francisco, California, to Washington, D.C., and Washington, D.C., to Sepulveda, California, where I retired. But it was always a case of that was what I had to do to provide a living. <br />
+                </span>
+            </div-->
+        </div>
+
+<!-- CHAPTER SIX -->
+
+    <div id="Gallery_Strip1" class="clearfix">
+            <ol class="GalleryPicsMod">                    
+                    <li><%= link_to image_tag("roos/wisdom/small/Messagetoposterity.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/wisdom/large/Messagetoposterity.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %> 
+                    </li>
+                    <li><%= link_to image_tag("roos/wisdom/small/Messagetoposterity1.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/wisdom/large/Messagetoposterity1.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/wisdom/small/Messagetoposterity2.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/wisdom/large/Messagetoposterity2.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/wisdom/small/Messagetoposterity3.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/wisdom/large/Messagetoposterity3.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/wisdom/small/Messagetoposterity4.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/wisdom/large/Messagetoposterity4.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/wisdom/small/Messagetoposterity5.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/wisdom/large/Messagetoposterity5.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/wisdom/small/Messagetoposterity6.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/wisdom/large/Messagetoposterity6.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/wisdom/small/Messagetoposterity7.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/wisdom/large/Messagetoposterity7.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/wisdom/small/Messagetoposterity8.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/wisdom/large/Messagetoposterity8.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/wisdom/small/Messagetoposterity9.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/wisdom/large/Messagetoposterity9.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/wisdom/small/Messagetoposterity10.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/wisdom/large/Messagetoposterity10.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/wisdom/small/Messagetoposterity11.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/wisdom/large/Messagetoposterity11.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/wisdom/small/Messagetoposterity12.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/wisdom/large/Messagetoposterity12.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/wisdom/small/Messagetoposterity13.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/wisdom/large/Messagetoposterity13.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/wisdom/small/Messagetoposterity14.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/wisdom/large/Messagetoposterity14.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/wisdom/small/Messagetoposterity15.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/wisdom/large/Messagetoposterity15.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/wisdom/small/Messagetoposterity16.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/wisdom/large/Messagetoposterity16.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/wisdom/small/Messagetoposterity17.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/wisdom/large/Messagetoposterity17.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/wisdom/small/Messagetoposterity18.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/wisdom/large/Messagetoposterity18.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/wisdom/small/Messagetoposterity19.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/wisdom/large/Messagetoposterity19.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/wisdom/small/Messagetoposterity20.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/wisdom/large/Messagetoposterity20.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/wisdom/small/Messagetoposterity21.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/wisdom/large/Messagetoposterity21.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/wisdom/small/Messagetoposterity22.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/wisdom/large/Messagetoposterity22.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/wisdom/small/Messagetoposterity23.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/wisdom/large/Messagetoposterity23.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/wisdom/small/Messagetoposterity24.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/wisdom/large/Messagetoposterity24.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/wisdom/small/Messagetoposterity25.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/wisdom/large/Messagetoposterity25.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/wisdom/small/Messagetoposterity26.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/wisdom/large/Messagetoposterity26.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/wisdom/small/Messagetoposterity27.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/wisdom/large/Messagetoposterity27.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/wisdom/small/Messagetoposterity28.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/wisdom/large/Messagetoposterity28.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/wisdom/small/Messagetoposterity29.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/wisdom/large/Messagetoposterity29.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/wisdom/small/Messagetoposterity30.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/wisdom/large/Messagetoposterity30.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/wisdom/small/Messagetoposterity31.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/wisdom/large/Messagetoposterity31.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/wisdom/small/Messagetoposterity32.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/wisdom/large/Messagetoposterity32.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/wisdom/small/Messagetoposterity33.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/wisdom/large/Messagetoposterity33.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/wisdom/small/Messagetoposterity34.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/wisdom/large/Messagetoposterity34.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/wisdom/small/Messagetoposterity35.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/wisdom/large/Messagetoposterity35.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/wisdom/small/Messagetoposterity36.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/wisdom/large/Messagetoposterity36.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/wisdom/small/Messagetoposterity37.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/wisdom/large/Messagetoposterity37.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/wisdom/small/Messagetoposterity38.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/wisdom/large/Messagetoposterity38.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/wisdom/small/Messagetoposterity39.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/wisdom/large/Messagetoposterity39.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            Be True to Yourself
+            </span>
+            <span id="Contributor_Name_Mod">
+            bill roos
+            </span>
+            <span id="First_Paragraph_Mod">
+           Be true to yourself. Number one: you are responsible for you. Nobody else is responsible for you. You are responsible for you. Then your next responsibility would be to your family. Some people in a family struggle, and they need help. The help should come from family. That doesn’t mean that they’re not being true to themselves. A lot of times things happen that are beyond their control, and they need help. But as far as possible, you need to take care of yourself.  
+            <br />
+            </span>
+            <div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <iframe src="https://player.vimeo.com/video/124079547" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “Don’t try to be somebody that you’re not!”
+                </span>
+            </div>
+
+            <span id="Second_Paragraph_Mod">
+                Be yourself. Now, I’m a little bit introverted, and I really struggled to be outgoing. A lot of people think I am outgoing, because I’ve worked very hard at doing that. For the last twelve or more years in my career, I was involved in going out into VA hospitals and meeting with the hospital director. I was going into the construction phase of the VA and meeting with the architects and engineers and dealing with them one-on-one. I had to stretch myself to be able to do that and not feel like I was overwhelmed. I was not actually being myself, but when I say, “Be yourself,” be what you need to be and hopefully what you need to be is what you want to be! <br /><br />
+
+                Maybe that’s a little confusing, but I think it comes back to being true to yourself. If you’re not true to yourself, then who are you true to? <br /><br />
+
+                Don’t try to be somebody that you’re not! Let’s put it that way. A lot of people are very fakey, because they’re trying to be something and somebody that they’re not. It shows up. Pretty fast, people can tell that’s not who you are.<br /><br />
+
+                To all my kids, grandkids, great-grandkids, and whoever else follows: be yourself. Be true to yourself.<br /><br />
+            </span>
+            <div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/199139602%3Fsecret_token%3Ds-hzVGN&amp;color=cccccc&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+                    </div>
+                </div>
+
+            </div>
+            
+
+        </div>
+
+
+
+<!-- BOTTOM OF PAGE -->
+
+        <div id="boxmodex1" class="clearfix">
+            <span id="Previous_Exhibit_Link_Mod"><a href="<%= roos_service_path %>">
+            previous exhibit</a> 
+            </span>
+            <span id="Next_Exhibit_Link_Mod"><a href="<%= roos_the_army_path %>">
+            next exhibit</a>
+            </span>
+        </div>
+
+        <div id="boxmodex4" class="clearfix">
+            <%= image_tag("evelyn/menu/arrow motif left.png", :id => "arrow_motif_left1", :class => "image")  %>
+            <span id="Home_Link_Mod"><a href="<%= roos_path %>">
+            HOME</a>
+            </span>
+             <%= image_tag("evelyn/menu/arrow motif right.png", :id => "arrow_motif_right1", :class => "image")  %>
+        </div>
+</body>

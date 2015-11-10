@@ -1,0 +1,273 @@
+#Michelle_Name {
+	font-family: garamond-premier-pro-display;
+	letter-spacing: 2px;
+	font-size: 6em;
+	text-align: center;
+	line-height: 1.05em;
+}
+
+#Michelle_Title {
+	margin-top: 75px;
+	text-align: center;
+}
+
+#Contribute_Explanation {
+	margin-top: 45px;
+	margin-left: 20%;
+	width: 60%;	
+}
+
+#Michelle_Frame {
+	margin-left: 20%;
+	width: 60%;
+}
+
+#Eulogy_Titlep {
+	margin-top: 50px;
+	text-align: center;
+	margin-left: 20%;
+	width: 60%;	
+}
+
+#Eulogy_Title {
+	font-family: garamond-premier-pro-display;
+	font-size: 3em;
+	letter-spacing: 2px;
+}
+
+#italicintro {
+	font-family: Georgia, serif;
+	font-size: 1em;
+	font-style: italic;
+	text-align: center;
+}
+
+#Eulogy_Content {
+	margin-top: 30px;
+	margin-left: 20%;
+	width: 60%;	
+}
+
+#Contribute_Title {
+	font-family: jaf-domus-titling-web;
+	font-size: 2.5em;
+	line-height: 1.2em;
+}
+
+#marginplease {
+	margin-left: 3%;
+	margin-top: 50px;
+	width: 80%;
+	max-width: 630px;
+}
+
+#textspanm1 {
+	font-family: Georgia, serif;
+	font-size: 1em;
+	letter-spacing: 0.5px;
+	line-height: 1.875em;
+}
+
+#storyfeedbottom {
+	display: none;
+}
+
+#storyfeedtop {
+	display: block;
+}
+
+#Call_To_Action {
+	font-family: garamond-premier-pro-display;
+	font-size: 1.6em;
+	margin-top: 150px;
+	line-height: 1.2em;
+}
+
+#Call_To_Action_Li {
+	font-family: 'Adobe Garamond Pro';
+	font-style: italic;
+	font-size: 1.6em;
+	margin-top: 150px;
+	line-height: 1.2em;
+	letter-spacing: 2px;
+}
+
+#Call_To_Action_Li_gb {
+	font-family: 'Adobe Garamond Pro';
+	font-style: italic;
+	font-size: 1.6em;
+	margin-top: 150px;
+	line-height: 1.2em;
+	letter-spacing: 2px;
+	color: white;
+}
+
+#Call_To_Action_Roos_gb {
+	font-family: 'Adobe Garamond Pro';
+	font-style: italic;
+	font-size: 1.6em;
+	margin-top: 150px;
+	line-height: 1.2em;
+	letter-spacing: 2px;
+	color: #8e8c95;
+}
+
+#Call_To_Actionds {
+	/* font-family: 'Adobe Garamond Pro'; */
+	font-family: garamond-premier-pro-display;
+	font-size: 1.6em;
+	margin-top: 150px;
+	line-height: 1.2em;
+	color: #ffffff;
+}
+
+
+#Michelle_Story_Form {
+	margin-left: 10%;
+	margin-top: 100px;
+	font-size: 1.75em;
+}
+
+#Li_Story_Form {
+	margin-left: 10%;
+	margin-top: 0px;
+	font-size: 1.75em;
+}
+
+#suedebox {
+    float: left;
+    height: auto;
+    margin: 50px 10% 0px 10%;
+    clear: both;
+    width: 80%;
+    min-width: 0px;
+    background-color: #f8f8f8;	
+}
+
+#OtherLinksTitle {
+	font-family: garamond-premier-pro-display;
+	font-size: 2.0em;
+}
+
+#Ann_Title {
+	margin-top: 50px;
+	font-family: Georgia, serif;
+	font-size: 1.75em;
+}
+
+#Ann {
+	font-family: Georgia, serif;
+	font-style: italic;
+	font-size: 1em;
+}
+
+#bluebox {
+	/* background-color: #d8f2e5; */
+	border-top: 2px solid #d1d2d4; 
+	margin-top: 30px;
+	/* margin-left: 10%;
+	width: 80%; */
+}
+
+@media only screen and (max-width: 760px) {
+	#Michelle_Title {
+		margin-top: 60px;
+		margin-left: 10%;
+		width: 80%;
+	}
+
+	#Michelle_Name {
+		font-size: 4.5em;
+	}
+
+	#Contribute_Explanation {
+		margin-top: 30px;
+		margin-left: 10%;
+		width: 80%;	
+	}
+
+	#Contribute_Title {
+		font-size: 2em;
+	}
+
+	#Michelle_Frame {
+		margin-left: 10%;
+		width: 80%;
+	}
+
+	#Eulogy_Content {
+		margin-top: 20px;
+		margin-left: 10%;
+		width: 80%;	
+	}
+
+	#Call_To_Action {
+		font-size: 1.3em;
+		margin-top: 70px;
+		line-height: 1.2em;
+	}
+
+	#Call_To_Actionds {
+		font-size: 1.3em;
+		margin-top: 70px;
+		line-height: 1.2em;
+	}
+
+	#Call_To_Action_Li {
+		font-size: 1.3em;
+		margin-top: 70px;
+		line-height: 1.2em;
+	}
+
+	#Call_To_Action_Li_gb {
+		font-size: 1.3em;
+		margin-top: 70px;
+		line-height: 1.2em;
+	}
+
+	#Call_To_Action_Roos_gb {
+		font-size: 1.3em;
+		margin-top: 70px;
+		line-height: 1.2em;
+	}
+}
+
+
+@media only screen and (max-width: 450px) {
+	#Michelle_Name {
+		font-size: 3em;
+	}
+
+	#Michelle_Title {
+		margin-top: 55px;
+		text-align: center;
+	}
+
+	#Contribute_Title {
+		font-size: 1.75em;
+	}
+
+	#storyfeedbottom {
+		display: block;
+	}
+
+	#storyfeedtop {
+		display: none;
+	}
+
+	#Michelle_Story_Form {
+		margin-left: 10%;
+		margin-top: 30px;
+		font-size: 1.55em;
+	}
+
+	#Li_Story_Form {
+		margin-left: 10%;
+		margin-top: 0px;
+		font-size: 1.55em;
+	}
+
+	#bluebox {
+		margin-top: 0px;
+	}
+}

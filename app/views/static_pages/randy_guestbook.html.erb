@@ -1,0 +1,38 @@
+    <head>
+        <script>
+              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+              ga('create', '[redacted-g]', 'antho.co');
+              ga('send', 'pageview');
+        </script>
+    	<meta name="viewport" content="initial-scale = 1, maximum-scale = 2, user-scalable=1" />
+    </head>
+
+    <% provide(:title, 'Randy Bird: Guestbook') %>
+    <body>
+        <%= image_tag("orchard.png", :id => "orchard", :class => "image") %>
+        <p id="_“And_as_I_look_out_into_my_orchard_I_will_always_see_Randy_up_">
+        <span id="textspany">“And as I look out into my orchard I will always see Randy up in those apple trees, &nbsp;grooming them, and teaching me how to care for them. I guess that my favorite thought is a very simple one...<br /><br />‘God gave us memory that we might have roses in December.’”<br /><br /></span><span id="textspany1">- Carma Bird, mother</span>
+        </p>
+        <%= image_tag("carma2.png", :id => "carmay2", :class => "image") %>
+        
+        <a name="x"></a>
+        <div id="gueststories" class="clearfix">
+         
+            <% @anthology_items = Micropost.where(:subject_id => "9") %>
+            <% @identity = "9" %>
+            <% @subject_matter = 'none' %>
+            
+            <%= render 'shared/guestbook_stories' %>
+        </div>
+        <p id="_“And_as_I_look_out_into_my_orchard_I_will_always_see_Randy_up_2">
+        <span id="textspany">“And as I look out into my orchard I will always see Randy up in those apple trees, &nbsp;grooming them, and teaching me how to care for them. I guess that my favorite thought is a very simple one...<br /><br />‘God gave us memory that we might have roses in December.’”<br /><br /></span><span id="textspany1">- Carma Bird, mother</span>
+        </p>
+        <%= image_tag("carma2.png", :id => "carmay22", :class => "image") %>
+        <div id="buttonbottom">
+            <%= link_to "Back to Life Story", randybird_path, class: "button2" %><br><br>
+        </div>
+    </body>

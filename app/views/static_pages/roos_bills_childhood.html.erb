@@ -1,0 +1,847 @@
+
+
+    <head>
+
+
+	<meta name="viewport" content="initial-scale = 1.0,maximum-scale = 3.0">
+
+    <script>
+            $(document).ready(function () {
+                $(".ChapterVideoMod").fitVids();
+            });
+
+    </script>
+
+    <script>
+        function showHide(shID) {
+          if (document.getElementById(shID)) {
+            if (document.getElementById(shID+'-show').style.display != 'none') {
+              document.getElementById(shID+'-show').style.display = 'none';
+              document.getElementById(shID).style.display = 'block';
+            }
+            else {
+              document.getElementById(shID+'-show').style.display = 'inline';
+              document.getElementById(shID).style.display = 'none';
+            }
+          }
+        }
+    </script>
+
+    <!-- fancybox begins -->
+
+        <!--script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script--> <!-- this causes fitvids NOT to work. BOO -->
+        <link rel="stylesheet" href="/fancybox/source/jquery.fancybox.css" type="text/css" media="screen">
+        <script type="text/javascript" src="/fancybox/source/jquery.fancybox.pack.js"></script>
+    <!-- fancybox end -->
+    </head>
+
+<body>
+
+        <span id="In_Exhibit_Title_Mod">
+        BILL’S CHILDHOOD
+        </span>
+        <div id="boxmodex_bills_childhood" class="clearfix">
+            <%= image_tag("evelyn/menu/arrow motif left.png", :id => "exhibit_top_arrow_motif_left", :class => "image")  %>
+            <span id="In_Exhibit_Subtitle_Mod">
+            COMING OF AGE IN THE WAKE OF WAR
+            </span>
+            <%= image_tag("evelyn/menu/arrow motif right.png", :id => "exhibit_top_arrow_motif_right", :class => "image")  %>
+        </div>
+        <div id="boxmodex1" class="clearfix">
+            <span id="Previous_Exhibit_Link_Mod"><a href="<%= roos_teresas_childhood_path %>">
+            previous exhibit</a> 
+            </span>
+            <span id="Next_Exhibit_Link_Mod"><a href="<%= roos_timeline_path %>">
+            next exhibit</a>
+            </span>
+        </div>
+
+
+<!-- CHAPTER ONE -->
+
+
+        <div id="Gallery_Strip" class="clearfix">
+            <ol class="GalleryPicsMod">
+                
+                   
+
+                    
+                    <li><%= link_to image_tag("roos/bill/small/Earlyyears2.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/bill/large/Earlyyears2.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                                        </li>
+
+                    <li><%= link_to image_tag("roos/bill/small/Earlyyears3.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/bill/large/Earlyyears3.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/bill/small/Earlyyears.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/bill/large/Earlyyears.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                                        </li>
+
+                    <li><%= link_to image_tag("roos/bill/small/Earlyyears4.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/bill/large/Earlyyears4.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/bill/small/Earlyyears5.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/bill/large/Earlyyears5.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/bill/small/Earlyyears6.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/bill/large/Earlyyears6.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    
+                    <li><%= link_to image_tag("roos/bill/small/Earlyyears12.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/bill/large/Earlyyears12.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/bill/small/Earlyyears11.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/bill/large/Earlyyears11.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/bill/small/Earlyyears7.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/bill/large/Earlyyears7.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/bill/small/Earlyyears8.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/bill/large/Earlyyears8.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/bill/small/Earlyyears1.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/bill/large/Earlyyears1.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                                        </li>
+                    <li><%= link_to image_tag("roos/bill/small/Earlyyears9.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/bill/large/Earlyyears9.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/bill/small/Earlyyears10.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/bill/large/Earlyyears10.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/bill/small/Earlyyears13.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/bill/large/Earlyyears13.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/bill/small/Earlyyears14.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/bill/large/Earlyyears14.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/bill/small/Earlyyears15.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/bill/large/Earlyyears15.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/bill/small/Earlyyears16.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/bill/large/Earlyyears16.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/bill/small/Earlyyears17.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/bill/large/Earlyyears17.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                   
+            </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            Early Years
+            </span>
+            <span id="Contributor_Name_Mod">
+            bill roos
+            </span>
+            <span id="First_Paragraph_Mod">
+            I was born July 16, 1936 in Afton, Lincoln County, Wyoming to Kenneth Deward Roos and Edna Louise Taysom. <br /><br />
+
+            I received my name and a blessing by my father in the Afton South Ward, Star Valley Stake of the Church of Jesus Christ of Latter-day Saints on November 1, 1936. It was during the depression years and things were tough for our family, although I had no way of knowing it. It was years later when I was in the army that I realized that all my life we had not had all that much in the way of worldly things, yet, we never lacked the necessities thanks to a very hard working father and a frugal, self-sacrificing mother. <br />
+            </span>
+            <!--div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <iframe src="https://player.vimeo.com/video/124071486" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “I would go to mass by myself with the children.”
+                </span>
+            </div-->
+            <span id="Second_Paragraph_Mod">
+                 
+                My earliest memories were of life at the ranch at Pack River, Idaho. <br /><br />
+
+                On October 27, 1937, my Grandpa Roos accompanied by my dad and his brother Sam sold out in Star Valley, Wyoming and moved to Bonner County in North Idaho where Grandpa bought a farm in the Kootenai area and a “stump ranch” on the Pack River, both areas are 10 to 15 miles north of Sandpoint. We lived for about two months in a house in Sandpoint, then moved out to the farm in Kootenai until May of 1938 when we moved to the ranch at Pack River. I remember when Grandpa Roos brought some kind on animal he had killed, maybe a coyote, and draped it across a fence near the house. I remember “helping” mother carry water buckets from the spring down the hill from the house. That was where we got the household water. 
+            </span>
+            
+            <span id="See_More_Mod"><a href="#" id="restofstory0-show"  onclick="showHide('restofstory0');return false;">SEE MORE</a>
+            </span>
+
+            <div id="restofstory0" class="more">
+
+                <span id="Second_Paragraph_Mod1" class="more">
+
+                I remember my dad blasting stumps out of the ground to clear land. But my most vivid memory was of frantic commotion and mother crying. It was at the time, “Sonny,” my 5-year-old brother’s body was recovered from the Pack River just down the road from our house, after he had drowned while fishing. I was too young to understand what had happened. My next clear memory was the funeral at the time of Grandpa Roos’s accidental death 14 months after my brother died. <br /><br />
+
+                My next relatively clear memories were during the time we lived beside the railroad at Elmira, Idaho. I remember going to Dad’s sawmill and all the loud noise there. I remember my mother asking the doctor who had made a house call when she could have her baby (my brother Dan). I also remember having to go to the Satterlee’s, our neighbor, when she delivered Dan at home. I was not too happy to have to leave my home just because a new baby was coming to our house! <br /><br />
+
+                I also remember standing beside the railroad as trains went past waving at the engineer and fireman in the engine and at the conductor in the caboose at the end of the train. I remember one time the conductor threw a newspaper to me which I took to my mom. <br /><br />
+
+                It was at Elmira that I learned cuss words. My dad spiced up his dialogue quite a bit with the words hell and damn and one day I used both of those words. Mother immediately told me that I should never say such words. I told her that Dad did. She said she knew, but those were words little boys should never use. As a four-year-old, I found that reasoning hard to understand, but made certain mother never heard me say those words again (at least until I was an adult!). I’m sure she let Dad know that his language was rubbing off on me. <br /><br />
+
+                While living at the ranch in Wyoming, at the Pack River ranch and at Elmira, we did not have indoor plumbing and the available facilities was what was referred to as “the outhouse.” Once, at Elmira, I dropped a cat down one of the holes in the outhouse and I remember dad having to climb down a rope to rescue it. I do remember being severely chastised by my mother at the time. <br /><br />
+
+                The reason we had moved to Elmira was that Dad and four other men had built a sawmill there which they operated for a short time, but the bottom had dropped out of the lumber business and they went broke. Dad “hopped” a freight train and went to Seattle to find work, which he did at the Todd Dry Docks in Seattle. I remember the long, boring drive in Uncle Sam’s car when he drove us to Seattle to join Dad. <br /><br />
+
+                When we moved to Seattle, at first we lived in a very small house. While there I remember being invited to attend a birthday party and mother admonishing me to behave properly. My first memory of Santa was the first Christmas in Seattle in that house, when I apparently was a bit slow getting to bed and was admonished by Mother to hurry up because Santa was waiting for me to get to sleep so he could come. I distinctly remember hearing some noises outside the house as I got into bed and I was convinced it was Santa and quickly covered up my head. <br /><br />
+
+                Later we moved to a larger house at 18469 40th NE, rented from a man named Schramm. It was in the community of Lake Forest Park at the northern end of Lake Washington. In that house, when mom and dad were gone and we kids were alone, I snooped in Mom and Dad’s bedroom closet and found all the Christmas presents hidden there. I hoped I was wrong, and that they were not our presents, but...sure enough, Christmas morning there were all the presents I had already seen. What a crushing blow! And to make matters worse, I then knew the truth about Santa. <br /><br />
+
+                The house was on a very large lot surrounded by a lot of woods. Mom and Dad had a large garden, some strawberry plants and I believe raspberries or blackberries as well. It was a great place, with lots of room to run and play and a huge tree with lots of limbs that we called “The Climbing Tree.” We spent a lot of hours in that tree. <br /><br />
+
+                I remember swimming at a beach on Lake Washington. At some time, Dad made me a kind of a little boat I could sit in and paddle with my hands. I named it “The Cynthia” after a girl in my first grade class I was “in love” with. Later, we named our third child Cynthia.
+
+                </span>
+            </div>
+        </div>
+
+
+<!-- CHAPTER TWO -->
+
+
+        <div id="Gallery_Strip1" class="clearfix">
+            <ol class="GalleryPicsMod">
+                     <li><%= link_to image_tag("roos/bill/small/Earlyyears18.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/bill/large/Earlyyears18.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/bill/small/Earlyyears19.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/bill/large/Earlyyears19.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/bill/small/Earlyyears20.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/bill/large/Earlyyears20.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/bill/small/Earlyyears21.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/bill/large/Earlyyears21.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/bill/small/Earlyyears22.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/bill/large/Earlyyears22.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/bill/small/Earlyyears23.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/bill/large/Earlyyears23.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    
+
+                </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            Scrapes and Slivers     
+            </span>
+            <span id="Contributor_Name_Mod">
+            bill roos
+            </span>
+            <span id="First_Paragraph_Mod">As a boy, I was somewhat uncoordinated. Well, perhaps out-and-out clumsy would be a better way of putting it. I suppose I was just too interested in “getting on with it” to pay attention to how I was getting on with it.
+            <br />
+            </span>
+            <!--div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <iframe src="https://player.vimeo.com/video/124071354" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “She said, ‘Yes,’ and my jaw really hit the floor.”
+                </span>
+            </div-->
+
+            <span id="Second_Paragraph_Mod">
+                When I was five and six years old, I would fly out the door to play outside and as soon as I hit the outside steps I would trip and fall. Sometimes I even made it down the steps onto the sidewalk before I took a nosedive. As a result, my knees, elbows and the palm of my hands were always skinned and there was at least one bandage on one of those locations at all times. <br /><br />
+
+                And, slivers! I was able to acquire at least one sliver every couple of weeks. When that happened, I hated it! First, because slivers hurt. Second, because it hurt even more to have them removed. If I went to mom for the extraction, she would get a needle from her sewing basket, sterilize it by holding it in the flame of a burning match, then using the needle, pick, pick, pick at the sliver until she had, picked, picked, picked it out. Each “pick” hurt just like another sliver was going into my skin. <br />
+            </span>
+
+            <span id="See_More_Mod"><a href="#" id="restofstory-show"  onclick="showHide('restofstory');return false;">SEE MORE</a>
+            </span>
+
+            <div id="restofstory" class="more">
+
+                <span id="Second_Paragraph_Mod1" class="more">
+
+                On the other hand, if I went to dad to have a sliver removed, that entailed major surgery. He would reach into his pocket, dig out what appeared to be a three-foot-long razor-sharp sword blade. Well...it really was a pocket knife with a blade about three-inches-long, quite narrow with a long tapered and sharp point. He would then slip that sharp-pointed blade under the sliver and slice it out. It usually bled! It always hurt! I hated slivers because I always knew they would hurt twice. Once going in and again if I chose mom’s pick action or dad’s cut action. When I was about 50 years old, I got a fat rotten wood sliver under a fingernail and had to have a doctor surgically remove it. He had to cut away a portion of the fingernail and lift out the sliver. He used a scalpel and tweezers. It bled. But...it didn’t hurt because he deadened the finger before he started. <br /><br />
+
+                The first sliver I remember having also required a doctor to remove. Behind our house in Lake Forest Park in Seattle was a fairly large tract of woods. I was out there playing one evening, and while climbing up a tree, my hands slipped and I fell backwards with my feet hung over a couple of branches. As my body hit the trunk of the tree, a small, broken off branch of the tree impaled me in the left buttock. I had a heck of a time getting loose, and I think I finally did so by kicking my legs off the limbs and falling the three feet or so to the ground. It hurt. A Lot! But I didn’t cry until I was almost in the house. Crying just doesn’t accomplish anything when there is no one to hear it. <br /><br />
+
+                Now, I was afraid I’d get in trouble for climbing the tree. Why I thought that I do not know, but, that is what I thought. So I told my mother I tripped and fell on an old log. I figured that since she knew I was always tripping and falling, that was a safe story to tell. After looking at the wound, she called my dad to get his opinion. They consulted and agreed we had to go to the emergency room of the hospital. Thus, I had my very first splinter surgery by someone other than my dad. And, I had two stitches to close the wound as well. 
+                </span>
+            </div>
+
+        </div>
+            <!--span id="Exclusive_Quote_Mod">
+            “I want my children to have wisdom and intelligence, to be able to make the right choice to go back to heaven. Then we can all be happily living forever with each other in heaven.”
+            </span-->
+            
+
+
+<!-- CHAPTER THREE -->
+
+
+        <div id="Gallery_Strip1" class="clearfix">
+            <ol class="GalleryPicsMod">
+                    
+                    <li><%= link_to image_tag("roos/bill/small/WWII2.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/bill/large/WWII2.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/bill/small/WWII5.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/bill/large/WWII5.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/bill/small/WWII9.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/bill/large/WWII9.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/bill/small/WWII10.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/bill/large/WWII10.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    
+                    <li><%= link_to image_tag("roos/bill/small/WWII12.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/bill/large/WWII12.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    
+                    <li><%= link_to image_tag("roos/bill/small/WWII14.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/bill/large/WWII14.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/bill/small/WWII15.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/bill/large/WWII15.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/bill/small/WWII.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/bill/large/WWII.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/bill/small/WWII1.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/bill/large/WWII1.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/bill/small/WWII16.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/bill/large/WWII16.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/bill/small/WWII17.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/bill/large/WWII17.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/bill/small/Earlyyears24.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/bill/large/Earlyyears24.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            World War II
+            </span>
+            <span id="Contributor_Name_Mod">
+            bill roos
+            </span>
+            <span id="First_Paragraph_Mod">
+               The Japanese attack on Pearl Harbor on Sunday, December 7th, 1941 came while we were living in the Seattle area. We were at church at the chapel on Queen Anne Hill. Because Dan or I or both were acting up, Mom sent us out with our sister Marilyn, to wait in the car. When our parents came out, Mother was crying. During the services, they had gotten word of the attack and the directions that all military personnel were to report to their duty station at once. 
+            <br />
+            </span>
+            <div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <iframe src="https://player.vimeo.com/video/124529530" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “I remember the search lights and barrage balloons in the sky over Seattle.”
+                </span>
+            </div>
+
+            <span id="Second_Paragraph_Mod">
+                I have a lot of memories of the two years or so after that. Big, lumbering Navy PBY amphibious airplanes taking off from the naval station on Lake Washington and flying so low over our house I could see the crew members through the plexiglass windows. The prop wash caused the tall trees behind our house to sway back and forth—blackouts and blackout curtains—barrage balloons with cables hanging beneath them over the city. <br /><br />
+
+                After the war started, Dad was hardly ever home. When he was home, he was taking a nap on the sofa. Dad worked at the shipyards and the war had brought on a frantic pace there and Dad worked countless hours of overtime, usually six days a week and at times seven. One time, Dad decided to play a prank on Mom and had the nurse at the shipyard help him out by putting bandages on his head and face, and making a sling for an arm. As he drove into the driveway at home, because he seldom arrived home that early in the day we rushed to greet him, mother included. Feebly he worked his way out of the car and started to limp towards us. Mother almost collapsed on the spot until he grinned and whipped off the bandages. 
+            </span>
+
+
+            <span id="See_More_Mod"><a href="#" id="restofstorya-show"  onclick="showHide('restofstorya');return false;">SEE MORE</a>
+            </span>
+
+            <div id="restofstorya" class="more">
+
+                <span id="Second_Paragraph_Mod1" class="more">
+                     I remember the search lights and barrage balloons in the sky over Seattle, the blackout curtains in our house and the “lights out” rule. Dad was an air raid warden and as such was issued a gas mask. The night he brought it home, I was in bed and he came into my room with it on and scared me half to death. <br /><br />
+
+                    One day, my uncle Harry came to visit and I ended up hating him. He took some of my toy cars, buried them in an embankment beside our driveway, stuck a firecracker under each one and blew them out of the embankment, blowing the wheels off in the process. He thought it was a lot of fun. I did not.  <br /><br />
+
+                    With the war on and manpower becoming short, Dad was in danger of being drafted, even though he was 32 years old, had a wife and three children and held down a vital job in the defense industry at the shipyard and had one lung which had been ravaged by numerous bouts of pneumonia as a child. As the threat of the draft became certain, he heard of a job which would exclude him. A year’s contract on a U.S. Army repair ship in Alaska. (Yes, an Army ship—at that time all shipping was under the control of the U.S. Army Transportation Corps, including the Merchant Marine. Only combat ships were under Navy command.) He signed up, moved us back to Sandpoint, Idaho where we would be close to his brother Sam and his mother. Although I had memories of the trip to Seattle, I have no memory at all of the trip back, dad told me we traveled at night so I most likely slept most of the time. <br /><br />
+
+                    So off Dad went to Aleutian island of Unalaska where he lived and worked as a carpenter on board the repair ship. I was in the middle of the second grade when we made the move. I remember the day he returned a year later. He was a stranger and I was a little bit afraid of him. <br /><br />
+
+                    I started school in the Lake Forest Park School in Washington and attended the first grade and half of the second there. We moved back to Sandpoint in December, halfway through the second grade and I was at once traumatized! In Washington at that time, schools did not start teaching cursive writing until the 3rd grade. In the first and second grades the students printed. In Sandpoint, cursive was the rule from day one of the first grade. The teacher gave me two weeks to learn cursive, until then I could print but after two weeks, all my work had to be in cursive! I really struggled. Cursive was a foreign language to me. After all, books weren’t in cursive, they were in print. Somehow, I was able to get it down enough to be able to meet the 2 week limit, but as a result, my handwriting has always been very poor. One of the classes in elementary school each day was “Penmanship” which was supposed to give the students very elegant handwriting using the “Palmer Method” of writing. Phooie! I hated that class and did very poorly. After I got to high school, where the teachers didn’t care things were written in cursive or were printed, I shifted back to printing everything and have done so to this day. <br /><br />
+
+                    The first day of school in Sandpoint, I was worried about finding my way. It was just four blocks straight down the street from our house and Dad told me all I had to do was follow my nose. My mother walked the four blocks to the school with me that first time but when I came home, I went the wrong direction. Instead of going straight north, I went west and got all confused. Eventually I found my way home. Dad asked me why I hadn’t followed my nose. I told him I did but my nose took me the wrong way. <br /><br />
+
+                    I remember playing marbles in the mud in the springtime and being hit by lightning while playing marbles in the backyard with a neighbor kid. It knocked the wind out of me, but that’s all. <br /><br />
+
+                    The war years in Sandpoint were years of rationing and seeing lots of sailors in uniform all over town. The Navy built the Farragut “boot camp” training base at the South end of Lake Pend Oreille, about 30 miles by road from Sandpoint. While Dad was in Alaska, mom rented out the 4 upstairs rooms of the house to wives of sailors stationed at Farragut. All the kids in our part of town knew where sailor’s dependents lived so we could be sure to go there at Halloween to trick or treat. They were the only ones who had candy and chewing gum to give away. Those items were just not available to the general public during the war, but were available to the military in their Ship’s Stores and commissaries. <br /><br />
+
+                    One day, after school when I was in about the 3rd grade, I stopped by the swings on the playground to look at the ice that had formed in the scooped out area under each swing. During the day kids had broken the ice into pieces and I decided I wanted to pick up a piece or two. I squatted down in front of a swing, pushed it away so I could reach the ice and as I reached, the stupid swing followed the natural laws of motion and swung back striking me square on the bridge of the nose breaking it with a loud ‘crack!’ <br /><br />
+
+                    Boy! did that ever hurt! I saw stars and my eyes watered, but since there were no witnesses, I didn’t cry. Crying only is useful when there is someone to hear it. That broken nose was the only broken bone I had for several years and I never told Mom or Dad about it, so they wouldn’t think I was clumsy.  <br /><br />
+
+                    While Dad was in Alaska, I turned 8 years old and was baptized into the Church of Jesus Christ of Latter-day Saints by Willis Earl Nobel, in “Chuck’s Slough,” a creek about four miles or so West of Sandpoint and confirmed a member of the Church by my uncle, Samuel Andrus Roos on August 5, 1844. 
+                </span>
+            </div>
+        </div>
+            <!--span id="Exclusive_Quote_Mod">
+            “I want my children to have wisdom and intelligence, to be able to make the right choice to go back to heaven. Then we can all be happily living forever with each other in heaven.”
+            </span-->
+
+<!-- CHAPTER FOUR -->
+
+
+        <div id="Gallery_Strip1" class="clearfix">
+            <ol class="GalleryPicsMod">
+                    <li><%= link_to image_tag("roos/bill/small/Adolescence.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/bill/large/Adolescence.jpg", :class => "fancybox", :rel => "galleryb", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/bill/small/Adolescence1.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/bill/large/Adolescence1.jpg", :class => "fancybox", :rel => "galleryb", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/bill/small/Adolescence2.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/bill/large/Adolescence2.jpg", :class => "fancybox", :rel => "galleryb", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/bill/small/Adolescence3.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/bill/large/Adolescence3.jpg", :class => "fancybox", :rel => "galleryb", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/bill/small/Adolescence4.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/bill/large/Adolescence4.jpg", :class => "fancybox", :rel => "galleryb", :title => "" %>
+                    </li>
+                    
+                    <li><%= link_to image_tag("roos/bill/small/Downthebank.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/bill/large/Downthebank.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/bill/small/Downthebank1.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/bill/large/Downthebank1.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            Down the Bank
+            </span>
+            <span id="Contributor_Name_Mod">
+            bill roos
+            </span>
+            <span id="First_Paragraph_Mod">
+            Across the street from our house at 721 N. 3rd Avenue, was a steep embankment leading down to the floodplain of Sandcreek. All the kids in the neighborhood played down at the creek during low and high water. As I look back on it now, we moved there from Seattle during the winter when I was seven years old and the next spring and summer we were off to the creek to play. That was barely 6 years after my brother had drowned in the Pack River. How my mother must have worried! Yet, she allowed us to play there, I’m sure knowing all along we would sneak off to do so if she didn’t openly allow it. 
+            <br />
+            </span>
+            <!--div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                       
+                        <iframe src="https://player.vimeo.com/video/124079546" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “They were very surprised! They didn’t think that I would say yes.”
+                </span>
+            </div-->
+
+            <span id="Second_Paragraph_Mod">
+                
+                The floodplain about 500 yards wide. In the summer, it had so little water that a 10 or 12 year old could jump across it in several places Yet in other places it was 15 to 20 feet wide, but quite shallow, and still, in other places there were pools 5 or 6 feet deep. In the spring, during the mountain snow melt, the water rose to fill the entire floodplain and the water was about 15 feet deep in the channel part. The creek flowed into the lake and, when I was about 15, they built a dam on the river which backed up the water into the floodplain all year around. That made for lots of good swimming and boating all summer long right across the street from our home. <br /><br />
+
+                We seldom said we were going to the creek. If someone asked where we had been or where we were going, our stock answer usually was, “down the bank” which could mean by the creek, or out in the tall grass growing on the floodplain or in the trees and bushes on the embankment from the street level to the floodplain. Also, nobody in that part of the country pronounced the word as “creak”—it was, and still is, pronounced “crick”. There are two schools of thought on the matter. Back East, people pronounce the word “creak” and say that a crick is what you get in your neck. In north Idaho, they use crick and say that a creak is what you have in the floor when there is a loose board there. 
+
+                
+            </span>
+
+            <span id="See_More_Mod"><a href="#" id="restofstoryb-show"  onclick="showHide('restofstoryb');return false;">SEE MORE</a>
+            </span>
+
+            <div id="restofstoryb" class="more">
+
+                <span id="Second_Paragraph_Mod1" class="more">
+                    “Down the bank” under the trees lining the embankment there were clumps of wild currant bushes from which we used to pick the fruit when it was ripe. We didn’t eat too many of them because they were so tart. One day, I made the mistake of taking some to my mother. Thereafter, when the currants were ripe, mother would send me off to pick as many as could be found from which she made jelly. Wild currants are about the size of bbs. Do you know how many million currants it takes to fill a quart jar? <br /><br />
+
+                    On the high ground across the creek floodplain, there were three or four apple trees that grew from who knows how. As kids, we would wait for them to ripen then we would build a bonfire and roast the apples on a stick. Also, I picked apples in earnest and brought them home to mom who made apple sauce out of them. <br /><br />
+
+                    “Down the bank” was a great place to play in the summer. We dug fox holes in the tall grass and played “Army” and we built huts and hideouts in the trees growing on the floodplain and on the embankment. <br /><br />
+
+                    Across the floodplain on the top of the other embankment where the old Humbird sawmill used to be there were a couple of large sawdust piles. Those piles had been there for years soaking up the rain and snowmelt and were wet top to bottom and settled and compacted quite solidly. One summer several of the neighborhood kids went over there and dug tunnels through the biggest pile. <br /><br />
+
+                    During the summer we were out playing from early morning until after dark at night riding bikes, swimming, making and shooting sling shots, making match shooters with clothes pins and shooting wooden matches, making “rubber guns” which shot fat rubber bands cut from old tire inner tubes, playing kick the can, and hide and seek. <br /><br />
+
+                    In the winter I skated on the ice on the creek, sledded down the big hill across the creek by the railroad trestle and skied with my dad’s skis. <br /><br />
+
+                    About a block from our house is where, at the turn of the century there was a walking bridge spanning the entire flood plain. The bridge had been built so workers at the Humbird lumber mill which was located on the other side of the floodplain could travel from home to work and back. When we lived there, it was just a skeleton remaining about 40% of the way across with no planking at all and only one or two log beams joining the upright pilings that the bridge had been built upon. Many of the logs were rotten, but all the kids knew which were safe and we could wend our way from land to the broken off end by walking on the “safe” logs. It required a good sense of balance as the logs were only about 16 inches in diameter, somewhat rotten, with some a bit wobbly and all were located some 30 feet above the ground. <br /><br />
+
+                    The first few times a kid went on the thing, he did it by sitting straddle the log with our feet and legs hanging on each side and scooting along it. However after countless sessions of teasing and words of derision from the other kids, he would be forced to stand and walk out. Usually this was accomplished in stages. He could walk the first span, then crawl on hands and knees a span or two, “scoot’ sit and scoot the rest of the way. Then another day, walk two spans, crawl a ways further and scoot the rest of the way and so on until he had the courage and confidence to make it all the way walking. Usually, the older kids refused to allow anyone to achieve arrival at the very end of the structure unless they walked the entire way there. You could only scoot and crawl so far. It was a tremendous right of passage when you achieved the success of walking the entire length of the structure and back again. <br /><br />
+
+                    I built model airplanes out of balsa wood sticks covered with tissue paper. I was never really good at it and none of my planes would fly. But, when I took them out to the end of the bridge, put a fresh dab of model airplane cement on the nose and lit a match to it, then tossed the plane off into space, it made a terrific version of an enemy fighter or bomber fluttering and flopping down to the water below in a flaming spectacle that was a sight to behold by all gathered to watch. As kids, we didn’t dream of going to the moon. We dreamed of being able to walk all the way to the end of the “Old Walking Bridge.” When I was about 15, they came with chainsaws and cut down the old bridge, piled up the logs and burned them. 
+                    It was a sad day.<br /><br />
+
+                    The first time I ever went fishing was “down the bank” when the creek was full with spring runoff. The first fish I ever caught was there also. We used to fish a lot as kids. Mostly in the creek in the spring, then as the snow melt ran off and the water level dropped, we would ride our bikes to the city docks on the lake and fish there. But the greatest fishing I had ever as a kid was one summer, when dad and my uncle Sam were building some buildings at the State Fish Hatchery in Hope, Idaho. He would drive there early Monday morning and return after the work day Friday evening, sleeping in one of the storage buildings there at the hatchery. A couple of times, he took me along for the week. <br /><br />
+
+                    All I had to do was fish. Now fishing at a fish hatchery was great! No, I didn’t actually fish the hatchery fish. There was a fast flowing mountain creek which flowed along one side of the hatchery and a large pond on the hatchery property which got its water from the creek and then emptied back into the creek. We fished in the pond and in the creek flowing out of the pond before it rejoined the main creek channel. Since that water was on the hatchery property, no one fished there except the employees, so fishing was quite good. So, I got to fish a lot, plus play around to my hearts content. One week, my cousin Paul was there with me and we really had a ball. 
+                </span>
+            </div>
+           
+
+        </div>
+
+<!-- CHAPTER FIVE -->
+
+    <div id="Gallery_Strip1" class="clearfix">
+            <ol class="GalleryPicsMod">                    
+
+
+                    
+                    <li><%= link_to image_tag("roos/bill/small/Adolescence7.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/bill/large/Adolescence7.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/bill/small/Adolescence8.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/bill/large/Adolescence8.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/extra/small/extra2.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/extra/large/extra2.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/extra/small/extra3.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/extra/large/extra3.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+
+                    <li><%= link_to image_tag("roos/bill/small/Adolescence10.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/bill/large/Adolescence10.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    
+                    <li><%= link_to image_tag("roos/bill/small/Adolescence6.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/bill/large/Adolescence6.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+
+                    <li><%= link_to image_tag("roos/bill/small/Adolescence5.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/bill/large/Adolescence5.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/bill/small/Adolescence9.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/bill/large/Adolescence9.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/bill/small/Adolescence12.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/bill/large/Adolescence12.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+
+                    <li><%= link_to image_tag("roos/bill/small/Adolescence15.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/bill/large/Adolescence15.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    
+                </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            Early Adolescence
+            </span>
+            <span id="Contributor_Name_Mod">
+            bill roos
+            </span>
+            <span id="First_Paragraph_Mod">
+           When I was 12, our scout troop spent a week camping on a remote part of the southwest shore of Lake Pend Oreille. To get there, we rode on a surplus World War II landing craft from Sandpoint for two to three hours. It was quite an adventure to be camping, but the boat ride was really boring after the first half hour. 
+
+            <br />
+            </span>
+            <!--div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <iframe src="https://player.vimeo.com/video/124071542" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “Everybody cried.”
+                </span>
+            </div-->
+
+            <span id="Second_Paragraph_Mod">
+                After the war, before Farragut was completely closed down, I went with the Boy Scout Troop to the huge swimming pool there. After the war the navy sold off buildings to the public. Our church bought a lot of material for use in building the first LDS chapel in Sandpoint. It required dismantling buildings and salvaging the lumber. We even salvaged the bricks which were used to face the front of the building. The county also bought several of the buildings which were hauled to Sandpoint and joined together to build the Bonner County General Hospital where several years later my daughters Pam, Cyndi and Janet were born. <br /><br />
+                            
+                When I was in the 7th and 8th grade, I was selected to be a member of the ‘Street Patrol.’ You wore a white mesh belt that buckled around your waist with a strap that went up over your left shoulder to identify you. The school ground covered an entire block right next to the downtown area. One kid stood at each of the 4 corners and directed the kids crossing the streets when coming to and going from school each day. We were on duty in the morning before school started, again at lunch time and in the afternoon when school was out for the day. We would rotate which corner we worked and which shift, morning, noon or afternoon. I liked working the corner opposite City hall at noon time the best. 
+            </span>
+
+            <span id="See_More_Mod"><a href="#" id="restofstoryq-show"  onclick="showHide('restofstoryq');return false;">SEE MORE</a>
+            </span>
+
+            <div id="restofstoryq" class="more">
+
+                <span id="Second_Paragraph_Mod1" class="more">
+                    During the war, I got sick and had to have my tonsils removed. That was not something that was done in Sandpoint, so mother and I rode a bus to Spokane, spent the night in a hotel and went to the hospital the next morning, where they were removed. I think I spent another day there then we took a bus back to Sandpoint. The best part of the whole affair was that I got to have lots of ice cream in the hospital which was a rare treat during the war years. <br /><br />
+
+                When I was 12 to 14, our ward, using mostly salvaged material from the buildings at Farragut, built the LDS chapel. It had a partial basement which was dug using a horse-drawn “slip.” A slip was a huge scoop about twice the size of a wheel barrow with handles at one end like a wheelbarrow and pulled by a horse. One person drove the horse and another would operate the slip. When the slip was pulled to the spot where dirt needed to be removed, the operator would lift up on the handles to force the front lip to dig into the soil. Then, when the slip was full, he would push down on the handles to force the lip up. The horse then dragged the slip up out of the hole and off to where the dirt was to be dumped, whereupon the operator lifted the handles high enough for the slip to tip over and dump its contents. This action was repeated all day long. The horse was driven by the man who owned it and the slip was operated by us 12 to 14 year old boys, one on each handle. It was hard, hard work. When the forms were all in place for the basement walls, we boys were sent down inside them to wire together the reinforcement bars, because we were the only ones small enough to fit in there.  <br /><br />
+
+                One day while working on the site, I stepped on a nice rusty nail sticking through a board in the dirt. I figured I’d get in trouble for being clumsy and not watching where I was stepping, so I didn’t tell anyone about it. I got on my bike, went home and soaked my foot in an Epsom salts bath then poured iodine into the wound. That really stung! Each day as I got out of bed in the morning and as I went to bed at night, I checked the wound to see if it was festering or looking bad. I fully expected to get blood poisoning and lose my leg. Fortunately, the wound healed in just a few days with no problem.   <br /><br />
+
+                
+                Over the next year I helped build that building alongside the men of the ward. A few years later I helped build the relief Society room addition and later repaint the entire interior. When the Relief Society addition was about to be built, the Bishop’s son, Orville Scott and I hauled all the gravel used for mixing the concrete for the foundation. We used a flatbed truck with no side boards or tail gate as that was all that was available. We drove about six or seven miles away, to a gravel pit where we used regular shovels to load as much gravel that would stay on the truck without falling off, then drive back to the church where we used those same shovels to unload. As I remember, we made two trips a day for about three days. That was when I discovered I had biceps.  <br /><br />
+
+                Another puncture wound of the foot occured when I was standing on my bed and stepped on a needle. How the needle got there we never determined, but there it was stuck all the way through my foot with the point sticking out of the top right about the middle. There was some thread sticking out of the bottom of my foot and mom tried pulling on it to extract the needle but to no avail. So she got some pliers and pulled it on through out of the top of my foot. Boy! That smarted. Again the foot was soaked in an Epsom salts bath and the wound anointed with iodine.  <br /><br />
+
+                Our house had a large roofed over front porch which spanned the entire front of the house. It was about eight feet or so deep and had turned posts and railings. Along the South end and across part Southern half of the of the front there grew dense vines which made that end of the porch quite secluded in the summer when the leaves were on the vines. As soon as the weather warmed up enough, usually about the time school ended for the summer, we made our beds out there by stacking a couple of folded quilts up as a mattress and using another as a cover. After a few days, we needed to shake out all the quilts to rid them of the earwigs. Earwigs, for those who have never seen one are long, slender bugs with about six legs as I remember and 
+                pincers at the front of their heads. When they bite, it isn’t poisonous, but it does hurt and raises a welt.  <br /><br />
+
+                Our house was on a corner property and had a large yard. In the summer we would go out onto the lawn with flashlights and capture the night crawler earthworms to use for fishing the next day. These worms would come out of their lairs at night, hence the name night crawler. Why they did so I never knew, but they always kept part of their body inside the hole in the ground and when startled, could zip back into the hole faster than you could react to grab them.  <br /><br />
+
+                I think it was the summer between the 4th and 5th grade I got a job delivering a handbill called the “Advertiser.” I delivered 200 of them each week and was paid 1/2 cent each. It sure took a long time to deliver 200 of those things and I was glad when the printer who started the business as a sideline decided to cease publication after a couple of months.  <br /><br />
+
+                The summer before I started the 6th grade, I had the opportunity of getting the Spokane Daily Chronicle newspaper route in our neighborhood. It was an afternoon Monday thru Saturday paper. After about a year I moved on to a route which was about 4 times as large and covered the entire downtown area as well as residences adjoining downtown. The only bad part was the three or four customers who lived across the bridge by the beach and train depot. In the summer, on my bike those were no problem, but during the winter when I had to walk the route, it was really a cold chore. I gave up the route when I started high school because I didn’t consider being a “paperboy” a cool thing to be when in high school. However, about five months before I quit, I was selected as the Daily Chronicle’s “Carrier of the Month” and a half page picture and write-up about me appeared in the March 21st, 1950 edition.  <br /><br />
+
+                The elementary school principal, Charlie Stidwell would select three or four seventh graders each year to be “his boys.” For some unknown reason, I was so selected. He would spend extra time with us and taught us how to run the 16mm movie projector, which entailed loading the film, properly threading it thru the projector, rewinding it and even how to splice the film when it broke. When we were in the eighth grade we would then be assigned to run the projector in showing films in a few of the classes. Also during the winter when the weather was bad, he would have us show Laurel and Hardy and other such films during the lunch hour for anyone who wanted to watch them. I even got to accompany the superintendent of schools on a trip out to two county one-room schoolhouses to show a film to those kids there. Boy, did I ever think I was a big shot!  <br /><br />
+
+                On Saturdays, Charlie would have us kids, both 7th and 8th graders come over to the school where we would watch U.S. Army combat films where we saw footage of actual combat scenes, dead bodies, soldiers being shot, burning equipment and bodies, etc. He was in the army in Europe and went through the Battle of the Bulge and wanted us to see what war was really like, that it wasn’t neat and clean as depicted in the war movies of the day. 
+                 <br /><br />
+
+                Other memories of when I was a kid: My first boy scout campout where we rode in a WWII landing craft across the lake where we camped for, I think, three days and two nights. Going on two different Church Father and Son campouts with my dad. Bee stings...I was highly allergic and would swell up big time. <br /><br /> 
+
+                When I was about 14 or 15, the Bishop’s son Orville, my cousin Paul and I decided to build us some punts to sail upon the waters of Sand Creek. Punts are a flat bottomed boat with square but sloped ends that are usually propelled by the occupant standing in them and using a long pole pushing on the creek or lake bottom. We salvaged and scraped together enough material for two craft which, after assembly, were waterproofed by filling the seams with melted roofing tar. On the day of the launch, Orville and Paul won the rights of being the first to go. They had both gone about 20 feet from shore when Paul shifted his weight, causing the low clearance side board to go under the water at the right rear corner. As the water poured in, he quickly shifted his weight the opposite side but overcompensated, and while standing there, shifting back and forth, he slowly sank deeper and deeper until the punt shifted from under him, leaving him alone to swim to shore fully clothed. The current was very slow and sluggish, but it caught the submerged punt and started carrying it off. Orville tried to get it but failed. So we were down to one craft for the three of us and I as yet had not the opportunity to take a spin. I don’t remember ever doing so either. At some point, within a few days of the fateful initial launch, one of the end boards came off the other punt as Orville was landing it after a short ride. Thus ended the punt experiment. <br /><br />
+
+                On July 18, 1948, I received the Aaronic Priesthood and was ordained a Deacon by my father, Kenneth Deward Roos. On July 22, 1951, I was ordained a Teacher in the Aaronic Priesthood by my father. On July 19, 1953, I was ordained a Priest in the Aaronic Priesthood by my father.  
+                </span>
+            </div>
+        </div>
+
+<!-- CHAPTER SIX -->
+
+    <div id="Gallery_Strip1" class="clearfix">
+            <ol class="GalleryPicsMod">
+                    <li><%= link_to image_tag("roos/bill/small/Adolescence13.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/bill/large/Adolescence13.jpg", :class => "fancybox", :rel => "gallerya", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/bill/small/Adolescence14.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/bill/large/Adolescence14.jpg", :class => "fancybox", :rel => "gallerya", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/bill/small/Adolescence11.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/bill/large/Adolescence11.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/bill/small/Adolescence16.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/bill/large/Adolescence16.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            “I Just Burned Some Leaves”
+            </span>
+            <span id="Contributor_Name_Mod">
+            bill roos
+            </span>
+            <span id="First_Paragraph_Mod">
+            Most of the residential streets of the small town in the Panhandle of North Idaho where I lived as a boy in the 1940's and early 1950's were not paved. They were gravel with drainage ditches on both sides. In the spring, the city street department came along with a road grader and smoothed out the winter's ruts and potholes. That was followed up with a truck, which sprayed down a thin coat of black oil that was supposed to seal in the dust. Actually, all that happened was the oil was picked up by the car tires and deposited on the under-parts and sides of the cars as they drove down the streets. After a while, the dust was back. Then, a couple of times a week throughout the summer, a water tank truck came along spraying water to dampen the dust. Within an hour or two the water had evaporated in the hot summer sun and again, the dust was back. 
+            <br />
+            </span>
+            <div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <iframe src="https://player.vimeo.com/video/124071350" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “Every leaf for a half a block leapt six feet into the air in a fiery explosion.”
+                </span>
+            </div>
+
+            <span id="Second_Paragraph_Mod">
+                        
+                There were no houses across the street in front of our house. Instead there was a steep embankment of about forty feet down to the 500-yard wide floodplain of Sand Creek, which meandered its way through the floodplain. <br /><br />
+                                        
+                Along that embankment grew 15 or 20 giant cottonwood trees 50 to 60 feet tall. I hated those trees with a passion, because every autumn, we had a gazillion-trillion leaves that fell from them, plus those from a large maple tree in our back yard. Those miserable trees caused me untold hours of work, and, as a youth, I was extremely averse to anything even resembling work.
+                                        
+                
+
+            </span>
+
+            <span id="See_More_Mod"><a href="#" id="restofstory2-show"  onclick="showHide('restofstory2');return false;">SEE MORE</a>
+            </span>
+
+            <div id="restofstory2" class="more">
+
+                <span id="Second_Paragraph_Mod1" class="more">
+                    Our house was on the comer of the block and I would rake the leaves into the drainage ditches along the street and burn them. In those days there were no environmental laws prohibiting the pollution of the air by burning leaves. I suppose that was because no one had yet discovered the environment and burning was the only way to dispose of leaves. During the autumn time, the air was filled with the scent of burning leaves all over town. <br /><br />
+                                        
+                After raking the leaves into the ditches, we set them alight in several places along the ditch. Then, because the leaves tended to mat down and not bum well I then had to be constantly busy going up and down the ditch turning and stirring the leaves to keep them burning. It was a very time consuming job and drastically cut into time I could be spending in much more profitable ways, such as just laying back and taking it easy. “Goofing off,” we called it. <br /><br />
+                                        
+                On a pleasant, warm and sunny October Saturday, when I was 14, after raking the ditches full and still having more stirring of burning leaves to do before I could finish raking and go off to do something much more interesting, I was struck with a great inspiration... I would use gasoline to make them burn faster. <br /><br />
+                                        
+                I knew that gasoline was dangerous so I was very careful. I got a can from Dad's workshop and began pouring it along the ditch on the half block long side of the lot starting at the driveway at the rear of the property and going to the front corner. I then carefully and securely placed the cap back on the gas can and carried the can back to the shop so there would be no possibility of the can exploding. <br /><br />
+                                        
+                There was just one small problem. Something I hadn't accounted for. During all the time to pour the gas for almost a half block, then cap the can and carry it to the garbage then walk back over to the ditch, all that gasoline had turned from a liquid into a gaseous state, filling every large and tiny air space within that ditch full of leaves. <br /><br />
+                                        
+                Oh, I knew there would be some vapor involved and the possibility of a small flashback, so I was very careful not to go too close when I lit the match. I walked to about the middle of the length of the ditch, stood back about 3 feet, struck a wooden match and threw it at the ditch. <br /><br />
+                                        
+                Well, that match never made it to the leaves. It caught the vapor in mid-air and there was a terrific "WHUMP!" Every leaf for a half a block leapt six feet into the air in a fiery explosion and by the time they fell to earth, they were nothing but ashes. My eyebrows and the front of my hair was singed off and all the perspiration on my face was instantly vaporized and replaced by ashes.  <br /><br />
+                                        
+                My mother came rushing out of the house and anxiously called out. “What happened?”  <br /><br />
+
+                “Nothing,” I replied. <br /><br />
+                                        
+                “Well, what was that noise?”  <br /><br />
+
+                “What noise?” <br /><br />
+                                        
+                “That whump noise.” <br /><br />
+
+                “Oh,” I said, “I just burned some leaves.” <br /><br />
+                                        
+                Mother stood there looking at me for a long time, then went back into the house. <br /><br />
+                                        
+                It was quite an interesting experience and I thought it worked out quite well in the end. But I never again used gasoline. After that day, whenever I burned leaves, I used kerosene, which took longer to burn the leaves, but it had a cooler flash point and did not pose the explosive problem that so alarmed my mother. <br /><br />
+                                        
+                Also it allowed me to have my eyebrows.  
+                </span>
+            </div>
+        </div>
+
+
+<!-- CHAPTER SEVEN -->
+
+   <div id="Gallery_Strip1" class="clearfix">
+            <ol class="GalleryPicsMod">                    
+                    <li><%= link_to image_tag("roos/bill/small/Teenager.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/bill/large/Teenager.jpg", :class => "fancybox", :rel => "gallery7", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/bill/small/Teenager5.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/bill/large/Teenager5.jpg", :class => "fancybox", :rel => "gallery7", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/bill/small/HS3.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/bill/large/HS3.jpg", :class => "fancybox", :rel => "gallery7", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/bill/small/HS4.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/bill/large/HS4.jpg", :class => "fancybox", :rel => "gallery7", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/bill/small/HS5.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/bill/large/HS5.jpg", :class => "fancybox", :rel => "gallery7", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/bill/small/HS7.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/bill/large/HS7.jpg", :class => "fancybox", :rel => "gallery7", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/bill/small/HS.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/bill/large/HS.jpg", :class => "fancybox", :rel => "gallery7", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/bill/small/HS1.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/bill/large/HS1.jpg", :class => "fancybox", :rel => "gallery7", :title => "" %>
+                    </li>
+                </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            Working as a Teenager
+            </span>
+            <span id="Contributor_Name_Mod">
+            bill roos
+            </span>
+            <span id="First_Paragraph_Mod">
+            The summer between my freshman and sophomore years, I started working with my brother-in-law Jack cutting telephone poles at his parents’ place in the country. That wasn’t too bad a job, but when we quit that to do the haying, my body decided it knew how to perspire and I learned I was to spend my life plagued with “hay fever.” When, in July, I got the chance for the job at the JCPenney store as a stock boy, I didn’t hesitate a minute. 
+            <br />
+            </span>
+            <div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/199140497%3Fsecret_token%3Ds-hJJz2&amp;color=c8c8c8&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “By the time New Years Eve arrived, I was rich with close to $100.”
+                </span>
+            </div>
+
+            <span id="Second_Paragraph_Mod">
+
+                I worked there until I graduated from high school. I worked 48 hours a week during the summer and during school on Saturday for 8 hours and 2 hours a day Monday through Thursday after school and 4 hours on Fridays because the store was open till 9:00pm on Fridays. I unpacked merchandise, put price tags on it and put it away on the stockroom shelves, printed signs for displays in the store, carried merchandise to the sales floor, emptied the trash containers, swept the floors and swamped out the rest rooms each day. <br /><br />
+
+                On days when I worked the full day, I would sweep the front sidewalk, or in winter if there was snow, shovel the snow off. I washed the front display windows each Saturday, even in the wintertime. On Saturdays the manager would let me onto the sales floor and wait on customers. During Christmas, I would assemble all the tricycles and pedal cars and help out in the toy department which operated only during the Christmas season. Each Friday evening, during the Christmas season, I was padded up and became the department store Santa. 
+
+                
+
+            </span>
+            <span id="See_More_Mod"><a href="#" id="restofstory4-show"  onclick="showHide('restofstory4');return false;">SEE MORE</a>
+            </span>
+            <div id="restofstory4" class="more">
+
+                <span id="Second_Paragraph_Mod1" class="more">
+
+                The winter of my junior year in high school, there came a blizzard which pretty well shut things down for about three days. With school closed and being a young man with financial demands which usually exceeded my income from JCPenney, I decided to venture forth with snow shovel in hand to earn cash shoveling sidewalks. It was hard and heavy work as the snow was about 30 inches deep and the average going price for doing a walk was 50 to 75 cents. As I was shoveling about the third or fourth walk and wondering if this was such a great way to earn money, the woman of the house where I was shoveling came out and, being worried about the deep heavy snow on the roof of her house, asked if I could and would shovel it off. Since I had shoveled snow off the roof of our garage at home many times, and knowing that was a lot easier than shoveling a sidewalk, I readily agreed it could be done and established the price of $3.00 for the job. <br /><br />
+
+                Now this was at the time when the Federal Minimum Wage was 85 cents an hour, which is what I was paid at JCPenney. $3.00 was almost four hours worth of work at minimum wage. The lady told me where there was a ladder and up onto the roof I went. In about an hour, I was not only finished and $3.00 richer, but two neighbors saw me and asked me to do their roofs as well. I settled for a $5.00 fee for shoveling their roof and their walk from the front door to the street. About three hours later, I was much richer and had yet another person ask for the same. When I quit for the day, I had earned about $20.00 in all. Over the next two days I earned another 30 or 40 dollars. <br /><br />
+
+                By then, the city and county was about dug out and school was set to reopen, when...another storm hit with even more snow. Oh yes! I set off once again to the same people I had served before and most hired me once again, plus I picked up several other customers along the way. By the time New Years Eve arrived, I was rich with close to $100.00 all from snow removal and treated my cousin Paul and two girls to a big New Years Eve celebration. <br /><br />
+
+                The local radio station: “Station KSPT, 1400 on your dial,” had a two hour program on Saturday afternoons called the “1400 Club” which was hosted by a local teen. People would send cards and letters requesting certain songs to be played and to dedicate songs to certain “special” people. I think it was in the spring during my sophomore year, I got the “job” of being the guest DJ and hosting the show. Every Saturday morning, I’d get on my bike and ride three or four miles west out on U.S. Highway 2 to where the station was located. There I’d go through all the requests, pull the records and stack them in the order I wanted them played. <br /><br />
+
+                When it was time to go on the air I’d leave the records stacked in the control room, take all the request cards and letters and commercials to a small room separated from the control room by a large plate glass window. This was called the announcers booth. There on a counter facing the window was a microphone, which I used. In the control room was the station engineer who actually played the records. For the next two hours I did all the talking, announcing the songs, and who had requested them, reading the commercials and also reading the news. People could also call in and make requests. When that happened, I’d have to run to the record library room pull the record and take it to the engineer. While songs were playing, I’d go to the room where the teletype machine was located, pull the latest news, take the long sheet of paper back to my announcers booth, decide which news items to read then read them on the hour and half hour. Thus I always started by reading the news, then announced it was time for the 1400 Club and start the program. And I always finished my shift by reading the news. Then, before I could go home, I had to take all the records back to the library and file them away.<br /><br /> 
+
+                The engineer loved to give me a hard time by having me make announcements without telling me about it before hand. The first time he did it was about half way through the program on my very first day. All of a sudden, just as a record was about to end, he ran into my booth and handed me a sheet of paper and told me it was a public service announcement which had to be read at the next beak, then he left and went back to the control room. The music ended, my mike came on and I started to read. Well, it truly was a public service announcement but from the American Medical Association and was full of technical, medical terms which were impossible to read even with time to review them before hand. The engineer was on the other side of that window laughing like crazy. He would do that every week and I soon became used to “sight reading” difficult text. Another of his favorite tricks was to sit and make stupid faces at me when I was trying to read the news, hoping to get me to laugh. <br /><br />
+
+                All this was done for free! The station did not pay the kids, it was considered an “honor” to be selected to do it. As I remember, each kid spent three or four months then another took over. It was an interesting experience and one that I enjoyed a lot. <br /><br />
+                </span>
+            </div>
+        </div>
+
+<!-- CHAPTER EIGHT -->
+
+   <div id="Gallery_Strip1" class="clearfix">
+            <ol class="GalleryPicsMod">                    
+                     <li><%= link_to image_tag("roos/bill/small/WWII3.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/bill/large/WWII3.jpg", :class => "fancybox", :rel => "gallery8", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/bill/small/WWII4.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/bill/large/WWII4.jpg", :class => "fancybox", :rel => "gallery8", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/bill/small/WWII6.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/bill/large/WWII6.jpg", :class => "fancybox", :rel => "gallery8", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/bill/small/WWII7.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/bill/large/WWII7.jpg", :class => "fancybox", :rel => "gallery8", :title => "" %>
+                    </li>
+
+                    <li><%= link_to image_tag("roos/bill/small/WWII8.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/bill/large/WWII8.jpg", :class => "fancybox", :rel => "gallery8", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/bill/small/WWII11.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/bill/large/WWII11.jpg", :class => "fancybox", :rel => "gallery8", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/bill/small/WWII13.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/bill/large/WWII13.jpg", :class => "fancybox", :rel => "gallery8", :title => "" %>
+                    </li>
+                     
+                </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            My Brother Dan
+            </span>
+            <span id="Contributor_Name_Mod">
+            bill roos
+            </span>
+            <span id="First_Paragraph_Mod">
+            A couple of days before I started high school, my brother Dan got mad at me for something I did to him, and threw a walnut at me, breaking my glasses. Since it took a couple of weeks to get new ones, I had to spend the first few days of class squinting through a piece of the broken lens so I could see what the teacher had written on the board.
+            </span>
+            <!--div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <iframe src="https://player.vimeo.com/video/121174375" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “Her growth spiritually has allowed her to succumb more of herself to the Lord and have faith and have patience.”
+                </span>
+            </div-->
+
+            <span id="Second_Paragraph_Mod"> 
+                Dan was four years younger and always wanted to bother me, or so I thought. It’s a wonder I didn’t kill or seriously maim him. Once, I was standing on the hood of an old pickup truck parked out behind our woodshed, and he was standing in the bed of the truck, telling me I shouldn’t be on the hood. I got angry and shoved a piece of board across the roof and hit him in the face giving him a black eye. Another time we were in the woodshed and he was giving me a bad time and I pushed a pile of wood on top of him, then I panicked and quickly dug him out. Fortunately he wasn’t hurt...well, not all that bad anyway. <br /><br />
+
+                During the winter, we heated the house with a wood burning heater. Dan would rush down each morning from his cold room upstairs and stand beside the heater to get dressed. After pulling on his trousers, he would stand and “do the dance” to shake the legs of his long underwear down. I would tell him to stop and to just reach up his pant legs and pull the underwear down, but he’d refuse and continue his foot stomping little dance. One day I got exasperated and gave him a push. The big problem was that I pushed him toward the stove. He put out his arm which pressed full length from elbow to palm onto that hot stove burning him severely. I got in very big trouble for that. 
+
+                
+            </span>
+
+            <span id="See_More_Mod"><a href="#" id="restofstoryg-show"  onclick="showHide('restofstoryg');return false;">SEE MORE</a>
+            </span>
+            <div id="restofstoryg" class="more">
+
+                <span id="Second_Paragraph_Mod1" class="more">
+
+                Then one year, when I was about 13 or so, during a hot summer day when the water level was only in the main channel of the creek, my cousin Paul and I decided to don our swimsuits and go to the creek and wade around. My brother Dan decided to go along, and to avoid a hassle, we agreed to take him. We were doing fine, wading up to about Dan’s chest, when all three of us stepped off into a very deep hole, way over all of our heads. I could swim and so could Paul, but not Dan. As I went underwater, I grabbed Dan and while standing on the bottom, held him up so Paul could grab him and take him to shallow water. Well, Paul was also standing on the bottom holding Dan up for me. Eventually, we managed to thrash our way out to shallower water whereupon Dan began his blackmail, threatening to tell Mom that we had almost drowned him. So for several months, I was at Dan’s mercy, having to do anything he wanted under the threat, “I’ll tell Mom about the creek.” <br /><br />
+
+                When I was about 13 or 14, Dan and I were down walking along the creek.. I was carrying my .22 caliber pellet rifle. Dan was on top of the bank about 3 feet above me and I was down by the water. As I started to climb up to where Dan was, my foot slipped and I fell. As I fell I pulled the trigger on the rifle and shot Dan in the leg. Fortunately it was only a pellet rifle and not a real .22. The pellet didn’t penetrate Dan’s trousers but it did raise a nice red welt. He howled loud and clear, and never let me forget what I had done. When he learned I was writing this memoir he reminded me of that incident. I did learn from that experience to never put my finger on the trigger of a weapon until I was ready to fire it. <br /><br />
+
+                Dan loved to bother me whenever he could. I would be upstairs in my bedroom reading or listening to radio programs and he would come in and want to “wrassle.” Whenever I would do so and would start winning, as I always did because I was much bigger than he was, he would suddenly go stiff and cry out, “Stop, stop, my rib is caught.” When I stopped and let him loose, he would immediately start again to try to gain an advantage. <br /><br />
+
+                Most days I would refuse to have anything to do with him, whereupon he would create a fuss which would cause mother to call up and ask what was going on. Dan would tell her I wasn’t letting him be in my room. Mother would then tell me to let Dan in, and wouldn’t accept any of my protestations. Thus, having won that battle, Dan would grin and usually go off to his own room for awhile. One evening, however, I refused to heed mothers admonishment, bodily dragged Dan from my room, down the hall and into his own room and dumped him on the floor. Then I ran back to my room, closed the door and locked it. Dan ran after me and immediately began pounding on my door demanding to be let in. Mother called up again and I told her I wasn’t going to let Dan in and apparently she accepted that for the time being. Dan then lay down on the floor and began kicking my door. I ignored him and eventually he quit, and I heard him get up and quietly go off to his own room. <br /><br />
+
+                Now, in times past when he couldn’t get his way with me, he would go off and write me a “poison pen letter” which would say something as, “You better watch out because some night when you are asleep, I’m going to come in your room and get you.” So, I knew that this was what he was doing and I picked up my flash camera and quietly slipped out of my room and closed the door. Immediately to the right of my door was the doorway to my sister’s room where I quietly stood. Since it was night and there was no light on in the hallway, it was pitch dark. After a few minutes wait, I heard Dan open his door and walk down the hall to my door. Just as he stepped even with the doorway where I stood, I said, “Dan!” and took a picture. My voice startled him and the flash of the camera absolutely seized him with fright. He collapsed to the floor screaming and crying. It was a hilarious sight. <br /><br />
+
+                Mother was at the foot of the stairs in a flash wanting to know what had happened. I tore down the stairs and into the living room doubled over with laughter and told what had happened. Dad laughed and so did Mother, but just a wee bit, then she told me I should not do things like that as Dan could have had a heart attack and die. 
+
+                </span>
+            </div>
+        </div>
+
+<!-- CHAPTER NINE -->
+
+   <div id="Gallery_Strip1" class="clearfix">
+            <ol class="GalleryPicsMod">                    
+                    
+                    
+                    <li><%= link_to image_tag("roos/bill/small/Teenager2.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/bill/large/Teenager2.jpg", :class => "fancybox", :rel => "gallery8", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/bill/small/Teenager3.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/bill/large/Teenager3.jpg", :class => "fancybox", :rel => "gallery8", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/bill/small/Teenager4.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/bill/large/Teenager4.jpg", :class => "fancybox", :rel => "gallery8", :title => "" %>
+                    </li><li><%= link_to image_tag("roos/bill/small/Downthebank3.jpg", :id => "Pic_2ƒ_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/bill/large/Downthebank3.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/bill/small/Downthebank4.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/bill/large/Downthebank4.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+
+
+                </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            Backpacking Adventures
+            </span>
+            <span id="Contributor_Name_Mod">
+            bill roos
+            </span>
+            <span id="First_Paragraph_Mod">
+            When I was 14 years old, I made the first of my backpacking camping trips. It was with a few guys in the church, one of whom was my brother-in-law. We went to Roman Nose Lake in Boundary County, Idaho. It entailed about a 35 mile drive to where the trail began then a very hard uphill hike for about three miles to the top of a ridge above the lake then an extremely steep hike of about a half mile down to the lake. It was a glorious trip. We caught dozens of trout which we ate for three meals a day and even packed some out with us when we left for home. We swam in the lake which was ice cold as it’s source was from the melt of a large snow glacier at the base of the north face cliff of Roman Nose Mountain. We climbed on rocks up to the top of the mountain and threw rocks and limbs and whatever we could drag there off the cliff and watch it hit the snow about 300 feet below. Then we climbed back down to the snow which was steeply deposited at the base of the cliff and slid down it on the seat of our pants. We camped under the stars for two nights and told scary stories around the campfire. The second night, a storm blew in and we got drenched in a pouring rain for about an hour or so and had to spend the rest of the night shivering in wet sleeping bags. What a life for a 14 year old! 
+            </span>
+            <!--div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <iframe src="https://player.vimeo.com/video/121174375" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “Her growth spiritually has allowed her to succumb more of herself to the Lord and have faith and have patience.”
+                </span>
+            </div-->
+
+            <span id="Second_Paragraph_Mod"> 
+            We had so much fun, we just had to return, which I did for two more years. Then, one year we went there and later in the summer to another lake which was about five or six miles to get to, but not on a steep grade. At that one, camped on a large meadow at one end of the lake. In the morning, I awoke to the sound of something chewing. I opened my eyes and stared directly into the eyes of a doe whitetail deer eating grass right by my head. As I tried to reach my camera, I made a noise which spooked her and she, in turn, spooked what turned out to be an entire herd of at least 20 which all ran past my tent and into the woods. That lake was very shallow and we had to build a raft of sorts to get out to where the fish were, but fishing was decent enough to feed us. <br /><br />
+
+            The next year, the summer between my junior and senior high school years, we went to a different lake, even though we were there in mid-July, there was still snow all around the lake except for an area about 20 by 30 feet under some trees. But that ground was soggy wet. So, we cut hundreds of pine boughs and built a solid bed of boughs 6 to 8 inches deep over the entire area. But...fishing was non-existent! The lake was very, very shallow and the winter had been so hard the lake must have been frozen so long the fish ran out of oxygen and all lay dead on the bottom. That spelled disaster for us as we always planned on eating fish two to three meals a day. We were some six miles from the road and another 15 miles or so down that road to the highway and another 25 miles to town and no one was going to come pick us up for three days. Somehow we managed to survive off what little food we had brought with us, plus a few fish we caught in the creek which hadn‘t frozen over. A few of the guys caught and killed a porcupine and cooked it, but it wasn’t the most tasty meat and they all got diarrhea from it. But boy! Did we have fun! 
+
+            </span>
+
+            <span id="See_More_Mod"><a href="#" id="restofstoryh-show"  onclick="showHide('restofstoryh');return false;">SEE MORE</a>
+            </span>
+            <div id="restofstoryh" class="more">
+
+                <span id="Second_Paragraph_Mod1" class="more">
+                    The last time we went to Roman Nose, we didn’t pack any tents and could see a storm brewing the second afternoon there and we knew we would get soaked. So, we decided to pack up and head up to the top of the mountain where there was an old abandoned forest service forest fire lookout tower. We figured we could spend the night there nice and dry. It took a couple of hours to climb from the lake up to the top of the mountain and when we got there we had a bit of a problem getting to the top of the lookout. Lookout towers were built on 4 poles such as are used for telephone poles only about 40 to 50 feet tall. To get to the top of the tower there was a wooden staircase built halfway up along one side of the framework and then a 90 degree turn up the adjoining side to the top. Between the four poles were a supporting grid work of beams and the whole thing is further anchored with four heavy cables running from the tops of the 4 poles out at an angle down to the ground and fastened to steel rods sunk into the ground and buried in concrete. The lower portion of the stairs was pretty much hanging lopsided and loose, but we found that by staying tight against the side where it was fastened to the tower, we could make it to the second half which was still in good shape. So, up we went. <br /><br />
+
+                    Inside, we found a nice wood burning stove with an oven even, two built-in bunks with wire mesh springs but no mattresses and a table and two chairs. Plush living. We journeyed back down to ground level and scrounged up some firewood, which we hauled to the top with nylon parachute cord. We built a fire in the stove and proceeded to cook our dinner including some biscuits in the oven. That night, about 7:00pm or so the storm hit and the rains came down! But we were high and dry! Boy, did we think we were smart. About 10:00pm while we were trying to get to sleep, the storm hit with a fury with high winds and gusts that seemed to be at least 150 miles per hour. Remember, we were on the top of a lookout tower, about 50 feet off the ground on the tip top of a mountain. The tower shook and swayed with the wind and the four anchor cables hummed like a stringed instrument. When a gust would hit, we were positive the whole works was going to blow off the top of the mountain and sail over the cliff onto the snow glacier we played on, especially when there was a horrible tearing, crashing noise that sounded as though the tower was being wrenched apart. It was a very scary night. <br /><br />
+
+                    In the morning, we discovered what that horrible crashing, tearing sound was. The lower, damaged part of the staircase was totally missing. Not a trace and the previously stable upper portion was now in not so good shape. So, we lowered our backpacks to the ground with our parachute cord and became monkeys and climbed down the bracing beam framework to the ground. What a great adventure!  
+
+                </span>
+            </div>
+        </div>
+
+<!-- BOTTOM OF PAGE -->
+
+        <div id="boxmodex1" class="clearfix">
+            <span id="Previous_Exhibit_Link_Mod"><a href="<%= roos_teresas_childhood_path %>">
+            previous exhibit</a> 
+            </span>
+            <span id="Next_Exhibit_Link_Mod"><a href="<%= roos_timeline_path %>">
+            next exhibit</a>
+            </span>
+        </div>
+
+        <div id="boxmodex4" class="clearfix">
+            <%= image_tag("evelyn/menu/arrow motif left.png", :id => "arrow_motif_left1", :class => "image")  %>
+            <span id="Home_Link_Mod"><a href="<%= roos_path %>">
+            HOME</a>
+            </span>
+             <%= image_tag("evelyn/menu/arrow motif right.png", :id => "arrow_motif_right1", :class => "image")  %>
+        </div>
+</body>

@@ -1,0 +1,798 @@
+
+
+/* .image-wrapper {
+    position : relative;
+    display  : inline-block; 
+}
+.image-wrapper .image-options {
+    position : absolute;
+    top      : 0;
+    right    : 0;
+    left     : 0;
+    height   : 0px;
+    z-index  : 2;
+    display  : none;
+}
+.image-wrapper:hover .image-options {
+    display : block;
+}
+*/
+
+.primaryContainer {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100%;
+    width: 100%;
+}
+
+#note_all_passages_unless_otherwise_specified_were_spoken_by_ {
+    float: left;
+    font-size: 1.125em;
+    width: auto;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 34px;
+    color: rgb(3, 3, 3);
+    font-style: italic;
+    letter-spacing: normal;
+    text-decoration: none;
+    font-family: georgia;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 12;
+    margin: 100px 0px 0px 6%;
+    clear: both;
+}
+
+#cancermenu {
+    float: left;
+    width: 22.6%;
+    max-width: 100%;
+    height: auto;
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 7;
+    margin-top: 0px;
+    margin-left: 30px;
+    clear: none;
+    margin-right: 0%;
+
+}
+
+/* #cancermenu:hover {
+    opacity: 0.8;
+} */
+
+
+
+
+
+#adventuremenu {
+    float: left;
+    width: 22.6%;
+    max-width: 100%;
+    height: auto;
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 5;
+    margin-top: 0px;
+    margin-left: 30px;
+    clear: none;
+    margin-right: 0%;
+}
+
+#adventuremenu:hover {
+    opacity: 0.8;
+}
+
+#familytreemenu {
+    float: left;
+    width: 22.6%;
+    max-width: 100%;
+    height: auto;
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 6;
+    margin: 0px 0% 0px 30px;
+    clear: none;
+}
+
+#earlyadulthoodmenu {
+    float: left;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 13;
+    margin: 30px 0px 0px;
+    clear: both;
+    min-width: 0px;
+}
+#earlyadulthoodmenu:hover {
+    opacity: 0.8;
+}
+
+#protectmenu {
+    float: left;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 14;
+    margin: 30px 0px 0px 0%;
+    clear: both;
+}
+#protectmenu:hover {
+    opacity: 0.8;
+}
+
+#formativeyearsmenu {
+    float: left;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 17;
+    margin: 30px 0px 0px;
+    clear: both;
+    min-width: 0px;
+}
+#formativeyearsmenu:hover {
+    opacity: 0.8;
+}
+
+#providemenu {
+    float: left;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 18;
+    margin: 30px 0px 0px 0%;
+    clear: both;
+}
+#providemenu:hover {
+    opacity: 0.8;
+}
+
+#boyhoodmenu {
+    float: left;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 16;
+    margin: 30px 0% 0px;
+    clear: both;
+    min-width: 0px;
+}
+#boyhoodmenu:hover {
+    opacity: 0.8;
+}
+
+#presidemenu {
+    float: left;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 19;
+    margin-top: 0px;
+    margin-left: 0%;
+    clear: none;
+    margin-right: 0%;
+}
+#presidemenu:hover {
+    opacity: 0.8;
+}
+
+#courtshipmenu {
+    float: left;
+    width: 99.992122%;
+    max-width: 100%;
+    height: auto;
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 15;
+    margin: 0px 0px 0px 0%;
+    clear: none;
+}
+#courtshipmenu:hover {
+    opacity: 0.8;
+}
+#My_Life_Story_by_Randy_Bird_Several_years_ago_I_heard_a_talk_t {
+    float: left;
+    font-size: 1em;
+    width: 48.797978%;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1em;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 11;
+    margin: 100px 0% 0px 4.988968%;
+    clear: both;
+    max-width: 630px;
+}
+
+#textspanz3 {
+    float: none;
+    font-size: 1.75em;
+    line-height: 34px;
+    color: rgb(3, 3, 3);
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: normal;
+    text-decoration: none;
+    font-family: georgia;
+}
+
+#textspanz4 {
+    float: none;
+    font-size: 0.875em;
+    line-height: 24px;
+    color: rgb(3, 3, 3);
+    font-style: italic;
+    font-weight: normal;
+    letter-spacing: normal;
+    text-decoration: none;
+    font-family: georgia;
+}
+
+#textspanz5 {
+    float: none;
+    font-size: 0.875em;
+    line-height: 24px;
+    color: rgb(3, 3, 3);
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: normal;
+    text-decoration: none;
+    font-family: georgia;
+}
+
+#timelinemenu {
+    float: left;
+    width: 25.699148%;
+    max-width: 100%;
+    height: auto;
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 4;
+    margin: 120px 0px 0px 10.003592%;
+    clear: none;
+}
+
+#timelinemenu:hover {
+    opacity: 0.8;
+}
+
+#Life_Summary_by_Nicole_Cheung_daughter_Randal_Scott_Bird_join {
+    float: left;
+    font-size: 1em;
+    width: 48.797978%;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1em;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 21;
+    margin: 100px 0% 0px 4.996665%;
+    clear: both;
+    max-width: 630px;
+}
+
+#textspanz {
+    float: none;
+    font-size: 1.75em;
+    line-height: 36px;
+    color: black;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: normal;
+    text-decoration: none;
+    font-family: georgia;
+}
+
+#textspanz1 {
+    float: none;
+    font-size: 0.875em;
+    line-height: 24px;
+    color: black;
+    font-style: italic;
+    font-weight: normal;
+    letter-spacing: normal;
+    text-decoration: none;
+    font-family: georgia;
+}
+
+#textspanz2 {
+    float: none;
+    font-size: 0.875em;
+    line-height: 24px;
+    color: black;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: normal;
+    text-decoration: none;
+    font-family: georgia;
+}
+
+#R_A_N_D_A_L_S_C_O_T_T_B_I_R_D {
+    float: left;
+    font-size: 2.75em;
+    width: 100.001499%;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1em;
+    color: rgb(3, 3, 3);
+    font-style: normal;
+    letter-spacing: 17px;
+    text-decoration: none;
+    font-family: georgia;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 20;
+    margin: 0px 0px 0px 0%;
+    clear: none;
+}
+
+#randyproff {
+    float: left;
+    width: 14.99256%;
+    max-width: 100%;
+    height: auto;
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 3;
+    margin: 75px 0px 0px 5%;
+    clear: none;
+    min-width: 150px;
+}
+
+#boxz {
+    float: left;
+    height: auto;
+    margin-left: 5.000588%;
+    margin-top: 150px;
+    clear: none;
+    width: 68.064963%;
+}
+
+#guestbook {
+    float: left;
+    width: 22.6%;
+    max-width: 100%;
+    height: auto;
+    margin: 0px 0%;
+    clear: none;
+    color: rgb(0, 0, 0);
+}
+
+#guestbook:hover {
+    opacity: 0.5;
+}
+
+#boxz1 {
+    float: left;
+    height: auto;
+    margin: 100px 0px 0px 5.995998%;
+    clear: both;
+    width: 89.998974%;
+    opacity: 1.0;
+}
+
+#boxzz {
+    float: left;
+    height: auto;
+    margin: 100px 0px 0px 5%;
+    clear: both;
+    width: 90%;
+    opacity: 1.0;
+}
+
+#boxz3 {
+    float: left;
+    height: auto;
+    margin: 0px 0px 0px 30px;
+    clear: none;
+    width: 25.7%;
+    min-width: 0px;
+}
+
+#boxz2 {
+    a:hover {
+        opacity: 0.7;
+    }
+    float: left;
+    height: auto;
+    margin-left: 0%;
+    margin-top: 0px;
+    clear: none;
+    width: 70.5%;
+
+}
+
+#boxz4 {
+    float: left;
+    height: auto;
+    margin: 30px 0px 0px 0%;
+    clear: both;
+    width: 100%;
+}
+
+@media only screen and (max-width: 1118px) {
+    #cancermenu {
+        width: 21.9%;
+    }
+
+    #guestbook {
+        width: 21.9%;
+    }
+
+    #familytreemenu {
+        width: 21.9%;
+    }
+
+    #adventuremenu {
+        width: 21.9%;
+    }
+
+    #boxz3 {
+        width: 25.5%;
+    }
+
+    #R_A_N_D_A_L_S_C_O_T_T_B_I_R_D {
+        margin: -60px 0px 0px 0%;
+    }
+
+    #My_Life_Story_by_Randy_Bird_Several_years_ago_I_heard_a_talk_t {
+        margin: 100px 0% 0px 4.99%;
+    }
+}
+
+@media only screen and (max-width: 844px) {
+    #boxz3 {
+        width: 100%;
+        margin: 30px 0px 0px;
+    }
+
+    #courtshipmenu {
+        width: 47%;
+        clear: none;
+        margin: 0px 0px 0px 0%;
+        float: left;
+    }
+
+    #boyhoodmenu {
+        width: 47%;
+        margin: 0px 0% 0px 30px;
+        clear: none;
+    }
+
+    #formativeyearsmenu {
+        margin-top: 30px;
+        margin-left: 0%;
+        clear: both;
+        width: 47%;
+        margin-right: 0px;
+        float: left;
+    }
+
+    #earlyadulthoodmenu {
+        margin-top: 30px;
+        margin-left: 30px;
+        clear: none;
+        width: 47%;
+        margin-right: 0px;
+        float: left;
+    }
+
+    #boxz2 {
+        width: 100%;
+    }
+
+    #boxz1 {
+        width: 89.999259%;
+        margin-top: 100px;
+        margin-left: 5.998223%;
+        clear: both;
+    }
+
+    #protectmenu {
+        width: 99%;
+        max-width: none;
+    }
+
+    #providemenu {
+        width: 99%;
+        max-width: none;
+    }
+
+    #presidemenu {
+        width: 99%;
+        max-width: none;
+    }
+
+    #guestbook {
+        width: 47%;
+    }
+
+    #cancermenu {
+        width: 47%;
+        margin: 30px 0% 0px 30px;
+    }
+
+    #familytreemenu {
+        width: 47%;
+    }
+
+    #adventuremenu {
+        width: 47%;
+        margin: 30px 0% 0px 0px;
+    }
+
+    #timelinemenu {
+        width: 37%;
+        margin: 50px 0px 0px 5%;
+        clear: both;
+    }
+
+    #Life_Summary_by_Nicole_Cheung_daughter_Randal_Scott_Bird_join {
+        width: 69.99963%;
+        max-width: none;
+        margin: 100px 0% 0px 4.99%;
+        clear: both;
+    }
+
+    #My_Life_Story_by_Randy_Bird_Several_years_ago_I_heard_a_talk_t {
+        width: 69.99963%;
+        margin: 100px 0% 0px 4.99%;
+        clear: both;
+    }
+
+    #note_all_passages_unless_otherwise_specified_were_spoken_by_ {
+        margin: 100px 0px 0px 6%;
+        clear: both;
+    }
+
+    #randyproff {
+        width: 17.772512%;
+    }
+
+    #boxz {
+        width: 68.065018%;
+    }
+
+    #R_A_N_D_A_L_S_C_O_T_T_B_I_R_D {
+        margin: -70px 0px 0px 0%;
+        width: 350px;
+    }
+}
+
+@media only screen and (max-width: 776px) {
+    #note_all_passages_unless_otherwise_specified_were_spoken_by_ {
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 75px;
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 683px) {
+    #R_A_N_D_A_L_S_C_O_T_T_B_I_R_D {
+        font-size: 2.75em;
+        margin: -290px 0px 0px 210px;
+        float: left;
+        clear: none;
+    }
+
+    #randyproff {
+        margin-left: 10%;
+    }
+
+    #Life_Summary_by_Nicole_Cheung_daughter_Randal_Scott_Bird_join {
+        margin: -50px 0% 0px 10%;
+    }
+
+    #timelinemenu {
+        margin-left: 10%;
+    }
+
+    #My_Life_Story_by_Randy_Bird_Several_years_ago_I_heard_a_talk_t {
+        margin-left: 10%;
+        width: 80%;
+    }
+
+    #boxz1 {
+        margin: 100px 0px 0px 6%;
+        width: 90%;
+    }
+
+    #note_all_passages_unless_otherwise_specified_were_spoken_by_ {
+        margin-right: 5%;
+        margin-left: 5%;
+        margin-top: 75px;
+    }
+}
+
+@media only screen and (max-width: 558px) {
+    #boxz1 {
+        width: 84%;
+        margin: 60px 0px 0px 10%;
+    }
+
+    #Life_Summary_by_Nicole_Cheung_daughter_Randal_Scott_Bird_join {
+        width: 80%;
+        margin: 70px 0% 0px 10%;
+    }
+
+    #boyhoodmenu {
+        width: 44%;
+    }
+
+    #earlyadulthoodmenu {
+        width: 44%;
+    }
+
+    #formativeyearsmenu {
+        width: 44%;
+    }
+
+    #courtshipmenu {
+        width: 44%;
+    }
+
+    #guestbook {
+        width: 44%;
+    }
+
+    #familytreemenu {
+        width: 44%;
+    }
+
+    #adventuremenu {
+        width: 44%;
+    }
+
+    #cancermenu {
+        width: 44%;
+    }
+
+    #protectmenu {
+        width: 98%;
+    }
+
+    #providemenu {
+        width: 98%;
+    }
+
+    #presidemenu {
+        width: 98%;
+    }
+
+    #My_Life_Story_by_Randy_Bird_Several_years_ago_I_heard_a_talk_t {
+        margin: 60px 0% 0px 10%;
+    }
+
+    #timelinemenu {
+        width: 40%;
+        margin-left: 10%;
+    }
+
+    #randyproff {
+        width: 150px;
+        min-width: 0px;
+    }
+
+    #R_A_N_D_A_L_S_C_O_T_T_B_I_R_D {
+        margin: -120px 0px 0px 7%;
+    }
+
+    #note_all_passages_unless_otherwise_specified_were_spoken_by_ {
+        margin-left: 10%;
+        margin-right: 10%;
+        font-size: 10px;
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 449px) {
+    #providemenu {
+        margin: 20px 0px 0px 0%;
+    }
+
+    #protectmenu {
+        margin: 20px 0px 0px 0%;
+    }
+
+    #boxz3 {
+        margin: 20px 0px 0px;
+    }
+
+    #formativeyearsmenu {
+        margin-top: 20px;
+        width: 46%;
+    }
+
+    #earlyadulthoodmenu {
+        margin-top: 20px;
+        margin-left: 20px;
+        width: 46%;
+    }
+
+    #boyhoodmenu {
+        margin-left: 20px;
+        width: 46%;
+    }
+
+    #adventuremenu {
+        margin-top: 20px;
+        width: 46%;
+    }
+
+    #cancermenu {
+        margin-top: 20px;
+        margin-left: 20px;
+        width: 46%;
+    }
+
+    #familytreemenu {
+        margin-left: 20px;
+        width: 46%;
+    }
+
+    #guestbook {
+        width: 46%;
+    }
+
+    #courtshipmenu {
+        width: 46%;
+    }
+
+    #note_all_passages_unless_otherwise_specified_were_spoken_by_ {
+        margin: 30px 10% 0px;
+        line-height: 18px;
+        font-size: 10px;
+    }
+}
+

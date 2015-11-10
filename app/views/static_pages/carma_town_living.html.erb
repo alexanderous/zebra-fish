@@ -1,0 +1,487 @@
+<head>
+    <!-- show and hide begins -->
+    <script>
+        function showHide(shID) {
+          if (document.getElementById(shID)) {
+            if (document.getElementById(shID+'-show').style.display != 'none') {
+              document.getElementById(shID+'-show').style.display = 'none';
+              document.getElementById(shID).style.display = 'block';
+            }
+            else {
+              document.getElementById(shID+'-show').style.display = 'inline';
+              document.getElementById(shID).style.display = 'none';
+            }
+          }
+        }
+    </script>
+    <!-- show and hide end -->
+    <!-- responsive video begins -->
+    <script>
+            $(document).ready(function () {
+                $(".ChapterVideoDiv").fitVids();
+            });
+    </script>
+    <!-- responsive video end -->
+    <!-- fancybox begins -->
+
+        <!--script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script--> <!-- this causes fitvids NOT to work. BOO -->
+        <link rel="stylesheet" href="/fancybox/source/jquery.fancybox.css" type="text/css" media="screen">
+        <script type="text/javascript" src="/fancybox/source/jquery.fancybox.pack.js"></script>
+    <!-- fancybox end -->
+
+<meta name="viewport" content="width=device-width; initial-scale=1.0,maximum-scale = 3.0">
+
+    <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', '[redacted-g]', 'antho.co');
+          ga('send', 'pageview');
+    </script>
+
+</head>
+
+<!-- Story Heading Begins -->
+        <div id="ThemeCoverPhotoTownLiving" class="clearfix">
+            <span id="ThemeTitle">
+                <span id="textspanlichapter">TOWN LIVING</span><span id="textspanlichapter1"><br /></span><span id="textspanlichapter2">THE TURNING POINT</span><br />
+            </span>
+            
+            <span id="ChapterSectionIndex"><br/><br/><br/>
+                <a href="#ch1">1 </a>&#x2f;<a href="#ch2"> 2 </a>&#x2f;<a href="#ch3"> 3 </a>&#x2f;<a href="#ch4"> 4 </a><!--&#x2f;<a href="#ch5"> 5 </a>&#x2f;<a href="#ch6"> 6 </a>&#x2f;<a href="#ch7"> 7 </a--><!--&#x2f;<a href="#ch8"> 8 </a> -->
+            </span>
+
+        </div>
+
+<!-- Story Heading Ends -->
+
+
+        <div id="Gallery_Strip" class="clearfix">
+            <ol class="GalleryPicsMod">
+
+                    
+                    <li><%= link_to image_tag("carma/townliving/small/townliving.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/carma/townliving/large/townliving.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("carma/townliving/small/townliving1.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/carma/townliving/large/townliving1.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("carma/townliving/small/townliving2.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/carma/townliving/large/townliving2.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("carma/townliving/small/townliving3.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/carma/townliving/large/townliving3.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("carma/townliving/small/townliving4.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/carma/townliving/large/townliving4.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("carma/townliving/small/townliving5.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/carma/townliving/large/townliving5.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("carma/townliving/small/townliving6.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/carma/townliving/large/townliving6.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("carma/townliving/small/townliving7.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/carma/townliving/large/townliving7.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <!--li><%#= link_to image_tag("carma/townliving/small/townliving8.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/carma/townliving/large/townliving8.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li-->
+                    <li><%= link_to image_tag("carma/townliving/small/townliving9.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/carma/townliving/large/townliving9.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("carma/townliving/small/townliving10.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/carma/townliving/large/townliving10.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+
+                </ol>   
+        </div>
+<!-- Chapter 1 Begins -->
+        <span class="anchorup"><a name="ch1"> </a><div class="invisichar"> a</div>
+<br /><br /><br /><div> </div></span>
+        <span id="ChapterHeading">
+            <span id="textspanlichapter9">N</span><span id="textspanlichapter10">o</span><span id="textspanlichapter11"> 1 &nbsp;</span>
+            <span id="textspanlichapter13">MOVING </span><span id="textspanlichapter15">off the </span><span id="textspanlichapter16">FARM</span>
+        </span>
+        <div id="HorizontalDivider" class="clearfix">
+        </div>
+        <div class="ChapterVideoDiv">
+            <div class="ChapterVideo">
+                <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/196379732&amp;color=cccccc&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+            </div>
+        </div>
+
+
+        <span id="ChapterQuoteAudio">
+        “As Ken and I looked back later, we decided that we enjoyed the Rexburg years most.” 
+        </span>
+        <div id="ChapterText" class="clearfix">
+            <!--span id="ChapterByline">
+            <span id="textspanlichapter22">ELLIS LI</span><br /><span id="textspanlichapter24">DAUGHTER</span>
+            </span-->
+
+            <span id="ChapterParagraphOne">
+            <span id="BigFirstLetterText"></span>
+                We moved off the farm in 1965. We had been thinking of making a change in our lives for some time. Ken’s health was beginning to show evidence of a needed slowdown in stress to his physical body and farm work definitely requires much hard work, long hours and complete dedication to the work. Ken has always had those qualities and his success in providing for his family has always been his prime concern. When his health began to decline because of the hard work on the farm, we began to look for some other way of providing for the needs of our family. <br /><br />
+
+                We looked into the possibility of acquiring a franchise for an Arctic Circle drive-in and when one became available in Rexburg we really began to do some very serious thinking. We made the move in 1965. We found a home that we could purchase on Maple Drive in Rexburg and moved in that September. The home was a split-level with four bedrooms, three upstairs and one in the lower level. There was an unfinished family room with an area for laundry, with a kitchen and living room on the main floor. It was a comer lot with a vacant field to the east. There was a good-sized backyard which we later fenced in for privacy. <br /><br />
+
+                We were comfortable there and the change was pretty dramatic considering where we previously lived for 16 years. Mike entered Madison High School as a junior, Marlon as a sophomore, Robert in the 7th grade, Debra 5th and Randy in the 3rd, having missed some school because of needed orthodontic surgery in Boise that fall. Janet started in the first grade. We had good neighbors. The Harts were the next house to the west, Ellises across the street north, Huskinsons behind us on the south next to Walkers. Maple Drive was a friendly street; it ran a little uphill going east and was near the Madison Memorial Hospital. We enjoyed about four years there. <br /><br />
+
+                On Maple Drive, we also became acquainted with the Stokes, Theron and Lola, who became our dear friends, and the Hinckleys and the Wasdens—many wonderful memories of wonderful friends. We lived in the bounds of the Rexburg 4th Ward, the ward from which Mike left to serve his mission. A year or so after acquiring the drive-in, I had the opportunity to take the position of Public Health Nurse for all of Madison County plus two school districts. The position became available when Esther Choales retired. I felt that I needed to return in some capacity to my nursing profession so applied for the job and was accepted. I began work in the office that was located in the Madison County courthouse, up a good flight of marble stairs to the second floor and toward the back of the building. There were two rooms to the office and a secretary worked there as well. <br /><br />
+
+                Mary Gibson became my dear friend through the years that we worked together, 12 in all. I had the responsibility for the whole county and a caseload that required much home visiting and teaching in the school districts to groups of students regarding various health subjects. These were mostly grade and junior high students. During the years in the health department as I worked with other public health nurses in the area, we instigated and conducted various clinics and child care classes in conjunction with Madison Memorial Hospital. I worked with Jerry Daniels, who worked in the Fremont County office and later Janice McNee, who became a dear friend and we established several clinics, such as blood pressure monitoring and mother and baby care classes. We conducted immunization clinics for both counties and worked together to do this. We had immunization clinics for measles, mumps, and rubella, polio, and influenza. <br /><br />
+
+                After several years we were privileged to have a new office built next to the courthouse and it was beautiful. The sanitarian for the county also had his office in the same building. We were happy there and it was an efficient and productive place to work. But it was short-lived because when the Teton Dam broke and the new little office was inundated, we of course had to find another place for the office and ended up in the house that was next to the drive-in down on Main Street. The house was acceptable and big enough and with the bedrooms adjusted to be used for clinic rooms, we were quite comfortable there for a year or two. Later our offices were established in the old hospital building, after the new hospital was built just to the south of the old building. <br /><br />
+
+                Mary Gibson was my faithful secretary, teacher, and friend for all those years. She lived down the hill a block and up another half block with her husband, Garr. Wonderful friends. She taught me much about the office and the needs of the people in Madison County and what my responsibility was to become. I will always treasure her friendship those years. She died while we were serving in the England mission. <br /><br />
+
+                Back to the drive-in. Each of the kids worked in the drive-in as they became of age to do so. They earned money there and also acquired quite a taste for hamburgers, seeing as how they were totally free…well, almost—they did have to work there! We also were a great source of income for Ricks College students; we hired them mostly and provided employment for many of them through those years. When we started the business, hamburgers were selling for 19 cents! And they were good hamburgers! <br /><br />
+
+                The move to Rexburg was especially good for our children. Rexburg, we felt, would be a good place to raise our children. The boys became active in the various sports programs in the schools, especially basketball. Mike was on the varsity team his senior year and Marlon tried out and also made the team but didn’t continue. He found out he was a little too short compared to the other guys, and would not play much so he decided not to continue. Robert did make the varsity football team and basketball team and had a couple of excellent years with the Madison High School teams. We enjoyed many basketball games when our boys were involved and always felt that “community games with local boys playing is where the real sport is.” We enjoyed several years being involved in those sports! <br /><br />
+
+                Debra became involved in the drill team at the high school. Randy sang with the high school choir and Janet was the only girl on the Adams Grade School baseball team! “The kids were good students, had lots of friends who were good kids as well, which we feel contributed to few real problems while they were growing up. Good friends make such a big difference. <br /><br />
+
+                As Ken and I looked back later, we decided that we enjoyed the Rexburg years most—the kids were in their teens and we had lots of fun together. We enjoyed each one and treasure the memories of those years. They were the best!<br /><br />
+
+                Mike received his mission call to New Zealand while we were living on Maple Drive. It was a year that wards could only have two missionaries leave because of the Vietnam War and only few were allowed to be called. There was no farewell in the ward but we had a family get together to see him off. Marion left for his mission to Indonesia when we lived in the new house on Reed Street as well as Robert when he was called to Australia. Randy saved in the Oakland Mission and we worried more about him being in the wicked San Francisco area more than we did the three brothers who were 8,000 miles from home! Debra was called to serve in the Italy Rome Mission and Janet to the Peru Lima Mission. Janet’s call was interesting because when Bishop Parkinson called us serve a mission, Janet was in school at BYU and she was shocked that we would be called to serve a mission when she was not yet married and still attached to her parents, so to speak. <br /><br />
+
+                A wise Bishop Parkinson called her to serve as well when she came home for the weekend and there we were, parents and daughter to serve together! Many blessings! After four years of living in the split level house on Maple Drive we decided to build a new home and chose a lot just down the street and north of the old hospital building, on Reed Street: 431 Reed Street. It was a new neighborhood and few homes had been built yet. We build a home that had three bedrooms upstairs with living room and kitchen-dining area and a downstairs completely finished as well with three bedrooms down there and a huge family room and walk out into the back yard. We build a balcony off to the north from the dining area. <br /><br />
+
+                It was a beautiful home and we loved it. Our neighbors there were the Boyles, who were already in the neighborhood, and the Huskinsons and the Eriksons who built after we did. Also the Carters and the Garners, Strobles, and later on further up the hill the Flamms and our bishop of the 8th Ward at that time, Bishop Jeppesen. We had good neighbors and a quiet, friendly street. My memories of Reed Street and happy memories. I remember Brother Huskinson telling me one time that he used to love to sit by his front window and watch all the activity going on over at the Ken Bird house, always seemed to be happy times and they were.
+            </span>
+
+            <!--div id="ChapterPictureGallery" class="clearfix">
+                <ol class="GalleryPics"-->
+                    <!-- pictures -->
+                    
+                <!--/ol>    
+            </div-->
+
+
+            <!--span id="ChapterParagraphTwo">
+                    I have little memory of anything that took place in my life during the years that my family lived on Whittier Street. I imagine that because of my placement in the order of the family, being the youngest of ten living siblings and being a new baby arriving, that I was the recipient of lots of attention. Of course there are the suggestions that I was certainly spoiled and pampered because of this. I do know that I had loving parents and brothers and sisters who cared for my every need and that my years as a small child were filled with loving attention and freedom to play without fear. We lived in that location for approximately four years after I arrived.
+            </span>
+            
+            <span id="SEE_MORE"><a href="#" id="restofstory1-show"  onclick="showHide('restofstory1');return false;">SEE MORE</a>
+            </span>
+
+            <div id="restofstory1" class="more">
+                <span id="ChapterParagraphTwo">
+                    I have memory of one incident that was quite traumatic to myself and a young friend, Doris Standen, when we interfered with a beehive located somewhere in the area and were both stung by the angry occupants to the extent that Doris was quite ill for a time. I fared much better than she as my injuries from the bees were minor. I also have a memory, however slight, of a big swing in the neighborhood, maybe in the Standen yard or even my yard, that we both enjoyed as kids and friends. <br /><br />
+
+                    The house on Whittier was about a block west of the railroad tracks that run through Idaho Falls. That area was quite sparsely populated in 1926 and there were few houses on the block where we lived. Doris lived just a house or two to the east of us so we were pretty constant play friends. I guess she could be known as the very first friend that I had as a child. When I was about 5 years old my family moved to F street, directly across Memorial Drive from the LDS Hospital. We lived there for about two or three years. <br /><br />
+
+                    The hospital was considered to be quite tall for buildings at that time. It was an impressive building. From the street there was a long walkway up to the front door of the hospital. There could usually be seen at most any time a doctor or a nurse in ter white uniform and cap hurrying up to the door to enter and report for duty. As long as I can remember I have always wanted to be a nurse. I do believe that it was because of the excitement of living near that beautiful hospital.<br /><br />
+                    
+                    I don’t remember much about the house I believe it was a two story and I’m sure if there was a basement. I remember a garden in the back of tiie house and a barn or shed of some sort. There were a lot of people to live in that house. However, according to my brother, Frant, the older brothers, who would be well into their teens when we moved into that house were off finding work so they could help take care of the large family of brothers and sisters. <br /><br />
+
+                    Rhoe, my oldest brother worked for the Coy Coal company, driving a delivery truck for them. The twin sisters, Melba and Nelda found work at Samsel’s which was a “five and dime” store on A street in Idaho Falls. Frant had left the area and was working in California. Duard (“Dude”) had also left to find work. These were the depression years and it was necessary for those old enough to take work to help the family. They would take on this responsibility either by being out on their own, or else if they lived at home they would help to supplement the income that Dad brought home. <br /><br />
+
+                    My dad worked as a sheep herder, cattle herder or ranch hand and was not home much of the time. I remember when he would come home that I could not remember him, because he would often be away for weeks at a time. None of the older brothers and sisters, excepting Ethel and Bart, and then I, attended high school. <br /><br />
+
+                    I remember one experience at the F street house. My dad was always a very soft hearted person when it came time to punish a child who had misbehaved. That responsibility fell to my mother who usually paddled us when needed. At one time I remember being across her knee being on the receiving end of a spanking and my dad was waiting outside the back door. I could see him there, so that he could comfort me when the ordeal was over. My dad said that those times were about as difficult for him as it was for one being punished. I never remember having him raise a hand to me in any way at anytime. And I remember very few times that my mother punished us that way either. 
+
+                </span-->
+
+                <!--span id="SEE_MORE">
+                    <a href="#" id="restofstory2-hide" onclick="showHide('restofstory2');return false;">SEE LESS</a>
+                </span-->
+            <!--/div-->
+
+
+                    
+                </span>
+
+                <!--span id="SEE_MORE">
+                    <a href="#" id="restofstory-hide" onclick="showHide('restofstory');return false;">SEE LESS</a>
+                </span-->
+            </div>
+           
+        </div>
+        <%#= image_tag("li/grace/movinggambling COVER.jpg", :id => "ChapterHeadingCoverPhoto", :class => "image") %>
+
+
+<!-- Chapter 2 Begins -->
+        <span class="anchorup"><a name="ch2"> </a><div class="invisichar"> a</div>
+<br /><br /><br /><div> </div></span>
+        <span id="ChapterHeading">
+            <span id="textspanlichapter9">N</span><span id="textspanlichapter10">o</span><span id="textspanlichapter11"> 2 &nbsp;</span>
+            <span id="textspanlichapter13">THE WORK </span><span id="textspanlichapter15">at </span><span id="textspanlichapter16">ARCTIC CIRCLE</span><!--span id="textspanlichapter15">to </span><span id="textspanlichapter16">GUATEMALA</span-->
+        </span>
+        <div id="HorizontalDivider" class="clearfix">
+        </div>
+        <!--div class="ChapterVideoDiv">
+            <div class="ChapterVideo">
+                <iframe src="//player.vimeo.com/video/113120003" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+        </div-->
+
+
+        <!--span id="ChapterQuoteAudio">
+        “My mom was a ‘Four Star Mother’ during the Second World War, as she had four sons who served in the military.” 
+        </span-->
+        <div id="ChapterText" class="clearfix">
+            <!--span id="ChapterByline">
+            <span id="textspanlichapter22">ELLIS LI</span><br /><span id="textspanlichapter24">DAUGHTER</span>
+            </span-->
+
+            <span id="ChapterParagraphOne">
+            <span id="BigFirstLetterText"></span>
+                The Arctic Circle drive-in that we purchased a franchise for was our main source of income for the first few years we lived in Rexburg. It was built on Main Street and was only the second drive-in in Rexburg at that time. The R &amp; B was the other and had been established in Rexburg for a number of years. This venture was an entirely new one for us and our lifestyle in Rexburg became very different from the farm. Our children loved the change and soon became the best for them. All the kids had duties at the drive-in and soon learned the arts and requirements of serving the public in this manner. We had a thriving business and all enjoyed the lifestyle change. Not many months after we acquired the drive-in, I had the opportunity to accept the County Nurses office and did so, leaving the managing of our new business venture in the hands of my husband and the older teenagers. They did very well and earned their own money this way…as well as developing a love of hamburgers, french fries and milk shakes!<br /><br />
+ 
+                To this day, they have their own tales to tell about their times in the Arctic Circle. It was a very handy place to have lunch during the break at school! We also provided employment for many, many Ricks College students during those years. I remember many of their faces but their names have escaped me—Joy Christensen I remember very well. She managed for us for a year or so if I remember correctly.
+            </span>
+
+            <!--div id="ChapterPictureGallery" class="clearfix">
+                <ol class="GalleryPics"-->
+                    <!-- pictures -->
+                    
+                <!--/ol>    
+            </div-->
+
+            <!--span id="ChapterParagraphTwo">
+                As we approached the turn that would take us down another ranger coming along in a jeep, he asked us where we were going in our big outfit. He then warned us that the trail was hairpin sharp, and that there was no turning back once we started—but we had already started down, so we couldn’t turn back! After a bit of consulting with Ethel, we decided to go for it and continue on. The ranger shook his head and said, “Good luck.” 
+            </span>
+            <span id="SEE_MORE"><a href="#" id="restofstory2-show"  onclick="showHide('restofstory2');return false;">SEE MORE</a>
+            </span-->
+
+            <!--div id="restofstory2" class="more">
+                <span id="ChapterParagraphTwo">
+                    
+ 
+                </span>
+
+                <span id="SEE_MORE">
+                    <a href="#" id="restofstory2-hide" onclick="showHide('restofstory2');return false;">SEE LESS</a>
+                </span>
+            </div-->
+
+        </div>
+        <%#= image_tag("li/grace/endearment COVER.jpg", :id => "ChapterHeadingCoverPhoto", :class => "image") %>
+
+
+<!-- Chapter 3 Begins -->
+
+             <span class="anchorup"><a name="ch3"> </a><div class="invisichar"> a</div>
+<br /><br /><br /><div> </div></span>
+
+       <span id="ChapterHeading">
+
+            <span id="textspanlichapter9">N</span><span id="textspanlichapter10">o</span><span id="textspanlichapter11"> 3 &nbsp;</span>
+            <span id="textspanlichapter13">THE NORSEMEN APARTMENTS</span><!--span id="textspanlichapter15">and </span><span id="textspanlichapter16">TRIPS </span><span id="textspanlichapter15">as a </span><span id="textspanlichapter13">CHILD</span-->
+        </span>
+        <div id="HorizontalDivider" class="clearfix">
+        </div>
+        <div class="ChapterVideoDiv">
+            <div class="ChapterVideo">
+                <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/196379665&amp;color=cccccc&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+            </div>
+        </div>
+
+
+        <span id="ChapterQuoteAudio">
+        “We had mud and water in the bottom floors of the Norsemen as well as the basement of the house.”
+        </span>
+        <div id="ChapterText" class="clearfix">
+            <!--span id="ChapterByline">
+            <span id="textspanlichapter22">ALICE CHAU</span><br /><span id="textspanlichapter24">SISTER</span>
+            </span-->
+
+            <span id="ChapterParagraphOne">
+            <span id="BigFirstLetterText"></span>
+            When the property next door to the drive-in, on the east, became available to us, we purchased it and built the Norsemen Apartments for male students at the college. It was a three-story building, the first being a walk out basement. It was one of the first of new student housing apartments in Rexburg at that time, and we had no problem filling with students. There was a stone house on the property, which we were able to rent, with a basement as well, which we rented. <br /><br />
+
+            During the devastation of the Teton Dam breaking, we had mud and water in the bottom floors of the Norsemen as well as in the basement of the house. The drive-in also was almost devastated with about five feet of water throughout. That was in 1976. In 1977 or 78, we sold the franchise for the drive-in and with the government check given to us because of our losses we purchased some property up next to the college and eventually built Riviera I, followed a few years later with Riviera II, and also an older building which became Riviera III. These have been our major sources of income and have provided for us a very comfortable living. 
+            </span>
+
+            <!--div id="ChapterPictureGallery" class="clearfix">
+                <ol class="GalleryPics"-->
+                        <!-- pics -->
+                <!--/ol>    
+            </div!-->
+
+            <!--span id="ChapterParagraphTwo">
+                One of them is, “There’s a better way than the way of the world.” That’s a statement by Gordon B. Hinckley. <br /><br />
+
+                Another is, “He who knows others is learned. He who knows himself is wise.” <br /><br />
+
+                Oh, this is another one of my favorites. “God gave us memory that we might have roses in December.” <br /><br />
+
+                I should sort these out first.
+
+            <span id="SEE_MORE"><a href="#" id="restofstory3-show"  onclick="showHide('restofstory3');return false;">SEE MORE</a>
+            </span>
+
+            <div id="restofstory3" class="more">
+                <span id="ChapterParagraphTwo">
+                    Oh, and this is another one of my favorites. “I’m stressed. I don’t know if I found a rope or lost my horse.”<br /><br />
+
+                    “Judge not an eternal soul by the appearance of an earthly body.”<br /><br />
+
+                    “The future is not something we enter. The future is something we create.”<br /><br />
+
+                    “Sometimes we must be hurt in order to grow. Sometimes we must fail in order to know. Sometimes we must lose in order to gain, because some lessons in life are best learned through pain.”<br /><br />
+
+                    “Life is what we make it. Always has been, always will.”<br /><br />
+
+                    This is another favorite: “As long as you keep waking up in the morning is evidence that HE is not through with you.”<br /><br />
+
+                    “Don’t compromise yourself. You’re all you’ve got.”<br /><br />
+
+                    I need one that’s special. I need to find it.<br /><br />
+
+                    “The main thing is to have the main thing be the main thing.”<br /><br />
+
+                    “When life gives you lemons, throw ‘em back and demand chocolate.”<br /><br />
+
+                    “We can’t all be heroes because someone has to sit on the curb and clap as they go by.”<br /><br />
+
+                    “You were given this life because you’re strong enough to live it.”<br /><br />
+
+                    These are all favorites!<br /><br />
+
+                    “Good morning. Let the stress begin.”<br /><br />
+
+                    “Be yourself. Just be yourself, because everyone else is taken.”<br /><br />
+
+                    “While there are some things wrong in the world today, there are many things right, such as teachers who teach, ministers who minister, marriages that make it, parents who sacrifice, and friends who help.”<br /><br />
+
+                    There are so many of these.<br /><br />
+
+                    “If you see the light at the end of the tunnel, it’s the light of the oncoming train.”<br /><br />
+
+                    “I believe everything happens for a reason. Usually the reason is somebody screwed up.”<br /><br />
+
+                    There’s one I need to find here.<br /><br />
+
+                    “A vacation is what you take when you can no longer take what you were taking.”<br /><br />
+
+                    One favorite, I don’t think it’s written down here, but it says…I’ll have to find it.<br /><br />
+
+                    “Be the kind of woman that when your feet touch the floor in the morning, the devil says, “Oh darn. She’s up!”<br /><br />
+
+                    “I’m too blessed to be stressed.”<br /><br />
+
+                    “When life does get tough and the crisis is undeniably at hand, we must in an instant look inward for strength of character to see us through. We will find nothing inside ourselves that we have not already put there.” That’s a good one.<br /><br />
+
+                    “Practical guide for successful living: put your head under the pillow and scream.”<br /><br />
+
+                    Oh, I’m taking too much time. <br /><br />
+
+                    “Whether you think you can or think you can’t, you’re right.”<br /><br />
+
+                    I like this one, too: “How beautiful it is to do nothing and then rest afterwards.”<br /><br />
+
+                    “The power of the Book of Mormon is the application of the doctrine therein.”<br /><br />
+
+                    This is a statement by President Harold B. Lee: “I bear you my witness that the Savior is closer to us than you have any idea. He will be closer to you and powers divine will be at your side when you have nowhere else to turn.”<br /><br />
+
+                    I should have sorted these out ahead of time.<br /><br />
+
+                    “Do not spoil what you have by desiring what you have not, but remember that what you have now was among the things you hoped for.”<br /><br />
+
+                    Oh, this one is a special favorite by President Gordon B. Hinckley: “Anyone who imagines that bliss is normal is going to waste a lot of time running around shouting that he’s been robbed. The fact is that most putts don’t drop. Most beef is tough. Most children grow up to be just people. Most successful marriages require a high degree of mutual toleration. Most jobs are more often dull than otherwise. The trick is to thank the Lord for letting you have the ride.”<br /><br />
+                </span>
+
+                <span id="SEE_MORE">
+                    <a href="#" id="restofstory2-hide" onclick="showHide('restofstory2');return false;">SEE LESS</a>
+                </span>
+            </div-->
+            
+        </div>
+    <%#= image_tag("li/menu/GraceMenuSmall.jpg", :id => "ChapterHeadingCoverPhoto", :class => "image") %>
+
+
+<!-- Chapter Four Begins -->
+
+
+<span class="anchorup"><a name="ch4"> </a><div class="invisichar"> a</div>
+<br /><br /><br /><div> </div></span>
+
+       <span id="ChapterHeading">
+
+            <span id="textspanlichapter9">N</span><span id="textspanlichapter10">o</span><span id="textspanlichapter11"> 4 &nbsp;</span>
+            <span id="textspanlichapter13">FROM GUATEMALA </span><span id="textspanlichapter15">back to </span><span id="textspanlichapter16">RIGBY</span><!--span id="textspanlichapter15">and </span><span id="textspanlichapter13">HOW THEY MET</span-->
+        </span>
+        <div id="HorizontalDivider" class="clearfix">
+        </div>
+        <div class="ChapterVideoDiv">
+            <div class="ChapterVideo">
+                <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/196381988%3Fsecret_token%3Ds-cXYX1&amp;color=c1c1c1&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+            </div>
+        </div>
+
+
+        <span id="ChapterQuoteAudio">
+        “Our cup of blessings seemed so full and wonderful to have them as neighbors and to have grandchildren so nearby!” 
+        </span>
+        <div id="ChapterText" class="clearfix">
+            <!--span id="ChapterByline">
+            <span id="textspanlichapter22">ALICE CHAU</span><br /><span id="textspanlichapter24">SISTER</span>
+            </span-->
+
+            <span id="ChapterParagraphOne">
+            <span id="BigFirstLetterText"></span>           
+
+                    In 1983, Ken and I returned from the Guatemala City Mission. While we were gone our four sons built a home for us in the Labelle area of Rigby. The property consisted of seven acres,wooded and surrounded by cottonwood trees. We had the plans for the home before we were called to that mission and left thinking we would build when we returned. <br /><br />
+
+                    Our sons were all involved in their own business of Early Bird Sprinkling and Landscaping so were not too busy with any work during the off seasons, so, they got the blueprints for the home and went to work building it for us while we were gone. When we returned, we found the home standing there in the huge field and all framed up and looking great. It seemed so big! And much to our surprise, and not in the plans, there stood a huge shop building in the back and to the east of the home and matching the home! We were amazed and pleased. The home was not finished inside, just framed up so we began to do the work and pleasure of finishing it for the next few months and were able to move in 1984. <br /><br />
+
+                    The boys did the landscaping and so professional! An example of their expertise in their business. There was as planned a two-acre area set aside for pasture so Ken could have some cattle to fatten during the summer months and from then on we always had five or six head of young cattle to be fattened and then sold in the fall. Ken loved this. He spent all of his growing-up years on a farm and because “you can take the boy away from the farm but you can't take the farm away from the boy,” so after 16 years of being away he was so happy to have a few acres to care for with the animals. He also took over the two acres of woods to irrigate and make it into a great place to wander through. <br /><br />
+
+                    We loved being back in the country atmosphere and especially enjoyed that location because we were also neighbors to Marlon and Robert who had built homes down the street on adjoining acres. Our cup of blessings seemed so full and wonderful to have them as neighbors and to have grandchildren so nearby! At this writing, I have lived in LaBelle for 31 years. They have been extremely happy years. Ken passed away in 2003 but I chose to remain in our home. Our children and grandchildren have come to love this home and area as I do and we have had numerous family gatherings here to enjoy and love being together. <br /><br />
+
+                    There are many happy memories of family Sunday dinners with a rousing game of croquet afterward, and family floating the dry bed—we baptized two of our grandchildren in the dry bed! Several family reunions have been held here at home and have become traditional happy family memories. The big arch swing that Randy put up in the big cottonwood tree has become a great memory for all of our grandchildren and is still out there waiting for a grandchild to come and climb in. The squirrels in the back yard and their antics trying to get birdseed from the bird feeder is a favorite view from my kitchen window. <br /><br />
+
+                    Another wonderful blessing the whole family has enjoyed this past eleven years is having at least two horses to graze the pasture during the summer months. Our former bishop's father, Brother Keller, brought his horses to graze during those months and soon became a tradition for summer and one that we have loved for all those years, thus giving me the moniker of “Grandma Horsey” by several grandchildren, a treasured memory now. We decided to sell off the two wooded acres to our neighbor the Bradleys and now once again the woods are a very special and unique place.
+            </span>
+
+            <!--div id="ChapterPictureGallery" class="clearfix">
+                <ol class="GalleryPics"-->
+                        <!-- pics -->
+                <!--/ol>    
+            </div!-->
+
+           <!--span id="ChapterParagraphTwo">
+                Then when Marlon came home from his mission, I believe we picked him up in Salt Lake. When Robert finished his mission in Australia, we planned to make a major trip down to pick him up. Kenneth and I, and Marlon and Debra left to go down to Australia to pick up Robert. We had a trip that lasted six weeks, and we visited many, many countries in the South Pacific. We visited Mike’s mission and met some of the people that he had worked with in New Zealand. We met many of Robert’s friends and had a very special time there with him. Robert served as an assistant to the president, so he had many things that he could show us in Australia. We thoroughly enjoyed that and met his mission president. 
+            </span>
+            <span id="SEE_MORE"><a href="#" id="restofstory4-show"  onclick="showHide('restofstory4');return false;">SEE MORE</a>
+            </span>
+
+            <div id="restofstory4" class="more">
+                <span id="ChapterParagraphTwo">
+                    From there we went to Indonesia and met many of Marlon’s mission friends as well. They called him “Yellow Bird” down there. We were kind of tickled with that nickname they gave him because of his blond hair. Being there was especially a fun time because we had a very tall Robert, a very rotund Kenneth–he had a little weight on him–and Debra with her long blond hair. That type of person in Indonesia was very, very rare. We attracted a crowd wherever we went. We had people following us and looking at us and wanting to stop and visit. We had a wonderful time. <br /><br />
+
+                    We also went to Taiwan. We went to Thailand. We were in Singapore. We spent time in Japan. We were in Tokyo for three or four days. Then we flew back to Hawaii where Mike and Randy and Janet met us and we spent another week in Hawaii. That was a very special trip and it really gave us the desire to travel as much as we possibly could throughout the following years.  <br /><br />
+
+                    Another special trip we had in our family was when we were going to celebrate our 50th wedding anniversary. Kenneth was just beginning to get into the throes of Alzheimer’s, so we knew that if we wanted to take a family trip together, we must do it at that time. We planned a trip to go to the Mediterranean.  <br /><br />
+
+                    It was kind of interesting how that trip came together, because some of our children just didn’t have the finances to do that trip. They were concerned about it. We wanted to do a family trip for a 50th wedding anniversary, but we didn’t know where we wanted to go or what to do or how long to stay. Finally, Dani called and she said, “Bob is going to put a trip together for us. Let’s go to the Mediterranean. Let’s go take a trip to the Greek Islands.” Oh, my goodness, I thought that would be wonderful. Debra thought it would be wonderful. Bob thought this was wonderful. We began to plan the trip, and pretty soon those who thought they would not go came together, and as a family, all six of our children and their spouses and Ken and I, we made the trip to the Mediterranean.  <br /><br />
+
+                    We went to Rome. We were in Italy for a week or so. We went to the Greek Islands and absolutely fell in love with them. I’ve always wanted to go back to Sorrento in Italy. That was a very special place for me. That was a marvelous trip. The time we spent together as family—we were unbelievably close, helping each other and enjoying the time that we had there. We had some really fun experiences that I would be happy to share with anyone. Anytime they want to listen to me, I’ll tell them of our experiences on that trip.  <br /><br />
+
+                    I’ve been privileged to make several trips to England and travel on the continent with Bob and Janet. They lived there for ten years while Bob was transferred there for his employment. I was privileged to go to England four different times, and it’s become my most favorite place in the world. I love England and I’ll always have special memories. I’m very much connected to England. My ancestors came from there as well, so I guess there’s a spiritual tie there that keeps me in love with England.  <br /><br />
+
+                    It’s interesting, because when Bob and Janet said they’d been transferred to England, I said, “England! Who on earth wants to go and live in England? Are you sure you’re going to do this?” But it just took one trip over there. I went over when Bradley was born. Janet was having some difficulties with that birth, and I went over to help her and just totally fell in love with England.  <br /><br />
+
+                    I’ve been blessed to travel through Europe: Germany, Switzerland, Holland, Italy. I’ve been blessed to travel. I have been blessed to travel! The Lord has been good to me in that respect.  <br /><br />
+
+                    Haven’t been to Alaska. Everyone’s been to Alaska but me.  <br /><br />
+
+                    Oh my goodness, I’ve been to South America. I’ve been to Guatemala. Janet served her mission in Peru and we went down to pick her up and brought her home with us, because we finished our mission in Guatemala as Janet finished hers. We were able to have some of the family go with us, and we went down and picked up Janet and she drove home with us.  <br /><br />
+
+                    Also, when we finished our mission in Guatemala, we brought back with us a fifteen-year-old Guatemalan girl named Norah Alvarado. Her parents were pleased to let her come home with us, and she was able to go to school in Rigby. A couple of years later she came back and attended Ricks College.  <br /><br />
+
+                    I’ve had some beautiful experiences traveling. I’ve had wonderful times and seen a lot of this wonderful world we live in.
+                </span>
+
+                <span id="SEE_MORE">
+                    <a href="#" id="restofstory2-hide" onclick="showHide('restofstory2');return false;">SEE LESS</a>
+                </span>
+            </div-->
+            
+        </div>
+    <%#= image_tag("li/menu/GraceMenuSmall.jpg", :id => "ChapterHeadingCoverPhoto", :class => "image") %>
+        
+
+
+    <div class="bottom-menu">
+        <p id="bottommenuli">
+        <%= link_to 'HOME', carma_path %> &nbsp; <span id="textspanlichapter15">/</span> &nbsp; <%= link_to 'NEXT EXHIBIT', carma_farmer_and_nurse_1_path %> &nbsp;<span id="textspanlichapter15">/</span> &nbsp; <%= link_to 'GUESTBOOK', carma_guestbook_path %><br /><br /><br />
+        </p>
+    </div>
+
+
+<!-- Chapter Eight Begins --><!-- Evelyn needs to write this up!!! -->

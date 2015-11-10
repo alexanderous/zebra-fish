@@ -1,0 +1,152 @@
+
+.primaryContainer {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100%;
+    width: 100%;
+}
+
+#carmay2 {
+    float: left;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+    margin-top: 323px;
+    margin-left: -15.234375%;
+    clear: none;
+}
+
+#_“And_as_I_look_out_into_my_orchard_I_will_always_see_Randy_up_ {
+    float: left;
+    font-size: 1em;
+    width: 22.58%;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1em;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 3;
+    margin: 100px 0px 0px -28.36%;
+    clear: none;
+}
+
+#textspany {
+    float: none;
+    font-size: 0.875em;
+    line-height: 24px;
+    color: black;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: normal;
+    text-decoration: none;
+    font-family: georgia;
+}
+
+#textspany1 {
+    float: none;
+    font-size: 0.875em;
+    line-height: 24px;
+    color: black;
+    font-style: italic;
+    font-weight: normal;
+    letter-spacing: normal;
+    text-decoration: none;
+    font-family: georgia;
+}
+
+#orchard {
+    float: left;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    margin: 0px 0px 0px 0%;
+    clear: none;
+    min-width: 0px;
+}
+
+#carmay22 {
+    display: none;
+}
+
+#_“And_as_I_look_out_into_my_orchard_I_will_always_see_Randy_up_2 {
+    display: none;
+}
+
+@media only screen and (max-width: 1098px) {
+    #carmay2 {
+        margin: 60px 0% 0px -28.36%;
+        clear: none;
+    }
+
+    #_“And_as_I_look_out_into_my_orchard_I_will_always_see_Randy_up_ {
+        clear: none;
+        margin-top: 170px;
+    }
+
+    #orchard {
+        margin: 0px;
+        clear: none;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 937px) {
+    #_“And_as_I_look_out_into_my_orchard_I_will_always_see_Randy_up_ {
+        display: none;
+        margin: 30px 0px 0px 10%;
+        width: 65%;
+        clear: left;
+    }
+
+    #carmay2 {
+        display: none;
+        margin: 20px 0px 0px 10%;
+        clear: left;
+    }
+
+    #_“And_as_I_look_out_into_my_orchard_I_will_always_see_Randy_up_2 {
+        display: block;
+        margin: 30px 0px 0px 10%;
+        width: 65%;
+        clear: left;
+    }
+
+    #carmay22 {
+        display: block;
+        margin: 20px 0px 0px 10%;
+        clear: left;
+    }
+    #orchard {
+        margin-top: -100px;
+    }
+}
+
+@media only screen and (max-width: 667px) {
+    #carmay2 {
+        clear: left;
+    }
+
+    #_“And_as_I_look_out_into_my_orchard_I_will_always_see_Randy_up_ {
+        clear: left;
+        margin: 20px 0px 0px 10%;
+        width: 80%;
+    }
+
+    #orchard {
+        margin-top: -130px;
+    }
+}
+

@@ -1,0 +1,629 @@
+
+
+    <head>
+
+
+	<meta name="viewport" content="initial-scale = 1.0,maximum-scale = 3.0">
+
+    <script>
+            $(document).ready(function () {
+                $(".ChapterVideoMod").fitVids();
+            });
+
+    </script>
+
+    <script>
+        function showHide(shID) {
+          if (document.getElementById(shID)) {
+            if (document.getElementById(shID+'-show').style.display != 'none') {
+              document.getElementById(shID+'-show').style.display = 'none';
+              document.getElementById(shID).style.display = 'block';
+            }
+            else {
+              document.getElementById(shID+'-show').style.display = 'inline';
+              document.getElementById(shID).style.display = 'none';
+            }
+          }
+        }
+    </script>
+
+    <!-- fancybox begins -->
+
+        <!--script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script--> <!-- this causes fitvids NOT to work. BOO -->
+        <link rel="stylesheet" href="/fancybox/source/jquery.fancybox.css" type="text/css" media="screen">
+        <script type="text/javascript" src="/fancybox/source/jquery.fancybox.pack.js"></script>
+    <!-- fancybox end -->
+    </head>
+
+<body>
+
+        <span id="In_Exhibit_Title_Mod">
+        TERESA’S CHILDHOOD
+        </span>
+        <div id="boxmodex_teresas_childhood" class="clearfix">
+            <%= image_tag("evelyn/menu/arrow motif left.png", :id => "exhibit_top_arrow_motif_left", :class => "image")  %>
+            <span id="In_Exhibit_Subtitle_Mod">
+            OF SOUTHERN CATHOLIC GENTILITY
+            </span>
+            <%= image_tag("evelyn/menu/arrow motif right.png", :id => "exhibit_top_arrow_motif_right", :class => "image")  %>
+        </div>
+        <div id="boxmodex1" class="clearfix">
+            <span id="Previous_Exhibit_Link_Mod"><a href="<%= roos_the_army_path %>">
+            previous exhibit</a> 
+            </span>
+            <span id="Next_Exhibit_Link_Mod"><a href="<%= roos_bills_childhood_path %>">
+            next exhibit</a>
+            </span>
+        </div>
+
+
+<!-- CHAPTER ONE -->
+
+
+        <div id="Gallery_Strip" class="clearfix">
+            <ol class="GalleryPicsMod">
+                <li><%= link_to image_tag("roos/teresa/small/Familyhistory.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/teresa/large/Familyhistory.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %> 
+                    </li>
+                    <li><%= link_to image_tag("roos/teresa/small/Familyhistory1.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/teresa/large/Familyhistory1.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/teresa/small/Familyhistory2.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/teresa/large/Familyhistory2.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/teresa/small/Familyhistory3.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/teresa/large/Familyhistory3.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/teresa/small/Familyhistory4.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/teresa/large/Familyhistory4.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/teresa/small/Familyhistory5.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/teresa/large/Familyhistory5.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/teresa/small/Familyhistory6.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/teresa/large/Familyhistory6.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/teresa/small/Familyhistory7.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/teresa/large/Familyhistory7.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/teresa/small/Familyhistory8.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/teresa/large/Familyhistory8.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/teresa/small/Familyhistory9.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/teresa/large/Familyhistory9.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/teresa/small/Familyhistory10.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/teresa/large/Familyhistory10.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/teresa/small/Familyhistory11.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/teresa/large/Familyhistory11.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/teresa/small/Familyhistory12.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/teresa/large/Familyhistory12.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/teresa/small/Familyhistory13.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/teresa/large/Familyhistory13.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/teresa/small/Familyhistory14.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/teresa/large/Familyhistory14.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/teresa/small/Familyhistory15.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/teresa/large/Familyhistory15.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/teresa/small/Familyhistory16.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/teresa/large/Familyhistory16.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/teresa/small/Familyhistory17.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/teresa/large/Familyhistory17.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/teresa/small/Familyhistory18.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/teresa/large/Familyhistory18.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/teresa/small/Familyhistory19.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/teresa/large/Familyhistory19.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/teresa/small/Familyhistory20.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/teresa/large/Familyhistory20.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/teresa/small/Familyhistory21.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/teresa/large/Familyhistory21.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/teresa/small/Familyhistory22.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/teresa/large/Familyhistory22.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/teresa/small/Familyhistory23.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/teresa/large/Familyhistory23.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/teresa/small/Familyhistory24.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/teresa/large/Familyhistory24.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/teresa/small/Familyhistory25.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/teresa/large/Familyhistory25.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/teresa/small/Familyhistory26.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/teresa/large/Familyhistory26.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+            </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            Recent Family History
+            </span>
+            <span id="Contributor_Name_Mod">
+            teresa roos
+            </span>
+            <span id="First_Paragraph_Mod">
+            All my grandparents came to Arkansas because the railroad advertised acreage for cheap prices so people would build their businesses along the tracks. They sold the land to German Catholics for coal mining. The railroad said there was fruit growing etc. but there wasn't. <br /><br />
+                
+            Surnames on my father’s line are Layes and Besselman. Bauer and Fritchie were the surnames for his aunts and uncles.<br />
+            </span>
+            <!--div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <iframe src="https://player.vimeo.com/video/124071486" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “I would go to mass by myself with the children.”
+                </span>
+            </div-->
+            <span id="Second_Paragraph_Mod">
+                 
+                Anton Layes Sr. was born in Germany, and had two sons, Anton Jr. and Jacob Frank, by his first wife. I do not know her name, but Jacob’s daughter Mary Frances said she was French. She died, and Anton married Katarina Rott, who was much younger than him, and also from Germany. They had five children and then moved to Stanton County Nebraska, and had another child, then went to an unknown place, then to Brown, Arkansas, then to Scranton, where they had my grandfather John and another son. Everyone thought Scranton would be a big coal mine but it didn't work. It had been named after Scranton, Pennsylvania, a coal mining town. Anton Jr. had stayed in Germany and served in the army. Jacob moved to Idaho. <br /><br />
+
+                The Besselman family went from Germany to St. Clair County (also Roosevelt), Morrisons Bluff, and Brown/Scranton. The whole group of the Besselmans were in St. Louis for seven to eight months, then moved to Arkansas. Henry and Elizabeth (known as Lizzie or Lisette Tieman or Teeman) settled in Shoal Creek. Henry had two sisters. Mary Elizabeth married Conrad Elskin and Anna married Fred Bunker. Anna and Fred had a baby who died and is buried in Shoal Creek. 
+ 
+            </span>
+            
+            <span id="See_More_Mod"><a href="#" id="restofstory0-show"  onclick="showHide('restofstory0');return false;">SEE MORE</a>
+            </span>
+
+            <div id="restofstory0" class="more">
+
+                <span id="Second_Paragraph_Mod1" class="more">
+
+                    The Anton Layes and Henry Bessleman families lived down the road from each other in Paris. They each had eight to nine children. Henry Besselman had a vineyard and made wine. Three of the Layes brothers Charles, John and Joe married three of the Besselman sisters Mary, Clara and Bertha. An older Besselman sister Anna had 14 children. Three babies, Joseph and Peter (twins) and Francis died of unknown causes and 15-year-old Elizabeth Lily died of appendicitis.<br /><br />
+
+                    My grandpa and grandma (John Layes and Clara Besselman) moved to Scranton and had three children. Helena was born in 1909, but died before the 1910 census. My dad, John Boniface was born in 1914. Emma was born in 1918 but died as a young baby of diarrhea. They don’t know what caused it, but Dad remembered it was after eating a blackberry. Grandpa Layes owned rental homes and the cotton gin and flour mill in Scranton.<br /><br />
+
+                    Surnames on my mother’s side are Beshoner, Nehus, Bergholt, and Nietsche. The Bergholt direct line and the Nehus came from Germany to Freeport, Illinois then to Paris, Arkansas. Other Bergholts scattered to Wisconsin and other Midwest states.<br /><br />
+
+                    My great-grandpa and grandma were Frank Beshoner and Pauline Nietsche. They came to Shoal Creek from Germany via New Orleans in 1879. They had all their possessions in one trunk. That trunk is in Oklahoma, now owned by Sandy Culp Bailey, a descendant of their first child, Bertha Beshoner Bartsch. I have never found them on a passenger list, but I keep searching. They had eleven children. My grandfather Joseph was their sixth child, born 1887. Frank died about 1894, before the last child was born.<br /><br />
+
+                    Abel Nehus came to Freeport from Germany when he was 14. He married Wilhelmenia Bergholte in Freeport on May 27, 1880. Juliafrank was their fifth of seven children. <br /><br />
+
+                    Joseph Beshoner married Julia Nehus on September 11, 1912. My mother Estelle was their oldest child of five. <br /><br />
+
+                    My father John Jr. married Estelle Beshoner on February 12, 1935. Everyone called her “Stella.” They had first met in Paris when they were in 8th grade at a Catholic confirmation which was held in a central place for the people in the area. Estelle was 2 years older than John Jr. They bought one of John Sr.’s rental homes and lived there for 20 years, then built a house up on the farm on the hill in 1955. My parents didn't really want to live in a house right by his parents, but it was a nice house. It was a two-story with a full high-ceiling basement. It only had one bathroom, but that was before most people had indoor bathrooms. There was an empty lot between the homes, which provided some separation, but my Grandpa Layes still expected my dad to help around his place.<br /><br />
+
+                    I was born October 22, 1936. Clarine was born in July of 1939, John was born in March of 1942, Ron was born in February of 1943, and Charlie was born in October of 1955, when they were building the house up on the hill. My dad had saved money to build the house on the hill and my grandpa didn't want him to build up there because it was the wheat field. They also grew cotton and raised cattle. They had a cotton gin, saw mill, wheat mill and ice plant. They advertised their ice in the Paris newspaper. John Sr. and Clara had a grocery store in their basement. They had a large dining room table down in the basement and another one upstairs in the dining room. My grandma had a cot in the dining room where my grandma would take a nap, probably because it was cooler there. The ceiling in the basement area had crown molding and was covered with decorative tin tiles, which were in style then. We had a lot of dinners on the one downstairs. I don’t remember the upstairs table ever being used. There was a coal room with an outside chute next to the kitchen. My grandpa Layes had a gun in the safe and a wine room by the office. <br /><br />
+
+                    My Grandpa’s brother, Frank farmed and was a blacksmith, and telephone operator. It was in his house—he would connect the numbers together. He was sick for awhile and died in 1930. My grandpa would hire Frank’s boys to work at the cotton gin, saw, mill flour, and farm. In depression times he paid them to pick up rocks around the properties, mostly so they would have some work to do and some money. My dad delivered ice when he was a teenager and young man. Grandpa paid us grandkids to pick weeds out of the cotton. He usually paid us the same as the workers, which did not make my mom happy. She didn’t think we should get so much. After the war, the nephews scattered elsewhere in the country for jobs.
+
+                </span>
+            </div>
+        </div>
+
+
+<!-- CHAPTER TWO -->
+
+
+        <div id="Gallery_Strip1" class="clearfix">
+            <ol class="GalleryPicsMod">
+                    <li><%= link_to image_tag("roos/teresa/small/Firstmemories.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/teresa/large/Firstmemories.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %> 
+                    </li>
+
+                    <li><%= link_to image_tag("roos/teresa/small/Firstmemories2.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/teresa/large/Firstmemories2.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/teresa/small/Firstmemories3.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/teresa/large/Firstmemories3.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/teresa/small/Firstmemories4.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/teresa/large/Firstmemories4.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+
+                </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            Earliest Memories    
+            </span>
+            <span id="Contributor_Name_Mod">
+            teresa roos
+            </span>
+            <span id="First_Paragraph_Mod">My first memories were when I helped my Grandma (Clara Layes) feed the chickens. In the barn with the cow was a cornhusker machine. We would crack up the corn and then scatter it on the ground so the chickens could eat. I also hunted for eggs in the chicken house. There were two rows of nests. I gathered them sometimes. One part of the chicken house was for setting hens to hatch and raise for chickens. There was a big red rooster who would attack me. I would scream. My grandpa would get irritated at me for screaming. One July 4th I went to the mill with my dad and I was told to stay on the raised concrete foundation where it was safe. The rooster was there and attacked me. I screamed. My grandpa was irritated and my dad was mad and killed the rooster for dinner.
+
+            <br />
+            </span>
+            <!--div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <iframe src="https://player.vimeo.com/video/124071354" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “She said, ‘Yes,’ and my jaw really hit the floor.”
+                </span>
+            </div-->
+
+            <span id="Second_Paragraph_Mod">
+                I lived in the Scranton house my whole life until my senior year. The house was very nice. The well was outside and they pumped the water in the house. Then they got it plumbed and got improved electricity etc. There was party line phones. We had a basketball hoop and a tennis court made of packed and rolled dirt with a high fence. The neighborhood kids liked to come over to play. Dad was going to put in a swimming pool but never did. Many years later he put in a hot tub at the house on the hill. He also dug for a swimming pool but the tornado hit good Friday 1974 and he never completed the pool. He filled the hole with debris and covered it up.<br /><br />
+
+                In the front of the house was a porch and the living room and a bedroom. Then there was the dining room and kitchen in the back. A bath was on the left of the kitchen and an enclosed porch with windows was on the right. The back porch had a laundry area with a ringing washer and a built-in toybox. We had to clean out the toy box when we got new toys. In the kitchen, by the porch was an enclosed stairway. Under the stairs was storage for food. There was not a basement. We had four large bedrooms upstairs with double beds. Clarine and I shared a room. There were storage closets with moth balls, etc. and we would rotate out the clothes with the seasons. The house had to be perfect and the yard too, with no toys laying around. 
+            </span>
+
+            <span id="See_More_Mod"><a href="#" id="restofstory-show"  onclick="showHide('restofstory');return false;">SEE MORE</a>
+            </span>
+
+            <div id="restofstory" class="more">
+
+                <span id="Second_Paragraph_Mod1" class="more">
+                    A little girl named Dolvory lived with her grandparents (Ross) across the road from us. Dolvory got her name from combining the soap names Oxydol and Ivory. She eventually got married and bought our house from whoever bought it from us after we moved up the hill. There was a driveway on the right side of the house and a train depot in the back to the right. It was no longer operating. There was a big garden to the right also. Everything was dirt roads back then.<br /><br />
+
+                    Behind the house was the railroad tracks but they were not in use. One day Dolvory and Bill Wayne “Champ” Georgia, Bill Ross (who lived across the street) and Frankie Gerard stole a pump car and rode it off the tracks into the creek. “Good Rainwater,” a man who lived and worked in the depot rescued them and didn't tell their parents. Later those kids moved to California and their mother was hit by a car and killed. The kids saw everything—her guts, etc. <br /><br />
+
+                    My dad didn’t want pets, so we played with the wild cats by the mill. We had a cat once that was cute and he liked it. Then one day while we were visiting Grandma Beshoner in Paris, it got hit by a car and died. Dad worried about how I would be. <br /><br />
+
+                    Part of my chores was to listen to the boys reading after school. Ron was more studious and a better student than John. Clarine and I did laundry, made beds, did dishes, and cleaned the bathrooms. We would switch off jobs, like one week I would wash the dark clothes and the Clarine would wash the whites, and I would wash the dishes and Clarine would dry. Then the next week we would switch. We made cookies, cakes, fried chicken, fried potatoes and even though Clarine was younger than me, we had the same responsibilities. She tried to keep up with me. She couldn't crochet as well though, because she was left-handed. We didn’t take extra music lessons or anything like that. One year Dad bought an old building and John and Ron had to chip concrete off the bricks. They also worked in the garden. They fed the corn stocks to the cows but didn't harvest the ears of corn. <br /><br />
+
+                    My mom was a good seamstress and made most of our clothes. She wore her trimming scissors on a cord around her neck. Later in life Dad would grumble when Mom went to baby showers. He said they had to get all their own kids’ clothes, everyone else should too. She made fried pork rinds every now and then. I guess they weren’t that good for us, but they tasted great. We raised pigs and had a smoke house with ham, ribs, and sausages. They also canned bacon and sausages. It was not easy to pull it out of the jar, and I am not really fond of bacon because of that.<br /><br />
+
+                    Rosie, my mom’s youngest sister was in the convent in Ft. Smith. We would visit Beshoner cousins in Paris. My cousin Demp snuck wine and Clarine and Teresa joined in. Another time John and Ron got some, but they were acting too goofy and the adults found out. There is a huge magnolia tree growing by the Beshoner home in Paris. My mom’s Grandpa Beshoner planted the seed to the tree.<br /><br />
+
+                    There was an old fashioned general store in Scranton. It seemed normal to me, but it was different than the stores in Ft. Smith. We went to Erma’s beauty shop for perms, etc.<br /><br />
+
+                    I got appendicitis when I was 12 and stayed in the Paris Hospital, but I did not have to have it surgically removed. My parents had an insurance plan for the hospital. It cost a dollar for the plan. My grandpa Layes had his appendix out. My dad was scared because my grandma Clara’s niece Elizabeth Lily had died of appendicitis, and Bertha and Joe Bessleman’s daughter Leona May Layes had died of anesthesia allergy during appendix surgery when she was 21. <br /><br />
+
+                    My grandpa Joe Beshoner broke his leg once while coupling the train for the mine. He got caught between them. He was in the Paris hospital for that also. August Bartch supplied electricity for the hospital.<br /><br />
+
+                    My dad got tickets to the Rodeo from Bruce Rogers Plumbing Supplies (they gave them out for Christmas to their customers) We used to get to go to the rodeo and sit in box seats every year. We saw the cowboys get bucked off the bulls and I liked the clowns. He got other little gifts from Fort Smith Cotton and Oil company. 
+                </span>
+            </div>
+
+        </div>
+            <!--span id="Exclusive_Quote_Mod">
+            “I want my children to have wisdom and intelligence, to be able to make the right choice to go back to heaven. Then we can all be happily living forever with each other in heaven.”
+            </span-->
+            
+
+
+<!-- CHAPTER THREE -->
+
+
+        <div id="Gallery_Strip1" class="clearfix">
+            <ol class="GalleryPicsMod">
+                    <li><%= link_to image_tag("roos/teresa/small/WWII.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/teresa/large/WWII.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %> 
+                    </li>
+                    <li><%= link_to image_tag("roos/teresa/small/WWII1.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/teresa/large/WWII1.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/teresa/small/WWII2.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/teresa/large/WWII2.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/teresa/small/Schoolandchurch4.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/teresa/large/Schoolandchurch4.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            World War II
+            </span>
+            <span id="Contributor_Name_Mod">
+            teresa roos
+            </span>
+            <span id="First_Paragraph_Mod">
+            My dad was drafted to work as a civilian electrician in the steel mill in Kansas City around 1942. My mom’s brother Lawrence lived in Independence. He was either drafted or joined the navy. His wife Francis was pregnant and didn’t want to be alone, so she moved in with her sister. My mom and siblings moved up there and into their house. I didn't want to go to school in Missouri, so I stayed in Paris with my grandparents Joe and Julia Beshoner for the rest of first grade. Barbara and Rita (who were nicknamed Demp and Nuki) were still living at home. Demp had polio when she was five years old, and one leg was crippled.
+
+
+            <br />
+            </span>
+            <!--div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                       
+                        <iframe src="https://player.vimeo.com/video/124079546" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “They were very surprised! They didn’t think that I would say yes.”
+                </span>
+            </div-->
+
+            <span id="Second_Paragraph_Mod">
+                
+                I moved up to Missouri the next school year for second grade. We lived at 315 Accidental Court. I don’t have any memory of my second-grade teacher there. I attended St. Mary’s school. On Sunday afternoons, we would drive in the county. My cousin Ricky was born with Down syndrome. Lawrence was still gone. My grandmother Beshoner worried it was paint that caused it because Francis had done some painting. (Many years later, Down syndrome was identified as a chromosome 21 trisomy by Dr. Jérôme Lejeune in 1959.)<br /><br />
+
+                In 1944 Jerome, my mom’s brother, was reported as killed when his plane went down. He was a tail gunner in a fighter plane. While we were in Independence, our neighbors the Borgedines—Betty and Stella and their mother, moved into house while we were gone. They later moved to Ft. Smith and then to California.
+
+                
+            </span>
+
+            <!--span id="See_More_Mod"><a href="#" id="restofstoryb-show"  onclick="showHide('restofstoryb');return false;">SEE MORE</a>
+            </span>
+
+            <div id="restofstoryb" class="more">
+
+                <span id="Second_Paragraph_Mod1" class="more">
+                    “Down the bank” under the trees lining the embankment there were clumps of wild currant bushes from which we used to pick the fruit when it was ripe. We didn’t eat too many of them because they were so tart. One day, I made the mistake of taking some to my mother. Thereafter, when the currants were ripe, mother would send me off to pick as many as could be found from which she made jelly. Wild currants are about the size of bb. Do you know how many million currants it takes to fill a quart jar? <br /><br />
+
+                    On the high ground across the creek floodplain, there were three or four apple trees that grew from who knows how. As kids, we would wait for them to ripen then we would build a bonfire and roast the apples on a stick. Also, I picked apples in earnest and brought them home to mom who made apple sauce out of them. <br /><br />
+
+                    “Down the bank” was a great place to play in the summer. We dug fox holes in the tall grass and played “Army” and we built huts and hideouts in the trees growing on the floodplain and on the embankment. <br /><br />
+
+                    Across the floodplain on the top of the other embankment where the old Humbird sawmill used to be there were a couple of large sawdust piles. Those piles had been there for years soaking up the rain and snowmelt and were wet top to bottom and settled and compacted quite solidly. One summer several of the neighborhood kids went over there and dug tunnels through the biggest pile. <br /><br />
+
+                    During the summer we were out playing from early morning until after dark at night riding bikes, swimming, making and shooting sling shots, making match shooters with clothes pins and shooting wooden matches, making “rubber guns” which shot fat rubber bands cut from old tire inner tubes, playing kick the can, and hide and seek. <br /><br />
+
+                    In the winter I skated on the ice on the creek, sledded down the big hill across the creek by the railroad trestle and skied with my dad’s skis. <br /><br />
+
+                    About a block from our house is where, at the turn of the century there was a walking bridge spanning the entire flood plain. The bridge had been built so workers at the Humbird lumber mill which was located on the other side of the floodplain could travel from home to work and back. When we lived there, it was just a skeleton remaining about 40% of the way across with no planking at all and only one or two log beams joining the upright pilings that the bridge had been built upon. Many of the logs were rotten, but all the kids knew which were safe and we could wend our way from land to the broken off end by walking on the “safe” logs. It required a good sense of balance as the logs were only about 16 inches in diameter, somewhat rotten, with some a bit wobbly and all were located some 30 feet above the ground. <br /><br />
+
+                    The first few times a kid went on the thing, he did it by sitting straddle the log with our feet and legs hanging on each side and scooting along it. However after countless sessions of teasing and words of derision from the other kids, he would be forced to stand and walk out. Usually this was accomplished in stages. He could walk the first span, then crawl on hands and knees a span or two, “scoot’ sit and scoot the rest of the way. Then another day, walk two spans, crawl a ways further and scoot the rest of the way and so on until he had the courage and confidence to make it all the way walking. Usually, the older kids refused to allow anyone to achieve arrival at the very end of the structure unless they walked the entire way there. You could only scoot and crawl so far. It was a tremendous right of passage when you achieved the success of walking the entire length of the structure and back again. <br /><br />
+
+                    I built model airplanes out of balsa wood sticks covered with tissue paper. I was never really good at it and none of my planes would fly. But, when I took them out to the end of the bridge, put a fresh dab of model airplane cement on the nose and lit a match to it, then tossed the plane off into space, it made a terrific version of an enemy fighter or bomber fluttering and flopping down to the water below in a flaming spectacle that was a sight to behold by all gathered to watch. As kids, we didn’t dream of going to the moon. We dreamed of being able to walk all the way to the end of the “Old Walking Bridge”. When I was about 15, they came with chainsaws and cut down the old bridge, piled up the logs and burned them. 
+                    It was a sad day.<br /><br />
+
+                    The first time I ever went fishing was “down the bank” when the creek was full with spring runoff. The first fish I ever caught was there also. We used to fish a lot as kids. Mostly in the creek in the spring, then as the snow melt ran off and the water level dropped, we would ride our bikes to the city docks on the lake and fish there. But the greatest fishing I had ever as a kid was one summer, when dad and my uncle Sam were building some buildings at the State Fish Hatchery in Hope, Idaho. He would drive there early Monday morning and return after the work day Friday evening, sleeping in one of the storage buildings there at the hatchery. A couple of times, he took me along for the week. <br /><br />
+
+                    All I had to do was fish. Now fishing at a fish hatchery was great! No, I didn’t actually fish the hatchery fish. There was a fast flowing mountain creek which flowed along one side of the hatchery and a large pond on the hatchery property which got its water from the creek and then emptied back into the creek. We fished in the pond and in the creek flowing out of the pond before it rejoined the main creek channel. Since that water was on the hatchery property, no one fished there except the employees, so fishing was quite good. So, I got to fish a lot, plus play around to my hearts content. One week, my cousin Paul was there with me and we really had a ball. 
+                </span>
+            </div-->
+           
+
+        </div>
+
+
+
+<!-- CHAPTER FOUR -->
+
+
+    <div id="Gallery_Strip1" class="clearfix">
+            <ol class="GalleryPicsMod">
+                    <li><%= link_to image_tag("roos/teresa/small/Firstmemories1.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/teresa/large/Firstmemories1.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/teresa/small/JuvenileBrothers.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/teresa/large/JuvenileBrothers.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %> 
+                    </li>
+                    <li><%= link_to image_tag("roos/teresa/small/JuvenileBrothers1.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/teresa/large/JuvenileBrothers1.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/teresa/small/JuvenileBrothers2.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/teresa/large/JuvenileBrothers2.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/extra/small/extra4.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/extra/large/extra4.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            My Juvenile Brothers
+            </span>
+            <span id="Contributor_Name_Mod">
+            teresa roos
+            </span>
+            <span id="First_Paragraph_Mod">
+            As my brothers John and Ron grew up, they were just regular boys. I don't know where they were when Mom worked to sell cotton. We were probably supposed to be watching them. They had a lot of fun and did a lot of things. They used to get out when the cotton gin was running in the cotton season, they would escape from my mother and get out behind the wagons and in between the horses’ legs and play in the cotton gin, whatever they decided they wanted to do until my mother caught up with them. 
+            <br />
+            </span>
+            <div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <iframe src="https://player.vimeo.com/video/124071352" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “For some people, that was a whole year’s wages.”
+                </span>
+            </div>
+
+            <span id="Second_Paragraph_Mod">    
+
+                One day, they were probably about twelve or so, they decided they wanted to see if they could get some cotton to burn. So they picked a cotton bale. One of them got brave—I don’t know how they chose who was going to go inside my grandmother’s (Clara Layes’) house to ask for a match, but one of them went and said, “Dad needs a match right now!” And my grandmother gave him a match. And then they went out to the lot where the cotton bales were, and they started burning the cotton bale. It was hard to start, I’m sure, but they burned the whole cotton bale. For some people, that was a whole year’s wages. Because they grew the cotton, they chopped the cotton, they picked the cotton, they hauled it to the cotton gin to be ginned, and they sold the bale. But since they burned it, they didn’t have a bale of cotton to sell.   <br /><br />
+
+                Sometimes the cotton would catch on fire by other means. The bales were huge and weighed 1,000 pounds. The cotton was put in a bale box and bound with metal bands. Then they were labeled with red metal tags according to the various grades of cotton. Each grade got a different price. Some were for seed, some for fertilizer, etc. They were rolled up a ramp onto the trucks to the buyer. We sold bales to one place, and seeds to another to be used for oil, etc. 
+ 
+            </span>
+
+            <span id="See_More_Mod"><a href="#" id="restofstory2-show"  onclick="showHide('restofstory2');return false;">SEE MORE</a>
+            </span>
+
+            <div id="restofstory2" class="more">
+
+                <span id="Second_Paragraph_Mod1" class="more">
+                    When it was time to bring the cotton to the market, my mom weighed trucks at the cotton gin. When she worked, Clarine and I had to get the clothes off the line and make potato salad with mayonnaise or German potato salad with vinegar because Dad liked it better. We also had to listen for the cotton buyers calling with price quotes. The prices were top secret and we had a private line phone to handle the calls. When we got a call we had to run to the gin to tell my dad they were on the phone with the price. The mill was very loud, and it was hard to get them to notice and hear us. I didn’t like listening for the calls because I wanted to play, and sometimes I would try not to hear the phone.   <br /><br />
+
+                    When Ron and John went to high school, they went to St. Benedict’s Academy, and we lived in Scranton and the academy was in Subiaco, so they had to ride a bus there. And they were the bus drivers, so they drove the bus. One day while they were going up the hill to our house, which was a curvy road, they went off the road, probably going faster than they should have been going up at that hill on those curves. They wrecked the school bus and that had to be repaired. My dad was really not happy with them, so he had a notice put into the paper, that he was no longer responsible for the actions of his two sons, that they were responsible for their own actions, that he was not responsible anymore, and he would not put up with them anymore. 
+                </span>
+            </div>
+        </div>
+
+<!-- CHAPTER FIVE -->
+
+<div id="Gallery_Strip1" class="clearfix">
+            <ol class="GalleryPicsMod">                    
+                    <li><%= link_to image_tag("roos/teresa/small/Schoolandchurch.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/teresa/large/Schoolandchurch.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %> 
+                    </li>
+                    <li><%= link_to image_tag("roos/teresa/small/Schoolandchurch1.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/teresa/large/Schoolandchurch1.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/teresa/small/Schoolandchurch2.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/teresa/large/Schoolandchurch2.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/teresa/small/Schoolandchurch3.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/teresa/large/Schoolandchurch3.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+
+                    <li><%= link_to image_tag("roos/teresa/small/Schoolandchurch5.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/teresa/large/Schoolandchurch5.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/teresa/small/Schoolandchurch6.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/teresa/large/Schoolandchurch6.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/teresa/small/Schoolandchurch7.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/teresa/large/Schoolandchurch7.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            Catholic Elementary and Middle School
+            </span>
+            <span id="Contributor_Name_Mod">
+            teresa roos
+            </span>
+            <span id="First_Paragraph_Mod">
+            There were Catholic churches in Scranton, Subiaco and Paris. There were also Baptist and Methodist churches. We went to Catholic school in Scranton. It was in the building that used to be the church. Public funds paid for Catholic school then. There wasn’t any kindergarten. We started in first grade. There were two rooms. One was for grades 1-4 and one was for grades 5-8. There were about 25-30 kids in each room. In the morning I walked a few blocks and met up with neighbor girls Betty and Stella Borgedines, who lived with their mother and grandparents. Sometimes I went back home, and said they had already left, so I could get a ride from my dad.
+
+            <br />
+            </span>
+            <!--div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <iframe src="https://player.vimeo.com/video/124071542" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “Everybody cried.”
+                </span>
+            </div-->
+
+            <span id="Second_Paragraph_Mod">
+                After school we would stop at the post office and pick up the mail, then cut through the depot to the back of our house…that was the beaten path. My friends in elementary were Ruth Baumgartner, Wanda Schuartz, Rita Patton, Rita Buss (pronounced Bush), Anna Ahne and Johnny Spellins—he was at John’s funeral in 2012.  <br /><br />
+
+                James Krammers played tennis at our house, and Ruth and Rita and I spent the night at each other’s houses. In 1st grade Charles Fox was my friend and we email now. He had an older sister who lived behind us with cute blonde kids…named Bobby and Nancy.
+            </span>
+
+
+            <span id="See_More_Mod"><a href="#" id="restofstoryq-show"  onclick="showHide('restofstoryq');return false;">SEE MORE</a>
+            </span>
+
+            <div id="restofstoryq" class="more">
+
+                <span id="Second_Paragraph_Mod1" class="more">
+                    We had catechism and Bible history at school. On Friday mornings we had Mass at church then we went over to the school. We didn’t have catechism on Fridays because of Mass. The 1st through 4th grade classes put on plays on a stage with a curtain. The 5th through 8th grade classes had a little library. There was an outdoor bathroom at the school and a girls and boys playground. We had a softball and baseball field. Once a baseball flew and hit me right in the chest. In 5th through 8th grade, we played games like Red Rover. We didn’t have any playground equipment. We also played house. John got into fights when he was in first and second grade. I remember coming in from recess and Clarine and I looked out at the playground and there was John and another kid fighting. There they were, rolling around on the ground, not paying any attention to the bell, and their shirt buttons were ripped off. Clarine and I had to sew them back on.  <br /><br />
+
+                    I had Sister Irma in first grade. Sister Vivian also taught the lower grades. She was nice, but nicer to Clarine. Once, Clarine picked out a pink and green journal cover which I didn’t like. I said so, and the Sister Vivian said I should be nicer to my sister.  <br /><br />
+
+                    In eighth grade Sister Cunnygunda taught the upper grades. Father Sylevista was the pastor and came once a week to do Friday Mass, etc. There were five nuns; principal, cook, keeper and teachers. We went to CYO, which was a Catholic youth organization. For jobs in the summer between 8th and 9th grade, I did light house cleaning in Paris. I would get a ride with Frank Jerrard (when he was younger, he was banned from hanging around our gin by my grandpa, because he was climbing around on top of the water tower). I also picked beans and cotton and did a little babysitting.   <br /><br />
+
+                    We had regular Sunday morning Mass and evening Benediction with prayers and incense. We went to Grandma Beshoner’s for dinner and quilting. We had our first communion and confirmation.  <br /><br />
+
+                    We went to shows and baseball games. The drug store was open after and we would go sit at the round tables and chairs and drink Coke.  
+                </span>
+            </div>
+        </div>
+
+            <!--span id="Exclusive_Quote_Mod">
+            “I want my children to have wisdom and intelligence, to be able to make the right choice to go back to heaven. Then we can all be happily living forever with each other in heaven.”
+            </span-->
+
+<!-- CHAPTER SIX -->
+
+
+        <!--div id="Gallery_Strip1" class="clearfix">
+            <ol class="GalleryPicsMod">
+                    
+            
+                </ol>   
+        </div-->
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod"><br /><br /><br />
+            On Holiday
+            </span>
+            <span id="Contributor_Name_Mod">
+            teresa roos
+            </span>
+            <span id="First_Paragraph_Mod">
+               Our Christmas traditions mostly came from Germans, since we were all descended from Germany, and one of them was we wouldn’t decorate our Christmas tree until Christmas Eve. Sometimes you wouldn’t even set up the tree until Christmas Eve. For Christmas, we went to midnight Mass on Christmas Eve. Then we went to bed, and my dad would decorate the tree for us to see when we woke up. He would put up the lights and decorations.The tree was part of our Christmas, the lights and everything—and we thought it was just great, wonderful. 
+            <br />
+            </span>
+            <div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/199139610%3Fsecret_token%3Ds-B4Whs&amp;color=dbdbdb&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “We wouldn’t decorate our Christmas tree until Christmas Eve.”
+                </span>
+            </div>
+
+            <span id="Second_Paragraph_Mod">
+                The lights were eight to a string on a fabric cord. Sometimes they were shaped like lanterns or Santa or snowmen. The fireplace mantel had greenery and the windows had a lighted wreath in them. We did not hang up stockings. We got gifts from Santa and when we got older, we exchanged them. After Christmas Eve Mass we would get to open one gift. <br /><br />
+                
+                For Easter, we got shoeboxes and went outside and picked grass and flowers and put them in our shoeboxes. Then we would leave the boxes out at night. My parents would color eggs and put them in the boxes during the night. We had egg hunts if it wasn’t rainy. We had a normal Sunday dinner. We probably had ham as there was always some in the smoke house. Every Monday after Easter, we had a big egg hunt at school. I don’t know who got all those eggs ready and hid them. It just happened, I never thought about that. During Lent, which lasted four weeks, we went through the Stations of the Cross. On Ash Wednesday, the priest would put ashes on our foreheads symbolically and say “Ashes to ashes, dust to dust.” Each week we gave up something. I usually gave up candy because it was hard to give up, but I didn’t get it very often anyway.  
+
+
+            </span>
+
+
+            <span id="See_More_Mod"><a href="#" id="restofstorya-show"  onclick="showHide('restofstorya');return false;">SEE MORE</a>
+            </span>
+
+            <div id="restofstorya" class="more">
+
+                <span id="Second_Paragraph_Mod1" class="more">
+                
+                    Fourth of July was a big deal. It was my grandpa Layes’ birthday. He used to have a huge celebration with a live community brass band, flags set up across the front porch, firecrackers, and Roman candles. His nieces would come help cook a big chicken dinner with hot potato salad made with vinegar, or mashed potatoes. As he got older, when I was born, the celebrations were not quite as huge. I remember there was always a big tub of homemade ice cream and a big tub of pop bottles in ice. He always had a three-layer cake of strawberry, vanilla, and chocolate. It had seven-minute frosting that my mom made. He used to have Grandma Layes’ frosting but it was buttercream, and Grandpa liked my mom’s better. <br /><br />
+ 
+                For Memorial Day, we didn’t do a whole lot because we had the Catholic holiday “All Souls Day.” We would decorate all servicemen’s graves. We started back to school after Labor Day and then when the cotton crop was ready, we stayed home to pick cotton and help get the crop in.<br /><br />
+
+                For Halloween we did not go trick or treating. We went to parties at the High School. My mom made up costumes out of big sheets of crepe paper.<br /><br /> 
+
+                    Once, Clarine went with her friends Wanda Jane and “Baby” Ruth to a Halloween party at the high school. When the party was over, they went to the store to get a coke. Grandpa Layes had taken cotton bales up to Ft. Smith. He went to the high school to get them and they weren’t there. He was looking for them everywhere. When they got home, he was not happy because everyone had been worried.<br /><br />
+
+                    For Thanksgiving, we usually had chicken because my dad didn’t like turkey because it was too dry. One year Nuki made a big Thanksgiving dinner for everyone with turkey and my Grandpa Layes had an appendicitis attack so everyone went over to the Paris hospital, and she was there with her big dinner. Everyone came later and ate. We normally had mincemeat and pumpkin pie or applesauce pie. <br /><br />
+
+                    Aside from annual holidays, we went on trips to Missouri to visit my mom’s family. Jodie, Celeste, Hennretta, Rily and Lawrence and younger cousins. When I was about 10 years old we went to the southeastern states. We went to Florida, and swam in the bay in Louisiana. We went to New Orleans, Kentucky, Georgia, Tennessee and Alabama. <br /><br />
+                     
+                    In 8th grade we went to Waco, Texas to see lumber. Then to New Mexico and to Phoenix where we saw Beshoner, and Schmuki relatives. We went to Hollywood area in California where Mary Nenus and family lived. She was widowed. We saw orange groves and the Hoover Dam, and the petrified forest. We went to Carlsbad Caverns, the Painted Desert, and the Grand Canyon. The boys had football practice in the summer so we couldn’t take a lot of long vacations. We went to places in Arkansas like the hot springs.
+                </span>
+            </div>
+        </div>
+
+<!-- CHAPTER SEVEN -->
+
+   <div id="Gallery_Strip1" class="clearfix">
+            <ol class="GalleryPicsMod">                    
+                    <li><%= link_to image_tag("roos/teresa/small/Highschool.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/teresa/large/Highschool.jpg", :class => "fancybox", :rel => "gallery7", :title => "" %> 
+                    </li>
+                    <li><%= link_to image_tag("roos/teresa/small/Highschool1.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/teresa/large/Highschool1.jpg", :class => "fancybox", :rel => "gallery7", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/teresa/small/Highschool2.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/teresa/large/Highschool2.jpg", :class => "fancybox", :rel => "gallery7", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/teresa/small/Highschool3.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/teresa/large/Highschool3.jpg", :class => "fancybox", :rel => "gallery7", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/teresa/small/Highschool4.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/teresa/large/Highschool4.jpg", :class => "fancybox", :rel => "gallery7", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/teresa/small/Highschool5.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/teresa/large/Highschool5.jpg", :class => "fancybox", :rel => "gallery7", :title => "" %>
+                    </li>
+                </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            St. Scholastica High
+            </span>
+            <span id="Contributor_Name_Mod">
+            teresa roos
+            </span>
+            <span id="First_Paragraph_Mod">
+            For high school, I went to St. Scholastica, a Catholic boarding school in Fort Smith. I thought I was cool. I went home once a month. They gave me a test and didn’t do well, because in 8th grade, the district ran out of money and school ended in March. The teacher was then surprised I did well in biology because she expected me not to because she saw the scores on that test. We had PE and after-school volleyball, shuffleboard, and softball, but no competitive sports. Subiaco Academy boys had dances, a football team, and a homecoming queen from St. Scholastic or “Scho.” John and Ron went to Subiaco Academy or “Sube.” 
+            <br />
+            </span>
+            <!--div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <iframe src="//player.vimeo.com/video/119499861" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “By the time New Years Eve arrived, I was rich with close to $100.”
+                </span>
+            </div-->
+
+            <span id="Second_Paragraph_Mod">
+                I boarded freshman and sophomore years. One of the jobs around the dorms for the freshmen was to use a whisk broom to clean the steps. For my junior and senior years, I stayed with families and did babysitting and light housework. I was paid while also earning room and board. The first family I stayed with had three kids: Jackeline or Jackie, Dennis, and Damion. The parents were named Donhay and Harold Kellan. He called her, “Honey” so the kids called her “Honey” too. John Johnston was the father of the other family I stayed with. They had Sally, John and Julia. <br /><br />
+
+                Clarine and I were in high school together for two years. I had cousins my age in my graduating class. Mary Jane and Teresa (Beshoner) Kern, Ritha Fay Brown—her mother was Pauline Koch, and Mary Beshoner. The convent slowed down high school and getting married.
+            </span>
+            <span id="See_More_Mod"><a href="#" id="restofstory4-show"  onclick="showHide('restofstory4');return false;">SEE MORE</a>
+            </span>
+            <div id="restofstory4" class="more">
+
+                <span id="Second_Paragraph_Mod1" class="more">
+                    When I was a freshman, I lived in a small dorm with four girls. There was two sets of bunk beds, and we rotated beds. My roommates were Charlotte Williams—her uncle Frank Williams was a state representative and was married to Jeanie’s (Ron’s wife) aunt—a Lansing, Martha Netzer who now lives in Henderson NV, Marilou Vonderheide, and Mary Jo Witt from Mina, AK.<br /><br />
+
+                    My sophomore year, we didn’t have bunkbeds. We were in a huge room with curtains around to form our own cubicles. There was one Prefit at each end of the room with us.<br /><br /> 
+
+                    We had our own bed, dresser, and locker to hang our clothes. During the summer the nuns stayed there. Rosie, my aunt, was a nun and was in charge of the gardens after she retired from teaching and she would drive a four-wheeler around to water the grounds. She went to school in Farse, Virginia.<br /><br />
+
+                    There was a large library that the nuns used also. We had art, music, PE, algebra, religion, English, Spanish, and Latin. All the teachers have died now and are buried there. There were band concerts at public schools and we would go see the marching band and other performances in the spring. On Saturdays, we would go shopping or take the bus downtown to a movie etc. Mary Ellen Verfurth took violin private lessons, and I rode the bus with her to lessons. Marta Ann Hendersen married her brother Patrick. The neighbor girl Stella Borgerding who lived by us in Scranton had moved to Ft. Smith, and attended St. Scholastica also. Her grandpa was a pioneer of Arkansas. Seniors went on trips with the Rector to the park for picnics and to the Dairy Queen. There was sour milk there once, and I didn’t like Dairy Queen after that.<br /><br />
+
+                    After high school in 1955, I worked as a typist for Bruce Rogers plumbing and electrical supply. This was where my dad bought his electrical supplies. The office manager was a Sharp. I typed up bills—they were hard to read and I had to know the abbreviations. After that I was a radio station receptionist in Ft. Smith and I also worked at Dixie Cup.<br /><br />
+                     
+                    I lived in an apartment with Rita Geel from St. Scholastica, and June Kearny, Evelyn Gee, and Mary Ann Buss. There were too many of us so I moved to an apartment with Roberta Hodges from Dixie Cup. We put labels on boxes and typeset the labels and was a secretary. I used shorthand. Our parents expected us to live on our own. Clarine lived in Ft. Smith also in an apartment. Nuki and Demp worked in a bank in Paris. Nuki didn’t get married for a long time. She worked as the doctor’s receptionist and when his wife died, Nuki married him. He was born in 1913 and she was born in 1929 so there was a 15 year difference. He had a little adopted daughter. Demp had Marsha and Steve.
+                </span>
+            </div>
+        </div>
+
+
+
+<!-- BOTTOM OF PAGE -->
+
+        <div id="boxmodex1" class="clearfix">
+            <span id="Previous_Exhibit_Link_Mod"><a href="<%= roos_the_army_path %>">
+            previous exhibit</a> 
+            </span>
+            <span id="Next_Exhibit_Link_Mod"><a href="<%= roos_bills_childhood_path %>">
+            next exhibit</a>
+            </span>
+        </div>
+
+        <div id="boxmodex4" class="clearfix">
+            <%= image_tag("evelyn/menu/arrow motif left.png", :id => "arrow_motif_left1", :class => "image")  %>
+            <span id="Home_Link_Mod"><a href="<%= roos_path %>">
+            HOME</a>
+            </span>
+             <%= image_tag("evelyn/menu/arrow motif right.png", :id => "arrow_motif_right1", :class => "image")  %>
+        </div>
+</body>

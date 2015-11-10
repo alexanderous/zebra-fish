@@ -1,0 +1,54 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale = 1, maximum-scale = 2, user-scalable=1" />
+    <script src="//use.typekit.net/[redacted-a].js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>    
+</head>
+
+
+<% provide(:title, "Blog Drafts") %>
+
+<body>
+  <% if current_user.admin? %>
+
+	<span id="blog-heading">Drafts</span>
+      <span id="blog-subtitle">All Unfinished Posts</span>
+
+	<div id="boxx1" class="clearfix">
+		<div class="blog-directory">
+		    <% @articles.each do |article| %>
+		        <% if article.draft? %>
+						<span class="article-title"><p><%= link_to article.title, article %></p>
+						</span>
+						<span class="article-byline"> 
+						                  Written by 
+						                  <% if !article.user_id.blank? %> 
+						                            <% if !article.user.image.blank? %>
+						                          <%= link_to image_tag(article.user.image_url(:none), options = {:size => "30x30" }), article.user %>
+						                      <% else %>
+						                        <%= link_to image_tag("hitchcock.png", :size => "30x30"), article.user %>
+						                      <% end %>
+						                      <%= link_to article.user.name, article.user %>
+						                  <% end %> | <%= (article.created_at).to_formatted_s(:blog_date) %>
+						                   | <%= link_to article.title, article_path(article, :anchor => "disqus_thread") %> 
+						                </span><br />
+						            <span class="article-content"><%= raw(article.content) %>
+						            </span>
+
+						            <% if signed_in? %>
+						              <% if current_user.admin? %>
+						                <span class="article-byline">
+						                  <%= link_to 'Edit', edit_article_path(article) %> |
+						                  <%= link_to 'Delete', article, method: :delete, data: { confirm: 'Are you sure?' } %>
+						                </span>
+						              <% end %>
+						            <% end %>
+						            <br />  <br />  <br />  <br />   
+						          
+				<% end %>
+			<% end %>
+		</div>
+	</div>
+
+  <% end %>
+</body>

@@ -1,0 +1,173 @@
+tr { 
+    vertical-align: top; 
+}
+.post { 
+	width: 315px;
+	height: 430px; 
+	margin: 10px;
+	background-color: white;
+}
+
+
+.postcontainer {
+	width: 315px;
+	height: 365px;
+	overflow-y: hidden;
+
+
+}
+.postop {
+	border: 2px solid #d1d2d4;
+	height: 365px;
+	overflow-y: scroll;
+	background: white;
+	h5 {
+	font-family: Century Gothic, san-serif; 
+	font-size: 14px;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	}
+	p {
+		font-family: Georgia, serif;
+		font-size: 12px;
+		line-height: 20px;
+
+	}
+	.content a:hover 
+	{
+	color: black;
+	}
+}
+span.dateofevent {
+	font-family: Century Gothic, sans-serif;
+}
+
+span.img-responsive {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	margin-left: -40px;
+} 
+
+/* span.image {
+	width: 100%;
+	height: auto;
+	margin-top: 10px;
+} */
+
+span.content {
+	width: 300px;
+	margin-top: 20px;
+	p {	
+		font-family: Georgia, serif;
+		font-size: 14px;
+		line-height: 24px;
+	}
+}
+.postbottom {
+	border: 2px solid #d1d2d4;
+	height: 50px;
+	padding-top: 7px;
+	padding-left: 10px;
+	padding-bottom: 6px;
+	background: white;
+	/* width: 302px; */
+	margin-top: 5px;
+	height: 67px;
+}
+span.timestamp {
+	font-family: Century Gothic, sans-serif;
+	font-size: 12px;
+	margin-top: 5px;
+	padding-top: 5px;
+	letter-spacing: 1px;
+	td {
+		font-size: 12px;
+		line-height: 12px;
+	}
+}
+
+.userimage {
+	margin-right: 15px;
+	float: left;
+}
+
+/* Drafts */
+
+.drafts {
+  list-style: none;
+  margin: 10px 0 0 0;
+
+  li {
+    padding: 0px 10px 10px 10px;
+    border-top: 1px solid #e8e8e8;
+  }
+}
+
+.postdraft { 
+	width: 450px;
+	height: 100px; 
+	margin: 25px auto;
+	background-color:rgba(255,255,255,0.5);
+	font-family: Georgia, serif;
+	h3 {
+	text-align: left;
+	font-size: 20px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	}
+}
+
+span.bottomstampdraft {
+	font-family: Century Gothic, san-serif;
+	font-size: 12px;
+}
+
+#noheight {
+	line-height: 0px;
+}
+
+/* Management */
+
+.managing {
+	text-align: center;
+}
+
+
+.postvertical {
+	display: none;
+	width: 315px;
+	height: 430px; 
+	margin: 10px;
+	background-color: white;
+}
+
+@media screen and (max-width: 520px) {
+	.post {
+		display: none;
+		
+	}
+	.postvertical {
+		display: block;
+		/* margin: 20px 10% 0 10%; */
+		
+		/* margin-left: 10%; */
+		
+	}
+
+}
+
+@media screen and (max-width: 350px) {
+	.post {
+		display: none;
+		
+	}
+	.postvertical {
+		display: block;
+		/* margin: 20px 10% 0 10%; */
+		
+		margin-left: 3.5%;
+		
+	}
+
+}

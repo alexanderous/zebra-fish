@@ -1,0 +1,794 @@
+<head>
+    <!-- show and hide begins -->
+    <script>
+        function showHide(shID) {
+          if (document.getElementById(shID)) {
+            if (document.getElementById(shID+'-show').style.display != 'none') {
+              document.getElementById(shID+'-show').style.display = 'none';
+              document.getElementById(shID).style.display = 'block';
+            }
+            else {
+              document.getElementById(shID+'-show').style.display = 'inline';
+              document.getElementById(shID).style.display = 'none';
+            }
+          }
+        }
+    </script>
+    <!-- show and hide end -->
+    <!-- responsive video begins -->
+    <script>
+            $(document).ready(function () {
+                $(".ChapterVideoDiv").fitVids();
+            });
+    </script>
+    <!-- responsive video end -->
+    <!-- fancybox begins -->
+
+        <!--script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script--> <!-- this causes fitvids NOT to work. BOO -->
+        <link rel="stylesheet" href="/fancybox/source/jquery.fancybox.css" type="text/css" media="screen">
+        <script type="text/javascript" src="/fancybox/source/jquery.fancybox.pack.js"></script>
+    <!-- fancybox end -->
+
+<meta name="viewport" content="width=device-width; initial-scale=1.0,maximum-scale = 3.0">
+
+    <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', '[redacted-g]', 'antho.co');
+          ga('send', 'pageview');
+    </script>
+
+</head>
+
+<!-- Story Heading Begins -->
+        <div id="ThemeCoverPhotoFarm" class="clearfix">
+            <span id="ThemeTitle">
+                <span id="textspanlichapter">THE FARM</span><span id="textspanlichapter1"><br /></span>A FAMILY OPERATION<span id="textspanlichapter2"></span><br />
+            </span>
+            
+            <span id="ChapterSectionIndex"><br/><br/><br/>
+                <a href="#ch1">1 </a>&#x2f;<a href="#ch2"> 2 </a>&#x2f;<a href="#ch3"> 3 </a>&#x2f;<a href="#ch4"> 4 </a>&#x2f;<a href="#ch5"> 5 </a>&#x2f;<a href="#ch6"> 6 </a>&#x2f;<a href="#ch7"> 7 </a>&#x2f;<a href="#ch8"> 8 </a> 
+            </span>
+
+        </div>
+
+<!-- Story Heading Ends -->
+
+        <div id="Gallery_Strip" class="clearfix">
+            <ol class="GalleryPicsMod">
+
+                    
+                    <li><%= link_to image_tag("carma/thefarm/small/thefarm.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/carma/thefarm/large/thefarm.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <!--li><%#= link_to image_tag("carma/thefarm/small/thefarm1.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/carma/thefarm/large/thefarm1.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li-->
+                    <li><%= link_to image_tag("carma/thefarm/small/thefarm2.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/carma/thefarm/large/thefarm2.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("carma/thefarm/small/thefarm3.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/carma/thefarm/large/thefarm3.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("carma/thefarm/small/thefarm4.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/carma/thefarm/large/thefarm4.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("carma/thefarm/small/thefarm5.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/carma/thefarm/large/thefarm5.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("carma/thefarm/small/thefarm6.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/carma/thefarm/large/thefarm6.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("carma/thefarm/small/thefarm7.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/carma/thefarm/large/thefarm7.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("carma/thefarm/small/thefarm8.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/carma/thefarm/large/thefarm8.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("carma/thefarm/small/thefarm9.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/carma/thefarm/large/thefarm9.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+
+                </ol>   
+        </div>
+
+<!-- Chapter 1 Begins -->
+        <span class="anchorup"><a name="ch1"> </a><div class="invisichar"> a</div>
+<br /><br /><br /><div> </div></span>
+        <span id="ChapterHeading">
+            <span id="textspanlichapter9">N</span><span id="textspanlichapter10">o</span><span id="textspanlichapter11"> 1 &nbsp;</span>
+            <span id="textspanlichapter13">OUR EARLY YEARS </span><span id="textspanlichapter15">of &nbsp;</span><span id="textspanlichapter16">MARRIAGE</span>
+        </span>
+        <div id="HorizontalDivider" class="clearfix">
+        </div>
+        <div class="ChapterVideoDiv">
+            <div class="ChapterVideo">
+                <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/196379824&amp;color=c8c8c8&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+            </div>
+        </div>
+
+
+        <span id="ChapterQuoteAudio">
+        “Uncle Jack dug a tunnel from their front door out to their mailbox, so when the mail car could get through, that’s how they got to their mail box.” 
+        </span>
+        <div id="ChapterText" class="clearfix">
+            <!--span id="ChapterByline">
+            <span id="textspanlichapter22">ELLIS LI</span><br /><span id="textspanlichapter24">DAUGHTER</span>
+            </span-->
+
+            <span id="ChapterParagraphOne">
+            <span id="BigFirstLetterText"></span>After our marriage in the Idaho Falls Temple, Ken and I went on a honeymoon trip to southern Utah and California. No, not in the green pickup! Ken's Dad let us use his car for that special trip! When we returned we lived in an apartment in Idaho Falls and I continued to work in the doctor's office until January when we moved out to the Milo farm. Ken owned 80 acres of farm ground and we began to purchase an adjoining 80 acres from his Dad, giving us 160 acres to begin our life as the farmer and his wife! <br /><br />
+
+            In the fall of that first year we wanted another vehicle so we made the choice to travel to Detroit to pick the car up ourselves so we boarded the Greyhound bus and went to the big city. The trip was quite an adventure for these two farm people! We got to see a bit of Chicago and then went on to get the Oldsmobile 88, quite a terrific car those days, we saw some of NYC and visited Niagara Falls and then on down the east coast, travelling through Maryland on one of the very first freeways in the country, the Maryland Parkway. We traveled to Texas and visited my sister Melba and her family, and then on home. Quite a trip for two young and inexperienced Idahoans! <br /><br />
+ 
+            The winter of 1948-1949 was severe with huge amounts of snow and very cold. We were “snowed-in” for about ten days shortly after we moved there. The roads were narrow and lower somewhat than the adjoining fields so the snow was continually blown and then piled into the road. The only way we could travel anywhere if the snow plow hadn't been in the area to “plow us out” was to walk. When the plows did come, the roads were usually one lane and the snow plowed high on the side of the road
+            so high that we could touch the phone wires. I remember that Uncle Jack dug a tunnel from their front door out to their mailbox, so when the mail car could get through, that’s how they got to their mail box. Our farm bordered the county line road and when it was plowed out only one vehicle could travel at a time in one direction. <br /><br />
+
+            We walked or rode Ken's white horse, Princess, about a half mile north to Aunt Mary's and Uncle Jack's. When we were able to get into Idaho Falls for supplies we had to use a sleigh part way down the Milo road and then were given a ride to the city. Quite an adventure that winter. No television, only books to read and games to play. We had the one horse and a Jersey cow. When the roads allowed us to get into Rigby, our favorite entertainment about once a week was at the movies. <br /><br />
+             
+            Early that first spring we “brooded' chicks in a basement room and when they were big enough to be marketed we set up in the backyard to slaughter them and de-feather and prepare to be sold. It was quite a process to de-feather so Uncle Jack came to help while Ken was doing fieldwork. This was the summer of 1949 and we were expecting our first baby to arrive later that month. During the process with the chickens, I mentioned to Uncle Jack that my baby would probably arrive that night, a couple weeks early. Uncle Jack said, “Oh probably not, too soon,” but sure enough Mike made his appearance that night (skinning chickens is hard work!). Our first son arrived at the LDS hospital in Idaho Falls on July 13, 1949. 
+
+
+            </span>
+
+            <!--div id="ChapterPictureGallery" class="clearfix">
+                <ol class="GalleryPics">
+                   
+                    
+                </ol>    
+            </div-->
+
+
+            <!--span id="ChapterParagraphTwo">
+                    I have little memory of anything that took place in my life during the years that my family lived on Whittier Street. I imagine that because of my placement in the order of the family, being the youngest of ten living siblings and being a new baby arriving, that I was the recipient of lots of attention. Of course there are the suggestions that I was certainly spoiled and pampered because of this. I do know that I had loving parents and brothers and sisters who cared for my every need and that my years as a small child were filled with loving attention and freedom to play without fear. We lived in that location for approximately four years after I arrived.
+            </span>
+            
+            <span id="SEE_MORE"><a href="#" id="restofstory1-show"  onclick="showHide('restofstory1');return false;">SEE MORE</a>
+            </span>
+
+            <div id="restofstory1" class="more">
+                <span id="ChapterParagraphTwo">
+                    I have memory of one incident that was quite traumatic to myself and a young friend, Doris Standen, when we interfered with a beehive located somewhere in the area and were both stung by the angry occupants to the extent that Doris was quite ill for a time. I fared much better than she as my injuries from the bees were minor. I also have a memory, however slight, of a big swing in the neighborhood, maybe in the Standen yard or even my yard, that we both enjoyed as kids and friends. <br /><br />
+
+                    The house on Whittier was about a block west of the railroad tracks that run through Idaho Falls. That area was quite sparsely populated in 1926 and there were few houses on the block where we lived. Doris lived just a house or two to the east of us so we were pretty constant play friends. I guess she could be known as the very first friend that I had as a child. When I was about 5 years old my family moved to F street, directly across Memorial Drive from the LDS Hospital. We lived there for about two or three years. <br /><br />
+
+                    The hospital was considered to be quite tall for buildings at that time. It was an impressive building. From the street there was a long walkway up to the front door of the hospital. There could usually be seen at most any time a doctor or a nurse in ter white uniform and cap hurrying up to the door to enter and report for duty. As long as I can remember I have always wanted to be a nurse. I do believe that it was because of the excitement of living near that beautiful hospital.<br /><br />
+                    
+                    I don’t remember much about the house I believe it was a two story and I’m sure if there was a basement. I remember a garden in the back of tiie house and a barn or shed of some sort. There were a lot of people to live in that house. However, according to my brother, Frant, the older brothers, who would be well into their teens when we moved into that house were off finding work so they could help take care of the large family of brothers and sisters. <br /><br />
+
+                    Rhoe, my oldest brother worked for the Coy Coal company, driving a delivery truck for them. The twin sisters, Melba and Nelda found work at Samsel’s which was a “five and dime” store on A street in Idaho Falls. Frant had left the area and was working in California. Duard (“Dude”) had also left to find work. These were the depression years and it was necessary for those old enough to take work to help the family. They would take on this responsibility either by being out on their own, or else if they lived at home they would help to supplement the income that Dad brought home. <br /><br />
+
+                    My dad worked as a sheep herder, cattle herder or ranch hand and was not home much of the time. I remember when he would come home that I could not remember him, because he would often be away for weeks at a time. None of the older brothers and sisters, excepting Ethel and Bart, and then I, attended high school. <br /><br />
+
+                    I remember one experience at the F street house. My dad was always a very soft hearted person when it came time to punish a child who had misbehaved. That responsibility fell to my mother who usually paddled us when needed. At one time I remember being across her knee being on the receiving end of a spanking and my dad was waiting outside the back door. I could see him there, so that he could comfort me when the ordeal was over. My dad said that those times were about as difficult for him as it was for one being punished. I never remember having him raise a hand to me in any way at anytime. And I remember very few times that my mother punished us that way either. 
+
+                </span-->
+
+                <!--span id="SEE_MORE">
+                    <a href="#" id="restofstory2-hide" onclick="showHide('restofstory2');return false;">SEE LESS</a>
+                </span-->
+            <!--/div-->
+           
+        </div>
+        <%#= image_tag("li/grace/movinggambling COVER.jpg", :id => "ChapterHeadingCoverPhoto", :class => "image") %>
+
+
+<!-- Chapter 2 Begins -->
+        <span class="anchorup"><a name="ch2"> </a><div class="invisichar"> a</div>
+<br /><br /><br /><div> </div></span>
+        <span id="ChapterHeading">
+            <span id="textspanlichapter9">N</span><span id="textspanlichapter10">o</span><span id="textspanlichapter11"> 2 &nbsp;</span>
+            <span id="textspanlichapter13">THE FARM’S STEEP LEARNING CURVE </span><!--span id="textspanlichapter15">at the </span><span id="textspanlichapter16">FARM</span--><!--span id="textspanlichapter15">to </span><span id="textspanlichapter16">GUATEMALA</span-->
+        </span>
+        <div id="HorizontalDivider" class="clearfix">
+        </div>
+        <!--div class="ChapterVideoDiv">
+            <div class="ChapterVideo">
+                <iframe src="//player.vimeo.com/video/113120003" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+        </div-->
+
+
+        <!--span id="ChapterQuoteAudio">
+        “The farm work always had to come first, short of sickness; the chores had to be done.” 
+        </span-->
+        <div id="ChapterText" class="clearfix">
+            <!--span id="ChapterByline">
+            <span id="textspanlichapter22">ELLIS LI</span><br /><span id="textspanlichapter24">DAUGHTER</span>
+            </span-->
+
+            <span id="ChapterParagraphOne">
+            <span id="BigFirstLetterText"></span>
+               That first year at the farm was really a learning experience for me. I learned how to clean eggs, how to kill and clean small chickens for market, how to skim cream off the top of the milk and how to run fast enough to keep the milk cows out of the yard, how to climb down into the well and flip the switch when the well went off and there was no water and I remember the fun Ken had when he was trying to teach me to milk a cow before there were milker machines—he didn’t succeed, by the way—I never did milk a cow by hand, but I did later milk with the milker machines (about 30 or 40 days in all, evening or morning). If Ken was in the field then the milking was for me and the boys, I remember the fun and the fear involved in learning how to drive a tractor and how angry a husband can get when his wife drives through a gate and doesn’t close it behind her and a whole herd of cows end up in the hay. <br /><br />
+
+                One difficult lesson for me to learn throughout the years that we lived on the farm was that the farm work always had to come first, short of sickness; the chores had to be done, the crops had to be put in when it was time, they had to be irrigated, cultivated and harvested when it was “the season thereof” and that everything else had to wait on those times. It took me a few years to learn this and I can remember a few unhappy times while my young husband was trying to teach me. 
+
+                    
+            </span>
+
+            <!--div id="ChapterPictureGallery" class="clearfix">
+                <ol class="GalleryPics">
+                    
+                </ol>    
+            </div-->
+
+            <!--span id="ChapterParagraphTwo">
+                As we approached the turn that would take us down another ranger coming along in a jeep, he asked us where we were going in our big outfit. He then warned us that the trail was hairpin sharp, and that there was no turning back once we started—but we had already started down, so we couldn’t turn back! After a bit of consulting with Ethel, we decided to go for it and continue on. The ranger shook his head and said, “Good luck.” 
+            </span>
+            <span id="SEE_MORE"><a href="#" id="restofstory2-show"  onclick="showHide('restofstory2');return false;">SEE MORE</a>
+            </span-->
+
+            <!--div id="restofstory2" class="more">
+                <span id="ChapterParagraphTwo">
+                    
+ 
+                </span>
+
+                <span id="SEE_MORE">
+                    <a href="#" id="restofstory2-hide" onclick="showHide('restofstory2');return false;">SEE LESS</a>
+                </span>
+            </div-->
+
+        </div>
+        <%#= image_tag("li/grace/endearment COVER.jpg", :id => "ChapterHeadingCoverPhoto", :class => "image") %>
+
+
+<!-- Chapter 3 Begins -->
+
+             <span class="anchorup"><a name="ch3"> </a><div class="invisichar"> a</div>
+<br /><br /><br /><div> </div></span>
+
+       <span id="ChapterHeading">
+
+            <span id="textspanlichapter9">N</span><span id="textspanlichapter10">o</span><span id="textspanlichapter11"> 3 &nbsp;</span>
+            <span id="textspanlichapter13">GERMS, FRUITS, CREATURES, </span><span id="textspanlichapter15">and &nbsp;</span><span id="textspanlichapter16">CHORES </span><!--span id="textspanlichapter15">as a </span><span id="textspanlichapter13">CHILD</span-->
+        </span>
+        <div id="HorizontalDivider" class="clearfix">
+        </div>
+        <div class="ChapterVideoDiv">
+            <div class="ChapterVideo">
+                <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/196382145%3Fsecret_token%3Ds-jQJIj&amp;color=c1c1c1&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+            </div>
+        </div>
+
+
+        <span id="ChapterQuoteAudio">
+        “I found out very soon in married life at that farm that farm living was not as easy as living in a city.”
+        </span>
+        <div id="ChapterText" class="clearfix">
+            <!--span id="ChapterByline">
+            <span id="textspanlichapter22">ALICE CHAU</span><br /><span id="textspanlichapter24">SISTER</span>
+            </span-->
+
+            <span id="ChapterParagraphOne">
+            <span id="BigFirstLetterText"></span>
+            Being a nurse, I guess that has made me much more conscious of cleanliness, germs, dirt, and necessity for order and all kinds of other qualities. These parts of my personality and character have developed throughout my life and sometimes they have been “thorns in my side.” At other times, though, they have saved us much sorrow and discomfort. Anyway, having lived in the farm atmosphere has made me realize that as I look back, that perhaps I have been too fusty and then maybe at other times not careful enough. I often wonder how we managed to keep all our health as good as we have—the whole family of us. Farm living had its problems for me and it was difficult for me to handle the disorganization of the farm yards and the old, tumble-down buildings as so many of them were. We did build and add as we lived there and improved the appearance of the yards and buildings as best we could. <br /><br />
+
+            Ken wasn’t too concerned about it, probably because his prime concern and responsibility was feeding all of us, which he did very well and that occupied most of his time during those years in Milo. The lawn mowing and caring for the garden, washing the car, etc. etc. all fell to my responsibility and I guess I did the best I could, begrudgingly at times but all in all I tried. I used to look out the kitchen window of that farmhouse and wish and wish that it was in better order and repair but knowing that I couldn’t do it myself so I tried to live with it. Many times I would spend hours and sometimes days cleaning out a shed or the shop just to have it back in shambles again within the month. I have fond memories of the day we burned down the old machine shop building. It faced the driveway and was always an eyesore. We burned it down after a number of years at the farm…hurrah! <br /><br />
+
+            I longed for a hose and sprinkler to water the lawn instead of having it flood irrigated from a ditch that ran from up at the head of Ronald’s ground. But that was the method of watering the lawn, and the ditch water carried “millions and millions” of weed seed right onto our grass and garden areas around the house. It was always a summer long fight to get the weeds. But the kids loved the days when the lawn was to be flood irrigated because it supplied for them lots of water to romp in and they loved the instant pools provided for them and delighted in playing in the water on those days. We had an orchard to the south of the house and had mostly apples and one pear tree. We realized a harvest of apples mostly, but the pear tree didn’t have much to offer. Ken always wanted a good orchard with lots of fruit, peaches as the favorite. <br /><br />
+
+            Later on in Labelle, he was able to have a peach tree which produced so many peaches that they couldn’t mature and ripen well and I remember our harvest was only about a half dozen. Since then we just went to Utah for the peaches! One of the many problems at living in the country was having to contend with mice and we had our share in Milo. And as I went down to the fruit room in the old basement I always had a fear of finding something “more than just a mouse!” It was dark and musty down there and always a little scary. One day I opened the basement door which was right off the kitchen and saw a movement right on the top step by the door…a pretty good-sized animal! I immediately thought “rat” as I saw his tail…it was very long and “rat-like” and I almost collapsed in dread. I yelled for help as he scurried back down the steps and out of sight. We heard him and later found him among the empty fruit jars and Ken got rid of him and blessings upon blessings—it was a muskrat…not a “real rat” after all (there’s a big difference, you know!).<br /><br />
+
+            The “fruit room” in the basement served as a fruit and storage room for us. It had a few shelves and one of the first things Ken did was to add shelves in that room so we would have plenty of space for putting canned fruits and vegetables on those shelves. This was the beginning of many, many hours spent canning food for our family during the years to come. We tried to raise some sort of a garden each year but mostly they weren’t that great. Ken was always so busy with farm work and I just didn’t have any heart to weed and keep a big garden in order. I guess it was the weeds; it was impossible for one person to keep the weeds out of that garden spot. I was sure it would take a frill crew working several hours a day to keep ahead of them and I guess it was because of the irrigating process. The ditch probably carried water that was frill of weed seed and it “dumped them all right on my garden spot” and it soon became impossible for me to keep them out. <br /><br />
+
+            I longed for the day when we could use a garden hose and water from the well to water the garden but I don’t remember that ever happening at the farm because of the hardship it would be on the well. We canned the vegetables and raspberries we raised and usually had lots of tomatoes and carrots. I learned early in married life what a thrill it is to fill bottles with food and then seal them and put them on the shelves to be used later. My parents used to come to frequently to the farm and usually were on hand in the fell when we were canning peaches. <br /><br />
+
+            After the boys grew old enough to help their dad in the fields and with the chores, their appetites grew and they loved to eat canned fruit: peaches mostly, and we usually put at least 200 quarts of peaches on the shelves each fall. We often made a trip to Utah especially to get the fruit, so it was fun as well as hard work. I found out very soon in married life at that farm that farm living was not as easy as living in a city. I had been raised as the last of a large family and had not been required to do very much hard work but I soon learned that in order to keep a house and hearth functioning it required a lot of hard work and perseverance. <br /><br />
+
+            I had always enjoyed having an orderly home with “a place for everything and everything in its place” and here I was on a farm with a very busy husband and no one else to do lawn mowing, car washing, gardening, keeping a house clean, canning, etc…but me! But I guess eventually I learned that I was happy because I have always loved to take care of a house; cooking wasn’t my favorite thing but doing housework I loved. I always dreamed how nice it would be to live next door to a neighbor who disliked housework but loved to cook and then we could trade off…I would do all her housework and she could do all the cooking! (Of course it never could happen that way!)<br /><br />
+
+            The farmhouse had a kitchen, dining room, living room, three bedrooms and a bath and a full basement. A fruit room, extra bedroom and furnace room and a big extra room were in the basement along with a huge monster of a coal furnace. It was scary to go into the furnace room as in those days the furnace was huge, black, noisy…and had to be fed coal! I did not enjoy going down that basement, but that’s where I did the washing and then hauled the baskets of laundry upstairs to be taken outside to the clothesline to dry; in the winter, the clothes were often frozen solid. Then when they were finally dry, maybe the next day, I would bring them in and sprinkle them down, roll them up, put them in a basket and the next day to be ironed.
+
+
+            </span>
+
+            <!--div id="ChapterPictureGallery" class="clearfix">
+                <ol class="GalleryPics">
+                        
+                </ol>    
+            </div-->
+
+            <!--span id="ChapterParagraphTwo">
+                One of them is, “There’s a better way than the way of the world.” That’s a statement by Gordon B. Hinckley. <br /><br />
+
+                Another is, “He who knows others is learned. He who knows himself is wise.” <br /><br />
+
+                Oh, this is another one of my favorites. “God gave us memory that we might have roses in December.” <br /><br />
+
+                I should sort these out first.
+
+            <span id="SEE_MORE"><a href="#" id="restofstory3-show"  onclick="showHide('restofstory3');return false;">SEE MORE</a>
+            </span>
+
+            <div id="restofstory3" class="more">
+                <span id="ChapterParagraphTwo">
+                    Oh, and this is another one of my favorites. “I’m stressed. I don’t know if I found a rope or lost my horse.”<br /><br />
+
+                    “Judge not an eternal soul by the appearance of an earthly body.”<br /><br />
+
+                    “The future is not something we enter. The future is something we create.”<br /><br />
+
+                    “Sometimes we must be hurt in order to grow. Sometimes we must fail in order to know. Sometimes we must lose in order to gain, because some lessons in life are best learned through pain.”<br /><br />
+
+                    “Life is what we make it. Always has been, always will.”<br /><br />
+
+                    This is another favorite: “As long as you keep waking up in the morning is evidence that HE is not through with you.”<br /><br />
+
+                    “Don’t compromise yourself. You’re all you’ve got.”<br /><br />
+
+                    I need one that’s special. I need to find it.<br /><br />
+
+                    “The main thing is to have the main thing be the main thing.”<br /><br />
+
+                    “When life gives you lemons, throw ‘em back and demand chocolate.”<br /><br />
+
+                    “We can’t all be heroes because someone has to sit on the curb and clap as they go by.”<br /><br />
+
+                    “You were given this life because you’re strong enough to live it.”<br /><br />
+
+                    These are all favorites!<br /><br />
+
+                    “Good morning. Let the stress begin.”<br /><br />
+
+                    “Be yourself. Just be yourself, because everyone else is taken.”<br /><br />
+
+                    “While there are some things wrong in the world today, there are many things right, such as teachers who teach, ministers who minister, marriages that make it, parents who sacrifice, and friends who help.”<br /><br />
+
+                    There are so many of these.<br /><br />
+
+                    “If you see the light at the end of the tunnel, it’s the light of the oncoming train.”<br /><br />
+
+                    “I believe everything happens for a reason. Usually the reason is somebody screwed up.”<br /><br />
+
+                    There’s one I need to find here.<br /><br />
+
+                    “A vacation is what you take when you can no longer take what you were taking.”<br /><br />
+
+                    One favorite, I don’t think it’s written down here, but it says…I’ll have to find it.<br /><br />
+
+                    “Be the kind of woman that when your feet touch the floor in the morning, the devil says, “Oh darn. She’s up!”<br /><br />
+
+                    “I’m too blessed to be stressed.”<br /><br />
+
+                    “When life does get tough and the crisis is undeniably at hand, we must in an instant look inward for strength of character to see us through. We will find nothing inside ourselves that we have not already put there.” That’s a good one.<br /><br />
+
+                    “Practical guide for successful living: put your head under the pillow and scream.”<br /><br />
+
+                    Oh, I’m taking too much time. <br /><br />
+
+                    “Whether you think you can or think you can’t, you’re right.”<br /><br />
+
+                    I like this one, too: “How beautiful it is to do nothing and then rest afterwards.”<br /><br />
+
+                    “The power of the Book of Mormon is the application of the doctrine therein.”<br /><br />
+
+                    This is a statement by President Harold B. Lee: “I bear you my witness that the Savior is closer to us than you have any idea. He will be closer to you and powers divine will be at your side when you have nowhere else to turn.”<br /><br />
+
+                    I should have sorted these out ahead of time.<br /><br />
+
+                    “Do not spoil what you have by desiring what you have not, but remember that what you have now was among the things you hoped for.”<br /><br />
+
+                    Oh, this one is a special favorite by President Gordon B. Hinckley: “Anyone who imagines that bliss is normal is going to waste a lot of time running around shouting that he’s been robbed. The fact is that most putts don’t drop. Most beef is tough. Most children grow up to be just people. Most successful marriages require a high degree of mutual toleration. Most jobs are more often dull than otherwise. The trick is to thank the Lord for letting you have the ride.”<br /><br />
+                </span>
+
+                <span id="SEE_MORE">
+                    <a href="#" id="restofstory2-hide" onclick="showHide('restofstory2');return false;">SEE LESS</a>
+                </span>
+            </div-->
+            
+        </div>
+    <%#= image_tag("li/menu/GraceMenuSmall.jpg", :id => "ChapterHeadingCoverPhoto", :class => "image") %>
+
+
+<!-- Chapter Four Begins -->
+
+
+<span class="anchorup"><a name="ch4"> </a><div class="invisichar"> a</div>
+<br /><br /><br /><div> </div></span>
+
+       <span id="ChapterHeading">
+
+            <span id="textspanlichapter9">N</span><span id="textspanlichapter10">o</span><span id="textspanlichapter11"> 4 &nbsp;</span>
+            <span id="textspanlichapter13">THE POOR POTATO HARVEST</span><!--span id="textspanlichapter15">and </span><span id="textspanlichapter16">BAPTISM</span--><!--span id="textspanlichapter15">and </span><span id="textspanlichapter13">HOW THEY MET</span-->
+        </span>
+        <div id="HorizontalDivider" class="clearfix">
+        </div>
+        <div class="ChapterVideoDiv">
+            <div class="ChapterVideo">
+                <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/196379690&amp;color=cccccc&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+            </div>
+        </div>
+
+
+        <span id="ChapterQuoteAudio">
+        “I had these guys—not very savory characters!—to feed and even had some of them sleeping over.”
+        </span>
+        <div id="ChapterText" class="clearfix">
+            <!--span id="ChapterByline">
+            <span id="textspanlichapter22">ALICE CHAU</span><br /><span id="textspanlichapter24">SISTER</span>
+            </span-->
+
+            <span id="ChapterParagraphOne">
+            <span id="BigFirstLetterText"></span>           
+
+                    I remember hours on end sitting on a stool of some sort in the spud cellar cutting seed spuds to be planted. Usually there was someone else helping as well. It was quite dark down there and damp and very cool. I often took a small radio with me for the music and company. We also hired “spud cutters” to help when we were planting and raising 30 to 40 acres of spuds. I didn’t like to cut seed potatoes! We would sit at a contraption that had a board ledge with a cutting knife inserted into it. We would feed the blade either out or in, so we would move our hands holding the spud through the knife once or twice to get the right size and then they would drop into the spud sack to be filled and then taken out and loaded into the planter. <br /><br />
+
+                        It was always one of my least favorite kinds of work needed to be done at that farm, (never did like the smell of a spud cellar!). When we sold the farm and moved to Rexburg, the people at the farm took the cellar out and filled a landmark in the space. Not too many spud cellars still exist today because most families do not raise potatoes anymore, it’s too costly and needs huge machinery crop. Now farmers who raise potatoes do so by the hundreds, with huge machinery to do the planting, cultivating and harvesting (they are welcome to it so far as I am concerned!). When we were growing potatoes. they had to be harvested in the fall by hand picking, walking up and down the rows that had been dug out, with the potatoes lying in a row. We had to walk along with baskets and dump them, then move on to the next bucket. <br /><br />
+
+                        It’s also very difficult to find spud pickers. For a year or two, when it was very hard to get help, Ken and Ray would go down to the employment center in Idaho Falls and try to hire help. I remember that they even went to the pool halls to find guys who were willing to come work. I had these guys—not very savory characters!—to feed and even had some of them sleeping over in the basement of our house, and then we fed them three meals a day! Horrors, that is what it was. We didn’t do that for many years. We just got tired of doing all that just to harvest the spuds and then not get enough money when we sold the crop to barely pay for expenses. I remember Ken often saying, “If we can get $3.50 a sack for the spuds we will do really well.” (We never did!) We quit raising potatoes and began to increase our cattle herd which is what Ken wanted most to do. <br /><br />
+
+                        Ken planned in the future to have a sizable herd of cattle. He always liked to work with cattle and was very good at judging good cattle. At one time we had a sizable herd of sheep but they were never a favorite of ours. I do remember having newborn lambs brought into my kitchen and put in a warm oven to save their life. Often twins or triplet lambs would arrive and we would do our utmost to save them all! <br /><br />
+
+                        There is a line in Ken’s patriarchal blessing that tells him that he will never be without food or raiment. When I read that blessing for the first time I thought to myself what a fantastic and wonderful promise to give to someone, but in later years, I came to realize that those promises given in a patriarchal blessing are just guidelines for our lives and we must get busy and live and work so they will happen. I am sure that Ken has used those lines in his blessing as a guide for his life for he has always been an extremely hard worker and true, we were never without plenty of food in our storage room and we always had clothes to provide for the children as well as a good home and other necessities of life and this was true because we both worked hard those years at the farm are proof of the promised blessings in the patriarchal blessing given to Ken. <br /><br />
+
+                        I might mention here as well that when I received my blessing after Ken and I were married that those same promised were in my blessing as well. Our farmhouse in Milo was one of the largest and nicest in the whole area we had a big front porch and front lawn with lots of big trees around. Also had an orchard to the side of the house for apples and pears (that never would be eatable much to Ken’s chagrin—he loved pears). Also had an irrigation ditch in front of the house to flood water the lawn. We had a garden to the north of the house and at one time had a beautiful raspberry patch that was fertilized so well that we had the largest raspberries in the neighborhood! <br /><br />
+
+                        The kids would love to play on the lawn when it was being irrigated. The farmhouse was white and framed, and after a few years we had to put on a new roof and we chose pink bartile for the job which is still there and still looks really good. The bedrooms in the house were really small; the front bedroom was planned primarily by Grandpa Bird as an office room and then later a bedroom. There was a diagonal arch between the living and dining rooms, the first and only house where I had a dining room! The door to the basement opened into the kitchen. I remember doing a lot of painting of that kitchen through the years. I also remember when we had the front room and living room carpeted wall to wall—such luxury! <br /><br />
+
+                        That old furnace provided good heat for the whole house as the heat vents were large and the heat really came out But coal heat is dirty heat and we had to clean and paint quite frequently. My memories of that house are warm it was a lovely home to bring our babies to. All six were born while we lived in that house; so many warm and beautiful memories of children playing in the yard, and boys being called to help do the chores. The first freezer we had, a big—a huge—Amana freezer that we installed on the back porch. What a revolution that was for our farm living, and a whole new way of preserving food and a luxury for sure. <br /><br />
+
+                        The farmhouse had hardwood floors that were either bare or had linoleum on them when we moved into it. The carpet we chose to put down was a blue carpet and was only put in the living and dining rooms. We painted the walls a deep aqua color (dark was “in” then). The walls throughout the whole house was rough plastered which I didn’t care for and always wanted what I couldn’t have in that house: wallpaper. And now after all these years that have passed, two of the homes we have built, the one in 1969 in Rexburg and the house in Rigby, have rough plaster all throughout the house (ah, fashion, we are thy slaves!).<br /><br />
+
+                        There are so many happy memories of the farm. Lots of wonderful Saturday nights when the house was all clean for Sunday, the children bathed and in their pajamas and newly baked bread sitting on the cupboard and a roast thawing for Sunday dinner. Those happy times when the kids were little and so much fun to watch them growing up. That spring Ken began earnestly to farm. He owned 80 acres when we were married and we were buying the adjoining 80 acres from his dad. He always liked to have me go with him whatever he was doing and I spent lots of time riding the tractor with him before Mike was born that summer. <br /><br />
+
+                        That summer we also bought a number of baby chicks which we ordered from a catalog or whatever. We had to go to pick them up from somewhere but I can’t remember where but we had ordered them. When they arrived we put them into a “brooder” in the basement bedroom and there took care of them until they were big enough to sell as “pullets” which were then able to be sold to a local store, more than likely a Safeway store in Idaho Falls. The chicken we had to eat was the best I can ever remember. I can remember that my first washing machine was a double tub Philco, at least I think that was the name. Philco was a big name in appliances, and in radios as well and later on television. A double tub washer was quite a luxury in those days. It was in the basement of course! Also had twin tubs for rinsing. I can still picture myself in that basement standing before the washer and rinse tubs to do the weeks washing. 
+            </span>
+
+            <!--div id="ChapterPictureGallery" class="clearfix">
+                <ol class="GalleryPics">
+                        
+                </ol>    
+            </div-->
+
+            <!--span id="ChapterParagraphTwo">
+                Then when Marlon came home from his mission, I believe we picked him up in Salt Lake. When Robert finished his mission in Australia, we planned to make a major trip down to pick him up. Kenneth and I, and Marlon and Debra left to go down to Australia to pick up Robert. We had a trip that lasted six weeks, and we visited many, many countries in the South Pacific. We visited Mike’s mission and met some of the people that he had worked with in New Zealand. We met many of Robert’s friends and had a very special time there with him. Robert served as an assistant to the president, so he had many things that he could show us in Australia. We thoroughly enjoyed that and met his mission president. 
+            </span>
+            <span id="SEE_MORE"><a href="#" id="restofstory4-show"  onclick="showHide('restofstory4');return false;">SEE MORE</a>
+            </span>
+
+            <div id="restofstory4" class="more">
+                <span id="ChapterParagraphTwo">
+                    From there we went to Indonesia and met many of Marlon’s mission friends as well. They called him “Yellow Bird” down there. We were kind of tickled with that nickname they gave him because of his blond hair. Being there was especially a fun time because we had a very tall Robert, a very rotund Kenneth–he had a little weight on him–and Debra with her long blond hair. That type of person in Indonesia was very, very rare. We attracted a crowd wherever we went. We had people following us and looking at us and wanting to stop and visit. We had a wonderful time. <br /><br />
+
+                    We also went to Taiwan. We went to Thailand. We were in Singapore. We spent time in Japan. We were in Tokyo for three or four days. Then we flew back to Hawaii where Mike and Randy and Janet met us and we spent another week in Hawaii. That was a very special trip and it really gave us the desire to travel as much as we possibly could throughout the following years.  <br /><br />
+
+                    Another special trip we had in our family was when we were going to celebrate our 50th wedding anniversary. Kenneth was just beginning to get into the throes of Alzheimer’s, so we knew that if we wanted to take a family trip together, we must do it at that time. We planned a trip to go to the Mediterranean.  <br /><br />
+
+                    It was kind of interesting how that trip came together, because some of our children just didn’t have the finances to do that trip. They were concerned about it. We wanted to do a family trip for a 50th wedding anniversary, but we didn’t know where we wanted to go or what to do or how long to stay. Finally, Dani called and she said, “Bob is going to put a trip together for us. Let’s go to the Mediterranean. Let’s go take a trip to the Greek Islands.” Oh, my goodness, I thought that would be wonderful. Debra thought it would be wonderful. Bob thought this was wonderful. We began to plan the trip, and pretty soon those who thought they would not go came together, and as a family, all six of our children and their spouses and Ken and I, we made the trip to the Mediterranean.  <br /><br />
+
+                    We went to Rome. We were in Italy for a week or so. We went to the Greek Islands and absolutely fell in love with them. I’ve always wanted to go back to Sorrento in Italy. That was a very special place for me. That was a marvelous trip. The time we spent together as family—we were unbelievably close, helping each other and enjoying the time that we had there. We had some really fun experiences that I would be happy to share with anyone. Anytime they want to listen to me, I’ll tell them of our experiences on that trip.  <br /><br />
+
+                    I’ve been privileged to make several trips to England and travel on the continent with Bob and Janet. They lived there for ten years while Bob was transferred there for his employment. I was privileged to go to England four different times, and it’s become my most favorite place in the world. I love England and I’ll always have special memories. I’m very much connected to England. My ancestors came from there as well, so I guess there’s a spiritual tie there that keeps me in love with England.  <br /><br />
+
+                    It’s interesting, because when Bob and Janet said they’d been transferred to England, I said, “England! Who on earth wants to go and live in England? Are you sure you’re going to do this?” But it just took one trip over there. I went over when Bradley was born. Janet was having some difficulties with that birth, and I went over to help her and just totally fell in love with England.  <br /><br />
+
+                    I’ve been blessed to travel through Europe: Germany, Switzerland, Holland, Italy. I’ve been blessed to travel. I have been blessed to travel! The Lord has been good to me in that respect.  <br /><br />
+
+                    Haven’t been to Alaska. Everyone’s been to Alaska but me.  <br /><br />
+
+                    Oh my goodness, I’ve been to South America. I’ve been to Guatemala. Janet served her mission in Peru and we went down to pick her up and brought her home with us, because we finished our mission in Guatemala as Janet finished hers. We were able to have some of the family go with us, and we went down and picked up Janet and she drove home with us.  <br /><br />
+
+                    Also, when we finished our mission in Guatemala, we brought back with us a fifteen-year-old Guatemalan girl named Norah Alvarado. Her parents were pleased to let her come home with us, and she was able to go to school in Rigby. A couple of years later she came back and attended Ricks College.  <br /><br />
+
+                    I’ve had some beautiful experiences traveling. I’ve had wonderful times and seen a lot of this wonderful world we live in.
+                </span>
+
+                <span id="SEE_MORE">
+                    <a href="#" id="restofstory2-hide" onclick="showHide('restofstory2');return false;">SEE LESS</a>
+                </span>
+            </div-->
+            
+        </div>
+    <%#= image_tag("li/menu/GraceMenuSmall.jpg", :id => "ChapterHeadingCoverPhoto", :class => "image") %>
+        
+
+
+
+
+
+<!-- Chapter Five Begins -->
+
+        
+       <span class="anchorup"><a name="ch5"> </a><div class="invisichar"> a</div>
+<br /><br /><br /><div> </div></span>
+
+       <span id="ChapterHeading">
+
+            <span id="textspanlichapter9">N</span><span id="textspanlichapter10">o</span><span id="textspanlichapter11"> 5 &nbsp;</span>
+            <span id="textspanlichapter13">MY FIRST CHILD</span><!--span id="textspanlichapter15">as a </span><span id="textspanlichapter16">CHILD </span-->
+        </span>
+        <div id="HorizontalDivider" class="clearfix">
+        </div>
+        <!--div class="ChapterVideoDiv">
+            <div class="ChapterVideo">
+                <iframe src="//player.vimeo.com/video/113120053" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+        </div-->
+
+
+        <!--span id="ChapterQuoteAudio">
+        “To be together, to show the love we feel for each other, and to see the cooperation—it was just full of love!”
+        </span-->
+        <div id="ChapterText" class="clearfix">
+            <!--span id="ChapterByline">
+            <span id="textspanlichapter22">ALICE CHAU</span><br /><span id="textspanlichapter24">SISTER</span>
+            </span-->
+
+            <span id="ChapterParagraphOne">
+            <span id="BigFirstLetterText"></span>
+                    My pregnancy with Mike was not a difficult one and I was only nauseated for the first three months. Never did I actually throw up. I gained 20 pounds and continued to go to Idaho Falls to Dr. West. On the day before Mike was born, Uncle Jack had come over to help kill the chickens that were of size to be sold. Uncle Jack was helping me because Ken was busy in the fields. All that afternoon the little pains were nagging, even though two weeks early I told Uncle Jack that the “baby would come tonight ” and he laughed, not believing me. Sure enough, that night a little baby boy was born after not too much labor, on Tuesday, July 13th about 3:15 in the morning. He was beautiful, lots of black hair and a little round, fat face. Ken chose the name for him and he was named Kenneth Michael Bird. He weighed 7 lb. 13 oz. and was 20.5 inches long. He was really a beautiful little guy and grew and developed into such a handsome baby; people often stopped me in the stores or along the street and comment on such a beautiful baby—made my day! <br /><br />
+
+                    I remember Mom and Dad coming out to the farm to help with canning of peaches in September, that fall. And my dad was just absolutely smitten with Mike and he was always the favorite of his Grandpa Ingram. Dad would call on the phone and if I hadn’t had Mike into his place for a couple of days he would scold us to “bring that baby in here!” We have some cute pictures of Mike and his Grandpa Ingram.  <br /><br />
+
+                    Mike contracted pneumonia when he was 10 months old and we had him in the hospital for a few days. I lost quite a bit of weight after that first pregnancy; I got down to 111 lbs after Mike was born and never did ever have much of a weight problem. Always have been quite thin. Mike nursed well and was a good eater as well. He grew and developed normally. I remember when he was one year old and he put his hands right in the middle of his first birthday cake. He also would come over to the kitchen sink after he learned to walk and would say “bitesey, bitesey, bitesey,” which meant, of course, that he wanted a drink of water! <br /><br />
+
+                    Mike was a good baby and a joy to have and love. I remember that he was the only baby that I accidentally stuck with a safety pin putting on a diaper. I also remember when we brought him home from the hospital that I worried and fussed over him as if I had never held a baby before in my life! (I had spent the last six months of my training in the newborn nursery at VMH but it didn’t help much when it came to my own baby!)  <br /><br />
+
+                    I used to wake up over every little sound he would make at night, afraid he would suffocate, or choke or some terrible thing would happen to him. He took his time sleeping throughout the whole night. As he got to be about eight or nine months old his hair was quite blonde and quite curly and we used to put a curl right on top of his head (pictures to prove) and much to his chagrin now. He was quite a darling baby boy. I was in the LDS hospital in Idaho Falls when Mike was born, and stayed there six days and the hospital bill was $78! 
+            </span>
+
+            <!--div id="ChapterPictureGallery" class="clearfix">
+                <ol class="GalleryPics">
+                        
+                </ol>    
+            </div-->
+
+            <!--span id="ChapterParagraphTwo">
+                The home was on seven acres. There are two acres of woods, two acres of pastures, and then an acre and a half for the home. I’m not sure just what the numbers are.<br /><br />
+
+                After we had lived here for a number of years, we found that the family loved to come here. They often planned their summer vacations to come, and eventually we had family reunions. I'm not sure just which year we started; I think it was about 1989. The family loved to come especially for reunions. We managed to put everyone up, and they loved to be together. They looked forward to coming and we looked forward so much to having them come. To be together, to show the love we feel for each other, and to see the cooperation—it was just full of love! The reunions have been wonderful. 
+            </span>
+            <span id="SEE_MORE"><a href="#" id="restofstory5-show"  onclick="showHide('restofstory5');return false;">SEE MORE</a>
+            </span>
+
+            <div id="restofstory5" class="more">
+                <span id="ChapterParagraphTwo">
+                    We always had a theme for our reunions, and everyone in the family participated. We had committees. Everyone was part of a committee, preparing meals and preparing games to play. The food was a big deal. We always tried to have special food that everyone would enjoy. We often had the food catered, but mostly family wanted to work together, to be together, and to have fun together. Our family has always had those blessings of enjoying being together and looking forward to reunion time. We had about half a dozen reunions here in this home. <br /><br />
+
+                    I think reunions are a very special part of family relationships. They bring families together; for those who’ve lived far away and been separated for a number of years, when they come to a reunion—I don't know how to describe it. It's such a warm, special time to be together with those that you love and be part of a very special family. We have always enjoyed having the reunions.<br /><br />
+
+                    The last one we had here had about eighty-five people. It was a riot! A riot. Everyone loved it. We had barrels of fun. We were together for about four days total. Some even wanted to stay longer. Family from Mesa traveled so far and they wanted to come and stay longer, so of course we welcomed that. It's a special feeling to know that your family wants to come back home and to be with you—very special.<br /><br />
+
+                    Cyndi gave me a kitchen towel, and the last reunion she hung it on my oven door and I didn't know who left it there. But the towel explains a family. I believe the towel says, “Home is where Mom is.” That's kind of what family is. We don't have a dad right now, but home is where Mom and Dad are, wherever they live. That's where home is. <br /><br />
+
+                    We've always been a close family. We've always enjoyed being close together. We've had many, many blessings in our family because of our love of the gospel, our desire to be together, and the love we feel for one another.
+                </span>
+
+                <span id="SEE_MORE">
+                    <a href="#" id="restofstory2-hide" onclick="showHide('restofstory2');return false;">SEE LESS</a>
+                </span>
+            </div-->
+            
+        </div>
+
+        <%#= image_tag("li/grace/personalities COVER.jpg", :id => "ChapterHeadingCoverPhoto", :class => "image") %>
+
+<!-- CHAPTER SIX BEGINS -->
+
+   <span class="anchorup"><a name="ch6"> </a><div class="invisichar"> a</div>
+<br /><br /><br /><div> </div></span>
+      <span id="ChapterHeading">
+            <span id="textspanlichapter9">N</span><span id="textspanlichapter10">o</span><span id="textspanlichapter11"> 6 &nbsp;</span>
+            <span id="textspanlichapter13">FAMILY LIFE </span><span id="textspanlichapter15">on the </span><span id="textspanlichapter16">FARM</span><!--span id="textspanlichapter15">in </span><span id="textspanlichapter16">BRIDLINGTON </span-->
+        </span>
+        <div id="HorizontalDivider" class="clearfix">
+        </div>
+        <div class="ChapterVideoDiv">
+            <div class="ChapterVideo">
+                <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/196381850%3Fsecret_token%3Ds-a2o0e&amp;color=c5c5c5&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+            </div>
+        </div>
+
+
+        <span id="ChapterQuoteAudio">
+        “The number one important thing was we, as a family, were involved in the Church and church activities.” 
+        </span>
+        <div id="ChapterText" class="clearfix">
+            <!--span id="ChapterByline">
+            <span id="textspanlichapter22">GREGG LI</span><br /><span id="textspanlichapter24">SON</span>
+            </span-->
+
+            <span id="ChapterParagraphOne">
+            <span id="BigFirstLetterText"></span>             
+
+            Although I found living on a farm to be difficult sometimes, because the work was so hard, I have a lot of happy memories of that farm in Milo. The atmosphere that we lived in was good. We had wholesome activities that we participated in, not only as a family but in our ward, the Milo Ward. <br /><br />
+
+            Kenneth was an example of a good father. He taught his boys. His boys worked along with him. Kenneth always wanted to have someone go with him as he was going out to do chores or doing field work. He wanted someone with him, and he would often take some of the children in the car if he was going on an errand or had some light work to do in the field. He always wanted to have someone to go with him. I usually was that one. When we were first married, I would go out with him often to help with the chores and maybe ride on the tractor. He loved to have someone with him. <br /><br />
+
+            He was an example of a good father. He taught his children how to work hard. They learned hard work, especially the four boys. They had chores to do. I don’t know how willingly they did them, but they all turned out pretty good. Those boys are all hard workers now. From what they learned, I attribute that a lot to their experiences as we lived on the farm. <br /><br />
+
+            Another thing: each one of those four boys, as they went into the mission field, wrote back to their dad a special letter and thanked him for teaching them how to work, because it was invaluable for them in the mission field.<br /><br />
+
+            Another thing that Kenneth did was make sure that we had time to attend the temple. The first few years that we lived on the farm, we tried to attend the temple weekly when it was possible for us to do so. Our boys always were able to do the chores so we could leave and go to the temple that evening. We had other friends who had boys the same age as ours, but they didn’t have the responsibility that our boys had. Often, when we would go pick up our friends to go to the temple, we would have to wait while they finished the chores, because the boys didn’t accept that responsibility. We were proud and happy that our boys had been taught to accept that responsibility. <br /><br />
+
+            We also had good times together when we had activities and when we took little trips with our family. We would go to Yellowstone and we would do camping trips. That was one of our funnest things to do. Oftentimes we couldn’t all go at the same time. Sometimes a couple of the boys would have to stay home and look after the chores and the animals while the rest of us would go, but mostly we tried to do those things together as a family.<br /><br />
+
+            Our home in Milo was a very pleasant home. It was a large home. Kenneth’s father had built that home a number of years ago, but it was a modern home, very comfortable. In fact, it was one of the finest homes in the valley on the farms at that time. Kenneth was a good provider of whatever was required for us. Many of the enjoyable times we had, he provided for us as a father.<br /><br />
+
+            As I think back on some of the experiences we had while we were living at the farm, I think the number one important thing was we, as a family, were involved in the Church and church activities, and our friends were all members of the Church. Our activities were centered in gospel-based entertainment. We had some wonderful friends in the Milo Ward, and we enjoyed being with them. Their standards were the same as ours.<br />
+
+            </span>
+
+            <!--div id="ChapterPictureGallery" class="clearfix">
+                <ol class="GalleryPics">
+                                      
+                </ol>    
+            </div-->
+
+            <!--span id="ChapterParagraphTwo">
+
+                    I would wish for them to have the kind of family that I have had. I would like to see them have families where their children grow up in the gospel and have strong, viable testimonies of the gospel as my children have had and as my husband and I have had. I would wish for them a tremendous posterity, as I have had. Heavenly Father has blessed me tremendously with my family. I couldn’t have asked to have a better family than I’ve had. My posterity, as well, is just…I can’t describe how pleased and happy and blessed I feel to have my family. 
+ 
+            </span-->
+            
+            <!--span id="SEE_MORE"><a href="#" id="restofstory6-show"  onclick="showHide('restofstory6');return false;">SEE MORE</a>
+            </span>
+
+            <div id="restofstory6" class="more">
+                <span id="ChapterParagraphTwo">
+                    As it turned out, Ricks College and the homes up there became a haven for many hundreds of those whose homes were destroyed. My big concern was for the Public Health Office, a newly-built health department building that we had only been using for a few months. I had someone notify the sheriff the next day that I needed to get to my office to remove vaccine materials and other chemicals and any other record materials that could be salvaged. <br /><br />
+
+                    The sheriff came to the bottom of the hill by Smith Park and took me in a row boat to the office and we were able to take out from there all that needed to be kept safe. The health department was soon established in the rock house next to the drive, which was high enough that only the basement apartment had water in it. <br /><br />
+
+                    The apartment in the basement where Robert and Laurie lived was filled with flood water and all of their possessions were soaked and ruined. Marlon's apartment was also totally flooded and they lived in our camper parked in our backyard for awhile. The drive-in and the bottom apartments of the Norsemen were filled as well and so the work to get it cleaned up began. <br /><br />
+
+                    The water in Rexburg eventually ran off and on down the valley. The 8th Ward chapel of which we were members only had a few inches of water and only had minor damage. A miracle there. Volunteers came from everywhere to help in the clean up of flooded Rexburg. Many faith-promoting incidents occurred during the next weeks and months following the tragedy of the Teton Dam breaking. Testimonies were strengthened and faith enlarged by those who were residents of Rexburg as well as those who came to help. <br /><br />
+
+                    Many of us learned that through adversity comes stronger faith and through service comes great blessings. We also earned that no matter what the Lord is always near to us and the blessings always come.
+                </span>
+
+                <span id="SEE_MORE">
+                    <a href="#" id="restofstory5-hide" onclick="showHide('restofstory5');return false;">SEE LESS</a>
+                </span>
+            </div-->
+        </div>
+            
+
+        <%#= image_tag("li/progress_two/working3x COVER.jpg", :id => "ChapterHeadingCoverPhoto", :class => "image") %>
+
+
+<!-- Chapter Seven Begins -->
+
+    <span class="anchorup"><a name="ch7"> </a><div class="invisichar"> a</div>
+<br /><br /><br /><div> </div></span>
+      <span id="ChapterHeading">
+            <span id="textspanlichapter9">N</span><span id="textspanlichapter10">o</span><span id="textspanlichapter11"> 7 &nbsp;</span>
+            <span id="textspanlichapter13">THE SILO </span><span id="textspanlichapter15">at </span><span id="textspanlichapter13">MILO</span>
+        </span>
+        <div id="HorizontalDivider" class="clearfix">
+        </div>
+        <!--div class="ChapterVideoDiv">
+            <div class="ChapterVideo">
+                <iframe src="//player.vimeo.com/video/113119999" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+        </div-->
+
+
+        <!--span id="ChapterQuoteAudio">
+        “Sister Briggs welcomed me with a big hug, with tears running down her cheeks...” 
+        </span-->
+        <div id="ChapterText" class="clearfix">
+            <!--span id="ChapterByline">
+            <span id="textspanlichapter22">ELLIS LI</span><br /><span id="textspanlichapter24">DAUGHTER</span>
+            </span-->
+
+            <span id="ChapterParagraphOne">
+            <span id="BigFirstLetterText"></span>
+            When Marlon was quite small, possibly two or three years old, we built a silo at the farm. They were a new concept and only a few around the country but the “thing to do.” The hay was brought in from the fields and chopped, and then blown into a big silo that was about 25 or 30 feet high. A silo really stood out in a field and could be seen for miles around the country and often became quite a landmark and could be seen from quite a distance. We hired the company we bought it from to do the construction. There was a ladder that adhered right to the side of the silo and was a permanent fixture to enable repair or whatever in the future. <br /><br />
+
+            We could always remember pretty close to the time when we built our silo, because Marlon was the smallest one able to get around in the yard on his own. One day we got a phone call from a neighbor who was driving down the county line road, or the Milo road (I can’t remember which it was). But she told us that there was a very small child up at the top of that new silo and he was walking around on the scaffolding that was still up there since the construction and perhaps we should go check it hurried to check this out and Marlon walking around on at the top, hanging onto the whole silo, all by himself. Ken to this day doesn’t remember it at all!  <br />
+            </span>
+
+            <!--div id="ChapterPictureGallery" class="clearfix">
+                <ol class="GalleryPics">
+                    
+                </ol>    
+            </div-->
+            <!--span id="ChapterParagraphTwo">
+            
+               When we were just about ready to have our first meeting in one of the homes in the area, Kenneth said, “I'm going to call the Briggs again on the telephone and see if they're home, rather than make a visit.” 
+ 
+            </span>
+
+            <span id="SEE_MORE"><a href="#" id="restofstory7-show"  onclick="showHide('restofstory7');return false;">SEE MORE</a>
+            </span>
+
+            <div id="restofstory7" class="more">
+                <span id="ChapterParagraphTwo">
+                    I said, “Honey, we're supposed to make a personal visit. We're not just supposed to telephone.”  <br /><br /> 
+
+                    He said, “We've been there twice, and they haven't been home. Just let me give them a call.” He picked up the phone, called them, and they picked up immediately. Brother Bird said, “We have been to your home twice and you haven't been home, and we just wanted to let you know about the branch being organized immediately.” <br /><br /> 
+
+                    Brother Briggs said, “Our doorbell doesn't work.” <br /><br /> 
+
+                    We were able to get them to come to church. They were very happy. When we visited their home, Sister Briggs welcomed me with a big hug, and with tears running down her cheeks, she said, “Brother and Sister Bird, where have you been? Where has the Church been? We haven't been involved for fifteen years.” <br /><br /> 
+
+                    The Briggs were very active in the branch. Brother Briggs was called to be the branch president. We felt like he should be the branch president so he could have the experience that he needed when there would be no missionaries there. It was a happy experience with the Briggs. They became fast friends.<br /><br /> 
+
+                    The little branch flourished. We were able to find members to come, and we held our meetings in a home for a month or two. Then we were able to rent a small building for our meetings. We had primary in the foyer of the little one-room building. Young people would come. We had a wonderful little branch that was established, and we were happy being able to help with that work. <br /><br /> 
+
+                    One of the young men in the branch was about fifteen years old when we went to serve there. He was the primary teacher. When he became of missionary age, he put his missionary papers in and he was called to serve in the Pocatello Idaho Mission. He was ecstatic. He said he always wanted to serve in the United States, and he was hoping for Idaho. His prayers were definitely answered. It was a wonderful experience in that mission with wonderful members to get a branch started and the Church flourishing there. Now they have a new building, and we were happy to be able to participate in that.
+                </span>
+                <span id="SEE_MORE">
+                    <a href="#" id="restofstory5-hide" onclick="showHide('restofstory5');return false;">SEE LESS</a>
+                </span>
+            </div-->
+        </div>
+            
+
+        <%#= image_tag("li/progress_two/survivorBBQ COVER.jpg", :id => "ChapterHeadingCoverPhoto", :class => "image") %>
+
+<!-- CHAPTER EIGHT BEGINS -->
+
+   <span class="anchorup"><a name="ch8"> </a><div class="invisichar"> a</div>
+<br /><br /><br /><div> </div></span>
+      <span id="ChapterHeading">
+            <span id="textspanlichapter9">N</span><span id="textspanlichapter10">o</span><span id="textspanlichapter11"> 6 &nbsp;</span>
+            <span id="textspanlichapter13">PROMPTED </span><span id="textspanlichapter15">by the </span><span id="textspanlichapter16">SPIRIT</span><!--span id="textspanlichapter15">in </span><span id="textspanlichapter16">BRIDLINGTON </span-->
+        </span>
+        <div id="HorizontalDivider" class="clearfix">
+        </div>
+        <div class="ChapterVideoDiv">
+            <div class="ChapterVideo">
+                <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/196379792&amp;color=cccccc&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+            </div>
+        </div>
+
+
+        <span id="ChapterQuoteAudio">
+        “He thought what fun it would be to just drive right into that big box and smash it flat!” 
+        </span>
+        <div id="ChapterText" class="clearfix">
+            <!--span id="ChapterByline">
+            <span id="textspanlichapter22">GREGG LI</span><br /><span id="textspanlichapter24">SON</span>
+            </span-->
+
+            <span id="ChapterParagraphOne">
+            <span id="BigFirstLetterText"></span>             
+
+            There is a time that still makes us weak whenever we think about it—and we didn't know about it for years later when Mike finally told us about it. He was driving a tractor into the yard from off the Milo road and as he pulled onto the driveway and headed for the sheds, he noticed that there was a great big cardboard box lying in the driveway. <br /><br />
+
+            He thought what fun it would be to just drive right into that big box and smash it flat! So he headed the tractor right for the box but at the last second swerved the tractor and didn't touch the box at all. After he passed it by, he looked back and Debra (or Janet) crawled out of the inside of that box and waved at him! He was just a young boy at the time. Surely, the Spirit prompted him and he listened and heeded. 
+
+            </span>
+
+            <!--div id="ChapterPictureGallery" class="clearfix">
+                <ol class="GalleryPics">
+                                      
+                </ol>    
+            </div-->
+
+            <!--span id="ChapterParagraphTwo">
+
+                    I would wish for them to have the kind of family that I have had. I would like to see them have families where their children grow up in the gospel and have strong, viable testimonies of the gospel as my children have had and as my husband and I have had. I would wish for them a tremendous posterity, as I have had. Heavenly Father has blessed me tremendously with my family. I couldn’t have asked to have a better family than I’ve had. My posterity, as well, is just…I can’t describe how pleased and happy and blessed I feel to have my family. 
+ 
+            </span-->
+            
+            <!--span id="SEE_MORE"><a href="#" id="restofstory6-show"  onclick="showHide('restofstory6');return false;">SEE MORE</a>
+            </span>
+
+            <div id="restofstory6" class="more">
+                <span id="ChapterParagraphTwo">
+                    As it turned out, Ricks College and the homes up there became a haven for many hundreds of those whose homes were destroyed. My big concern was for the Public Health Office, a newly-built health department building that we had only been using for a few months. I had someone notify the sheriff the next day that I needed to get to my office to remove vaccine materials and other chemicals and any other record materials that could be salvaged. <br /><br />
+
+                    The sheriff came to the bottom of the hill by Smith Park and took me in a row boat to the office and we were able to take out from there all that needed to be kept safe. The health department was soon established in the rock house next to the drive, which was high enough that only the basement apartment had water in it. <br /><br />
+
+                    The apartment in the basement where Robert and Laurie lived was filled with flood water and all of their possessions were soaked and ruined. Marlon's apartment was also totally flooded and they lived in our camper parked in our backyard for awhile. The drive-in and the bottom apartments of the Norsemen were filled as well and so the work to get it cleaned up began. <br /><br />
+
+                    The water in Rexburg eventually ran off and on down the valley. The 8th Ward chapel of which we were members only had a few inches of water and only had minor damage. A miracle there. Volunteers came from everywhere to help in the clean up of flooded Rexburg. Many faith-promoting incidents occurred during the next weeks and months following the tragedy of the Teton Dam breaking. Testimonies were strengthened and faith enlarged by those who were residents of Rexburg as well as those who came to help. <br /><br />
+
+                    Many of us learned that through adversity comes stronger faith and through service comes great blessings. We also earned that no matter what the Lord is always near to us and the blessings always come.
+                </span>
+
+                <span id="SEE_MORE">
+                    <a href="#" id="restofstory5-hide" onclick="showHide('restofstory5');return false;">SEE LESS</a>
+                </span>
+            </div-->
+        </div>
+            
+
+        <%#= image_tag("li/progress_two/working3x COVER.jpg", :id => "ChapterHeadingCoverPhoto", :class => "image") %>
+        
+
+    <div class="bottom-menu">
+        <p id="bottommenuli">
+        <%= link_to 'HOME', carma_path %> &nbsp; <span id="textspanlichapter15">/</span> &nbsp; <%= link_to 'NEXT EXHIBIT', carma_town_living_path %> &nbsp;<span id="textspanlichapter15">/</span> &nbsp; <%= link_to 'GUESTBOOK', carma_guestbook_path %><br />
+        </p>
+    </div>
+
+
+<!-- Chapter Eight Begins --><!-- Evelyn needs to write this up!!! -->

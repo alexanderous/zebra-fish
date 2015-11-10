@@ -1,0 +1,19 @@
+<div class="wrap">
+	<div id="passwordreset2">
+		<div class="top">
+	      	<h1>Reset Your Password</h1>
+	      	<p>No worries, we all forget sometimes.</p>
+	  	</div>
+	 	<%= form_tag password_resets_path, :method => :post do %>
+		<div id="justabox">
+			<div class="field5">
+				<%= label_tag :email, "Please enter your email" %>
+				<%= text_field_tag :email, params[:email] %>
+				<br><br>
+				<div class="actions"><%=submit_tag "Submit", class: "button3" %></div>
+			</div>
+			<br><br>
+		</div>		
+		<% end %>
+	</div>
+</div>

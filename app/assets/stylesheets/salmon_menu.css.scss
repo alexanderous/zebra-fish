@@ -1,0 +1,2174 @@
+.primaryContainer {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100%;
+    width: 100%;
+}
+
+#Nulla {
+    float: left;
+    font-size: 1.05em;
+    width: 41.65%;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1.85em;
+    color: rgb(0, 0, 0);
+    font-style: normal;
+    letter-spacing: 0.005em;
+    text-decoration: none;
+    font-family: adobe-garamond-pro;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 113;
+    margin: 2.08% 0px 0px 5.66%;
+    clear: none;
+    padding-bottom: 2.08%;
+}
+
+#dougskipmain {
+    float: left;
+    width: 40%;
+    max-width: 100%;
+    height: auto;
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 112;
+    margin: 0px 0% 0px 3.32%;
+    clear: none;
+    padding-top: 270px;
+    display: block;
+}
+
+#dougskipvertical {
+    display: none;
+    float: left;
+    width: 30%;
+    max-width: 100%;
+    height: auto;
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 112;
+    margin: 9% 0px 0px 8.33%;
+    clear: none;
+    padding-top: 120px;
+}
+
+
+
+
+
+
+#Life_Summary {
+    float: left;
+    font-size: 1.822959375em;
+    width: 39.59%;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1em;
+    color: rgb(0, 0, 0);
+    font-style: normal;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    font-family: Goldenbook;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 115;
+    margin: 7% 0px 0px 5.66%;
+    clear: none;
+}
+
+
+@media only screen and (max-width: 1222px) {
+    #dougskipvertical {
+        display: block;
+    }
+
+    #dougskipmain {
+        display: none;
+    }
+
+    #Nulla {
+        margin-left: 11.66%;
+    }
+
+    #Life_Summary {
+        margin-left: 11.66%;
+    }
+}
+
+
+@media only screen and (max-width: 1016px) {
+    #dougskipvertical {
+    padding-top: 190px;
+    }
+}
+
+
+#sky {
+    float: left;
+    width: 100%;
+    height: auto;
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 110;
+    background-image: url("img/sky.png");
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    margin: 4.158386% 0px 0px 0%;
+    clear: both;
+    background-size: cover;
+}
+
+#SubtitleMenu {
+    float: left;
+    font-size: 0.845853875em;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-weight: normal;
+    line-height: 1em;
+    color: rgb(62, 77, 77);
+    font-style: italic;
+    letter-spacing: 0.01em;
+    text-decoration: none;
+    font-family: 'Adobe Garamond Pro';
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 116;
+    margin: 0.99985095% 0px 0px 0%;
+    clear: both;
+    min-width: 0px;
+}
+
+#Shapedsm_2 {
+    float: left;
+    height: 1px;
+    width: 83.33%;
+    background-color: rgb(6, 8, 8);
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 117;
+    margin: 0.5005465% 0px 0px 8.329193%;
+    clear: both;
+}
+
+#DOUG_SKIP_SALMON {
+    float: left;
+    font-size: 3.64591875em;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-weight: normal;
+    line-height: 1em;
+    color: rgb(32, 38, 39);
+    font-style: normal;
+    letter-spacing: 0.12em;
+    text-decoration: none;
+    font-family: Goldenbook;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 118;
+    margin-top: 1%;
+    margin-bottom: 0.4%;
+    margin-left: 0%;
+    clear: both;
+    min-width: 0px;
+}
+
+#Shapedsm_3 {
+    float: left;
+    height: 1px;
+    width: 83.33%;
+    background-color: rgb(6, 8, 8);
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 120;
+    margin-top: 1.35%;
+    margin-left: 8.33%;
+    clear: both;
+}
+
+#The_Life_Story_of {
+    float: left;
+    font-size: 1.21530625em;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-weight: normal;
+    line-height: 1em;
+    color: rgb(82, 96, 99);
+    font-style: normal;
+    letter-spacing: 0.2em;
+    text-decoration: none;
+    font-family: jaf-domus-titling-web;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 121;
+    margin: 6.659877% 0px 0px 0%;
+    clear: none;
+    min-width: 0px;
+}
+
+#lovestorymenu {
+    float: left;
+    width: 50%;
+    max-width: 100%;
+    height: auto;
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 107;
+    margin: 0px 0px 0px 0%;
+    clear: none;
+}
+
+#ENTER {
+    float: left;
+    font-size: 1.0354418125em;
+    width: auto;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1em;
+    color: rgb(255, 253, 255);
+    font-style: normal;
+    letter-spacing: 0.12em;
+    text-decoration: none;
+    font-family: Goldenbook;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 99;
+    margin-top: 5px;
+    margin-left: 4.651163%;
+    clear: none;
+}
+
+#Love_Story_Quote {
+    float: left;
+    font-size: 1em;
+    width: 83.33%;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1em;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 101;
+    margin: 2.38% 0% 0px 8.32%;
+    clear: both;
+}
+
+#textspandsm {
+    float: none;
+    font-size: 1em;
+    line-height: 1.45em;
+    color: rgb(0, 0, 0);
+    font-style: italic;
+    font-weight: normal;
+    letter-spacing: 0.01em;
+    text-decoration: none;
+    font-family: adobe-garamond-pro;
+}
+
+#EB {
+    float: left;
+    width: 172px;
+    height: 24px;
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 98;
+    background-color: black;
+    background-image:url("img/EB2.png");
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    margin: 8.32% 0% 0px 8.33%;
+    clear: both;
+}
+
+#Shapedsm_4 {
+    float: left;
+    height: 1px;
+    width: 83.33%;
+    background-color: rgb(6, 8, 8);
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 103;
+    margin-top: 2.5%;
+    margin-left: 8.33%;
+    clear: both;
+    margin-right: 0%;
+}
+
+#Love_Story {
+    float: left;
+    font-size: 2.916735em;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-weight: normal;
+    line-height: 1em;
+    color: rgb(0, 0, 0);
+    font-style: normal;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    font-family: Goldenbook;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 104;
+    margin-top: 2.38%;
+    margin-left: 0%;
+    clear: both;
+    margin-right: 0%;
+    min-width: 0px;
+}
+
+#Shapedsm_4_copy {
+    float: left;
+    height: 1px;
+    width: 83.33%;
+    background-color: rgb(6, 8, 8);
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 105;
+    margin-top: 0px;
+    margin-left: 8.33%;
+    clear: none;
+    margin-right: 0%;
+}
+
+#LOVE_STORYdsm {
+    float: left;
+    height: auto;
+    margin-left: 0%;
+    margin-top: 16.659628%;
+    clear: both;
+    width: 50%;
+}
+
+#PERSEVERANCE {
+    float: left;
+    height: auto;
+    margin: 16.66% 0px 0px;
+    clear: none;
+    width: 50%;
+}
+
+#Shapedsm_4_copy1 {
+    float: left;
+    height: 1px;
+    width: 83.33%;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 105;
+    margin-top: 0%;
+    margin-left: 8.33%;
+    clear: none;
+    margin-right: 0%;
+    background-color: rgb(6, 8, 8);
+    display: block;
+}
+
+#Love_Story1 {
+    float: left;
+    font-size: 2.916735em;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-weight: normal;
+    line-height: 1em;
+    color: rgb(0, 0, 0);
+    font-style: normal;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    font-family: Goldenbook;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 104;
+    margin: 2.38% 0% 0px;
+    clear: both;
+    min-width: 0px;
+    display: block;
+}
+
+#Shapedsm_41 {
+    float: left;
+    height: 1px;
+    width: 83.33%;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 103;
+    margin-top: 2.5%;
+    margin-left: 8.33%;
+    clear: both;
+    margin-right: 0%;
+    background-color: rgb(6, 8, 8);
+    display: block;
+}
+
+#Love_Story_Quote1 {
+    float: left;
+    font-size: 1em;
+    width: 83.33%;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1em;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 101;
+    margin: 2.38% 0% 0px 8.32%;
+    clear: both;
+}
+
+#textspandsm1 {
+    float: none;
+    font-size: 1em;
+    line-height: 1.45em;
+    color: rgb(0, 0, 0);
+    font-style: italic;
+    font-weight: normal;
+    letter-spacing: 0.01em;
+    text-decoration: none;
+    font-family: adobe-garamond-pro;
+}
+
+#EB1 {
+    float: left;
+    width: 172px;
+    height: 24px;
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 98;
+    margin: 8.32% 0% 0px 8.33%;
+    clear: both;
+    background-color: black;
+    background-image:url("img/EB2.png");
+    background-attachment: scroll;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    background-position: 0% 0%;
+    background-repeat: repeat repeat;
+}
+
+#ENTER1 {
+    float: left;
+    font-size: 1.0354418125em;
+    width: auto;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1em;
+    color: rgb(255, 253, 255);
+    font-style: normal;
+    letter-spacing: 0.12em;
+    text-decoration: none;
+    font-family: Goldenbook;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 99;
+    margin-top: 5px;
+    margin-left: 4.651163%;
+    clear: none;
+}
+
+#perseverancemenu {
+    float: left;
+    width: 50%;
+    max-width: 100%;
+    height: auto;
+    margin: 0px 0px 0px 0%;
+    clear: both;
+    color: rgb(0, 0, 0);
+}
+
+#FAMILYmenu {
+    float: left;
+    height: auto;
+    margin: 16.659628% 0px 0px;
+    clear: both;
+    width: 50%;
+}
+
+#Shapedsm_4_copy2 {
+    float: left;
+    height: 1px;
+    width: 83.33%;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 105;
+    margin-top: 0%;
+    margin-left: 8.33%;
+    clear: none;
+    margin-right: 0%;
+    display: block;
+    background-color: rgb(6, 8, 8);
+}
+
+#Love_Story2 {
+    float: left;
+    font-size: 2.916735em;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-weight: normal;
+    line-height: 1em;
+    color: rgb(0, 0, 0);
+    font-style: normal;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    font-family: Goldenbook;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 104;
+    margin-top: 2.38%;
+    margin-left: 0%;
+    clear: both;
+    margin-right: 0%;
+    min-width: 0px;
+    display: block;
+}
+
+#Shapedsm_42 {
+    float: left;
+    height: 1px;
+    width: 83.33%;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 103;
+    margin-top: 2.5%;
+    margin-left: 8.33%;
+    clear: both;
+    margin-right: 0%;
+    display: block;
+    background-color: rgb(6, 8, 8);
+}
+
+#Love_Story_Quote2 {
+    float: left;
+    font-size: 1em;
+    width: 83.33%;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1em;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 101;
+    margin: 2.38% 0% 0px 8.32%;
+    clear: both;
+}
+
+#textspandsm2 {
+    float: none;
+    font-size: 1em;
+    line-height: 1.45em;
+    color: rgb(0, 0, 0);
+    font-style: italic;
+    font-weight: normal;
+    letter-spacing: 0.01em;
+    text-decoration: none;
+    font-family: adobe-garamond-pro;
+}
+
+#EB2 {
+    float: left;
+    width: 172px;
+    height: 24px;
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 98;
+    margin: 8.32% 0% 0px 8.33%;
+    clear: both;
+    background-color: black;
+    background-image:url("img/EB2.png");
+    background-attachment: scroll;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    background-position: 0% 0%;
+    background-repeat: repeat repeat;
+}
+
+#ENTER2 {
+    float: left;
+    font-size: 1.0354418125em;
+    width: auto;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1em;
+    color: rgb(255, 253, 255);
+    font-style: normal;
+    letter-spacing: 0.12em;
+    text-decoration: none;
+    font-family: Goldenbook;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 99;
+    margin-top: 5px;
+    margin-left: 4.651163%;
+    clear: none;
+}
+
+#familymenu {
+    float: left;
+    width: 50%;
+    max-width: 100%;
+    height: auto;
+    margin-left: 0%;
+    margin-top: 0px;
+    clear: none;
+    color: rgb(0, 0, 0);
+    margin-right: 0%;
+}
+
+#servicemenu {
+    float: left;
+    width: 50%;
+    max-width: 100%;
+    height: auto;
+    margin: 0px 0px 0px 0%;
+    clear: none;
+    color: rgb(0, 0, 0);
+}
+
+#SERVICE {
+    float: left;
+    height: auto;
+    margin: 16.66% 0px 0px;
+    clear: none;
+    width: 50%;
+}
+
+#Shapedsm_4_copy3 {
+    float: left;
+    height: 1px;
+    width: 83.33%;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 105;
+    margin-top: 0%;
+    margin-left: 8.33%;
+    clear: none;
+    margin-right: 0%;
+    display: block;
+    background-color: rgb(6, 8, 8);
+}
+
+#Love_Story3 {
+    float: left;
+    font-size: 2.916735em;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-weight: normal;
+    line-height: 1em;
+    color: rgb(0, 0, 0);
+    font-style: normal;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    font-family: Goldenbook;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 104;
+    margin-top: 2.38%;
+    margin-left: 0%;
+    clear: both;
+    margin-right: 0%;
+    min-width: 0px;
+    display: block;
+}
+
+#Shapedsm_43 {
+    float: left;
+    height: 1px;
+    width: 83.33%;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 103;
+    margin-top: 2.5%;
+    margin-left: 8.33%;
+    clear: both;
+    margin-right: 0%;
+    display: block;
+    background-color: rgb(6, 8, 8);
+}
+
+#Love_Story_Quote3 {
+    float: left;
+    font-size: 1em;
+    width: 83.33%;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1em;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 101;
+    margin: 2.38% 0% 0px 8.32%;
+    clear: both;
+}
+
+#textspandsm3 {
+    float: none;
+    font-size: 1em;
+    line-height: 1.45em;
+    color: rgb(0, 0, 0);
+    font-style: italic;
+    font-weight: normal;
+    letter-spacing: 0.01em;
+    text-decoration: none;
+    font-family: adobe-garamond-pro;
+}
+
+#EB3 {
+    float: left;
+    width: 172px;
+    height: 24px;
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 98;
+    margin: 8.32% 0% 0px 8.33%;
+    clear: both;
+    background-color: black;
+    background-image:url("img/EB2.png");
+    background-attachment: scroll;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    background-position: 0% 0%;
+    background-repeat: repeat repeat;
+}
+
+#ENTER3 {
+    float: left;
+    font-size: 1.0354418125em;
+    width: auto;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1em;
+    color: rgb(255, 253, 255);
+    font-style: normal;
+    letter-spacing: 0.12em;
+    text-decoration: none;
+    font-family: Goldenbook;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 99;
+    margin-top: 5px;
+    margin-left: 4.651163%;
+    clear: none;
+}
+
+#HOBBIES {
+    float: left;
+    height: auto;
+    margin: 16.659628% 0px 0px;
+    clear: both;
+    width: 50%;
+}
+
+#Shapedsm_4_copy4 {
+    float: left;
+    height: 1px;
+    width: 83.33%;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 105;
+    margin-top: 0%;
+    margin-left: 8.33%;
+    clear: none;
+    margin-right: 0%;
+    display: block;
+    background-color: rgb(6, 8, 8);
+}
+
+#Love_Story4 {
+    float: left;
+    font-size: 2.916735em;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-weight: normal;
+    line-height: 1em;
+    color: rgb(0, 0, 0);
+    font-style: normal;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    font-family: Goldenbook;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 104;
+    margin-top: 2.38%;
+    margin-left: 0%;
+    clear: both;
+    margin-right: 0%;
+    min-width: 0px;
+    display: block;
+}
+
+#Shapedsm_44 {
+    float: left;
+    height: 1px;
+    width: 83.33%;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 103;
+    margin-top: 2.5%;
+    margin-left: 8.33%;
+    clear: both;
+    margin-right: 0%;
+    display: block;
+    background-color: rgb(6, 8, 8);
+}
+
+#Love_Story_Quote4 {
+    float: left;
+    font-size: 1em;
+    width: 83.33%;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1em;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 101;
+    margin: 2.38% 0% 0px 8.32%;
+    clear: both;
+}
+
+#textspandsm4 {
+    float: none;
+    font-size: 1em;
+    line-height: 1.45em;
+    color: rgb(0, 0, 0);
+    font-style: italic;
+    font-weight: normal;
+    letter-spacing: 0.01em;
+    text-decoration: none;
+    font-family: adobe-garamond-pro;
+}
+
+#EB4 {
+    float: left;
+    width: 172px;
+    height: 24px;
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 98;
+    margin: 8.32% 0% 0px 8.33%;
+    clear: both;
+    background-color: black;
+    background-image:url("img/EB2.png");
+    background-attachment: scroll;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    background-position: 0% 0%;
+    background-repeat: repeat repeat;
+}
+
+#ENTER4 {
+    float: left;
+    font-size: 1.0354418125em;
+    width: auto;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1em;
+    color: rgb(255, 253, 255);
+    font-style: normal;
+    letter-spacing: 0.12em;
+    text-decoration: none;
+    font-family: Goldenbook;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 99;
+    margin-top: 5px;
+    margin-left: 4.651163%;
+    clear: none;
+}
+
+#hobbiesmenu_png {
+    float: left;
+    width: 50%;
+    max-width: 100%;
+    height: auto;
+    margin: 0px;
+    clear: none;
+    color: rgb(0, 0, 0);
+}
+
+#guestbookmenu {
+    float: left;
+    width: 50%;
+    max-width: 100%;
+    height: auto;
+    margin: 0px;
+    clear: none;
+    color: rgb(0, 0, 0);
+}
+
+#GUESTBOOKdsm {
+    float: left;
+    height: auto;
+    margin: 16.66% 0px 0px;
+    clear: none;
+    width: 50%;
+}
+
+#Shapedsm_4_copy5 {
+    float: left;
+    height: 1px;
+    width: 83.33%;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 105;
+    margin-top: 0%;
+    margin-left: 8.33%;
+    clear: none;
+    margin-right: 0%;
+    display: block;
+    background-color: rgb(6, 8, 8);
+}
+
+#Love_Story5 {
+    float: left;
+    font-size: 2.916735em;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-weight: normal;
+    line-height: 1em;
+    color: rgb(0, 0, 0);
+    font-style: normal;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    font-family: Goldenbook;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 104;
+    margin-top: 2.38%;
+    margin-left: 0%;
+    clear: both;
+    margin-right: 0%;
+    min-width: 0px;
+    display: block;
+}
+
+#Shapedsm_45 {
+    float: left;
+    height: 1px;
+    width: 83.33%;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 103;
+    margin-top: 2.5%;
+    margin-left: 8.33%;
+    clear: both;
+    margin-right: 0%;
+    display: block;
+    background-color: rgb(6, 8, 8);
+}
+
+#Love_Story_Quote5 {
+    float: left;
+    font-size: 1em;
+    width: 83.33%;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1em;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 101;
+    margin: 2.38% 0% 0px 8.32%;
+    clear: both;
+}
+
+#textspandsm5 {
+    float: none;
+    font-size: 1em;
+    line-height: 1.45em;
+    color: rgb(0, 0, 0);
+    font-style: italic;
+    font-weight: normal;
+    letter-spacing: 0.01em;
+    text-decoration: none;
+    font-family: adobe-garamond-pro;
+}
+
+#EB5 {
+    float: left;
+    width: 172px;
+    height: 24px;
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 98;
+    margin: 8.32% 0% 0px 8.33%;
+    clear: both;
+    background-color: black;
+    background-image:url("img/EB2.png");
+    background-attachment: scroll;
+    -webkit-background-size: 100%; 
+    background-size: 100%;
+    background-position: 0% 0%;
+    background-repeat: repeat repeat;
+}
+
+#ENTER5 {
+    float: left;
+    font-size: 1.0354418125em;
+    width: auto;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1em;
+    color: rgb(255, 253, 255);
+    font-style: normal;
+    letter-spacing: 0.12em;
+    text-decoration: none;
+    font-family: Goldenbook;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 99;
+    margin-top: 5px;
+    margin-left: 4.651163%;
+    clear: none;
+}
+
+#FAMILYTREE {
+    float: left;
+    height: auto;
+    margin: 16.659628% 0px 0px;
+    clear: both;
+    width: 50%;
+}
+
+#Shapedsm_4_copy6 {
+    float: left;
+    height: 1px;
+    width: 83.33%;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 105;
+    margin-top: 0%;
+    margin-left: 8.33%;
+    clear: none;
+    margin-right: 0%;
+    display: block;
+    background-color: rgb(6, 8, 8);
+}
+
+#Love_Story6 {
+    float: left;
+    font-size: 2.916735em;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-weight: normal;
+    line-height: 1em;
+    color: rgb(0, 0, 0);
+    font-style: normal;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    font-family: Goldenbook;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 104;
+    margin-top: 2.38%;
+    margin-left: 0%;
+    clear: both;
+    margin-right: 0%;
+    min-width: 0px;
+    display: block;
+}
+
+#Shapedsm_46 {
+    float: left;
+    height: 1px;
+    width: 83.33%;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 103;
+    margin-top: 2.5%;
+    margin-left: 8.33%;
+    clear: both;
+    margin-right: 0%;
+    display: block;
+    background-color: rgb(6, 8, 8);
+}
+
+#Love_Story_Quote6 {
+    float: left;
+    font-size: 1em;
+    width: 83.33%;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1em;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 101;
+    margin: 2.38% 0% 0px 8.32%;
+    clear: both;
+}
+
+#textspandsm6 {
+    float: none;
+    font-size: 1em;
+    line-height: 1.45em;
+    color: rgb(0, 0, 0);
+    font-style: italic;
+    font-weight: normal;
+    letter-spacing: 0.01em;
+    text-decoration: none;
+    font-family: adobe-garamond-pro;
+}
+
+#EB6 {
+    float: left;
+    width: 172px;
+    height: 24px;
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 98;
+    margin: 8.32% 0% 0px 8.33%;
+    clear: both;
+    background-color: black;
+    background-image:url("img/EB2.png");
+    background-attachment: scroll;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    background-position: 0% 0%;
+    background-repeat: repeat repeat;
+}
+
+#ENTER6 {
+    float: left;
+    font-size: 1.0354418125em;
+    width: auto;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1em;
+    color: rgb(255, 253, 255);
+    font-style: normal;
+    letter-spacing: 0.12em;
+    text-decoration: none;
+    font-family: Goldenbook;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 99;
+    margin-top: 5px;
+    margin-left: 4.651163%;
+    clear: none;
+}
+
+#dsfamilytreemenu {
+    float: left;
+    width: 50%;
+    max-width: 100%;
+    height: auto;
+    margin: 0px 0px 0px 0%;
+    clear: none;
+    color: rgb(0, 0, 0);
+}
+
+#dstimelinemenu {
+    float: left;
+    width: 50%;
+    max-width: 100%;
+    height: auto;
+    margin: 0px;
+    clear: both;
+    color: rgb(0, 0, 0);
+}
+
+#TIMELINE {
+    float: left;
+    height: auto;
+    margin: 16.66% 0px 0px;
+    clear: none;
+    width: 50%;
+}
+
+#Shapedsm_4_copy7 {
+    float: left;
+    height: 1px;
+    width: 83.33%;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 105;
+    margin-top: 0%;
+    margin-left: 8.33%;
+    clear: none;
+    margin-right: 0%;
+    display: block;
+    background-color: rgb(6, 8, 8);
+}
+
+#Love_Story7 {
+    float: left;
+    font-size: 2.916735em;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-weight: normal;
+    line-height: 1em;
+    color: rgb(0, 0, 0);
+    font-style: normal;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    font-family: Goldenbook;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 104;
+    margin-top: 2.38%;
+    margin-left: 0%;
+    clear: both;
+    margin-right: 0%;
+    min-width: 0px;
+    display: block;
+}
+
+#Shapedsm_47 {
+    float: left;
+    height: 1px;
+    width: 83.33%;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 103;
+    margin-top: 2.5%;
+    margin-left: 8.33%;
+    clear: both;
+    margin-right: 0%;
+    display: block;
+    background-color: rgb(6, 8, 8);
+}
+
+#Love_Story_Quote7 {
+    float: left;
+    font-size: 1em;
+    width: 83.33%;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1em;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 101;
+    margin: 2.38% 0% 0px 8.32%;
+    clear: both;
+}
+
+#textspandsm7 {
+    float: none;
+    font-size: 1em;
+    line-height: 1.45em;
+    color: rgb(0, 0, 0);
+    font-style: italic;
+    font-weight: normal;
+    letter-spacing: 0.01em;
+    text-decoration: none;
+    font-family: adobe-garamond-pro;
+}
+
+#EB7 {
+    float: left;
+    width: 172px;
+    height: 24px;
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 98;
+    margin: 8.32% 0% 0px 8.33%;
+    clear: both;
+    background-color: black;
+    background-image:url("img/EB2.png");
+    background-attachment: scroll;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    background-position: 0% 0%;
+    background-repeat: repeat repeat;
+}
+
+#ENTER7 {
+    float: left;
+    font-size: 1.0354418125em;
+    width: auto;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1em;
+    color: rgb(255, 253, 255);
+    font-style: normal;
+    letter-spacing: 0.12em;
+    text-decoration: none;
+    font-family: Goldenbook;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 99;
+    margin-top: 5px;
+    margin-left: 4.651163%;
+    clear: none;
+}
+
+#dougskipmain1 {
+    float: left;
+    width: 45.83%;
+    max-width: 100%;
+    height: auto;
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 112;
+    margin: -355.421875px 0px 0px 95.827757%;
+    clear: both;
+    padding-top: 117px;
+    display: none;
+    padding-right: 0px;
+}
+
+#SubtitleMenu1 {
+    float: left;
+    font-size: 0.845853875em;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-weight: normal;
+    line-height: 1em;
+    color: rgb(62, 77, 77);
+    font-style: italic;
+    letter-spacing: 0.01em;
+    text-decoration: none;
+    font-family: 'Adobe Garamond Pro';
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 116;
+    margin: 1.148966% 0px 0px 0%;
+    clear: both;
+    min-width: 0px;
+    display: none;
+}
+
+@media only screen and (max-width: 983px) {
+    #dougskipmain1 {
+        width: 45.83%;
+        margin: 0px 0px 0px 25%;
+        clear: both;
+        display: none;
+        padding: 0px;
+    }
+
+    #The_Life_Story_of {
+        margin-top: 6.658191%;
+        margin-left: 0%;
+        clear: none;
+        font-size: 1.12em;
+    }
+
+    #Shapedsm_3 {
+        margin-top: 1.35%;
+        margin-left: 8.33%;
+        clear: both;
+    }
+
+    #DOUG_SKIP_SALMON {
+        margin-top: 1%;
+        margin-left: 0%;
+        margin-bottom: 0.4%;
+        clear: both;
+        font-size: 3em;
+    }
+
+    #Shapedsm_2 {
+        margin-top: 0.50020075%;
+        margin-left: 8.327757%;
+        clear: both;
+    }
+
+    #SubtitleMenu {
+        margin-top: 0.99872859%;
+        margin-left: 0%;
+        clear: both;
+    }
+
+    #sky {
+        margin-top: 4.157187%;
+        margin-left: 0%;
+        clear: both;
+        height: auto;
+    }
+
+    #LOVE_STORYdsm {
+        margin-top: 16.66%;
+        margin-left: 0%;
+        clear: both;
+    }
+
+    #lovestorymenu {
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 0%;
+        clear: none;
+    }
+
+    #perseverancemenu {
+        margin-top: 0px;
+        margin-left: 0%;
+        clear: both;
+    }
+
+    #FAMILYmenu {
+        margin-top: 16.65886%;
+        margin-left: 0px;
+        clear: both;
+    }
+
+    #HOBBIES {
+        margin-top: 16.65886%;
+        margin-left: 0px;
+        clear: both;
+    }
+
+    #FAMILYTREE {
+        margin-top: 16.65886%;
+        margin-left: 0px;
+        clear: both;
+    }
+
+    #dstimelinemenu {
+        margin-top: 0px;
+        margin-left: 0px;
+        clear: both;
+    }
+
+    #dougskipmain {
+        display: none;
+    }
+
+    #Life_Summary {
+        margin: 6.66% 0px 0px 4.16%;
+    }
+
+    #dougskipvertical {
+    width: 30%;
+    margin-left: 2.08%;
+    padding-top: 185px;
+    }
+
+    #Nulla {
+        clear: none;
+        margin-left: 4.16%;
+        width: 55%;
+        text-align: justify;
+    }
+
+    #Love_Story_Quote {
+        font-size: 0.8em;
+    }
+
+    #Love_Story_Quote1 {
+        font-size: 0.8em;
+    }
+
+    #Love_Story_Quote2 {
+        font-size: 0.8em;
+    }
+
+    #Love_Story_Quote3 {
+        font-size: 0.8em;
+    }
+
+    #Love_Story_Quote4 {
+        font-size: 0.8em;
+    }
+
+    #Love_Story_Quote5 {
+        font-size: 0.8em;
+    }
+
+    #Love_Story_Quote6 {
+        font-size: 0.8em;
+    }
+
+    #Love_Story_Quote7 {
+        font-size: 0.8em;
+    }
+
+    #Love_Story {
+        font-size: 2.3em;
+    }
+
+    #Love_Story1 {
+        font-size: 2.3em;
+    }
+
+    #Love_Story2 {
+        font-size: 2.3em;
+    }
+
+    #Love_Story3 {
+        font-size: 2.3em;
+    }
+
+    #Love_Story4 {
+        font-size: 2.3em;
+    }
+
+    #Love_Story5 {
+        font-size: 2.3em;
+    }
+
+    #Love_Story6 {
+        font-size: 2.3em;
+    }
+
+    #Love_Story7 {
+        font-size: 2.3em;
+    }
+
+    #SubtitleMenu1 {
+        margin-top: 0.99872859%;
+        margin-left: 0%;
+        clear: both;
+    }
+}
+
+
+@media only screen and (max-width: 854px) {
+    #dougskipmain1 {
+        display: block;
+    }
+
+    #dougskipvertical {
+        display: none;
+    }
+
+    #Nulla {
+        clear: both;
+        width: 83.33%;
+        margin-left: 8.33%;
+    }
+
+    #Life_Summary {
+        margin-left: 8.33%;
+    }
+}
+
+
+@media only screen and (max-width: 802px) {
+    #Love_Story {
+        font-size: 2em;
+    }
+
+    #Love_Story1 {
+        font-size: 2em;
+    }
+
+    #Love_Story2 {
+        font-size: 2em;
+    }
+
+    #Love_Story3 {
+        font-size: 2em;
+    }
+
+    #Love_Story4 {
+        font-size: 2em;
+    }
+
+    #Love_Story5 {
+        font-size: 2em;
+    }
+
+    #Love_Story6 {
+        font-size: 2em;
+    }
+
+    #Love_Story7 {
+        font-size: 2em;
+    }
+
+    #TIMELINE {
+        margin-top: 10.41%;
+    }
+
+    #FAMILYTREE {
+        margin-top: 10.41%;
+    }
+
+    #GUESTBOOKdsm {
+        margin-top: 10.41%;
+    }
+
+    #HOBBIES {
+        margin-top: 10.41%;
+    }
+
+    #SERVICE {
+        margin-top: 10.41%;
+    }
+
+    #FAMILYmenu {
+        margin-top: 10.41%;
+    }
+
+    #PERSEVERANCE {
+        margin-top: 10.41%;
+    }
+
+    #LOVE_STORYdsm {
+        margin-top: 10.41%;
+    }
+
+    #DOUG_SKIP_SALMON {
+        font-size: 2.5em;
+    }
+
+    #Life_Summary {
+        margin: 6.66% 0px 0px 8.33%;
+        width: 83.33%;
+    }
+}
+
+@media only screen and (max-width: 794px) {
+    #SubtitleMenu {
+        display: none;
+    }
+
+    #SubtitleMenu1 {
+        display: block;
+        margin-top: 1.148966%;
+        margin-right: 0px;
+        margin-left: 0%;
+        clear: both;
+    }
+}
+
+@media only screen and (max-width: 687px) {
+    #SubtitleMenu {
+        display: none;
+        margin-top: 0.99859023%;
+        margin-left: 0%;
+        clear: both;
+    }
+
+    #SubtitleMenu1 {
+        display: block;
+        margin-top: 1.148966%;
+        margin-right: 0px;
+        margin-left: 0%;
+        clear: both;
+    }
+
+    #Shapedsm_3 {
+        margin-top: 1.55%;
+        margin-left: 8.33%;
+        clear: both;
+    }
+
+    #DOUG_SKIP_SALMON {
+        margin-top: 1.3%;
+        margin-bottom: 0.7%;
+        margin-left: 0%;
+        clear: both;
+    }
+
+    #Shapedsm_2 {
+        margin-top: 0.4981203%;
+        margin-left: 8.327068%;
+        clear: both;
+    }
+
+    #sky {
+        margin-top: 4.16%;
+        margin-left: 0%;
+        clear: both;
+    }
+
+    #LOVE_STORYdsm {
+        margin-top: 10.411184%;
+        margin-left: 0%;
+        clear: both;
+    }
+
+    #lovestorymenu {
+        margin-left: 0%;
+        clear: none;
+    }
+
+    #perseverancemenu {
+        margin-top: 0px;
+        margin-left: 0%;
+        clear: both;
+    }
+
+    #FAMILYmenu {
+        margin-top: 10.408835%;
+        margin-left: 0px;
+        clear: both;
+    }
+
+    #HOBBIES {
+        margin-top: 10.408835%;
+        margin-left: 0px;
+        clear: both;
+    }
+
+    #FAMILYTREE {
+        margin-top: 10.408835%;
+        margin-left: 0px;
+        clear: both;
+    }
+
+    #dstimelinemenu {
+        margin-top: 0px;
+        margin-left: 0px;
+        clear: both;
+    }
+
+    #Love_Story {
+        font-size: 1.6em;
+    }
+
+    #Love_Story1 {
+        font-size: 1.6em;
+    }
+
+    #Love_Story2 {
+        font-size: 1.6em;
+    }
+
+    #Love_Story4 {
+        font-size: 1.6em;
+    }
+
+    #Love_Story5 {
+        font-size: 1.6em;
+    }
+
+    #Love_Story6 {
+        font-size: 1.6em;
+    }
+
+    #Love_Story3 {
+        font-size: 1.6em;
+    }
+
+    #Life_Summary {
+        width: 83.33%;
+    }
+
+    #Love_Story7 {
+        font-size: 1.6em;
+    }
+
+    #ENTER4 {
+        font-size: 0.8em;
+        margin-top: 4px;
+        margin-left: 4.641204%;
+        clear: none;
+    }
+
+    #ENTER5 {
+        font-size: 0.8em;
+        margin-top: 4px;
+        margin-left: 4.641204%;
+        clear: none;
+    }
+
+    #ENTER6 {
+        font-size: 0.8em;
+        margin-top: 4px;
+        margin-left: 4.641204%;
+        clear: none;
+    }
+
+    #ENTER7 {
+        font-size: 0.8em;
+        margin-top: 4px;
+        margin-left: 4.641204%;
+        clear: none;
+    }
+
+    #ENTER3 {
+        font-size: 0.8em;
+        margin-top: 4px;
+        margin-left: 4.641204%;
+        clear: none;
+    }
+
+    #ENTER2 {
+        font-size: 0.8em;
+        margin-top: 4px;
+        margin-left: 4.641204%;
+        clear: none;
+    }
+
+    #ENTER1 {
+        font-size: 0.8em;
+        margin-top: 4px;
+        margin-left: 4.641204%;
+        clear: none;
+    }
+
+    #ENTER {
+        font-size: 0.8em;
+        margin-top: 4px;
+        margin-left: 4.641204%;
+        clear: none;
+    }
+
+    #EB7 {
+        width: 135px;
+        height: 18px;
+    }
+
+    #EB6 {
+        width: 135px;
+        height: 18px;
+    }
+
+    #EB5 {
+        width: 135px;
+        height: 18px;
+    }
+
+    #EB4 {
+        width: 135px;
+        height: 18px;
+    }
+
+    #EB3 {
+        width: 135px;
+        height: 18px;
+    }
+
+    #EB2 {
+        width: 135px;
+        height: 18px;
+    }
+
+    #EB1 {
+        width: 135px;
+        height: 18px;
+    }
+
+    #EB {
+        width: 135px;
+        height: 18px;
+    }
+}
+
+@media only screen and (max-width: 591px) {
+    #Life_Summary {
+        font-size: 1.35em;
+        width: 83.33%;
+    }
+
+    #dougskipmain1 {
+        width: 75%;
+        margin-left: 12.5%;
+    }
+
+    #DOUG_SKIP_SALMON {
+        font-size: 2em;
+        margin-left: 8.33%;
+        width: 83.33%;
+    }
+
+    #Shapedsm_3 {
+        margin-top: 2.3%;
+    }
+
+    #LOVE_STORYdsm {
+        width: 50%;
+        margin: 10.41% 0px 0px 0%;
+    }
+
+    #lovestorymenu {
+        width: 50%;
+    }
+
+    #Love_Story_Quote {
+        display: block;
+        font-size: 0.8em;
+    }
+
+    #ENTER {
+        font-size: 0.88em;
+        margin-top: 3px;
+        margin-left: 4.635417%;
+        clear: none;
+    }
+
+    #EB {
+        height: 18px;
+        width: 135px;
+        margin-top: 4.16%;
+        display: none;
+    }
+
+    #EB1 {
+        display: none;
+    }
+
+    #EB2 {
+        display: none;
+    }
+
+    #EB3 {
+        display: none;
+    }
+
+    #EB4 {
+        display: none;
+    }
+
+    #EB5 {
+        display: none;
+    }
+
+    #EB6 {
+        display: none;
+    }
+
+    #EB7 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 489px) {
+    #Love_Story_Quote {
+        display: none;
+    }
+
+    #Love_Story_Quote1 {
+        display: none;
+    }
+
+    #Love_Story_Quote2 {
+        display: none;
+    }
+
+    #Love_Story_Quote3 {
+        display: none;
+    }
+
+    #Love_Story_Quote4 {
+        display: none;
+    }
+
+    #Love_Story_Quote5 {
+        display: none;
+    }
+
+    #Love_Story_Quote6 {
+        display: none;
+    }
+
+    #Love_Story_Quote7 {
+        display: none;
+    }
+
+    #LOVE_STORYdsm {
+        margin-top: 20.82%;
+    }
+
+    #PERSEVERANCE {
+        margin-top: 20.82%;
+    }
+
+    #FAMILYmenu {
+        margin-top: 20.82%;
+    }
+
+    #SERVICE {
+        margin-top: 20.82%;
+    }
+
+    #HOBBIES {
+        margin-top: 20.82%;
+    }
+
+    #GUESTBOOKdsm {
+        margin-top: 20.82%;
+    }
+
+    #FAMILYTREE {
+        margin-top: 20.82%;
+    }
+
+    #TIMELINE {
+        margin-top: 20.82%;
+    }
+
+    #Love_Story {
+        font-size: 1.4em;
+    }
+
+    #Love_Story1 {
+        font-size: 1.4em;
+    }
+
+    #Love_Story2 {
+        font-size: 1.4em;
+    }
+
+    #Love_Story3 {
+        font-size: 1.4em;
+    }
+
+    #Love_Story4 {
+        font-size: 1.4em;
+    }
+
+    #Love_Story5 {
+        font-size: 1.4em;
+    }
+
+    #Love_Story6 {
+        font-size: 1.4em;
+    }
+
+    #Love_Story7 {
+        font-size: 1.4em;
+    }
+
+    #Nulla {
+        margin-top: 4.08%;
+    }
+
+    #sky {
+        margin-top: 8.32%;
+    }
+
+    #dougskipmain1 {
+        margin-top: 2.16%;
+    }
+
+    #DOUG_SKIP_SALMON {
+        margin-top: 1.9%;
+    }
+
+    #Shapedsm_2 {
+        margin-top: 1.55%;
+    }
+
+    #The_Life_Story_of {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 428px) {
+    #Love_Story2 {
+        font-size: 1.2em;
+    }
+
+    #Love_Story1 {
+        font-size: 1.2em;
+    }
+
+    #Love_Story {
+        font-size: 1.2em;
+    }
+
+    #Love_Story3 {
+        font-size: 1.2em;
+    }
+
+    #Love_Story4 {
+        font-size: 1.2em;
+    }
+
+    #Love_Story5 {
+        font-size: 1.2em;
+    }
+
+    #Love_Story6 {
+        font-size: 1.2em;
+    }
+
+    #Love_Story7 {
+        font-size: 1.2em;
+    }
+
+    #SubtitleMenu1 {
+        margin-top: 2%;
+    }
+}
+

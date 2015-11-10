@@ -1,0 +1,83 @@
+
+
+    <head>
+
+
+    <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 3.0">
+
+    </head>
+
+<body>
+
+        <span id="In_Exhibit_Title_Mod">
+        GUESTBOOK
+        </span>
+        <div id="boxmodex_guestbook" class="clearfix">
+            <%= image_tag("evelyn/menu/arrow motif left.png", :id => "exhibit_top_arrow_motif_left", :class => "image")  %>
+            <span id="In_Exhibit_Subtitle_Mod">
+            SHARE YOUR STORY
+            </span>
+            <%= image_tag("evelyn/menu/arrow motif right.png", :id => "exhibit_top_arrow_motif_right", :class => "image")  %>
+        </div>
+        <div id="boxmodex1" class="clearfix">
+            <span id="Previous_Exhibit_Link_Mod"><a href="<%= roos_timeline_path %>">
+            previous exhibit</a> 
+            </span>
+            <span id="Next_Exhibit_Link_Mod"><a href="<%= roos_devotion_path %>">
+            next exhibit</a>
+            </span>
+        </div>
+
+<a name="x"></a>
+            <div id="gueststories" class="clearfix">
+             
+                <% @anthology_items = Micropost.where(:subject_id => "155") %>
+                <% @identity = "155" %>
+                <% @subject_matter = 'none' %>
+                
+                <% if @anthology_items.count > 0 %>
+                      <!--div class="wrap"-->
+                        <div id="show">
+                          <div class="main">                  
+                            <div class="horizontal">               
+                                  <ol class="microposts">
+                                    <%#= @feed_items = micropost %>
+                                    
+                                    <%= render "shared/anthology" %>
+                                    
+                                  </ol>   
+                            </div> 
+                          </div>
+                        </div> 
+                        <br>
+                <% end %>
+            </div>
+<div id="guestbook_roos" class="clearfix">
+                <%= render 'shared/guest_stories_roos' %>
+                <!--div id="outerboxbutton_li">
+                    <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/186093346%3Fsecret_token%3Ds-QMY5S&amp;color=c5c5c5&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+
+                    <span class="StoryQuote">
+                    
+                    "Popo and Gong Gong lived together with us in Washington, D.C. during 1984-85. One thing that Gong Gong loved to do, and we all found very funny, was to rub his shoes on the floor and create static. He would then touch metal and shock himself and other people. He loved to do that all the time, and in D.C. in the winter months it's very dry, so he created so much static on himself."<br /> <span class="StoryQuoteByline">- KAREN LI, DAUGHTER-IN-LAW</span>
+         
+                    </span>
+                </div-->
+        </div>
+
+                <div id="boxmodex1" class="clearfix">
+            <span id="Previous_Exhibit_Link_Mod"><a href="<%= roos_timeline_path %>">
+            previous exhibit</a> 
+            </span>
+            <span id="Next_Exhibit_Link_Mod"><a href="<%= roos_devotion_path %>">
+            next exhibit</a>
+            </span>
+        </div>
+
+        <div id="boxmodex4" class="clearfix">
+            <%= image_tag("evelyn/menu/arrow motif left.png", :id => "arrow_motif_left1", :class => "image")  %>
+            <span id="Home_Link_Mod"><a href="<%= roos_path %>">
+            HOME</a>
+            </span>
+             <%= image_tag("evelyn/menu/arrow motif right.png", :id => "arrow_motif_right1", :class => "image")  %>
+        </div>

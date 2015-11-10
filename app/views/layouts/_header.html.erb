@@ -1,0 +1,19 @@
+<header class="navbar navbar-fixed-top">
+  <!--div class="navbar-inner"-->
+    <div class="header">
+      <%#= link_to "sample app", '#', id: "logo" %>
+      <nav>         
+          <ul class="nav pull-right">            
+            <li><!--a href="www.antho.co"--><!--img id="headerlogo" src="public/img/AnthoLogowoLS.png" class="image" /--><!--/a--><%= link_to image_tag("AnthoLogowoLS.png", :size => "76x17"), root_path %></li>
+              <% if signed_in? %>
+                <li><%= link_to "Profile", user_path(current_user) %></li>
+                <li><%= link_to "Drafts", my_drafts_path %></li>
+                <li><%= link_to "Sign out", signout_path, method: "delete" %></li>
+              <% else %>          
+                <li><%= render "shared/header_login" %> </li>
+              <% end %>
+            
+          </ul>
+      </nav>
+    </div>
+</header>

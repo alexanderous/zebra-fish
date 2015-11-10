@@ -1,0 +1,587 @@
+
+
+    <head>
+
+
+	<meta name="viewport" content="initial-scale = 1.0,maximum-scale = 3.0">
+
+    <script>
+            $(document).ready(function () {
+                $(".ChapterVideoMod").fitVids();
+            });
+
+    </script>
+
+    <script>
+        function showHide(shID) {
+          if (document.getElementById(shID)) {
+            if (document.getElementById(shID+'-show').style.display != 'none') {
+              document.getElementById(shID+'-show').style.display = 'none';
+              document.getElementById(shID).style.display = 'block';
+            }
+            else {
+              document.getElementById(shID+'-show').style.display = 'inline';
+              document.getElementById(shID).style.display = 'none';
+            }
+          }
+        }
+    </script>
+
+    <!-- fancybox begins -->
+
+        <!--script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script--> <!-- this causes fitvids NOT to work. BOO -->
+        <link rel="stylesheet" href="/fancybox/source/jquery.fancybox.css" type="text/css" media="screen">
+        <script type="text/javascript" src="/fancybox/source/jquery.fancybox.pack.js"></script>
+    <!-- fancybox end -->
+    </head>
+
+<body>
+
+        <span id="In_Exhibit_Title_Mod">
+        PURPOSE
+        </span>
+        <div id="boxmodex_purpose" class="clearfix">
+            <%= image_tag("evelyn/menu/arrow motif left.png", :id => "exhibit_top_arrow_motif_left", :class => "image")  %>
+            <span id="In_Exhibit_Subtitle_Mod">
+            DRIVING OUT DARKNESS
+            </span>
+            <%= image_tag("evelyn/menu/arrow motif right.png", :id => "exhibit_top_arrow_motif_right", :class => "image")  %>
+        </div>
+        <div id="boxmodex1" class="clearfix">
+            <span id="Previous_Exhibit_Link_Mod"><a href="<%= evelyn_motherhood_1_path %>">
+            previous exhibit</a> 
+            </span>
+            <span id="Next_Exhibit_Link_Mod"><a href="<%= evelyn_motherhood_2_path %>">
+            next exhibit</a>
+            </span>
+        </div>
+
+
+<!-- CHAPTER ONE -->
+
+        
+        <div id="Gallery_Strip" class="clearfix">
+            <ol class="GalleryPicsMod">
+
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/1BuildClinicRunCongress3.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/1BuildClinicRunCongress3.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/1BuildClinicRunCongress4.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/1BuildClinicRunCongress4.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/1BuildClinicRunCongress.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/1BuildClinicRunCongress.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/1BuildClinicRunCongress1.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/1BuildClinicRunCongress1.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/1BuildClinicRunCongress2.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/1BuildClinicRunCongress2.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/1BuildClinicRunCongress5.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/1BuildClinicRunCongress5.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/1BuildClinicRunCongress6.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/1BuildClinicRunCongress6.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/1BuildClinicRunCongress7.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/1BuildClinicRunCongress7.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/1BuildClinicRunCongress8.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/1BuildClinicRunCongress8.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/1BuildClinicRunCongress9.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/1BuildClinicRunCongress9.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/1BuildClinicRunCongress10.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/1BuildClinicRunCongress10.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/1BuildClinicRunCongress11.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/1BuildClinicRunCongress11.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/1BuildClinicRunCongress12.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/1BuildClinicRunCongress12.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/1BuildClinicRunCongress13.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/1BuildClinicRunCongress13.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/1BuildClinicRunCongress14.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/1BuildClinicRunCongress14.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/1BuildClinicRunCongress15.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/1BuildClinicRunCongress15.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/1BuildClinicRunCongress16.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/1BuildClinicRunCongress16.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/1BuildClinicRunCongress17.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/1BuildClinicRunCongress17.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/1BuildClinicRunCongress18.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/1BuildClinicRunCongress18.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/1BuildClinicRunCongress19.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/1BuildClinicRunCongress19.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/1BuildClinicRunCongress20.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/1BuildClinicRunCongress20.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/1BuildClinicRunCongress21.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/1BuildClinicRunCongress21.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/1BuildClinicRunCongress22.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/1BuildClinicRunCongress22.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/1BuildClinicRunCongress23.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/1BuildClinicRunCongress23.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/1BuildClinicRunCongress24.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/1BuildClinicRunCongress24.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/1BuildClinicRunCongress25.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/1BuildClinicRunCongress25.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+
+                </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            Spiritual Motivations
+            </span>
+            <span id="Contributor_Name_Mod">
+            evelyn li
+            </span>
+            <span id="First_Paragraph_Mod">
+            What made me decide to build the non-profit clinic and what made me decide to run for Congress is under the same premise: I want to be a disciple of Jesus. If one day I die and go to heaven, Jesus will say, "What have you done?" I want to help spread the Gospel. To people who are disadvantaged, I want to help give confidence that someday they can be successful, like me. I want to tell them that there is a God, and he can really make you successful. <br />
+            </span>
+            <div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <iframe src="//player.vimeo.com/video/119499858" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “I woke up and said, ‘God has been nice to me all this time, and I have not been nice to him. What happened to me?’”
+                </span>
+            </div>
+            <span id="Second_Paragraph_Mod">Without that little push from somebody, they may not be successful. I want to be there to give them a little push. That was the theory behind making the movie Life for Sale: even though the law is bigger than us, we as patients can have a voice. We can get together and make that change so that our land is a land that is habitable. <br /><br />
+
+            Having been through all my life’s trauma, I can relate to the people who are immigrants, who have difficulty in accessing healthcare because of language barriers. That’s what prompted me to open this non-profit organization clinic, which allows people who cannot speak the language to also have affordable and accessible care in the medical field. <br />
+            </span>
+            
+            
+            </div>
+        </div>
+
+
+<!-- CHAPTER TWO -->
+
+
+        <div id="Gallery_Strip1" class="clearfix">
+            <ol class="GalleryPicsMod">
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/2SavingPatientsLives.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/2SavingPatientsLives.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/2SavingPatientsLives1.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/2SavingPatientsLives1.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/2SavingPatientsLives2.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/2SavingPatientsLives2.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/2SavingPatientsLives3.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/2SavingPatientsLives3.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/2SavingPatientsLives4.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/2SavingPatientsLives4.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/2SavingPatientsLives5.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/2SavingPatientsLives5.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/2SavingPatientsLives6.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/2SavingPatientsLives6.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            Saving the Lives of Patients Everywhere
+            </span>
+            <span id="Contributor_Name_Mod">
+            evelyn li
+            </span>
+            <span id="First_Paragraph_Mod">The problem was the patients’ lives were being affected, and they were not given a choice to say what they wanted. What people don’t understand is that the law is actually against their favor until they change it. That was the 1986 healthcare law, when the hospitals lobbied to make a hospital have full control of a doctor’s medical license. If the doctors don’t listen to the hospital, they can lose their medical licenses. Not directly, but indirectly you can be affected. That law has to be changed. 
+            <br />
+            </span>
+            <div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <iframe src="//player.vimeo.com/video/119502219" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “Because of that exposure, the law changed after a few years.”
+                </span>
+            </div>
+
+            <span id="Second_Paragraph_Mod">
+            We decided to make a documentary to explain it, and hopefully someone will decide to change the law. Once the law is changed, hopefully patients will have a choice in their own life and death. <br /><br />
+
+            When we shot the movie, there were a lot of miracles. From the beginning to the end, it was totally in God’s hand. Every time I went to the temple, the temple reinforced to me that I should make that movie. The people around me were so talented. My daughter Kimberli, my sons Alex and Jonathan, and also all the other helpers were so talented. Without knowing very much about movies, they were able to put this whole movie together. Even with so many movies that come out every year - we’re talking about hundreds of thousands of movies. <br /><br />
+            </span>
+
+            <span id="See_More_Mod"><a href="#" id="restofstory-show"  onclick="showHide('restofstory');return false;">SEE MORE</a>
+            </span>
+
+            <div id="restofstory" class="more">
+
+                <span id="Second_Paragraph_Mod1" class="more">
+                The process of making the movie was entirely a miracle. So many movies get out into the market - we're talking 200,000 movies - that it is difficult to get into the theater. It was a miracle that God made happen. We had this unique connection so we could have our film screen in multiple theaters. He also connected us to a political channel to have the movie shown to senators and mayors. <br /><br />
+
+                Because of that exposure, the law changed after a few years. Now if the hospital discharges a patient prematurely and the patient falls victim to a revolving door to come back, the hospital will be penalized for such irresponsible behavior. We made the movie, did some good, and I feel that God was happy with our choice of action. That reconfirmed that there is a God, and He is living. <br />
+                </span>
+            </div>
+        </div>
+            
+
+
+<!-- CHAPTER THREE -->
+
+
+        <div id="Gallery_Strip1" class="clearfix">
+            <ol class="GalleryPicsMod">
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/3StandingUpforOthers.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/3StandingUpforOthers.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/3StandingUpforOthers1.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/3StandingUpforOthers1.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/3StandingUpforOthers2.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/3StandingUpforOthers2.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/3StandingUpforOthers3.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/3StandingUpforOthers3.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/3StandingUpforOthers4.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/3StandingUpforOthers4.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/3StandingUpforOthers5.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/3StandingUpforOthers5.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/3StandingUpforOthers6.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/3StandingUpforOthers6.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/3StandingUpforOthers7.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/3StandingUpforOthers7.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/3StandingUpforOthers8.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/3StandingUpforOthers8.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/3StandingUpforOthers9.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/3StandingUpforOthers9.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/3StandingUpforOthers10.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/3StandingUpforOthers10.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/3StandingUpforOthers11.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/3StandingUpforOthers11.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+            
+                </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            Standing Up for Others
+            </span>
+            <span id="Contributor_Name_Mod">
+            kimberli cheung
+            </span>
+            <span id="First_Paragraph_Mod">
+            One way my mom has stood up for others is through her work at the hospital. When she saw that patients were being lied to and mistreated, that she witnessed unethical practices, she stood up for patients. She didn’t give in to the rules of whatever the business regulated in administration. 
+            <br />
+            </span>
+            <div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <iframe src="//player.vimeo.com/video/118855302" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “She wasn’t afraid of how people were going to taunt her, tease her, laugh at her, put her down, and essentially threaten to take away her license, because she felt, ‘It doesn’t matter if I lose everything. I need to tell the truth.’”
+                </span>
+            </div>
+
+            <span id="Second_Paragraph_Mod">
+                She felt strongly that, “No. This is wrong. You shouldn’t do this and that in surgeries and in sending patients home.” She was honest with patients. That was very courageous of her. If you’ve seen the movie that we made, Life for Sale, you understand that when doctors put their lives on the line like that for a patient, they literally are putting their whole career on the line, because hospitals and hospital administration don’t want to see that. They don’t want to see defiance of rules. More defiance and deviations are going to lead to less profit for them. <br /><br />
+
+                My mom wasn’t afraid. She wasn’t afraid of how people were going to taunt her, tease her, laugh at her, put her down, and essentially threaten to take away her license, because she felt, “It doesn’t matter if I lose everything. I need to tell the truth. People need to know and they need to be protected. I need to protect my people.”<br />
+            </span>
+        </div>
+            
+
+<!-- CHAPTER FOUR -->
+
+
+        <div id="Gallery_Strip1" class="clearfix">
+            <ol class="GalleryPicsMod">
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/4MakingDifference.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/4MakingDifference.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/4MakingDifference1.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/4MakingDifference1.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/4MakingDifference2.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/4MakingDifference2.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/4MakingDifference3.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/4MakingDifference3.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/4MakingDifference4.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/4MakingDifference4.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/4MakingDifference5.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/4MakingDifference5.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/4MakingDifference6.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/4MakingDifference6.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/4MakingDifference7.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/4MakingDifference7.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/4MakingDifference8.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/4MakingDifference8.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/4MakingDifference9.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/4MakingDifference9.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/4MakingDifference10.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/4MakingDifference10.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/4MakingDifference11.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/4MakingDifference11.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/4MakingDifference12.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/4MakingDifference12.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/4MakingDifference13.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/4MakingDifference13.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/4MakingDifference14.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/4MakingDifference14.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/4MakingDifference15.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/4MakingDifference15.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/4MakingDifference16.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/4MakingDifference16.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/4MakingDifference17.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/4MakingDifference17.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            Making a Tremendous Difference
+            </span>
+            <span id="Contributor_Name_Mod">
+            norman cheung
+            </span>
+            <span id="First_Paragraph_Mod">
+            There are certain events that I consider very important in Mom’s life. One of the things during our marriage that influenced both of us tremendously is the issue that she has with the hospital. They disagree with how things are being done. All through that episode, I believe that what Mom did was essentially be a patient’s advocate. Because of that, she’s taking a stand. She is not willing to back down. There are many, many other doctors who share the same feeling, but they are afraid. They don’t want to come up front and stand for what needs to be done. That led to the movie that she made, Life for Sale. 
+            <br />
+            </span>
+            <div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <iframe src="//player.vimeo.com/video/118855301" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “A lot of people come to me, even some of the doctors up to this day, and still appreciate that she stood up and fought for it.”
+                </span>
+            </div>
+
+            <span id="Second_Paragraph_Mod">
+            If you get a chance to look at Life for Sale, what happens in it is essentially what she was trying to communicate to the public. The events in there were real. They were not made up. The doctors in there that supported her expressed their feelings, which were also real. But it did turn into a very complicated situation. It does make our life difficult, especially hers, which brings us to the point that I was making earlier – she takes the stress well. It’s not easy. <br /><br />
+
+            That was an extremely difficult fight; it was very costly, very difficult. I wouldn’t be able to handle that if I were her. But she got through it, and a lot of people come to me, even some of the doctors up to this day, and still appreciate that she stood up and fought for it. I think because of that, other doctors are slowly trying to make a stand for that, too. It’s an extremely costly situation for most people, and that stops them from doing it. I admire her for standing up and doing that. <br />
+            </span>
+
+            <span id="See_More_Mod"><a href="#" id="restofstory2-show"  onclick="showHide('restofstory2');return false;">SEE MORE</a>
+            </span>
+
+            <div id="restofstory2" class="more">
+
+                <span id="Second_Paragraph_Mod1" class="more">
+                Another important situation was when she was interested in running for Congress. She was a nobody. Ive never seen a person work so hard trying to convey her message to other people. She did good. For someone who was completely unknown in the community, she got into the primary. She lost, but she put up a good fight and she did good. <br /><br />
+
+                The third event that sticks in my mind is with Kimberli’s situation. When Kimberli got married, they were in Utah. Mom was the first one over there to help them. Mom was also there to help Kimberli’s ex-husband. Unfortunately, it turned out to be a very bad situation. Mom actually lost quite a bit of money trying to support Kimberli’s ex-husband. When Kimberli moved back, Mom was able to set up a home for them here in San Jose. Unfortunately, her ex-husband refused to change, one thing led to another, and then came the divorce. After the divorce, it was very, very difficult to see Kimberli and Jeremiah essentially isolated. They needed support. <br /><br />
+
+                We decided that it was best for Kimberli and Jeremiah to move back in with us. We do the best we can to share our sorrow, our belief, our support. It’s working fine, in my opinion. Hopefully, one of these days, Kimberli will find herself another good companion. That’s our hope, that’s our wish: for Jeremiah to have a full, whole family again. But I still consider that, in a way, it’s a blessing to recognize a mistake and correct it before the mistake gets bigger and bigger, and resolve it.
+                 <br />
+                </span>
+            </div>
+
+        </div>
+
+
+
+<!-- CHAPTER FIVE -->
+
+
+    <div id="Gallery_Strip1" class="clearfix">
+            <ol class="GalleryPicsMod">
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/5LessonsLearned.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/5LessonsLearned.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/5LessonsLearned1.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/5LessonsLearned1.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/5LessonsLearned2.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/5LessonsLearned2.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/5LessonsLearned3.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/5LessonsLearned3.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/5LessonsLearned4.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/5LessonsLearned4.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/5LessonsLearned5.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/5LessonsLearned5.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/5LessonsLearned6.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/5LessonsLearned6.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/5LessonsLearned7.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/5LessonsLearned7.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/5LessonsLearned8.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/5LessonsLearned8.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/5LessonsLearned9.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/5LessonsLearned9.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    </li>
+                </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            Lessons Learned in Battling Corruption
+            </span>
+            <span id="Contributor_Name_Mod">
+            evelyn li
+            </span>
+            <span id="First_Paragraph_Mod">
+            I probably was pretty arrogant and not really worried about people’s feelings. With that whole deal, it helped me understand people and have more compassion, more empathy. After that happened, we had other hurdles we had to climb over. 
+            <br />
+            </span>
+            <div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <iframe src="//player.vimeo.com/video/119502122" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “When they were wrongly wanting to end people’s lives because of money, I had to fight over it.”
+                </span>
+            </div>
+
+            <span id="Second_Paragraph_Mod">
+            One of them was the jealousy of the hospital. Some doctors were ganging up to fight against us because they were jealous that we had so many patients. With my ability to speak three languages, it all of a sudden became a sore point for them. The hospital also was not happy with my saving patients' lives. At that moment, I had already decided that I was a follower of Christ and I didn’t really care what people were doing to me. <br /><br />
+
+            When they were wrongly wanting to end people’s lives because of money, I had to fight over it. They were not happy with me being a whistleblower, so they were determined to take away my medical license. Which was okay, because since I decided that I was a follower of Christ, I said, “Okay, take away what I have. That’s fine. God will provide.” <br /><br />
+
+            But then, there was a small voice that tell me, you know you can make a difference, you can make some changes. The law of the land at that time was not very friendly to patients. 
+             <br />
+        </div>
+
+<!-- CHAPTER SIX -->
+
+    <div id="Gallery_Strip1" class="clearfix">
+            <ol class="GalleryPicsMod">                    
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/6TurmoilinSacrifice.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/6TurmoilinSacrifice.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/6TurmoilinSacrifice1.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/6TurmoilinSacrifice1.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/6TurmoilinSacrifice2.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/6TurmoilinSacrifice2.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/6TurmoilinSacrifice3.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/6TurmoilinSacrifice3.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/6TurmoilinSacrifice4.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/6TurmoilinSacrifice4.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/6TurmoilinSacrifice5.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/6TurmoilinSacrifice5.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/6TurmoilinSacrifice6.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/6TurmoilinSacrifice6.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/6TurmoilinSacrifice7.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/6TurmoilinSacrifice7.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/6TurmoilinSacrifice8.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/6TurmoilinSacrifice8.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/6TurmoilinSacrifice9.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/6TurmoilinSacrifice9.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            Turmoil Borne out of Sacrifice
+            </span>
+            <span id="Contributor_Name_Mod">
+            jonathan cheung
+            </span>
+            <span id="First_Paragraph_Mod">
+            From my perspective, there are a couple of experiences that Mom had to go through when she had more stress and anxiety than at other times in her life. The first one would have to do with her running for the 2012 House of Representatives for a district here in the Bay Area. The second involved defending her medical license against a couple different hospitals. Intensive lawsuits took place over a period of seven years. It was very difficult for Mom to continually prove her innocence in the case of the hospital lawsuits, and then in running for Congress, she had to make the case that she was the best representative for her district. 
+            <br />
+            </span>
+            <div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <iframe src="//player.vimeo.com/video/118836108" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “What caused a lot of the stress was that Mom‘s purpose was to show that she wanted to serve not just her fellow man, but God.”
+                </span>
+            </div>
+
+            <span id="Second_Paragraph_Mod">
+            On top of that, in both of these situations she constantly had to worry about money. You need a lot of money to run for Congress, and she was concerned about fundraising and making sure there was enough to run an advertising campaign. She was also out tracting doors to make sure everyone was aware that she was running and to encourage them to get out to the polls to vote for her. <br /><br />
+
+            Aside from the monetary aspect, what caused a lot of the stress was that Mom’s purpose was to show that she wanted to serve not just her fellow man, but God. What piled onto her level of anxiety was the fact that at times she got discouraged. She got discouraged from not being able to win the seat in the House of Representatives, and she was probably deeply saddened when she found out that her medical license was suspended, or on probation. <br /><br />
+
+            To some degree, she probably felt that perhaps God didn‘t trust her, or that God didnæt really have any power. I think that shook her faith, and it took her a while to recover from that lack of faith. But it was also part of the process to help her grow and become stronger, because perhaps the foundation of her faith wasn’t in the right place. After she weathered those situations and really did some retrospection about her life, she was able to grow stronger and overcome those weaknesses in that foundation. <br />
+            </span>
+        </div>
+
+
+
+<!-- CHAPTER SEVEN -->
+
+   <div id="Gallery_Strip1" class="clearfix">
+            <ol class="GalleryPicsMod">                    
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/7GoodHeart.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/7GoodHeart.jpg", :class => "fancybox", :rel => "gallery7", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/7GoodHeart1.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/7GoodHeart1.jpg", :class => "fancybox", :rel => "gallery7", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/7GoodHeart2.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/7GoodHeart2.jpg", :class => "fancybox", :rel => "gallery7", :title => "" %>
+                    </li>
+                </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            A Heart for Good
+            </span>
+            <span id="Contributor_Name_Mod">
+            norman cheung
+            </span>
+            <span id="First_Paragraph_Mod">
+            The best quality I know of in Mom is that she has a good heart. She has extremely good intentions for a lot things that she does. She has principles that she believes in strongly, and she’s very capable. She’s probably one of the best people, as far as taking stress, that I know of. Maybe that’s because of her faith. I’ve not seen many people take stress as well as she does.
+            <br />
+            </span>
+            <div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <iframe src="//player.vimeo.com/video/118842252" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “All of these years I’ve seen her help her sister, her nephew, her niece, and other people... That takes a lot of love, a lot of care to do that.”
+                </span>
+            </div>
+
+            <span id="Second_Paragraph_Mod">
+                I’ve seen her over the years helping a lot of people, for example, her parents. One incident that strikes me was when Popo was sick in Hong Kong. She was too sick to travel back to the United States, so Mom took time off, went back to Hong Kong, and took care of Popo and brought her back by cruise ship. Popo was really, really sick during that whole period of time. She stuck with her and brought her back. That takes a lot of love, a lot of care to do that. All of these years I’ve seen her help her sister, her nephew, her niece, and other people. <br /><br />
+
+                A lot of the things that she does are with good intentions. For example, she wants to run for politics. Again, I believe she’s doing that out of good intentions. She wants to change the world for the better. The best part of her is her intentions. She is a person with great faith. She devotes a lot of time working at the temple, which is very admirable. <br /><br />
+
+                The time that she spends with Jeremiah is quality time. She really cares about minor things, not just feeding him or buying clothes. She cares about his activities, making sure that he’s involved in good activities physically and mentally. She brings him to the science museum to learn things all the time. She has a lot of devotion for Jeremiah. She does that for a lot of other people, too. All in all, she’s really a good person; a great person.
+            </span>
+        </div>
+
+
+<!-- CHAPTER EIGHT -->
+
+   <div id="Gallery_Strip1" class="clearfix">
+            <ol class="GalleryPicsMod">                    
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/8RestofMyLife.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/8RestofMyLife.jpg", :class => "fancybox", :rel => "gallery8", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/8RestofMyLife1.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/8RestofMyLife1.jpg", :class => "fancybox", :rel => "gallery8", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/8RestofMyLife2.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/8RestofMyLife2.jpg", :class => "fancybox", :rel => "gallery8", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Purpose/Smaller/8RestofMyLife3.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Purpose/Large/8RestofMyLife3.jpg", :class => "fancybox", :rel => "gallery8", :title => "" %>
+                    </li>
+                </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            For the Rest of My Life
+            </span>
+            <span id="Contributor_Name_Mod">
+            Evelyn Li
+            </span>
+            <span id="First_Paragraph_Mod">
+            What do I plan to do for the rest of my life? I have a plan, but my plan is still my plan. It may not be God’s plan. I would like to serve a mission so that I can feel that my life is complete, that I have been a disciple of Christ. 
+            <br />
+            </span>
+            <div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <iframe src="//player.vimeo.com/video/120529307" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “I would like to do something that is influential to disadvantaged individuals, such as stopping sex trafficking, premarital sex, or drug addiction.”
+                </span>
+            </div>
+
+            <span id="Second_Paragraph_Mod">
+                If I’m not able to do that, I would like to do something that is influential to disadvantaged individuals, such as stopping sex trafficking, stopping premarital sex, or stopping drug addiction. All those things are on my agenda. How I’m going to do that or where I’m going to do that, I don’t know. I can only say I put in my application to God, and if he wants to give me the opportunity to do something, I would love to do it.
+            </span>
+        </div>
+
+<!-- BOTTOM OF PAGE -->
+
+        <div id="boxmodex1" class="clearfix">
+            <span id="Previous_Exhibit_Link_Mod"><a href="<%= evelyn_motherhood_1_path %>">
+            previous exhibit</a> 
+            </span>
+            <span id="Next_Exhibit_Link_Mod"><a href="<%= evelyn_motherhood_2_path %>">
+            next exhibit</a>
+            </span>
+        </div>
+
+        <div id="boxmodex4" class="clearfix">
+            <%= image_tag("evelyn/menu/arrow motif left.png", :id => "arrow_motif_left1", :class => "image")  %>
+            <span id="Home_Link_Mod"><a href="<%= evelyn_path %>">
+            HOME</a>
+            </span>
+             <%= image_tag("evelyn/menu/arrow motif right.png", :id => "arrow_motif_right1", :class => "image")  %>
+        </div>
+</body>

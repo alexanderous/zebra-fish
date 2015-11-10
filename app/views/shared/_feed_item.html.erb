@@ -1,0 +1,84 @@
+<%#this is for the home/museum page %>
+
+<head>
+  <script language="javascript" type="text/javascript">
+     $(document).ready(function () {
+     if ($("[rel=tooltip]").length) {
+     $("[rel=tooltip]").tooltip();
+     }
+   });
+      $(function(){
+      $("#page-wrap").wrapInner("<table cellspacing='30'><tr>");
+      $(".post").wrap("<td>");
+    });
+  </script>
+  <% @fans = feed_item.lovers.all %>
+</head>
+
+<% if !feed_item.hide && !feed_item.draft %>
+  <article class="post"> 
+    <div class="postcontainer">
+      <div class="postop">
+        <ol id="<%= feed_item.id %>">
+          <p>
+            <span class="dateofevent">
+              <% if feed_item.dateofevent.nil? %>
+                  *
+              <% else %>
+                  <%= feed_item.dateofevent %>
+              <% end %>
+            </span>
+            <br>
+            <% if !feed_item.subject.nil? %>
+                For <strong><%= link_to feed_item.subject.name, feed_item.subject %></strong>
+            <% end %>
+            <br>
+            <% if feed_item.hide %>
+                <a href="#" rel="tooltip" title="This story is private, and only visible to the author and the subject." data-placement="left" ><strong>Personalized</strong></a>
+            <% end %>
+          </p>
+          <% if !feed_item.image_url.nil? %>
+             <span class="image"><%= link_to image_tag(feed_item.image_url(:grande).to_s), micropost_path(feed_item) %></span>
+          <% end %>
+          <h5><strong><%= link_to feed_item.title, micropost_path(feed_item) %></strong></h5>
+          <span class="content"><%= link_to simple_format(feed_item.content), micropost_path(feed_item) %></span>
+        </ol>
+      </div>
+    </div>
+    <div class="postbottom">
+      <% if !feed_item.user.nil? %> <!--this is to prevent contributions from users who've deleted their accounts from breaking the system (their posts will also still show, albeit their pics and names will not). --> 
+        <div class="userimage">         
+            <% if !feed_item.user.image.blank? %>
+                <%= link_to image_tag(feed_item.user.image_url(:none), options = {:size => "60x60" }), feed_item.user %>
+            <% else %>
+                 <%= link_to image_tag("hitchcock.png", :size => "60x60"), feed_item.user %>
+            <% end %> 
+        </div>
+        <div class="postinfo"> 
+          <p>
+            <span class="timestamp"><a href="<%= micropost_path(feed_item) %>"><%="View Full Story"%></a></span>
+            <br>
+            <span class="timestamp"><strong><%= link_to feed_item.user.name, feed_item.user %></strong></span>
+            <br>
+      <% end %>
+            <span class="timestamp">
+              <%= time_ago_in_words(feed_item.created_at) %> ago
+              <br>
+              <% if feed_item.comments.blank? %>
+                <a href="<%= micropost_comments_path(feed_item) %>">
+                <%="Comment"%></a>
+              <% else %>
+                <a href="<%= micropost_comments_path(feed_item) %>">
+                <span id="microposts" class="stat">
+                <%= pluralize(feed_item.comments.count, "Comment") %></span></a>
+              <% end %>
+              <% if feed_item.lovers.count > 0 %>
+                  <a href="#" rel="tooltip" title="<% @fans.each do |user| %> <%= user.name %> <% end %>" data-placement="right"><%= pluralize feed_item.lovers.count, "Love" %></a>
+              <% end %>
+            </span>
+          </p>
+        </div>
+    </div>
+  </article> 
+<% end %>
+

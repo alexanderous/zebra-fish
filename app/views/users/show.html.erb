@@ -1,0 +1,125 @@
+<head>
+  <script language="javascript" type="text/javascript">
+      $(document).ready(function () {
+      if ($("[rel=tooltip]").length) {
+      $("[rel=tooltip]").tooltip();
+      }
+    });
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', '[redacted-g]']);
+    _gaq.push(['_setDomainName', 'antho.co']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+</head>
+
+<% provide(:title, @user.name) %>
+<div class="wrap">
+  <div class="top">
+      <div class="needfont">
+        <br>
+        <p>
+          <% if !@user.image.blank? %>            
+                <%= link_to image_tag(@user.image_url(:none), :size => "160x160", :class => "anthopic"), @user %>
+          <% elsif @user == current_user %>
+               <%= link_to image_tag("hitchcock.png", :size => "160x160"), edit_user_path(current_user) %>
+          <% elsif @user.dead && current_user == @user.admin %>
+               <%= link_to image_tag("hitchcock.png", :size => "160x160"), edit_user_path(@user)  %>
+          <% else %>
+               <%= link_to image_tag("hitchcock.png", :size => "160x160"), @user %>
+          <% end %>
+          <% if @user.id == 139 %>
+            <div id="userprofile"><h1><%= link_to @user.name, randybird_path %></h1>
+            <%= link_to "View Life Story", randybird_path %></div>
+          <% else %>
+            <div id="userprofile"><h1><%= link_to @user.name, @user %></h1></div>
+          <% end %>
+          <br>
+          <%# if @user.dead %>
+              <%# if !@user.birth_year.nil? && !@user.death_year.nil? %>
+                  <!--span class="dateofevent"><strong><%#= @user.birth_year.year %> to <%#= @user.death_year.year %></strong></span>       
+                  <br>
+              <%# end %>
+              <a href="#" rel="tooltip" title="This is the admin of the anthology, who takes care of maintaining its contents." data-placement="left" ><strong>Managed by</strong></a> <%# if @user.admin == current_user %> You
+              <br> <%#= link_to "Settings", edit_user_path(@user) %> <%# else %> <%#= link_to @user.admin.name, @user.admin %> <%# end %>
+              <br-->
+          <%# end %>
+          <%#= link_to "View Kin", kinships_user_path(@user) %>
+          <%# if !@legacy_anthologies.blank? %>
+            <!--br><a href="<%= anthologies_managed_user_path(@user) %>"> Managing <%#= pluralize(@legacy_anthologies.count, "Anthology") %></a-->
+          <%# end %>
+          <%# if @user.friend_with? current_user %>
+                <!--br><a href="#" rel="tooltip" title="Kin is a close friend or family member. You are kin with <%= @user.name %>." data-placement="right" >Kin</a-->
+          <%# elsif current_user.invited? @user %>
+                <!--br><a href="#" rel="tooltip" title="You have requested <%#= @user.name %> as kin, and are waiting for a response." data-placement="right" >Pending Request</a-->
+          <%# elsif @user.invited? current_user %>
+              <!--br><%#= link_to "Confirm Kin?", friend_path(@user), :method => "put" %>
+          <%# elsif @user != current_user %>
+                <br><%#= link_to "Add as Kin", friends_path(:user_id => @user), :method => "post"%>
+          <%# end %><br-->
+          <%# if @user.friend_with? current_user or @user == current_user %>
+            <!--a href="<%#= show_posts_user_path(@user) %>"-->
+                <br>
+                <span id="microposts" class="stat">
+                Contributed <%= pluralize(@publishedcontributions.count, "Story") %>
+                </span>
+                <br>
+                <% if @user == current_user %>
+                  <%= link_to "Account Settings", edit_user_path(current_user) %>
+                <% end %>
+            <!--/a--> 
+          <%# end %>   
+        </p>
+      </div>
+      <!--section-->
+                <%# @user ||= current_user %>
+                <%# unless @user == current_user %>
+                  <%#= render 'shared/micropost_form' %>
+                <%# end %>
+      <!--/section-->
+    </div>
+    <div id="show2">
+        <!--div class="storynumber">
+          <%# @number = Micropost.where(:subject_id => @user.id).count %>
+                <a href="#" rel="tooltip" title="This is the running tally of stories on this anthology." data-placement="right" ><strong><%#= pluralize(@number, "Story") %></strong></a><br>
+        </div-->
+      <div class="main">
+       <div class="horizontal">
+        <% if @anthology_items.count < 1 %>
+               
+            <div id="explanation">
+              <br><br><br><br><br><br><br><br><br>
+              <% if @user == current_user %>   
+                  <p>The stories you contribute<br>
+                  will be displayed here.</p> 
+              <% else %>
+                  <p><%= @user.name %> hasn't written any stories yet. </p>
+              <% end %>              
+            </div>
+          
+        <% else %>
+                <ol class="microposts">
+                <%# @anthology_items = Micropost.where(:user_id => @user.id) %><!-- Micropost.where(["user_id in (?) or subject_id in (?) or user_id in (?) or subject_id in (?)", self.friends, self.friends, self, self] -->
+                  <%= render "shared/anthology" %>
+                </ol>         
+        <% end %>
+       </div>
+          <%# if @user != current_user && !current_user.friend_with?(@user) %>
+            <!--br--> 
+            <!--h3>In order to view <%#= @user.name %>'s anthology, add <%#= @user.name %> as kin.</h3--> 
+          <%# end %>
+      </div>
+    </div>  
+    <!--br><br>
+    <div class="startbutton3">
+        <%#= link_to 'Start an Anthology', start_path, class: "button" %> &nbsp; &nbsp; &nbsp;
+        <%#= link_to 'Contribute a Story', contribute_path, class: "button3" %>
+    </div>
+    <br><br-->
+</div>

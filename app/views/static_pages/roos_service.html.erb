@@ -1,0 +1,507 @@
+
+
+    <head>
+
+
+	<meta name="viewport" content="initial-scale = 1.0,maximum-scale = 3.0">
+
+    <script>
+            $(document).ready(function () {
+                $(".ChapterVideoMod").fitVids();
+            });
+
+    </script>
+
+    <script>
+        function showHide(shID) {
+          if (document.getElementById(shID)) {
+            if (document.getElementById(shID+'-show').style.display != 'none') {
+              document.getElementById(shID+'-show').style.display = 'none';
+              document.getElementById(shID).style.display = 'block';
+            }
+            else {
+              document.getElementById(shID+'-show').style.display = 'inline';
+              document.getElementById(shID).style.display = 'none';
+            }
+          }
+        }
+    </script>
+
+    <!-- fancybox begins -->
+
+        <!--script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script--> <!-- this causes fitvids NOT to work. BOO -->
+        <link rel="stylesheet" href="/fancybox/source/jquery.fancybox.css" type="text/css" media="screen">
+        <script type="text/javascript" src="/fancybox/source/jquery.fancybox.pack.js"></script>
+    <!-- fancybox end -->
+    </head>
+
+<body>
+
+        <span id="In_Exhibit_Title_Mod">
+        SERVICE
+        </span>
+        <div id="boxmodex_service" class="clearfix">
+            <%= image_tag("evelyn/menu/arrow motif left.png", :id => "exhibit_top_arrow_motif_left", :class => "image")  %>
+            <span id="In_Exhibit_Subtitle_Mod">
+            FURTHERING OUR COMMUNITIES
+            </span>
+            <%= image_tag("evelyn/menu/arrow motif right.png", :id => "exhibit_top_arrow_motif_right", :class => "image")  %>
+        </div>
+        <div id="boxmodex1" class="clearfix">
+            <span id="Previous_Exhibit_Link_Mod"><a href="<%= roos_resilience_path %>">
+            previous exhibit</a> 
+            </span>
+            <span id="Next_Exhibit_Link_Mod"><a href="<%= roos_wisdom_path %>">
+            next exhibit</a>
+            </span>
+        </div>
+
+
+<!-- CHAPTER ONE -->
+
+        <div id="Gallery_Strip1" class="clearfix">
+            <ol class="GalleryPicsMod">
+                   <li><%= link_to image_tag("roos/service/small/Findingmyancestors.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/service/large/Findingmyancestors.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/service/small/Findingmyancestors1.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/service/large/Findingmyancestors1.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/service/small/Findingmyancestors5.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/service/large/Findingmyancestors5.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/service/small/Findingmyancestors6.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/service/large/Findingmyancestors6.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/service/small/Findingmyancestors2.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/service/large/Findingmyancestors2.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/service/small/Findingmyancestors3.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/service/large/Findingmyancestors3.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/service/small/Findingmyancestors4.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/service/large/Findingmyancestors4.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    
+                    <li><%= link_to image_tag("roos/service/small/Findingmyancestors7.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/service/large/Findingmyancestors7.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/service/small/Findingmyancestors8.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/service/large/Findingmyancestors8.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/service/small/Findingmyancestors9.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/service/large/Findingmyancestors9.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/service/small/Findingmyancestors10.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/service/large/Findingmyancestors10.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/service/small/Findingmyancestors11.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/service/large/Findingmyancestors11.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/service/small/Findingmyancestors12.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/service/large/Findingmyancestors12.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/service/small/Findingmyancestors13.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/service/large/Findingmyancestors13.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/service/small/Findingmyancestors14.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/service/large/Findingmyancestors14.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+
+                </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            Finding My Ancestors         
+            </span>
+            <span id="Contributor_Name_Mod">
+            teresa roos
+            </span>
+            <span id="First_Paragraph_Mod">For a few years I was a family history consultant, and I learned much more about doing research and submitting names to the temple. I was able to have the work done for a few of my family members who had passed on and help other people find their ancestors who had passed on and learn how to submit their names to the temple. 
+            <br />
+            </span>
+            <div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <iframe src="https://player.vimeo.com/video/124071380" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “He was born in Germany, and then all of a sudden he disappeared.”
+                </span>
+            </div>
+
+            <span id="Second_Paragraph_Mod">
+                One of the things that I did was to submit all the names that I had to the Family History Center in Salt Lake. By doing that I came in contact with members of my family who were working on their family lines, and I came in contact with a cousin in Germany who was willing to go to the Catholic churches in Germany and verify dates of birth, marriages, and deaths, and share them with me. <br /><br />
+
+                I was able to share information with him about his side of the family who had come to the United States. He especially was looking for my great-grandfather, and he couldn’t find him. He was born in Germany, and then all of a sudden he disappeared. He didn’t know where he went. He finally found out that he had come to the United States with his parents and was living in Freeport, Illinois. He was very happy that I was able to supply him that information.
+            </span>
+
+            <span id="See_More_Mod"><a href="#" id="restofstory-show"  onclick="showHide('restofstory');return false;">SEE MORE</a>
+            </span>
+
+            <div id="restofstory" class="more">
+
+                <span id="Second_Paragraph_Mod1" class="more">
+
+                I got in contact with him through a lady in New Orleans. She was the one who got in contact with Johann Cobus in Germany, and she called me one day and she pronounced the Nehus name “Newhouse”,” and I wasn’t positively sure it was part of my family—I’d never heard it pronounced “Newhouse”—so I finally figured out from the first names that it was part of my family. She gave me the e-mail for Johann, we e-mailed back and forth, and he sent me his whole family line. I was able to add those names to my program and submit those names for temple work. <br /><br />
+
+                Johann is still Catholic and his family is still Catholic, but he was an English teacher in Germany. He understood English and German, so he taught me a few tricks about reading the German records. I was able to read some of the German records and gain the information that he had there.
+                </span>
+            </div>
+
+        </div>
+            <!--span id="Exclusive_Quote_Mod">
+            “I want my children to have wisdom and intelligence, to be able to make the right choice to go back to heaven. Then we can all be happily living forever with each other in heaven.”
+            </span-->
+
+<!-- CHAPTER TWO -->
+            
+<div id="Gallery_Strip" class="clearfix">
+            <ol class="GalleryPicsMod">
+
+                    <li><%= link_to image_tag("roos/service/small/Workwithyouth1.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/service/large/Workwithyouth1.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/service/small/Workwithyouth2.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/service/large/Workwithyouth2.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/service/small/Workwithyouth.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/service/large/Workwithyouth.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+            </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            My Work with the Youth
+            </span>
+            <span id="Contributor_Name_Mod">
+            bill roos
+            </span>
+            <span id="First_Paragraph_Mod">
+            The most rewarding experiences that I think I’ve had would be the time I served in a branch presidency in Arkansas. I served in two bishoprics in Virginia and a bishopric here. Those were good experiences. <br />
+            </span>
+            <div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <iframe src="https://player.vimeo.com/video/124071349" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “I miss the association I had with the youth as a member of the bishopric.”
+                </span>
+            </div>
+            <span id="Second_Paragraph_Mod">
+            I especially like working in the bishopric with the youth. They are great people, especially taking them to the temple to do baptisms. That was always a great experience, and I enjoyed that very much. In fact, I miss the association I had with the youth as a member of the bishopric. <br /><br />
+
+            Youth interviews were very special to me, especially when I was interviewing them for temple recommends. I asked them the same questions I asked any adult, and I had to turn a couple of them down, because they couldn’t answer all of the questions right. And the great thing was, the next time they came for interviews six months later, they could give the right answers and I could give them the recommend. That was special.
+            </span>
+            
+            <span id="See_More_Mod"><a href="#" id="restofstory0-show"  onclick="showHide('restofstory0');return false;">SEE MORE</a>
+            </span>
+
+            <div id="restofstory0" class="more">
+
+                <span id="Second_Paragraph_Mod1" class="more">
+
+                I didn’t do a lot of temple recommend interviews, because usually those were done after the block on Sunday, and I was involved with the finance clerk doing the tithing, so the other counselor did most of those. But I think I did 90% of the youth interviews, because we did that on mutual night. I can remember going to girls’ camp and pulling the girls aside and interviewing them at girls’ camp for a temple recommend. I loved going to girls’ camp as a priesthood holder. <br /><br />
+
+                Those were things in my life that I found very meaningful and fulfilling.
+
+                </span>
+            </div>
+        </div>
+
+
+<!-- CHAPTER THREE -->
+
+
+        <div id="Gallery_Strip1" class="clearfix">
+            <ol class="GalleryPicsMod">
+                    <li><%= link_to image_tag("roos/service/small/IdahoBoiseMission.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/service/large/IdahoBoiseMission.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/service/small/IdahoBoiseMission1.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/service/large/IdahoBoiseMission1.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/service/small/IdahoBoiseMission4.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/service/large/IdahoBoiseMission4.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/service/small/IdahoBoiseMission5.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/service/large/IdahoBoiseMission5.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/service/small/IdahoBoiseMission6.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/service/large/IdahoBoiseMission6.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/service/small/IdahoBoiseMission7.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/service/large/IdahoBoiseMission7.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/service/small/IdahoBoiseMission8.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/service/large/IdahoBoiseMission8.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/service/small/IdahoBoiseMission2.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/service/large/IdahoBoiseMission2.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/service/small/IdahoBoiseMission3.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/service/large/IdahoBoiseMission3.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    
+                    <li><%= link_to image_tag("roos/service/small/IdahoBoiseMission9.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/service/large/IdahoBoiseMission9.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/service/small/IdahoBoiseMission10.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/service/large/IdahoBoiseMission10.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/service/small/IdahoBoiseMission11.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/service/large/IdahoBoiseMission11.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/service/small/IdahoBoiseMission12.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/service/large/IdahoBoiseMission12.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/service/small/IdahoBoiseMission13.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/service/large/IdahoBoiseMission13.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/service/small/IdahoBoiseMission14.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/service/large/IdahoBoiseMission14.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/service/small/IdahoBoiseMission15.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/service/large/IdahoBoiseMission15.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/service/small/IdahoBoiseMission16.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/service/large/IdahoBoiseMission16.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/service/small/IdahoBoiseMission17.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/service/large/IdahoBoiseMission17.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/service/small/IdahoBoiseMission18.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/service/large/IdahoBoiseMission18.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/service/small/IdahoBoiseMission19.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/service/large/IdahoBoiseMission19.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+            
+                </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            The Idaho Boise Mission
+            </span>
+            <span id="Contributor_Name_Mod">
+            teresa roos
+            </span>
+            <span id="First_Paragraph_Mod">
+              We were privileged to serve in the Idaho Boise mission office. My calling was the baptismal secretary. I had other jobs that I did in the mission, too, but that was my main calling. I recorded the baptisms and transmitted them to Salt Lake so that those new members would be able to become members of the Church. They were not actually a member until their membership was recorded in the Church.
+            <br />
+            </span>
+            <div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <iframe src="https://player.vimeo.com/video/124071543" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “Some of the things we knew, but some of the things we didn’t fully understand.”
+                </span>
+            </div>
+
+            <span id="Second_Paragraph_Mod">
+                That was my main job, but I also took pictures of the missionaries and posted them on the bulletin boards, in the newsletters, and in the president’s office. I helped with other clerical chores in the office that needed to be done.<br /><br />
+
+                We attended zone conferences and that was really good because we got to hear the mission president’s talks to the missionaries. We got to hear the assistants to the president and other missionaries who would speak and bear their testimonies of the gospel. Most of the time they would have a little luncheon afterwards and we were able to attend the luncheons and visit with the missionaries.
+            </span>
+
+
+            <span id="See_More_Mod"><a href="#" id="restofstorya-show"  onclick="showHide('restofstorya');return false;">SEE MORE</a>
+            </span>
+
+            <div id="restofstorya" class="more">
+
+                <span id="Second_Paragraph_Mod1" class="more">
+                The evening before the missionaries would go home, they were able to go to the temple, and we were able to go with them. Some of the times the mission president would have a short meeting with the missionaries, and we learned a lot about the temple from those meetings. Some of the things we knew, but some of the things we didn’t fully understand. That was very helpful to attend those meetings and learn more about the temple.<br /><br />
+
+                We also served in the temple as temple ordinance workers, and through the training we get in the temple before our shifts, we learned a lot about the temple; a lot about how to serve the people who come to the temple to perform ordinances for their ancestors; how to deal with them; and how to make them feel comfortable. We especially enjoyed the temple presidents and the matrons, visiting and talking with them and meeting all those other ordinance workers who we served with.
+                </span>
+            </div>
+        </div>
+            <!--span id="Exclusive_Quote_Mod">
+            “I want my children to have wisdom and intelligence, to be able to make the right choice to go back to heaven. Then we can all be happily living forever with each other in heaven.”
+            </span-->
+
+<!-- CHAPTER FOUR -->
+
+
+        <div id="Gallery_Strip1" class="clearfix">
+            <ol class="GalleryPicsMod">
+                    <li><%= link_to image_tag("roos/service/small/Howfaithchangedme.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/service/large/Howfaithchangedme.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/service/small/Howfaithchangedme1a.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/service/large/Howfaithchangedme1a.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/service/small/Howfaithchangedme1b.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/service/large/Howfaithchangedme1b.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/service/small/Howfaithchangedme2.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/service/large/Howfaithchangedme2.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/service/small/Howfaithchangedme3.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/service/large/Howfaithchangedme3.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/service/small/Howfaithchangedme4.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/service/large/Howfaithchangedme4.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            How Faith Has Changed Me
+            </span>
+            <span id="Contributor_Name_Mod">
+            bill roos
+            </span>
+            <span id="First_Paragraph_Mod">
+            I have been pretty well hung-strung, and quite judgmental—a lot, at times. Particularly since I’ve retired, I’ve mellowed out a lot. I didn’t have the pressure from my job, probably. But being retired and having more time to devote to the Church—even though I’ve had callings while I was working for a living—since I’ve retired, I’ve had some super callings: the high council, I was a stake executive secretary, ward mission leader a couple times, high priest group leader, then I served for the third time in a bishopric, and working in the temple. Those have all made me mellow out a little bit. I’m much more relaxed, I’m not as judgmental. Teresa might disagree with me, but I think I tend to not take too many things too seriously. Life is serious enough. You don’t need to make it overwhelmingly serious.  
+            <br />
+            </span>
+            <div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <!--iframe src="//player.vimeo.com/video/113120001" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe-->
+                        <iframe src="https://player.vimeo.com/video/124071419" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “I’m much more relaxed, I’m not as judgmental.”
+                </span>
+            </div>
+
+            <span id="Second_Paragraph_Mod">
+                Being involved in the Church helps. Especially being an ordinance worker in the temple is really, really a great place to be, because the people there are great people. They are—every one of them. It’s unbelievable how close they work with you, how concerned they are. <br /><br />
+
+                When Randy died, the word got out, and everybody, including the presidency, was offering their condolences to us. A couple months later when Michelle died, it was like their own personal tragedy.  <br /><br />
+
+                They’re just wonderful people. It makes you really realize that humanity has got its faults, but there are a lot of people in humanity that are wonderful. It’s a life-changing thing. You can’t be obnoxious in situations like that. You just naturally have to blend in with them, and it changes your life.
+            </span>
+
+           
+
+        </div>
+
+
+
+<!-- CHAPTER FIVE -->
+
+
+    <div id="Gallery_Strip1" class="clearfix">
+            <ol class="GalleryPicsMod">
+                    <li><%= link_to image_tag("roos/service/small/Lifelongstudy1.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/service/large/Lifelongstudy1.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/Togetherstill5.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/Togetherstill5.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/Togetherstill6.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/Togetherstill6.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            A Lifelong Study of the Scriptures
+            </span>
+            <span id="Contributor_Name_Mod">
+            bill roos
+            </span>
+            <span id="First_Paragraph_Mod">
+            I’d read the Book of Mormon and the Pearl of Great Price and The Doctrine and Covenants before, and part of the Bible. Most of the New Testament. But when my dad had his accident—he was in the hospital, then he was in rehab, then he was in a nursing home. We brought him home and I went to stay with him for a month. There was nothing to do. It was wintertime, snowing outside. I’d get out and shovel the snow paths out to the various places and come back in. Dad would sit in his easy chair watching television. He’d fall asleep, so I’d change the channel to something I wanted to watch, and that would wake him up and he’d get after me for changing the channel.  
+            <br />
+            </span>
+            <div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <iframe src="https://player.vimeo.com/video/124529457" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “So in a month’s time I read the entire set of scriptures.”
+                </span>
+            </div>
+
+            <span id="Second_Paragraph_Mod">
+            So what was I to do? I started reading the scriptures. In that month I read the Book of Mormon, the Doctrine and Covenants, then the Pearl of Great Price, then the New Testament, then the Old Testament, and then I read the Book of Mormon again. So in a month’s time I read the entire set of scriptures, plus the Book of Mormon two times.<br /><br />
+
+            Ten years ago, President Hinckley challenged members to read the Book of Mormon by the end of the year. Teresa and I did that, and we’ve read the Book of Mormon every year through since. We’ve just finished a month ago, and now we’re on the Doctrine and Covenants. When we finish the Doctrine and Covenants we’ll go right back to the Book of Mormon again. It’s getting to where even the Isaiah parts of the Book of Mormon are not that difficult to go through. It’s something that I enjoy.
+            </span>
+
+            <span id="See_More_Mod"><a href="#" id="restofstory2-show"  onclick="showHide('restofstory2');return false;">SEE MORE</a>
+            </span>
+
+            <div id="restofstory2" class="more">
+
+                <span id="Second_Paragraph_Mod1" class="more">
+                When I’m working in the temple, if I’m someplace where there’s not a whole lot to do, there’s scriptures always available someplace in the temple, and I’ll get the Bible and I’ll go to the Bible Dictionary and read the Bible Dictionary. I encourage anybody to do that. Start right at the front with the A’s and go right through to the Z’s. It makes the scriptures a whole lot more meaningful. You read about the people in the Bible, and you read about all kinds of things in the Bible in the dictionary. To me it clarifies the scriptures. <br /><br />
+
+                In fact, the man we have in our ward right now who is the Gospel Doctrine teacher calls that the sealed portions of the Bible because no members of the Church read it. And you should. It’s great reading. The subject matter changes a lot, but it gives you a greater depth of understanding of what’s in the Old and New Testament.<br />
+                </span>
+            </div>
+        </div>
+
+<!-- CHAPTER SIX -->
+
+    <div id="Gallery_Strip1" class="clearfix">
+            <ol class="GalleryPicsMod">                    
+                    <li><%= link_to image_tag("roos/service/small/Retirementandcommunityservicea.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/service/large/Retirementandcommunityservicea.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/service/small/Retirementandcommunityservice1a.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/service/large/Retirementandcommunityservice1a.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/service/small/Retirementandcommunityservice2a.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/service/large/Retirementandcommunityservice2a.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    
+                    <li><%= link_to image_tag("roos/service/small/Retirementandcommunityservice5.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/service/large/Retirementandcommunityservice5.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/service/small/Retirementandcommunityservice6.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/service/large/Retirementandcommunityservice6.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/service/small/Retirementandcommunityservice7.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/service/large/Retirementandcommunityservice7.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/service/small/Retirementandcommunityservice8.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/service/large/Retirementandcommunityservice8.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/extra/small/extra15.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/extra/large/extra15.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/extra/small/extra16.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/extra/large/extra16.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/service/small/Retirementandcommunityservice9.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/service/large/Retirementandcommunityservice9.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/service/small/Retirementandcommunityservice10.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/service/large/Retirementandcommunityservice10.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/service/small/Retirementandcommunityservice11.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/service/large/Retirementandcommunityservice11.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/service/small/Retirementandcommunityservice12.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/service/large/Retirementandcommunityservice12.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/service/small/Retirementandcommunityservice13.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/service/large/Retirementandcommunityservice13.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/service/small/Retirementandcommunityservice14.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/service/large/Retirementandcommunityservice14.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/service/small/Retirementandcommunityservice15.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/service/large/Retirementandcommunityservice15.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/service/small/Retirementandcommunityservice3.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/service/large/Retirementandcommunityservice3.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/service/small/Retirementandcommunityservice4.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/service/large/Retirementandcommunityservice4.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            Community Service in Retirement
+            </span>
+            <span id="Contributor_Name_Mod">
+            teresa roos
+            </span>
+            <span id="First_Paragraph_Mod">
+           In 1993, Bill retired from the Veterans Service and we flew up to Boise looking for a home in Boise. But we didn’t find a home in Boise, so we came over to Caldwell and found a house here. We retired, rented a truck, and moved everything we had in that truck to Caldwell.
+            <br />
+            </span>
+            <div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <iframe src="https://player.vimeo.com/video/124529450" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “I was able to meet a lot of people that I wouldn’t have otherwise met.”
+                </span>
+            </div>
+
+            <span id="Second_Paragraph_Mod">
+            I had actually been retired ever since we moved from Virginia because I had done daycare there. I didn’t have a whole lot to do at home, so I did a lot of service in the family history center in Palmdale. <br /><br />
+
+            We came here and I didn’t have anything much to do, so I looked in the newspaper, and there I saw ads for the retired senior volunteer program. So I called them. I saw an ad for the respite program. I called them. 
+            </span>
+            <span id="See_More_Mod"><a href="#" id="restofstory3-show"  onclick="showHide('restofstory3');return false;">SEE MORE</a>
+            </span>
+            <div id="restofstory3" class="more">
+
+                <span id="Second_Paragraph_Mod1" class="more">
+
+                I did volunteer work with the Retired Seniors Volunteer Program (R.S.V.P.) in a lot of different locations, like the Sacajawea School, the Chamber of Commerce, the Caldwell Town site, just different places doing odd jobs that needed to be done. <br /><br />
+
+                With respite, I stayed with people who were ill and their caregivers needed a break from their caregiving. They needed to go places and do things like go shopping, go to doctor’s appointments, or whatever they needed to do. I would spend a few hours with these persons. Usually I had a person that I would go to once a week. That was my regular assignment, that I went to this one person once a week until they either got too ill or passed away. Then I would get a new person to visit. I only had two people where I actually went to their house on a regular basis for two or three years. They were very interesting people. I enjoyed doing that.<br /><br />
+
+                By doing community service, I was able to meet a lot of people that I wouldn’t have otherwise met and do things that were interesting. We were also able to usher at the Civic Center, and we met a lot of people there. Through the Civic Center we met a lady who was president of the Historical Society, and then we got connected with Our Memories Indian Creek Museum, and we still volunteer at Our Memories Indian Creek Museum every week, at least once or twice. We have attended a lot of functions with the Historical Society and have enjoyed doing that.
+                </span>
+            </div>
+        </div>
+
+
+
+<!-- BOTTOM OF PAGE -->
+
+        <div id="boxmodex1" class="clearfix">
+            <span id="Previous_Exhibit_Link_Mod"><a href="<%= roos_resilience_path %>">
+            previous exhibit</a> 
+            </span>
+            <span id="Next_Exhibit_Link_Mod"><a href="<%= roos_wisdom_path %>">
+            next exhibit</a>
+            </span>
+        </div>
+
+        <div id="boxmodex4" class="clearfix">
+            <%= image_tag("evelyn/menu/arrow motif left.png", :id => "arrow_motif_left1", :class => "image")  %>
+            <span id="Home_Link_Mod"><a href="<%= roos_path %>">
+            HOME</a>
+            </span>
+             <%= image_tag("evelyn/menu/arrow motif right.png", :id => "arrow_motif_right1", :class => "image")  %>
+        </div>
+</body>

@@ -1,0 +1,4 @@
+<%= form_for(current_user.loves.find_by_loved_id(@micropost),
+             html: { method: :delete }, :remote => true) do |f| %>
+	<%= image_submit_tag('heartbutton.png') %>
+<% end %>

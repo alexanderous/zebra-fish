@@ -1,0 +1,63 @@
+<head>
+<script language="javascript" type="text/javascript">
+
+function showHide(shID) {
+  if (document.getElementById(shID)) {
+    if (document.getElementById(shID+'-show').style.display != 'none') {
+      document.getElementById(shID+'-show').style.display = 'none';
+      document.getElementById(shID).style.display = 'block';
+    }
+    else {
+      document.getElementById(shID+'-show').style.display = 'inline';
+      document.getElementById(shID).style.display = 'none';
+    }
+  }
+}
+$(document).ready(function () {
+  if ($("[rel=tooltip]").length) {
+    $("[rel=tooltip]").tooltip();
+  }
+  $("#user_dead").click(function() {
+    $("#emailprompt").toggle('slow');
+  });
+});
+
+</script>
+    <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', '[redacted-g]', 'antho.co');
+          ga('send', 'pageview');
+    </script>
+</head>
+
+
+
+                  <%# comment this out to disallow direct sign ups %>
+
+
+
+
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModal2Label" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h3 id="myModal2Label">Register</h3>
+      </div>
+      <div class="modal-body">
+         <%= render "shared/signup" %>
+
+      </div>
+      <!--div class="modal-footer"-->
+          <!--button class="button2a" data-dismiss="modal" aria-hidden="true">Close</button-->
+                <!--button class="button2a"><%#= link_to "Sign In", signin_path %></button> &nbsp; &nbsp;
+      </div-->
+    </div>
+  </div>
+</div>
+
+

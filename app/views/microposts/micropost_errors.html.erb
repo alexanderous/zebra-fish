@@ -1,0 +1,15 @@
+<% if @object.errors.any? %>
+  <div class="wrap">
+    <div id="error_explanation">
+      <div class="alert alert-error">
+        I'm sorry, but we encountered an error trying to publish your story.
+      </div>
+      <ul>
+        <% @object.errors.full_messages.each do |msg| %>
+          <li>* <%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  Please click Back on your browser to return to and fix your unpublished story.  
+  <% end %>
+</div>

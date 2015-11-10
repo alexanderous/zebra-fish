@@ -1,0 +1,80 @@
+
+<%# provide(:title, 'Sign Up') %>
+            <!--div class="wrap">
+              
+                  <div class="top"-->
+                  <div id="signup"> <!-- this was above top below wrap -->
+                    <!--h1>Start an Anthology</h1>
+                    <p>You can create an anthology for anyone young or old, here or gone!  
+                  </div-->
+                  <div class="form">
+                    <div id="signup_form">
+                    <% @user = User.new(params[:user]) %>
+                        
+                          <% if flash[:error2] %><%#this is not ideal... can't figure out how to do errors, when error takes you to different page. eventually i'd like to do javascript right on the modal! %>
+                              <h1> Sign Up </h1>
+                              <div id="form_guidelines"> <h3>Guidelines</h3>
+                                <ul>
+                                    <li>You must have a name.</li>
+                                    <li>You must have a valid email address.</li>
+                                    <li>Your username must be unique.</li>
+                                    <li>Your password must be at least six characters long.</li>
+                                    <li>Your passwords must match.</li>
+                                </ul>  
+                              </div>  
+                          <% end %>
+
+                        <%= form_for(@user) do |f| %>
+                        <%#= form_for :user, :url => {:action => :create} do |f| %>
+                            <%= render 'shared/error_messages', object: @user %>
+
+                            
+                            <%#= f.hidden_field :login, :value => @user.initiate_token %>
+                            <%#= f.label :name, "Full Name" %>
+                            <%= f.text_field :name, :placeholder => "Full Name" %>
+                            <br>
+
+                            <%# if @user.image.blank? %>
+                                <!--strong>Add a Profile Picture</strong><br-->
+                            <%# else %>
+
+                                  <!--strong>Change Profile Picture</strong>
+                                  <br-->      
+                                  <%#= image_tag @user.image_url(:none), options = {:size => "100x100", :class => "profilepic"} %> 
+                 
+                            <%# end %>
+                            <%#= f.file_field :image %>
+                            <!--br><br-->
+                            <!--p><%#= f.check_box("dead") %><a href="#" rel="tooltip" title="Check this box if the person is a small child, a seasoned senior citizen, or someone who has passed away. You will be designated as the admin of the anthology and will manage its contents." data-placement="left" > This person has passed away or is unable to manage his/her own account.</a></p>
+                            <br-->
+                            <!--span id="emailprompt"-->
+                              <%#= f.label :email, "Email Address" %>
+                              <%= f.text_field :email, :placeholder => "Email Address" %> 
+                              <br>
+                              <%#= f.label :login, "Username" %>
+                              <%= f.text_field :login, :placeholder => "Username" %>
+                              <br>
+                              <%#= f.label :password %>
+                              <%= f.password_field :password, :placeholder => "Password" %>
+                              <br>  
+                              <%#= f.label :password_confirmation %> 
+                              <%= f.password_field :password_confirmation, :placeholder => "Re-enter Password" %>
+                              <br>
+                              <!--div class="addamessage">
+                                <%#= f.label :message, "Add a Message to the Invitation" %>
+                                <%#= f.text_area :message, :placeholder => "Introduce your friend or relative to Antho here." %> 
+                                <br><br>
+                              </div-->
+                            <!--/span-->
+                            <%#= f.hidden_field :password, :value => :initiate_token %>
+                            <%#= f.hidden_field :password_confirmation, :value => :initiate_token %>
+
+                            <%#= f.hidden_field :admin_id, :value => current_user.id %>
+                            <br>
+                            <%= f.submit "Sign Up", class: "button3" %>
+                            <br><br>
+                        <% end %>
+                    </div>
+                </div>
+              </div>
+            <!--/div-->

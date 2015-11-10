@@ -1,0 +1,147 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0; maximum-scale=2.0; user-scalable=1" />
+    <script src="//use.typekit.net/[redacted-a].js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>    
+
+            
+  <script language="javascript" type="text/javascript">
+         $(document).ready(function () {
+         if ($("[rel=tooltip]").length) {
+         $("[rel=tooltip]").tooltip();
+         }
+       });
+  </script>
+
+</head>
+
+
+<body>
+
+  <% provide(:title, 'Contact Us') %>
+
+        <%= render 'shared/public_header' %>
+
+        <%= image_tag("top bar.png", :id => "top_bar", :class => "image") %>
+        <p id="_The_spoken_word_perishes_but_the_written_word_endures_-_Anc">
+        "The spoken word perishes, but the written word endures." - Ancient Roman Proverb
+        </p>
+        <p id="Contactv">
+        Contact
+        </p>
+        <p id="Contact_us_to_set_up_your_free_consultation_">
+        Send us a message to set up your free consultation 
+        </p>
+        <div id="boxv1" class="clearfix"></div>
+            <!--p id="Namev">
+            Name
+            </p>
+            <p id="Email_Address">
+            Email Address
+            </p>
+            <p id="Phone_Number">
+            Phone Number
+            </p>
+            <p id="Notev">
+            Note
+            </p-->
+
+    <!--p-->
+      <div id="whereformgoes">
+        <div class="evangelistform">
+        
+          <%= form_for(@evangelist) do |f| %>
+            <div class="field5">
+              <% if @evangelist.errors.any? %>
+                  Please fix the following items on the form. <br /> <br />
+                  <ol>
+                    <% @evangelist.errors.full_messages.each do |msg| %>
+                      <li><%= msg %><br /></li>
+                    <% end %>
+                  </ol>
+              <% end %>
+            </div>
+
+              <br>
+                <div class="field5">
+                  <%= f.text_field :name, placeholder: "Full Name *" %>
+                </div>
+                <div class="field5">  
+                <%= f.text_field :phone, placeholder: "Phone Number" %>
+                </div>
+                <div class="field5">  
+                <%= f.text_field :email, placeholder: "Email Address *" %>
+                </div>
+                <div class="field6">
+                  <%= f.text_area :note, placeholder: "Write a short note...", :rows => "7" %>
+                </div>
+
+
+
+                <div class="field5">
+                  <%= f.submit "send", class: "button3x" %>
+                </div>
+                <br>
+          <% end %>
+        <!--/div-->
+      <!--/p-->
+
+
+        </div>
+      </div>
+
+
+
+
+
+        
+        <p id="Have_questions_Contact_us_directly_Phone_206_701-9486_Em">
+        <span id="textspanv">Have questions? Contact us directly:<br /></span><span id="textspanv1"><br /></span><span id="textspanv2">Phone: (206) 701-9486<br /><br />Email: alex@antho.co<br /><br />Address: 500 Yale Ave N, 1st Flr, Seattle, WA 98109</span>
+
+          <br><br>          <br><br>          <br><br>          <br><br>    
+            <%= link_to "LEARN MORE", about_path, class: "button4" %>
+
+          <br><br>
+          
+        </p>
+
+        <!--img id="redbutton" src="img/redbutton.png" class="image" /-->
+
+        <%= image_tag("bottom bar.png", :id => "bottom_bar", :class => "image") %>
+        <div id="boxv2" class="clearfix">
+        </div>
+
+</body>
+
+
+
+<!--div class="wrap">
+  <div class="top">
+    <h1>Request an Invite</h1>
+    <p>Sign up below, and we'll send you an invitation as soon as we're able!</p> 
+  </div>
+  <br><br>
+  <div class="form">
+    <div class="evangelist">
+        <%#= form_for(@evangelist) do |f| %>
+              <div class="field2">
+                  <p><%#= f.label :name %></p>
+                  <%#= f.text_field :name %>
+              </div>
+              <br>
+              <div class="field2">
+                  <p><%#= f.label :email %></p>
+                  <%#= f.text_field :email %>
+              </div>
+              <br>
+              <div class="field2">
+                <%#= f.submit "Sign Up", class: "button" %>
+              </div>  
+        <%# end %>
+    </div>  
+  </div>
+  <br><br><br>
+  <div class="bottom">
+        <%#= image_tag("Anthologowhite.png", :size => "100x100", :id => "anthologo2") %>
+  </div>
+</div-->

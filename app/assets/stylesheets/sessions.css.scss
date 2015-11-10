@@ -1,0 +1,38 @@
+/* New - sign in */
+
+#signin_form {
+	margin: 0 auto;
+	padding-top: 10px;
+	width: 95%;
+	text-align: left;
+	p {
+	text-align: left;
+	font-family: Century Gothic, sans-serif;
+
+	}
+}
+.alert-error {
+	color: white;
+	background-color: #e63b33;
+	border-color: white;
+	/* padding-top: 45px; */
+}
+
+.alert-error2 {
+	color: white;
+	background-color: #e63b33;
+	border-color: white;
+
+}
+.alert {
+	text-shadow: none;
+	color: white;
+	background-color: #9ed0b7;
+	border-color: white;
+	position: fixed;
+}
+.alert-success {
+	color:white;
+	background-color: #9ed0b7;
+	border-color: white;
+}

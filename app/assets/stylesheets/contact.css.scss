@@ -1,0 +1,1086 @@
+
+.primaryContainer {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100%;
+    width: 100%;
+}
+
+.field5 {
+        margin: 20px 5% 0 5%;
+        input[type="text"]{ padding: 20px 10px; line-height: 28px; font-family: jaf-domus-titling-web}
+        width: 600px;
+        font-family: jaf-domus-titling-web;
+        color: #e75c41;
+}
+
+.field6 {
+        margin: 20px 5% 0 5%;   
+        width: 600px;
+        height: auto;
+        textarea {
+            font-family: Georgia, serif;
+            font-style: italic;
+            letter-spacing: 1px;
+        }
+}
+
+
+#bottom_bar {
+    float: left;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 3;
+    margin-top: 95px;
+    margin-left: 0%;
+    clear: both;
+    min-width: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+
+.needsamargin {
+    margin-top: 50px;
+}
+
+#LEARN_MORE {
+    float: left;
+    font-size: 1.492022em;
+    width: auto;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: normal;
+    color: rgb(254, 253, 253);
+    font-style: normal;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+    font-family: trajan-pro-3;
+    margin-top: 18px;
+    margin-left: 9.996751%;
+    clear: both;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+
+#redbutton {
+    float: left;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    margin-top: 100px;
+    margin-left: 9.996751%;
+    clear: both;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+
+#Have_questions_Contact_us_directly_Phone_206_701-9486_Em {
+    float: left;
+    font-size: 1em;
+    width: auto;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1em;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 4;
+    margin-top: 44px;
+    margin-left: 9.996751%;
+    clear: both;
+}
+
+#textspanv {
+    float: none;
+    font-size: 0.875em;
+    line-height: normal;
+    color: rgb(53, 53, 53);
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    font-family: trajan-pro-3;
+}
+
+#textspanv1 {
+    float: none;
+    font-size: 0.875em;
+    line-height: normal;
+    color: rgb(53, 53, 53);
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    font-family: trajan-pro-3;
+}
+
+#textspanv2 {
+    float: none;
+    font-size: 0.875em;
+    line-height: normal;
+    color: rgb(53, 53, 53);
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    font-family: jaf-domus-titling-web;
+}
+
+#Notev {
+    float: left;
+    font-size: 1.125em;
+    width: auto;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: normal;
+    color: rgb(3, 3, 3);
+    font-style: normal;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    font-family: jaf-domus-titling-web;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 6;
+    margin-top: 35px;
+    margin-left: 0%;
+    clear: both;
+    margin-right: 0%;
+}
+
+#Phone_Number {
+    float: left;
+    font-size: 1.125em;
+    width: 200px;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: normal;
+    color: rgb(3, 3, 3);
+    font-style: normal;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    font-family: jaf-domus-titling-web;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 7;
+    margin-top: 35px;
+    margin-left: 0%;
+    clear: both;
+    margin-right: 0%;
+}
+
+#Email_Address {
+    float: left;
+    font-size: 1.125em;
+    width: 200px;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: normal;
+    color: rgb(3, 3, 3);
+    font-style: normal;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    font-family: jaf-domus-titling-web;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 8;
+    margin-top: 35px;
+    margin-left: 0%;
+    clear: both;
+    margin-right: 0%;
+}
+
+#Namev {
+    float: left;
+    font-size: 1.125em;
+    width: auto;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: normal;
+    color: rgb(3, 3, 3);
+    font-style: normal;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    font-family: jaf-domus-titling-web;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 9;
+    margin-top: 0px;
+    margin-left: 0%;
+    clear: none;
+    margin-right: 0%;
+}
+
+#whereformgoes {
+    float: left;
+    width: 680px;
+    max-width: 100%;
+    height: auto;
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 5;
+    margin-top: 20px;
+    margin-left: -16.800735%;
+    clear: none;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+
+#Contact_us_to_set_up_your_free_consultation_ {
+    float: left;
+    font-size: 0.875em;
+    width: auto;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: normal;
+    color: rgb(53, 53, 53);
+    font-style: normal;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    font-family: jaf-domus-titling-web;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    margin-top: 50px;
+    margin-left: 9.996751%;
+    clear: both;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+
+#Contactv {
+    float: left;
+    font-size: 3em;
+    width: auto;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: normal;
+    color: rgb(53, 53, 53);
+    font-style: normal;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 11;
+    font-family: trajan-pro-3;
+    margin-top: 100px;
+    margin-left: 9.996751%;
+    clear: both;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+
+#_The_spoken_word_perishes_but_the_written_word_endures_-_Anc {
+    float: left;
+    font-size: 0.875em;
+    width: auto;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: normal;
+    color: rgb(53, 53, 53);
+    font-style: italic;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    font-family: georgia;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 12;
+    margin-top: 23px;
+    margin-left: 28%;
+    clear: both;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+
+#top_bar {
+    float: left;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 13;
+    margin-top: 20px;
+    margin-left: 0%;
+    clear: none;
+    min-width: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+
+#MISSIONv {
+    float: left;
+    font-size: 0.75em;
+    width: auto;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: normal;
+    color: rgb(24, 24, 24);
+    font-style: normal;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    font-family: jaf-domus-titling-web;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 16;
+    margin-top: 0px;
+    margin-left: 20.697226%;
+    clear: none;
+    margin-right: 0%;
+    margin-bottom: 0px;
+    display: block;
+}
+
+#AnthoLogov {
+    float: none;
+    width: 14.993515%;
+    max-width: 100%;
+    height: auto;
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 20;
+    margin-top: 75px;
+    margin-left: auto;
+    clear: none;
+    margin-right: auto;
+    margin-bottom: 0px;
+}
+
+#HIRE_USv {
+    float: left;
+    font-size: 0.75em;
+    width: auto;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: normal;
+    color: rgb(24, 24, 24);
+    font-style: normal;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    font-family: jaf-domus-titling-web;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 15;
+    margin-top: 0px;
+    margin-left: 0.0623053%;
+    clear: none;
+    margin-right: 0%;
+    display: block;
+}
+
+#BLOGv {
+    float: left;
+    font-size: 0.75em;
+    width: auto;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: normal;
+    color: rgb(24, 24, 24);
+    font-style: normal;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    font-family: jaf-domus-titling-web;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 18;
+    margin-top: 0px;
+    margin-left: 20.697226%;
+    clear: none;
+    margin-right: 0%;
+    display: block;
+}
+
+#METHODv {
+    float: left;
+    font-size: 0.75em;
+    width: auto;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: normal;
+    color: rgb(24, 24, 24);
+    font-style: normal;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    font-family: jaf-domus-titling-web;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 17;
+    margin-top: 0px;
+    margin-left: 20.697226%;
+    clear: none;
+    margin-right: 0%;
+    margin-bottom: 0px;
+    display: block;
+}
+
+#boxv {
+    float: none;
+    height: auto;
+    margin-left: auto;
+    margin-top: 65px;
+    clear: none;
+    width: 43.548295%;
+    margin-right: auto;
+    margin-bottom: 0px;
+}
+
+#boxv1 {
+    float: left;
+    height: auto;
+    margin-left: 14.549858%;
+    margin-top: 51px;
+    clear: both;
+    width: 12.249104%;
+    margin-right: 0%;
+}
+
+#boxv2 {
+    float: left;
+    height: 69px;
+    margin-left: 5.825243%;
+    margin-top: 23px;
+    clear: both;
+    width: 11.217731%;
+}
+
+#BLOGv:hover {
+    opacity: 0.6;
+}
+
+#MISSIONv:hover {
+    opacity: 0.6;
+}
+
+#METHODv:hover {
+    opacity: 0.6;
+}
+
+#HIRE_USv:hover {
+    opacity: 0.6;
+}
+
+@media only screen and (max-width: 1356px) {
+    #_The_spoken_word_perishes_but_the_written_word_endures_-_Anc {
+        margin-left: 25%;
+    }
+}
+
+@media only screen and (max-width: 1231px) {
+    #_The_spoken_word_perishes_but_the_written_word_endures_-_Anc {
+        margin-left: 19.5%;
+    }
+
+    #boxv {
+        width: 57.207237%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #AnthoLogov {
+        width: 14.991776%;
+    }
+
+    #top_bar {
+        margin-top: 20px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 0%;
+        clear: none;
+        width: 100%;
+    }
+
+    #boxv1 {
+        width: 12.248355%;
+    }
+
+    #whereformgoes {
+        margin-top: 20px;
+        margin-left: -16.799041%;
+        clear: none;
+    }
+
+    #bottom_bar {
+        width: 100%;
+    }
+
+    #boxv2 {
+        width: 11.217105%;
+        height: 69px;
+    }
+}
+
+@media only screen and (max-width: 902px) {
+    #whereformgoes {
+        width: 641px;
+        height: auto;
+    }
+
+    .field5 {
+        width: 560px;     
+    }
+
+    .field6 {
+        width: 560px;     
+    }
+
+    #_The_spoken_word_perishes_but_the_written_word_endures_-_Anc {
+        font-size: 0.66em;
+        margin-left: 17%;
+    }
+
+    #HIRE_USv {
+        margin-top: 0px;
+        margin-right: 0%;
+        margin-bottom: 0px;
+        margin-left: -0.019998%;
+        clear: none;
+    }
+
+    #MISSIONv {
+        margin-top: 0px;
+        margin-right: 0%;
+        margin-bottom: 0px;
+        margin-left: 17.068293%;
+        clear: none;
+    }
+
+    #BLOGv {
+        margin-top: 0px;
+        margin-right: 0%;
+        margin-bottom: 0px;
+        margin-left: 16.854981%;
+        clear: none;
+    }
+
+    #AnthoLogov {
+        width: 26%;
+    }
+
+    #METHODv {
+        margin-top: 0px;
+        margin-left: 16.848315%;
+        clear: none;
+    }
+
+    #Email_Address {
+        width: 200px;
+    }
+
+    #Phone_Number {
+        width: 200px;
+    }
+}
+
+@media only screen and (max-width: 762px) {
+    #AnthoLogov {
+        min-width: 110px;
+        width: 25.997186%;
+    }
+
+    #HIRE_USv {
+        margin-left: -0.09895741%;
+        margin-top: 0px;
+        clear: none;
+    }
+
+    #BLOGv {
+        margin-left: 16.285563%;
+        margin-top: 0px;
+        clear: none;
+    }
+
+    #MISSIONv {
+        margin-left: 16.285563%;
+        margin-top: 0px;
+        clear: none;
+    }
+
+    #_The_spoken_word_perishes_but_the_written_word_endures_-_Anc {
+        margin-left: 12%;
+    }
+
+    #whereformgoes {
+        width: 441px;
+        height: 500px;
+    }
+
+    .field5 {
+        width: 360px;     
+    }
+
+    .field6 {
+        width: 360px;     
+    }
+
+    #Contactv {
+        margin-top: 50px;
+    }
+
+    #Contact_us_to_set_up_your_free_consultation_ {
+        margin-top: 30px;
+    }
+
+    #Have_questions_Contact_us_directly_Phone_206_701-9486_Em {
+        margin-top: 25px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 10%;
+    }
+
+    #redbutton {
+        margin-top: 50px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 10%;
+    }
+
+    #bottom_bar {
+        margin-top: 50px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 0%;
+        width: 100%;
+    }
+
+    #METHODv {
+        margin-top: 0px;
+        margin-left: 16.511751%;
+        clear: none;
+    }
+
+    #boxv {
+        width: 67.546584%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #top_bar {
+        width: 100%;
+    }
+
+    #boxv1 {
+        width: 12.250097%;
+    }
+
+    #Email_Address {
+        height: auto;
+        width: 187px;
+    }
+
+    #Phone_Number {
+        height: auto;
+        width: 157px;
+    }
+}
+
+@media only screen and (max-width: 625px) {
+    #_The_spoken_word_perishes_but_the_written_word_endures_-_Anc {
+        margin-left: 8%;
+        line-height: 20px;
+    }
+
+    #boxv {
+        margin-top: 35px;
+        margin-right: auto;
+        margin-bottom: 0px;
+        margin-left: auto;
+        clear: none;
+        width: 74.019222%;
+    }
+
+    #AnthoLogov {
+        width: 25.994829%;
+        margin-right: auto;
+        margin-bottom: 0px;
+        margin-left: auto;
+    }
+
+    #top_bar {
+        width: 100%;
+        margin-top: 20px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 0%;
+        clear: none;
+    }
+
+    #boxv1 {
+        width: 12.249888%;
+    }
+
+    #whereformgoes {
+        margin-top: 20px;
+        margin-left: -16.799607%;
+        clear: none;
+        width: 441px;
+        height: 500px;
+    }
+
+    .field5 {
+        width: 360px;     
+    }
+
+    .field6 {
+        width: 360px;     
+    }
+
+    #bottom_bar {
+        width: 100%;
+    }
+
+    #BLOGv {
+        margin-left: 15.634022%;
+        margin-top: 0px;
+        clear: none;
+    }
+
+    #HIRE_USv {
+        margin-left: -0.09993338%;
+        margin-top: 0px;
+        clear: none;
+    }
+
+    #MISSIONv {
+        margin-left: 15.634022%;
+        margin-top: 0px;
+        clear: none;
+    }
+
+    #METHODv {
+        margin-top: 0px;
+        margin-left: 15.634022%;
+        clear: none;
+    }
+
+    #Email_Address {
+        height: auto;
+        width: 232.075903%;
+    }
+
+    #Phone_Number {
+        margin-top: 62px;
+        margin-left: 0%;
+        clear: both;
+        height: auto;
+        width: 239.163237%;
+    }
+
+    #Notev {
+        margin-top: 62px;
+        margin-left: 0%;
+        clear: both;
+    }
+}
+
+@media only screen and (max-width: 514px) {
+    #boxv {
+        margin-top: 35px;
+        margin-left: auto;
+        clear: none;
+        width: 75.406055%;
+        margin-right: auto;
+    }
+
+    #AnthoLogov {
+        width: 25.987526%;
+        margin-top: 50px;
+    }
+
+    #top_bar {
+        margin-top: 20px;
+        margin-left: 0%;
+        clear: none;
+        width: 100%;
+        max-width: none;
+    }
+
+    #boxv1 {
+        width: 12.243373%;
+    }
+
+    #whereformgoes {
+        width: 290px;
+        height: 500px;
+    }
+
+    .field5 {
+        width: 250px;
+        margin-left: 20px;     
+    }
+
+    .field6 {
+        width: 250px;
+        margin-left: 20px;     
+    }
+
+    #bottom_bar {
+        width: 100%;
+    }
+
+    #Contact_us_to_set_up_your_free_consultation_ {
+        font-size: 0.66em;
+    }
+
+    #Contactv {
+        font-size: 2.66em;
+    }
+
+    #Have_questions_Contact_us_directly_Phone_206_701-9486_Em {
+        font-size: 0.88em;
+    }
+
+    #Email_Address {
+        font-size: 1em;
+        height: auto;
+        width: 170.78px;
+    }
+
+    #Namev {
+        font-size: 1em;
+    }
+
+    #Phone_Number {
+        font-size: 1em;
+        margin-top: 59px;
+        margin-left: 0%;
+        clear: both;
+        height: auto;
+        width: 170.78px;
+    }
+
+    #Notev {
+        font-size: 1em;
+        margin-top: 59px;
+        margin-left: 0%;
+        clear: both;
+    }
+
+    #BLOGv {
+        margin-top: 0px;
+        margin-left: 11.963611%;
+        clear: none;
+    }
+
+    #HIRE_USv {
+        margin-top: 0px;
+        margin-left: -0.11215885%;
+        clear: none;
+    }
+
+    #METHODv {
+        margin-top: 0px;
+        margin-left: 11.963611%;
+        clear: none;
+    }
+
+    #MISSIONv {
+        margin-top: 0px;
+        margin-left: 12.229469%;
+        clear: none;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    #BLOGv {
+        margin-top: 0px;
+        margin-left: 8%;
+        clear: none;
+    }
+
+    #boxv {
+        margin-top: 35px;
+        margin-left: auto;
+        clear: none;
+        width: 72.742619%;
+        margin-right: auto;
+    }
+
+    #AnthoLogov {
+        width: 28.866991%;
+        margin-top: 50px;
+    }
+
+    #top_bar {
+        width: 100%;
+    }
+
+    #boxv1 {
+        width: 12.236966%;
+    }
+
+    #whereformgoes {
+        width: 280px;
+        height: 500px;
+        margin-left: -21.790213%;
+        margin-top: 20px;
+        clear: none;
+    }
+
+    .field5 {
+        width: 240px;
+        margin-left: 20px;     
+    }
+
+    .field6 {
+        width: 240px;
+        margin-left: 20px;     
+    }
+
+    #bottom_bar {
+        width: 100%;
+    }
+
+    #HIRE_USv {
+        margin-top: 0px;
+        margin-left: auto;
+        clear: none;
+    }
+
+    #METHODv {
+        margin-top: 0px;
+        margin-left: 8%;
+        clear: none;
+    }
+
+    #MISSIONv {
+        margin-top: 0px;
+        margin-left: 8%;
+        clear: none;
+    }
+
+    #redbutton {
+        margin-left: 5%;
+    }
+
+    #Have_questions_Contact_us_directly_Phone_206_701-9486_Em {
+        margin-left: 5%;
+    }
+
+    #Contact_us_to_set_up_your_free_consultation_ {
+        margin-left: 5%;
+    }
+
+    #Contactv {
+        margin-left: 5%;
+    }
+
+    #LEARN_MORE {
+        margin-top: 18px;
+        margin-left: 4.998385%;
+        clear: both;
+    }
+
+    #_The_spoken_word_perishes_but_the_written_word_endures_-_Anc {
+        margin-left: 5%;
+    }
+
+    #boxv2 {
+        width: 11.216237%;
+        height: 69px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    #boxv {
+        margin-top: 35px;
+        margin-left: auto;
+        clear: none;
+        width: 85.680147%;
+        margin-right: auto;
+    }
+
+    #AnthoLogov {
+        width: 32.352941%;
+        margin-top: 35px;
+    }
+
+    #top_bar {
+        margin-top: 20px;
+        margin-left: 0%;
+        clear: none;
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 0px;
+    }
+
+    #boxv1 {
+        width: 12.233456%;
+    }
+
+    #whereformgoes {
+        width: 280px;
+        height: 500px;
+    }
+
+    .field5 {
+        width: 250px;
+        margin-left: 15px;     
+    }
+
+    .field6 {
+        width: 250px;
+        margin-left: 15px;     
+    }
+
+    #bottom_bar {
+        width: 100%;
+    }
+
+    #boxv2 {
+        width: 11.20864%;
+        height: 69px;
+    }
+
+    #redbutton {
+        width: 175px;
+    }
+
+    #LEARN_MORE {
+        font-size: 1.22em;
+    }
+}
+

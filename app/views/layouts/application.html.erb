@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%= favicon_link_tag 'favicon.ico' %>
+    <title><%= full_title(yield(:title)) %></title>
+    <%= stylesheet_link_tag    "application", media: "all" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+    <%= render 'layouts/shim' %>
+    <script type="text/javascript" src="//use.typekit.net/[redacted-a].js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>    
+  </head>
+
+  <body>
+    <div id="wrapper">
+          <%#= render 'layouts/header' %> <%# previously, we turned off this common header and opted for a sticky footer instead %><br><br>
+          <div id="bodycontent">
+            <div class="container">
+              <!--div id="fixed-alert"-->
+                <% flash.each do |key, value| %>
+                  <%= content_tag(:div, value, class: "alert alert-#{key}") %>
+                <% end %>
+              <!--/div-->
+                <% if flash[:error] %>
+                  <%= render "shared/sign_in" %>
+                <% end %>
+                <% if flash[:error2] %>
+                  <%= render "shared/signup" %>
+                <% end %>
+                <%= render 'layouts/header' %>
+                <%= yield %>
+                <div class="push"></div>
+                <%= render 'layouts/footer' %> 
+            </div>
+          </div>
+          <%#= render 'layouts/footer' %> <%#this used to be below yield above /div %>
+    </div>
+  </body>
+
+</html>
+
+

@@ -1,0 +1,688 @@
+
+
+    <head>
+
+
+	<meta name="viewport" content="initial-scale = 1.0,maximum-scale = 3.0">
+
+    <script>
+            $(document).ready(function () {
+                $(".ChapterVideoMod").fitVids();
+            });
+
+    </script>
+
+    <script>
+        function showHide(shID) {
+          if (document.getElementById(shID)) {
+            if (document.getElementById(shID+'-show').style.display != 'none') {
+              document.getElementById(shID+'-show').style.display = 'none';
+              document.getElementById(shID).style.display = 'block';
+            }
+            else {
+              document.getElementById(shID+'-show').style.display = 'inline';
+              document.getElementById(shID).style.display = 'none';
+            }
+          }
+        }
+    </script>
+
+    <!-- fancybox begins -->
+
+        <!--script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script--> <!-- this causes fitvids NOT to work. BOO -->
+        <link rel="stylesheet" href="/fancybox/source/jquery.fancybox.css" type="text/css" media="screen">
+        <script type="text/javascript" src="/fancybox/source/jquery.fancybox.pack.js"></script>
+    <!-- fancybox end -->
+    </head>
+
+<body>
+
+        <span id="In_Exhibit_Title_Mod">
+        DEVOTION
+        </span>
+        <div id="boxmodex_devotion" class="clearfix">
+            <%= image_tag("evelyn/menu/arrow motif left.png", :id => "exhibit_top_arrow_motif_left", :class => "image")  %>
+            <span id="In_Exhibit_Subtitle_Mod">
+            OUR STORIED YEARS TOGETHER
+            </span>
+            <%= image_tag("evelyn/menu/arrow motif right.png", :id => "exhibit_top_arrow_motif_right", :class => "image")  %>
+        </div>
+        <div id="boxmodex1" class="clearfix">
+            <span id="Previous_Exhibit_Link_Mod"><a href="<%= roos_guestbook_path %>">
+            previous exhibit</a> 
+            </span>
+            <span id="Next_Exhibit_Link_Mod"><a href="<%= roos_conversion_path %>">
+            next exhibit</a>
+            </span>
+        </div>
+
+
+<!-- CHAPTER ONE -->
+
+        <div id="Gallery_Strip" class="clearfix">
+            <ol class="GalleryPicsMod">
+                    <li><%= link_to image_tag("roos/devotion/small/HowwemetBill.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/HowwemetBill.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/HowwemetBill1.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/HowwemetBill1.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/HowwemetBill2.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/HowwemetBill2.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/HowwemetBill3.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/HowwemetBill3.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/HowwemetBill4.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/HowwemetBill4.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/extra/small/extra10.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/extra/large/extra10.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/extra/small/extra11.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/extra/large/extra11.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/extra/small/extra12.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/extra/large/extra12.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+
+                </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            How We Met, v. I        
+            </span>
+            <span id="Contributor_Name_Mod">
+            bill roos
+            </span>
+            <span id="First_Paragraph_Mod">abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz It was at Fort Chaffee that I met my wife Teresa. She had come out to a dance at the serviceman’s club with a friend. I was working that night at a part time job I had running a pool hall for Special Services, (the entertainment department of the Army) when a buddy came by to tell me about this good looking girl at the dance. Well, business was slow at the pool hall (no customers at all) so I closed it up early and hustled over to see what this girl looked like. When I saw her, I had to agree she was something special, so I asked her to dance.  
+            <br />
+            </span>
+            <div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <iframe src="https://player.vimeo.com/video/124071541" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “She was hoping another guy would ask her.”
+                </span>
+            </div>
+
+            <span id="Second_Paragraph_Mod">
+                After that dance I asked her again and again. She was hoping another guy would ask her, but I always seemed to beat him to her. After the dance was over, and the girls were all leaving, I asked her for a date. She accepted. I asked about a day and the time of 7:30pm. She agreed to the day but wanted me to arrive at 7:00pm instead. That was no problem for me and I showed up as agreed. A long time later I learned she had stood up a guy she had previously made a date with for that same night at 7:30pm and decided she would rather go with me than him. I knew the guy as he also worked in the Finance Office. <br /><br />
+
+                And after that we dated pretty regularly. I went home on leave, and when I was home, I was put on quarters to go down for a 90-day temporary duty in an army base in Louisiana, and because I was on leave, and they needed someone right away, they picked this other guy that Teresa stood up. So he ended up going there for 90 days, and after 90 days he didn’t come back, and we found out he had requested permanent duty there. And it turned out the reason he requested that was that he was running an embezzlement scheme, and got caught, and ended up being sentenced to 20 years of hard labor in military prison (which was reduced to ten years from appeal).<br /><br />
+
+                And... that is how it all started. We now have 6 children and 28 grandchildren. See what happens when you check out what a buddy thinks is a great looking girl? 
+            </span>
+
+            <!--span id="See_More_Mod"><a href="#" id="restofstory-show"  onclick="showHide('restofstory');return false;">SEE MORE</a>
+            </span>
+
+            <div id="restofstory" class="more">
+
+                <span id="Second_Paragraph_Mod1" class="more">
+
+                I got in contact with him through a lady in New Orleans. She was the one who got in contact with Johann Cobus in Germany, and she called me one day and she pronounced the Nehus name “Newhouse”,” and I wasn’t positively sure it was part of my family—I’d never heard it pronounced “Newhouse”—so I finally figured out from the first names that it was part of my family. She gave me the e-mail for Johann, we e-mailed back and forth, and he sent me his whole family line. I was able to add those names to my program and submit those names for temple work. <br /><br />
+
+                Johann is still Catholic and his family is still Catholic, but he was an English teacher in Germany. He understood English and German, so he taught me a few tricks about reading the German records. I was able to read some of the German records and gain the information that he had there.
+                </span>
+            </div-->
+
+        </div>
+            <!--span id="Exclusive_Quote_Mod">
+            “I want my children to have wisdom and intelligence, to be able to make the right choice to go back to heaven. Then we can all be happily living forever with each other in heaven.”
+            </span-->
+
+
+
+<!-- CHAPTER TWO -->
+
+
+        <div id="Gallery_Strip1" class="clearfix">
+            <ol class="GalleryPicsMod">
+               
+
+                    <li><%= link_to image_tag("roos/extra/small/extra17.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/extra/large/extra17.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/extra/small/extra18.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/extra/large/extra18.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/HowwemetTeresa1.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/HowwemetTeresa1.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/HowwemetTeresa2.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/HowwemetTeresa2.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    
+                     <li><%= link_to image_tag("roos/devotion/small/HowwemetTeresa.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/HowwemetTeresa.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/extra/small/extra13.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/extra/large/extra13.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+
+            </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            How We Met, v. II
+            </span>
+            <span id="Contributor_Name_Mod">
+            teresa roos
+            </span>
+            <span id="First_Paragraph_Mod">
+            After I graduated from high school, I got a job in Fort Smith with a plumbing company that my dad bought plumbing supplies from. My job there was to type up invoices for the people who bought the supplies. <br />
+            </span>
+            <div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <iframe src="https://player.vimeo.com/video/124071486" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “I had made a date with another soldier, and I didn’t really want to go.”
+                </span>
+            </div>
+            <span id="Second_Paragraph_Mod">
+                While I was working there I lived in an apartment with roommates, and my roommate was my best friend, Mary Rita. Another girl we graduated with needed an apartment to live in, so we decided we would let her come and live with us. Her name was June. One day she persuaded me to ride the bus to the service club at Camp Chaffee. They had dances there, so I went with her. And there I met Bill Roos.<br /><br />
+
+                Everyone sat in chairs around the dance floor, and the boys would ask the girls to dance. Bill Roos asked me to dance several times, and I danced with him. Previously I had made a date with another soldier, and I didn’t really want to go, so when Bill Roos asked me for a date on that same night, I asked him if he could come a little bit earlier so I would miss my first date! He did that. It just happened to be someone who worked in his same office, which was kind of embarrassing because of the situation. Somehow, I don’t think he really minded too much that I stood him up.<br /><br />
+
+                I learned how to do that from my friend June, ‘cause several times when someone would knock on our apartment door, it would be someone who had a date with June, and June was not there. She had stood them up! 
+            </span>
+            
+            <!--span id="See_More_Mod"><a href="#" id="restofstory0-show"  onclick="showHide('restofstory0');return false;">SEE MORE</a>
+            </span>
+
+            <div id="restofstory0" class="more">
+
+                <span id="Second_Paragraph_Mod1" class="more">
+
+                I didn’t do a lot of temple recommend interviews, because usually those were done after the block on Sunday, and I was involved with the finance clerk doing the tithing, so the other counselor did most of those. But I think I did 90% of the youth interviews, because we did that on mutual night. I can remember going to girls’ camp and pulling the girls aside and interviewing them at girls’ camp for a temple recommend. I loved going to girls’ camp as a priesthood holder. <br /><br />
+
+                Those were things in my life that I found very meaningful and fulfilling.
+
+                </span>
+            </div-->
+        </div>
+            
+
+
+<!-- CHAPTER THREE -->
+
+
+        <div id="Gallery_Strip1" class="clearfix">
+            <ol class="GalleryPicsMod">
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %> 
+                    </li>
+                    
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears2.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears2.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears3.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears3.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears4.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears4.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears5.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears5.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears6.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears6.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears7.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears7.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears8.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears8.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears9.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears9.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears10.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears10.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears11.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears11.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears12.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears12.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears14.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears14.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears15.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears15.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears16.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears16.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears17.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears17.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears18.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears18.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears19.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears19.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears20.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears20.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears21.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears21.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears22.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears22.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears23.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears23.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears24.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears24.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears25.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears25.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears38.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears38.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears39.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears39.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears40.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears40.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears41.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears41.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears42.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears42.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears43.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears43.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears45.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears45.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears46.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears46.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears47.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears47.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears50.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears50.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears51.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears51.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears52.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears52.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears54.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears54.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears55.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears55.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears56.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears56.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears57.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears57.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears58.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears58.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears59.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears59.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears60.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears60.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears61.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears61.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears62.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears62.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears63.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears63.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears64.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears64.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears65.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears65.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    
+
+                </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            Our First Years Together
+            </span>
+            <span id="Contributor_Name_Mod">
+            teresa roos
+            </span>
+            <span id="First_Paragraph_Mod">
+               After meeting Bill Roos at the dance, we started dating. We went to the movies. He gave me an Elvis Presley “Love Me Tender” necklace. Since he was Mormon and I was Catholic, it was not so great to be dating. My family was not happy and didn’t want us to get married. After we had known each other about a year and a half, we got married anyway. We lived in a duplex in Ft. Smith. It had been a house that they split into two places. 
+            <br />
+            </span>
+            <!--div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <iframe src="https://player.vimeo.com/video/124071543" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “My family was not happy and didn’t want us to get married.”
+                </span>
+            </div-->
+
+            <span id="Second_Paragraph_Mod">
+                Laura was born June 25, 1957. She was early so she was in an incubator a few weeks. By November 1957, after Thanksgiving, Bill was out of the army and we were expecting Pam. Bill took a job up in Sandpoint, Idaho where he was from, at JCPenneys as a sales associate selling men’s clothing. He had worked there during high school. We drove to Idaho with a crib in the back of a station wagon. <br /><br />
+
+                    Pam was born June 5, 1958. My dad came to see us. Cyndi was born May 16, 1959, and Janet October 16, 1960. We lived in Bill’s parents’ (Ken and Louise’s) house. They were working in Washington building schools at the time and would come home on weekends. There were four bedrooms upstairs. Emma Jane Merritt Roos also lived on the property in a little house. Bill’s brother Dan lived with them his senior year too. In the winter, it was cold upstairs, so I put the girls’ beds in the front room and pulled the blinds down. Grandma didn’t like it because her neighbors commented on the drawn blinds. We had an automatic washer and I hung the clothes on a rack above the stove in the winter. They dried really fast and I would take them down and put more up. I bought clothes at Penneys and sewed. I got fabric and patterns cheap. I had a Singer sewing machine I brought with me from Arkansas. We had a coal cooking stove and a hot plate and roaster oven. The water heater was part of the coal stove. We had a normal refrigerator. 
+            </span>
+
+
+            <span id="See_More_Mod"><a href="#" id="restofstorya-show"  onclick="showHide('restofstorya');return false;">SEE MORE</a>
+            </span>
+
+            <div id="restofstorya" class="more">
+
+                <span id="Second_Paragraph_Mod1" class="more">
+                    In June 1962 Bill got a job working for the Veterans Administration. We moved to Minneapolis, Minnesota in a gray rambler pulling a small U-Haul. I worked part time at a printing company. I worked on an autotype machine, and would type a letter on a main typewriter and then multiple typewriters would type it out. In Minneapolis we had three ladies for neighbors. They were Anna, Vera, and Helen Johnson. Vera was a teacher and had not married. She sometimes babysat the girls. <br /><br />
+
+                    We moved to a different house closer to Bill’s work. We lived within walking distance to Powderhorn Park. I made dinners for Thanksgiving, Christmas and Easter. We had just our own family. I sewed dresses for Easter and got Easter hats for everyone except Janet. because she wouldn’t wear it. I went to Catholic Mass and sometimes took the girls. We got a gold rambler with less than 2,000 miles on it made by American motors.  Romney was the president of the company—his son later ran for U.S. president. Laura and Pam started school. <br /><br />
+
+                    We moved to Arkansas in 1963. Bill worked for the U.S. Department of Veterans Affairs.  Shortly after we arrived, the Mormon missionaries knocked on the door. They had knocked on our landlord’s door, and they sent them to our house. I listened to the discussions and this time it made sense so I was baptized a few weeks later. We lived in the Gulf States Mission. There was just a tiny branch.  Francis Dortch was the president. My parents were not happy with me joining the church, but in time they were OK with it. <br /><br />
+
+                    Billy was born May 16, 1967 on Mother’s Day in Little Rock. We lived there until the summer of 1968. Bobby was born October 7, 1968, shortly after we moved to Caldwell, Idaho so Bill could work for Tempo. We moved many, many more times after that. 
+                </span>
+            </div>
+        </div>
+            <!--span id="Exclusive_Quote_Mod">
+            “I want my children to have wisdom and intelligence, to be able to make the right choice to go back to heaven. Then we can all be happily living forever with each other in heaven.”
+            </span-->
+
+<!-- CHAPTER FOUR -->
+
+
+        <div id="Gallery_Strip1" class="clearfix">
+            <ol class="GalleryPicsMod">
+                    <li><%= link_to image_tag("roos/devotion/small/Mywife.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Mywife.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %> 
+                    </li>
+                    <li><%= link_to image_tag("roos/resilience/small/Placetoplace1.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/resilience/large/Placetoplace1.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Mywife1.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Mywife1.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Mywife3.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Mywife3.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Mywife4.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Mywife4.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Mywife5.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Mywife5.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Mywife6.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Mywife6.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Mywife7.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Mywife7.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears66.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears66.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears67.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears67.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears68.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears68.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears69.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears69.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears70.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears70.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears72.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears72.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears73.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears73.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears74.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears74.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears76.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears76.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears78.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears78.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears79.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears79.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears80.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears80.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears82.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears82.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears83.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears83.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears84.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears84.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears85.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears85.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears86.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears86.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears87.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears87.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears89.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears89.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears91.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears91.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears92.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears92.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Mywife8.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Mywife8.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Mywife9.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Mywife9.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Mywife10.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Mywife10.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Mywife11.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Mywife11.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+
+                </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            My Wife
+            </span>
+            <span id="Contributor_Name_Mod">
+            bill roos
+            </span>
+            <span id="First_Paragraph_Mod">
+            What do I admire about my wife? She’s my sweetheart. She’s got a lot of great qualities. The biggest thing in her life is her family: her kids, her grandkids, her great-grandkids. She struggles when they’re having problems. She cries for them, she prays for them. That’s her main big quality.
+            <br />
+            </span>
+            <div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <!--iframe src="//player.vimeo.com/video/113120001" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe-->
+                        <iframe src="https://player.vimeo.com/video/124079546" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “I think her best trait is love for her family.”
+                </span>
+            </div>
+
+            <span id="Second_Paragraph_Mod">
+                Then there’s her dedication to the Church. Once she joined the Church she was 100 percent, period, no doubt about it, steady, strong in the Church. That impresses me very much.<br /><br />
+
+                She’s a stubborn German, and I’m a stupid Swede. No, my dad called me a Swede—I’m only about a quarter Swede—I’m mostly English, which is kind of stupid, too! 
+            </span>
+
+            <span id="See_More_Mod"><a href="#" id="restofstoryb-show"  onclick="showHide('restofstoryb');return false;">SEE MORE</a>
+            </span>
+
+            <div id="restofstoryb" class="more">
+
+                <span id="Second_Paragraph_Mod1" class="more">
+                    Teresa is a very warm, sweet person, but she has her opinions, and when somebody crosses her opinions, she gets her dander up. She pretty much withholds for other people, but she lets me know in a hurry that I’m wrong. <br /><br />
+
+                    Occasionally, when somebody is crossing her, she’ll let ‘em know in no uncertain terms. When she does that, she has a hard time expressing herself. She gets all tense and worked up, but that’s her. What you see is what you get. <br /><br />
+
+                    Again, I think her best trait is love for her family. And that goes beyond family here. She’s really into family history research. Ever since she joined the Church, she’s been struggling and scratching and scraping to put together information about her ancestors. Now, with so much available on the internet, why, she’s in heaven. She spends hours doing it. That’s great. That’s my wife!
+                </span>
+            </div>
+           
+
+        </div>
+
+
+
+<!-- CHAPTER FIVE -->
+
+
+    <div id="Gallery_Strip1" class="clearfix">
+            <ol class="GalleryPicsMod">
+                    <li><%= link_to image_tag("roos/devotion/small/TeresasSacrifice.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/TeresasSacrifice.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %> 
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/TeresasSacrifice1.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/TeresasSacrifice1.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/TeresasSacrifice2.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/TeresasSacrifice2.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/TeresasSacrifice3.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/TeresasSacrifice3.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears71.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears71.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears75.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears75.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Firstyears81.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Firstyears81.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            Teresa’s Great Sacrifice
+            </span>
+            <span id="Contributor_Name_Mod">
+            bill roos
+            </span>
+            <span id="First_Paragraph_Mod">
+            When Teresa and I informed her parents that we were going to get married, they got really upset because I was a Mormon, and she was marrying out of the Catholic Church. Her father was really angry and he told me, “If you’re responsible for her ever leaving the Catholic Church, I’ll splatter your guts all over the sidewalk.” About that time her mother told Teresa, “You’re still welcome to come, but only because we want to see our grandkids.”  
+            <br />
+            </span>
+            <div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <iframe src="https://player.vimeo.com/video/124529532" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “She’s as much of a pioneer as somebody who trucked across the plains.”
+                </span>
+            </div>
+
+            <span id="Second_Paragraph_Mod">
+                Over time, their anger and their philosophy changed. It softened. They saw that we were getting along very well. Our marriage was rocky at a point in time there, and she actually was getting ready to leave me, and I went to them for help. But then, about that time, her sister got divorced, and then they had problems with one of the sons and his marriage, and they realized it wasn’t just Teresa and I; it was other kids as well. Then they could see in later years how Teresa and I just worked out fine, while some of their others didn’t. <br /><br />
+
+                I see where that was, to me, a sacrifice on Teresa’s part, to join the Church and disappoint her parents and have her parents so upset with her. That was a leap of faith for her to do that. I refer to her as a pioneer. She’s as much of a pioneer as somebody who trucked across the plains. A lot of the people in the early days of the Church, they joined the Church and left their families behind. My ancestors left families behind in Europe and never saw them again. Others buried children and then left where the child was buried and never got to go back to the grave. They made sacrifices. Well, I think my wife made a sacrifice, too.<br />
+
+                
+            </span>
+
+            <span id="See_More_Mod"><a href="#" id="restofstory2-show"  onclick="showHide('restofstory2');return false;">SEE MORE</a>
+            </span>
+
+            <div id="restofstory2" class="more">
+
+                <span id="Second_Paragraph_Mod1" class="more">
+                Granted, later on, attitudes softened, and it was not a problem for her. In fact, her aunt, who was a nun, my mother-in-law’s sister, knew full well what Teresa was doing genealogy for, and turned over a whole bunch of genealogy information to her, knowing she was going to do temple work. <br /><br />
+
+                It was a sacrifice at the time, but it turned out right. It turned out good. <br /><br />
+
+                Now, for me, sacrificing? No. I didn’t sacrifice anything!<br />
+                </span>
+            </div>
+        </div>
+
+<!-- CHAPTER SIX -->
+
+    <div id="Gallery_Strip1" class="clearfix">
+            <ol class="GalleryPicsMod">                    
+                    <li><%= link_to image_tag("roos/devotion/small/Twostories.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Twostories.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %> 
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Twostories1.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Twostories1.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Twostories2.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Twostories2.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Twostories3.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Twostories3.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Twostories4.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Twostories4.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Twostories5.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Twostories5.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Twostories6.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Twostories6.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Twostories7.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Twostories7.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            Two Stories
+            </span>
+            <span id="Contributor_Name_Mod">
+            bill roos
+            </span>
+            <span id="First_Paragraph_Mod">
+           Well, we didn’t have too many fun and games, but one day, probably about the time Cindy was born, she was sitting in an easy chair and I was sitting on a footstool in front of her. We were about that far apart, talking, and I made some smart remark, and she just went “Pow!” like that! Caught me right smack in the mouth and knocked me backwards off the footstool. I learned after that if I’m going to make a smart remark to her, be beyond arm’s length!
+            <br />
+            </span>
+            <div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <iframe src="https://player.vimeo.com/video/124071416" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “Caught me right smack in the mouth and knocked me backwards off the footstool.”
+                </span>
+            </div>
+
+            <span id="Second_Paragraph_Mod">
+            A few years ago, we decided to go over to Yellowstone Park. It was late fall in the year, so we drove over there, found a motel, and unloaded. I hadn’t loaded any of her clothes in the car. All she had was the clothes on her back. That was it! She thought I had hauled everything out of the bedroom and put it in the car, but I didn’t. So I was in big trouble over that. She had to go three days wearing the same clothes. We planned on staying for about a week, but it started snowing, and we decided we’d better get out of there and get going before we got snowed in. We left earlier. I thought it was funny—I don’t think she does!
+            </span>
+        </div>
+
+<!-- Chapter Seven -->
+
+    <div id="Gallery_Strip1" class="clearfix">
+            <ol class="GalleryPicsMod">                    
+                    <li><%= link_to image_tag("roos/devotion/small/Therose.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Therose.jpg", :class => "fancybox", :rel => "gallery7", :title => "" %> 
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Therose2.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Therose2.jpg", :class => "fancybox", :rel => "gallery7", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Therose3.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Therose3.jpg", :class => "fancybox", :rel => "gallery7", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Therose4.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Therose4.jpg", :class => "fancybox", :rel => "gallery7", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Therose5.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Therose5.jpg", :class => "fancybox", :rel => "gallery7", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Therose6.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Therose6.jpg", :class => "fancybox", :rel => "gallery7", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("roos/devotion/small/Therose7.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/roos/devotion/large/Therose7.jpg", :class => "fancybox", :rel => "gallery7", :title => "" %>
+                    </li>
+                </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            “The Rose”
+            </span>
+            <span id="Contributor_Name_Mod">
+            teresa roos
+            </span>
+            <span id="First_Paragraph_Mod">
+            Some say love, it is a river<br />
+            That drowns the tender reed.<br />
+            Some say love, it is a razor<br />
+            That leaves your soul to bleed.<br />
+            Some say love, it is a hunger,<br />
+            An endless aching need.<br />
+            I say love, it is a flower,<br />
+            And you its only seed.
+            <br />
+            </span>
+            <div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/199139624%3Fsecret_token%3Ds-teVO4&amp;color=c5c5c5&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “Be willing to take chances and do what needs to be done.”
+                </span>
+            </div>
+
+            <span id="Second_Paragraph_Mod">
+            It’s the heart afraid of breaking<br />
+            That never learns to dance.<br />
+            It’s the dream afraid of waking<br />
+            That never takes the chance.<br />
+            It’s the one who won’t be taken,<br />
+            Who cannot seem to give,<br />
+            And the soul afraid of dyin’<br />
+            That never learns to live.<br /><br />
+
+            When the night has been too lonely<br />
+            And the road has been too long,<br />
+            And you think that love is only<br />
+            For the lucky and the strong,<br />
+            Just remember in the winter<br />
+            Far beneath the bitter snows<br />
+            Lies the seed that with the sun’s love<br />
+            In the spring becomes the rose.<br /><br />
+
+            This was a copy of a poem that was given to me by my visiting teacher. I just really liked to compare that to how we should live our lives, to be willing to take chances and do what needs to be done. 
+            </span>
+        </div>
+
+<!-- BOTTOM OF PAGE -->
+
+        <div id="boxmodex1" class="clearfix">
+            <span id="Previous_Exhibit_Link_Mod"><a href="<%= roos_guestbook_path %>">
+            previous exhibit</a> 
+            </span>
+            <span id="Next_Exhibit_Link_Mod"><a href="<%= roos_conversion_path %>">
+            next exhibit</a>
+            </span>
+        </div>
+
+        <div id="boxmodex4" class="clearfix">
+            <%= image_tag("evelyn/menu/arrow motif left.png", :id => "arrow_motif_left1", :class => "image")  %>
+            <span id="Home_Link_Mod"><a href="<%= roos_path %>">
+            HOME</a>
+            </span>
+             <%= image_tag("evelyn/menu/arrow motif right.png", :id => "arrow_motif_right1", :class => "image")  %>
+        </div>
+</body>

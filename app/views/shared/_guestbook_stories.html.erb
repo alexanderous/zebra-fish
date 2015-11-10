@@ -1,0 +1,119 @@
+ <head>
+  <script>
+        function showHide(shID) {
+          if (document.getElementById(shID)) {
+            if (document.getElementById(shID+'-show').style.display != 'none') {
+              document.getElementById(shID+'-show').style.display = 'none';
+              document.getElementById(shID).style.display = 'block';
+            }
+            else {
+              document.getElementById(shID+'-show').style.display = 'inline';
+              document.getElementById(shID).style.display = 'none';
+            }
+          }
+        }
+
+        $(document).ready(function () {
+         if ($("[rel=tooltip]").length) {
+         $("[rel=tooltip]").tooltip();
+         }
+       });
+
+
+    $(document).ready(function() {
+      $('button').click(function () {
+        $('body').chardinJs('toggle');
+      });
+    });
+  </script>
+</head>
+
+<% if @anthology_items.count > 0 %>
+      <!--div class="wrap"-->
+        <div id="show">
+          <div class="main">                  
+            <div class="horizontal">               
+                  <ol class="microposts">
+                    <%#= @feed_items = micropost %>
+                    
+                    <%= render "shared/anthology" %>
+                    
+                  </ol>   
+            </div> 
+          </div>
+        </div> 
+        <br>
+<% end %>
+
+<% if signed_in? %>
+
+  <section>
+  <br>
+      <div id="hideform">
+      <p>
+        <a href="#" id="example-show" class="button3" 
+        onclick="showHide('example');return false;">Add Your Story</a>
+      </p>
+      <div id="example" class="more">
+        <p>
+          <a href="#" id="example-hide" class="button2a" 
+          onclick="showHide('example');return false;">Hide Form</a>
+        </p>
+        <p id="Michelle_Story_Form">
+          <span id="Call_To_Action">Add a Story or Tribute</span>
+        </p>
+          
+          <div class="micropostform">
+
+            <%= form_for(Micropost.new) do |f| %>
+            <%#= form_for(@micropost) do |f| %>
+                <%= f.hidden_field :subject_id, :value => @identity %> 
+                <%#= f.hidden_field :subject_id, :value => '138' %> 
+                <%= f.hidden_field :topic, :value => @subject_matter %>
+                <br>
+                  <%# randy is user number 9 in live mode%>
+                <div id="addstory">
+                  <!--h4>Contribute a Story</h4-->
+                  <!--div class="field"-->
+                    <!--a href="#" rel="tooltip" title="All fields, including this one, are optional" data-placement="right" > Title</a-->
+                    <%#= f.text_field :title %>
+                  <!--/div-->  
+                  <div class="field">
+                    <%= f.text_area :content, placeholder: "I remember when..." %>
+                  </div>
+                </div>
+                <!--div id="addpicture"-->
+                  <!--h4>Additional Information</h4-->
+                  <!--br-->
+                  <!--a href="#" rel="tooltip" title="When did the story happen?" data-placement="right" > Date</a>
+                  <div class="field"-->
+                    <%#= f.date_select :dateofevent, :start_year => 2013, :end_year => 1850, :discard_day => true, :prompt => {:month => 'Month', :year => 'Year'} %>
+                  <!--/div--> 
+                  <!--br-->
+                    <%# if current_user.admin? %><!--br-->
+                      <%#= f.check_box("hide") %> <!--a href="#" rel="tooltip" title="This makes the story private, and keeps it between you and the subject." data-placement="right"--><!-- Hide</a-->
+                    <%# end %>
+                <div class="moveover">
+                    <h6> Add Photo </h6>
+                    <!--div class="field"-->
+                      <h6><%= f.file_field :image %></h6>
+                    <!--/div-->
+                  <!--/div-->
+
+                  <h6>
+                    <%= f.submit "Save Draft", :name => "draft_button", class: "button2a" %> &nbsp; &nbsp;
+                    <%= f.submit "Publish", :name => "publish_button", class: "button3" %>
+                  </h6>
+                </div>
+            <% end %>
+          </div>
+        </div>
+      </div>
+  </section> 
+
+<% else %>
+  <%#= link_to "Add Your Story", signin_path, class: "button2a" %>    
+
+  <!--div class="startbutton2"-->
+    <%= render "shared/modal_login" %>
+<% end %>

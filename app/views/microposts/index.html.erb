@@ -1,0 +1,43 @@
+ <head>
+  <script language="javascript" type="text/javascript">
+       $(document).ready(function () {
+       if ($("[rel=tooltip]").length) {
+       $("[rel=tooltip]").tooltip();
+       }
+     });
+  </script>
+</head>
+
+<% provide(:title, 'Your Drafts') %>
+<div class="wrap"> 
+  <div id="showposts">
+    <div class="top">
+        <h1>Your Drafts</h1>
+
+          <p>
+            <% if @user.image.blank? %>
+               <%= link_to image_tag("hitchcock.png", :size => "120x120"), @user %> 
+            <% else %>
+               <%= link_to image_tag(@user.image_url(:none), options = {:size => "120x120" }), @user %>
+            <% end %>
+          </p>
+
+    </div>
+    <h2>A Directory of Your Unpublished Stories</h2>
+    <br>
+    <h3><%= pluralize(@drafts.count, "Draft") %></h3>        
+    <ol class="drafts">
+        <%= render partial: 'shared/draft', collection: @drafts %>
+    </ol>
+    <!--h2><%#= pluralize(@published.count, "Published Story") %></h2>
+    <ol class= "drafts">
+        <%#= render partial: 'shared/draft', collection: @published %>
+    </ol-->
+    <!--br><br-->   
+    <!--div class="startbutton4">
+        <%#= link_to 'Start an Anthology', start_path, class: "button" %> &nbsp; &nbsp; &nbsp;
+        <%#= link_to 'Contribute a Story', contribute_path, class: "button3" %>
+    </div--> 
+    <!--br><br-->
+  </div>
+</div>

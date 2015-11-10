@@ -1,0 +1,506 @@
+
+
+    <head>
+
+
+    <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 3.0">
+
+    <script>
+            $(document).ready(function () {
+                $(".ChapterVideoMod").fitVids();
+            });
+
+    </script>
+
+    <script>
+        function showHide(shID) {
+          if (document.getElementById(shID)) {
+            if (document.getElementById(shID+'-show').style.display != 'none') {
+              document.getElementById(shID+'-show').style.display = 'none';
+              document.getElementById(shID).style.display = 'block';
+            }
+            else {
+              document.getElementById(shID+'-show').style.display = 'inline';
+              document.getElementById(shID).style.display = 'none';
+            }
+          }
+        }
+    </script>
+
+    <!-- fancybox begins -->
+
+        <!--script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script--> <!-- this causes fitvids NOT to work. BOO -->
+        <link rel="stylesheet" href="/fancybox/source/jquery.fancybox.css" type="text/css" media="screen">
+        <script type="text/javascript" src="/fancybox/source/jquery.fancybox.pack.js"></script>
+    <!-- fancybox end -->
+    </head>
+
+<body>
+
+        <span id="In_Exhibit_Title_Mod">
+        MOTHERHOOD I
+        </span>
+        <div id="boxmodex_motherhood1" class="clearfix">
+            <%= image_tag("evelyn/menu/arrow motif left.png", :id => "exhibit_top_arrow_motif_left", :class => "image")  %>
+            <span id="In_Exhibit_Subtitle_Mod">
+            PARENTING AS A WORKING WIDOW
+            </span>
+            <%= image_tag("evelyn/menu/arrow motif right.png", :id => "exhibit_top_arrow_motif_right", :class => "image")  %>
+        </div>
+        <div id="boxmodex1" class="clearfix">
+            <span id="Previous_Exhibit_Link_Mod"><a href="<%= evelyn_faith_path %>">
+            previous exhibit</a> 
+            </span>
+            <span id="Next_Exhibit_Link_Mod"><a href="<%= evelyn_purpose_path %>">
+            next exhibit</a>
+            </span>
+        </div>
+
+
+<!-- CHAPTER ONE -->
+
+        
+        <div id="Gallery_Strip" class="clearfix">
+            <ol class="GalleryPicsMod">
+                    <li><%= link_to image_tag("evelyn/Motherhood1/Smaller/1Consequences.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood1/Large/1Consequences.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood1/Smaller/1Consequences1.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood1/Large/1Consequences1.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood1/Smaller/1Consequences2.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood1/Large/1Consequences2.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood1/Smaller/1Consequences3.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood1/Large/1Consequences3.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood1/Smaller/1Consequences4.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood1/Large/1Consequences4.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood1/Smaller/1Consequences5.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood1/Large/1Consequences5.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood1/Smaller/1Consequences6.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood1/Large/1Consequences6.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood1/Smaller/1Consequences7.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood1/Large/1Consequences7.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood1/Smaller/1Consequences8.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood1/Large/1Consequences8.jpg", :class => "fancybox", :rel => "gallery1", :title => "" %>
+                    </li>
+                </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            Experiencing Our Consequences
+            </span>
+            <span id="Contributor_Name_Mod">
+            Kimberli Cheung
+            </span>
+            <span id="First_Paragraph_Mod">
+            I’ve learned from my mom some things that I feel are very, very valuable. I really appreciate them and want to pass them down to my children. When we were growing up we would talk about what happens when people do something bad, like break the commandments or break the laws, and what would happen if we stole and what the consequences would be. <br />
+            </span>
+            <div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <iframe src="https://player.vimeo.com/video/121174376" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “She was very clear from the beginning that if we ever made any mistakes as far as breaking big laws or commandments that she was not going to bail us out.”
+                </span>
+            </div>
+            <span id="Second_Paragraph_Mod">I remember at that age thinking that our mom would say, “If you went to jail, don’t worry. We’ll save you. We love you. We’ll take care of you.” But no! That wasn’t her answer. She was very clear from the beginning that if we ever made any mistakes as far as breaking big laws or commandments that she was not going to bail us out. If we go to jail, she’s not going to be there to save us.<br /><br /> 
+
+            I feel like that was great for me growing up, because it made me that much more aware of the choices that I was making, to always try to choose the right and always try to think ahead of time what the consequences would be. That’s valuable because I see other people around me who may have not grown up with that sort of thinking, and their parents have bailed them out on multiple occasions in different ways, whether through debt, jail, or whatever it may be, and yet they repeat the same types of problematic choices. <br />
+            </span>
+
+            <span id="See_More_Mod"><a href="#" id="restofstory0-show"  onclick="showHide('restofstory0');return false;">SEE MORE</a>
+            </span>
+
+            <div id="restofstory0" class="more">
+                <span id="Second_Paragraph_Mod1" class="more">
+                That’s something I have been passing down to my child, Jeremiah. At the same time, I let him know that I love him. That’s just how Heavenly Father loves us. We still have choices that we have to make. If we choose the wrong, we will unfortunately have to suffer those consequences. Heavenly Father is not going to bail us out just because he loves us. We learn that, regardless, he’s still going to be there. <br /><br />
+
+                At the end of whatever mistakes we’ve made, our mom still loves us. But that doesn’t mean that we can do whatever we want and make mistakes on purpose or choose to do bad things and not have those consequences. I appreciate that.<br />
+                </span>
+            </div>
+        </div>
+
+
+<!-- CHAPTER TWO -->
+
+
+        <div id="Gallery_Strip1" class="clearfix">
+            <ol class="GalleryPicsMod">
+                    <li><%= link_to image_tag("evelyn/Motherhood1/Smaller/2BeingThere.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood1/Large/2BeingThere.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood1/Smaller/2BeingThere1.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood1/Large/2BeingThere1.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood1/Smaller/2BeingThere2.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood1/Large/2BeingThere2.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood1/Smaller/2BeingThere3.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood1/Large/2BeingThere3.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood1/Smaller/2BeingThere4.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood1/Large/2BeingThere4.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood1/Smaller/2BeingThere5.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood1/Large/2BeingThere5.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood1/Smaller/2BeingThere6.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood1/Large/2BeingThere6.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood1/Smaller/2BeingThere7.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood1/Large/2BeingThere7.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood1/Smaller/2BeingThere8.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood1/Large/2BeingThere8.jpg", :class => "fancybox", :rel => "gallery2", :title => "" %>
+                    </li>
+                </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            Being There in the End
+            </span>
+            <span id="Contributor_Name_Mod">
+            jonathan cheung
+            </span>
+            <span id="First_Paragraph_Mod">One of my favorite stories growing up with Mom was when I was really young. I don’t remember what age, exactly, but we had gone to Chuck E. Cheese’s for my birthday. My family, some friends, grandparents, and I were there. Chuck E. Cheese’s was one of my favorite places to go to, and I was very sad that Mom wasn’t there for pretty much the whole birthday party. 
+            <br />
+            </span>
+            <div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <iframe src="//player.vimeo.com/video/118836103" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “Mom hadn’t forgotten about my birthday and had tried really hard to get there.”
+                </span>
+            </div>
+
+            <span id="Second_Paragraph_Mod">
+            At the end of the birthday party, she ended up dropping by, obviously to say hello. She had been working, but she brought a birthday gift for me. It was a Teenage Mutant Ninja Turtles video game, one that I really, really wanted. It is probably one of my favorite memories, because one, Mom hadn’t forgotten about my birthday and had tried really hard to get there, and two, she bought the one thing I’d asked her to get me.<br /><br />
+            </span>
+
+        </div>
+            
+
+
+<!-- CHAPTER THREE -->
+
+
+        <div id="Gallery_Strip1" class="clearfix">
+            <ol class="GalleryPicsMod">
+                    <li><%= link_to image_tag("evelyn/Motherhood1/Smaller/3ExitingComfortZones.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood1/Large/3ExitingComfortZones.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood1/Smaller/3ExitingComfortZones1.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood1/Large/3ExitingComfortZones1.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood1/Smaller/3ExitingComfortZones2.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood1/Large/3ExitingComfortZones2.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood1/Smaller/3ExitingComfortZones3.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood1/Large/3ExitingComfortZones3.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood1/Smaller/3ExitingComfortZones4.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood1/Large/3ExitingComfortZones4.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood1/Smaller/3ExitingComfortZones5.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood1/Large/3ExitingComfortZones5.jpg", :class => "fancybox", :rel => "gallery3", :title => "" %>
+                    </li>
+                </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            Exiting Our Comfort Zones
+            </span>
+            <span id="Contributor_Name_Mod">
+            kimberli cheung
+            </span>
+            <span id="First_Paragraph_Mod">
+            I really appreciate how Mom encouraged me to become friends with strangers, and I’m not saying just any strangers, but she encouraged me to develop friendships with people around my age as well as her grown-up friends. I really appreciate that because watching her, how she’s a social butterfly when it comes to social events, really pushed me out of my comfort zone to develop friendships. 
+            <br />
+            </span>
+            <div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <iframe src="//player.vimeo.com/video/118855303" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “[It] made me realize that if she can go out and give to society like that, then I also have something in me that I can give to others.”
+                </span>
+            </div>
+
+            <span id="Second_Paragraph_Mod">
+                That has made an impact on my life because I’m more of an artistic, creative type of person, and the social aspect has become a part of who I am because of her initial steps in pushing me to step out of my comfort zone and be friends with people my age. It started at an early age, when I was four or five, and she would put me in a lot of different social settings where I didn’t really know the people at all, whether it was throwing me at a neighbor’s house or taking me to her parties and introducing me to the grown ups. I had a really great time. It boosted my confidence in the social aspect of my life.<br /><br />
+
+                She would go around to tables, talk to different people, and introduce herself or compliment others and make them feel uplifted. They, in turn, would respond very positively. I could tell that she had a lot of friends or acquaintances around her and they all adored her. Being in environments like that made me realize that if she can go out and give to society like that, then I also have something in me that I can give to others. <br /><br />
+
+            </span>
+            <span id="Exclusive_Quote_Mod">
+            “I grew a sense of self-confidence through experiences like that, where she pushed me to develop the ability to communicate with grown ups or other people who may be able to share knowledge with me, and to not be afraid of that.”
+            </span>
+            <span id="Second_Paragraph_Mod">
+                I discovered my own ability to connect with people through junior high, high school, and beyond. It became very natural for me to have that desire to connect with people and I felt very comfortable doing that. I felt like I could help others. I could teach others something that I knew. I could uplift others with compliments and positive comments.<br />
+            </span>
+        </div>
+            <!--span id="Exclusive_Quote_Mod">
+            “I want my children to have wisdom and intelligence, to be able to make the right choice to go back to heaven. Then we can all be happily living forever with each other in heaven.”
+            </span-->
+
+<!-- CHAPTER FOUR -->
+
+
+        <div id="Gallery_Strip1" class="clearfix">
+            <ol class="GalleryPicsMod">
+                                        <li><%= link_to image_tag("evelyn/Motherhood1/Smaller/4HowWeMet.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood1/Large/4HowWeMet.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood1/Smaller/4HowWeMet1.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood1/Large/4HowWeMet1.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood1/Smaller/4HowWeMet2.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood1/Large/4HowWeMet2.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood1/Smaller/4HowWeMet3.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood1/Large/4HowWeMet3.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood1/Smaller/4HowWeMet4.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood1/Large/4HowWeMet4.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood1/Smaller/4HowWeMet5.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood1/Large/4HowWeMet5.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood1/Smaller/4HowWeMet6.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood1/Large/4HowWeMet6.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood1/Smaller/4HowWeMet7.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood1/Large/4HowWeMet7.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood1/Smaller/4HowWeMet8.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood1/Large/4HowWeMet8.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood1/Smaller/4HowWeMet9.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood1/Large/4HowWeMet9.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood1/Smaller/4HowWeMet10.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood1/Large/4HowWeMet10.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood1/Smaller/4HowWeMet11.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood1/Large/4HowWeMet11.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood1/Smaller/4HowWeMet12.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood1/Large/4HowWeMet12.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood1/Smaller/4HowWeMet13.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood1/Large/4HowWeMet13.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood1/Smaller/4HowWeMet14.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood1/Large/4HowWeMet14.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood1/Smaller/4HowWeMet15.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood1/Large/4HowWeMet15.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood1/Smaller/4HowWeMet16.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood1/Large/4HowWeMet16.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood1/Smaller/4HowWeMet17.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood1/Large/4HowWeMet17.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood1/Smaller/4HowWeMet18.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood1/Large/4HowWeMet18.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood1/Smaller/4HowWeMet19.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood1/Large/4HowWeMet19.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood1/Smaller/4HowWeMet20.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood1/Large/4HowWeMet20.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood1/Smaller/4HowWeMet21.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood1/Large/4HowWeMet21.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood1/Smaller/4HowWeMet22.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood1/Large/4HowWeMet22.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood1/Smaller/4HowWeMet23.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood1/Large/4HowWeMet23.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood1/Smaller/4HowWeMet24.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood1/Large/4HowWeMet24.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood1/Smaller/4HowWeMet25.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood1/Large/4HowWeMet25.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood1/Smaller/4HowWeMet26.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood1/Large/4HowWeMet26.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood1/Smaller/4HowWeMet27.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood1/Large/4HowWeMet27.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood1/Smaller/4HowWeMet28.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood1/Large/4HowWeMet28.jpg", :class => "fancybox", :rel => "gallery4", :title => "" %>
+                    </li>
+                </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            How We Met
+            </span>
+            <span id="Contributor_Name_Mod">
+            norman cheung
+            </span>
+            <span id="First_Paragraph_Mod">
+            The first time I met Mom was at the hospital. We shared a mutual patient, and we started talking about our interests. In the beginning it was mostly medical issues: what we believed needed to be done on our patient, how the medical health system should be run. One thing led to another and we talked about a lot of things, like sports. At the time I was very much interested in tennis. 
+            <br />
+            </span>
+            <div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <iframe src="//player.vimeo.com/video/118842256" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “After that I met the kids: Kimberli, Jonathan, and Alex...I fell in love with them.”
+                </span>
+            </div>
+
+            <span id="Second_Paragraph_Mod">
+            She also expressed interest in playing tennis with me, so we went out and actually started playing some tennis. Little did I know that she doesn’t play too well. But she was a sport and she tried. <br /><br />
+
+            After that I met the kids: Kimberli, Jonathan, and Alex. The boys were only five or six years old. Kimberli was around nine. I fell in love with them. Then we started dating. At one time we went to a rodeo, and at another we went to Fisherman’s Wharf. That’s probably one of our favorite places, because Alex and Jonathan loved to play games at Fisherman’s Wharf. We usually had a very good time over there, too. She introduced me to the Mormon Church. I went and got baptized.
+
+            </span>
+
+            <div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/189859556&amp;color=d3d3d3&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <span id="See_More_Mod"><a href="#" id="restofstory4-show"  onclick="showHide('restofstory4');return false;">SEE MORE</a>
+            </span>
+
+            <div id="restofstory4" class="more">
+
+                <span id="Second_Paragraph_Mod1" class="more">
+                After that we had a little bit of an issue with another person who was also chasing after Mom. We cooled off for a little while before we got back together again. After that, we got married! Our marriage ceremony was at the chapel first, and then we went to the bishop’s house to sign the certificate. The ceremony was pretty small. I believe one of my brothers, Horatio, was there to witness that. The banquet was on a boat. I was so glad that my parents were there, and my sister made a huge cake and brought it all the way from England for our wedding cake. Kimberli was the flower girl and Jonathan and Alex were flower boys, if I’m not mistaken. <br /><br />
+
+                After the marriage, we moved into the house in southern Fremont and Mom’s parents also stayed with us, helping with the kids and with a lot of chores around the house. It was very helpful and took a lot of stress out of our lives, because it’s not that often that I spend as much time as I want with the children, as well as with Mom. But I think we both pretty much understand what each other’s schedule is, and it also helps that we both work in the same hospitals. Although we may not be spending time necessarily by ourselves a lot of the time, we make do with what we have and it does work. At least I believe that.
+                 <br />
+                </span>
+            </div>
+
+        </div>
+
+
+
+<!-- CHAPTER FIVE -->
+
+
+    <div id="Gallery_Strip1" class="clearfix">
+            <ol class="GalleryPicsMod">
+                    <li><%= link_to image_tag("evelyn/Motherhood1/Smaller/5TigerMother.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood1/Large/5TigerMother.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood1/Smaller/5TigerMother1.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood1/Large/5TigerMother1.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood1/Smaller/5TigerMother2.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood1/Large/5TigerMother2.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood1/Smaller/5TigerMother3.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood1/Large/5TigerMother3.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood1/Smaller/5TigerMother4.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood1/Large/5TigerMother4.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood1/Smaller/5TigerMother5.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood1/Large/5TigerMother5.jpg", :class => "fancybox", :rel => "gallery5", :title => "" %>
+                    </li>
+                </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            Tiger Mother
+            </span>
+            <span id="Contributor_Name_Mod">
+            jonathan cheung
+            </span>
+            <span id="First_Paragraph_Mod">
+            Mom and I had a “tiger mom”-son type of relationship. I know that Mom really wanted a better life for us, so she was very strict on what she wanted us to do and how to accomplish it. She strongly encouraged us to delve into our studies and always made sure we partook in a lot of extra-curricular activities. 
+            <br />
+            </span>
+            <div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <iframe src="//player.vimeo.com/video/118836109" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “Even when we were in grade school, she had us memorizing SAT vocabulary words over summer breaks.”
+                </span>
+            </div>
+
+            <span id="Second_Paragraph_Mod">
+            Even when we were in grade school, she had us memorizing SAT vocabulary words over summer breaks. I was part of a math camp right before junior high. For a lot of people, and from an educational standpoint, it seemed like overkill, but Mom thought it was normal. She thought we had the potential to do more than the average kid, so she had us do things that helped us get to that point. <br /> <br />
+
+            In terms of how it evolved over time, Mom was very strict about setting rules and making sure we followed those rules. We found out very early on that if we didn’t obey the rules, we would suffer the consequences of not doing so. For a lot of our childhood, we lived in fear of those consequences, and so I, for one, tried to be as accommodating to those rules as possible. <br /><br />
+
+            Through that, I also learned the life lesson of following rules not just because you’re scared of rules themselves or the consequences, but also because there are natural consequences, such as people being unhappy, people being uncomfortable, or the pain of someone disciplining you in ways that aren’t your first choice. That’s what my relationship with Mom growing up was like, and I feel like it has done a lot to help motivate me to become who I am today.<br />
+        </div>
+
+<!-- CHAPTER SIX -->
+
+    <div id="Gallery_Strip1" class="clearfix">
+            <ol class="GalleryPicsMod">                    
+                    <li><%= link_to image_tag("evelyn/Motherhood1/Smaller/6ProgressinParenting.jpg", :id => "Pic_1_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood1/Large/6ProgressinParenting.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood1/Smaller/6ProgressinParenting1.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood1/Large/6ProgressinParenting1.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood1/Smaller/6ProgressinParenting2.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood1/Large/6ProgressinParenting2.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood1/Smaller/6ProgressinParenting3.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood1/Large/6ProgressinParenting3.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood1/Smaller/6ProgressinParenting4.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood1/Large/6ProgressinParenting4.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood1/Smaller/6ProgressinParenting5.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood1/Large/6ProgressinParenting5.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood1/Smaller/6ProgressinParenting6.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood1/Large/6ProgressinParenting6.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood1/Smaller/6ProgressinParenting7.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood1/Large/6ProgressinParenting7.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood1/Smaller/6ProgressinParenting8.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood1/Large/6ProgressinParenting8.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood1/Smaller/6ProgressinParenting9.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood1/Large/6ProgressinParenting9.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood1/Smaller/6ProgressinParenting10.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood1/Large/6ProgressinParenting10.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood1/Smaller/6ProgressinParenting11.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood1/Large/6ProgressinParenting11.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood1/Smaller/6ProgressinParenting12.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood1/Large/6ProgressinParenting12.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood1/Smaller/6ProgressinParenting13.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood1/Large/6ProgressinParenting13.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood1/Smaller/6ProgressinParenting14.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood1/Large/6ProgressinParenting14.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood1/Smaller/6ProgressinParenting15.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood1/Large/6ProgressinParenting15.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                    <li><%= link_to image_tag("evelyn/Motherhood1/Smaller/6ProgressinParenting16.jpg", :id => "Pic_2_Gallery_Mod"), "https://dqp5htr9jmxmj.cloudfront.net/assets/evelyn/Motherhood1/Large/6ProgressinParenting16.jpg", :class => "fancybox", :rel => "gallery6", :title => "" %>
+                    </li>
+                </ol>   
+        </div>
+        <div id="boxmodex2" class="clearfix">
+            <span id="Chapter_Title_Mod">
+            Progress in Parenting
+            </span>
+            <span id="Contributor_Name_Mod">
+            kimberli cheung
+            </span>
+            <span id="First_Paragraph_Mod">
+            I’m going to be honest. I will say that a lot of people would not agree with the way that my mom disciplined us growing up. There were definitely spankings and yelling and anger and situations that were not cool. At the same time, I also feel like I understand that she was a single parent with three kids and working extremely long hours as a cardiologist. 
+            <br />
+            </span>
+            <div id="boxmodex3" class="clearfix">
+                <div class="ChapterVideoDivMod">
+                    <div class="ChapterVideoMod">
+                        <iframe src="//player.vimeo.com/video/120529308" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+                <span id="Chapter_Quote_Mod">
+                “What caused a lot of the stress was that Mom‘s purpose was to show that she wanted to serve not just her fellow man, but God.”
+                </span>
+            </div>
+
+            <span id="Second_Paragraph_Mod">
+            Now that I’m a single parent, I understand that it can be frustrating to love your kids so much, and you care about them being raised and brought up righteously to be good citizens. That’s exactly the end result I want for Jeremiah, and any of my future children. <br /><br />
+
+            Different people have different methods of going about doing it. It was hard the way that she would go about disciplining us back then. It wasn’t the best way to go about doing it, but I know that her intentions were really good. She loved us and was thinking of the long-term end result for us: who we were going to be.
+            </span>
+
+            <span id="See_More_Mod"><a href="#" id="restofstory6-show"  onclick="showHide('restofstory6');return false;">SEE MORE</a>
+            </span>
+
+            <div id="restofstory6" class="more">
+                <span id="Second_Paragraph_Mod1" class="more">
+                It was frustrating to her that she wasn’t able to be there as a mother all the time to nurture us, teach us, and discipline us every single minute, every single day, unlike some mothers who are able to stay at home with their kids all day and monitor their actions and alter them. I can understand that. <br /><br />
+
+                How she’s changed is interesting, because over the years I have seen her grow spiritually. Granted, it’s taken fifteen years for things to really change, but over the course of that fifteen years I’ve seen her go from not being able to go to church on Sundays – very often because of work – to have the desire to go to the temple. It didn’t happen overnight, but it happened over years. <br /><br />
+
+                As her testimony grew and as she learned to give more of herself to the Lord and let him take over some of her burdens, she began to discipline and see things differently. Now when she’s spending time and helping me care for Jeremiah, she’s exercising her ability to change and improve herself in disciplining children. <br /><br />
+
+                She’s open to criticism, whereas years ago, when we were growing up, that was never an option. We didn’t even bring it up. If you brought up anything that she was doing wrong, you were in trouble. Things are different now. She’s definitely able to exercise more patience, she’s able to recognize when she’s wrong, and she’s able to admit that she’s wrong. She’s willing to learn how to do this better, how to communicate better, how to get the end result more immediately and better. I appreciate that. <br />
+                </span>
+            </div>
+        </div>
+
+
+<!-- BOTTOM OF PAGE -->
+
+        <div id="boxmodex1" class="clearfix">
+            <span id="Previous_Exhibit_Link_Mod"><a href="<%= evelyn_faith_path %>">
+            previous exhibit</a> 
+            </span>
+            <span id="Next_Exhibit_Link_Mod"><a href="<%= evelyn_purpose_path %>">
+            next exhibit</a>
+            </span>
+        </div>
+
+        <div id="boxmodex4" class="clearfix">
+            <%= image_tag("evelyn/menu/arrow motif left.png", :id => "arrow_motif_left1", :class => "image")  %>
+            <span id="Home_Link_Mod"><a href="<%= evelyn_path %>">
+            HOME</a>
+            </span>
+             <%= image_tag("evelyn/menu/arrow motif right.png", :id => "arrow_motif_right1", :class => "image")  %>
+        </div>
+</body>
